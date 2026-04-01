@@ -1,0 +1,33 @@
+dataset:
+  root: datasets/agriculture
+
+runtime:
+  base_run_dir: runs
+  log_level: INFO
+
+retrieval:
+  entity_top_k: 6
+  hyperedge_top_k: 6
+  chunk_top_k: 8
+  evidence_keep: 6
+  taskframe_registration_threshold: 0.33
+
+reasoning:
+  max_steps: 5
+  coarse_top_k: 6
+  llm_top_k: 3
+  thought_score_threshold: 0.12
+  min_verified_evidence: 2
+  evidence_score_threshold: 0.20
+
+llm:
+  api_key_env: OPENAI_API_KEY
+  base_url_env: OPENAI_BASE_URL
+  model: gpt-4o-mini
+  embedding_model: text-embedding-3-small
+  timeout_seconds: 120
+  temperature: 0.2
+  use_mock: false
+
+prompts:
+  dir: prompts
