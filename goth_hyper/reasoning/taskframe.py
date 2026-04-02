@@ -55,37 +55,37 @@ class TaskFrameRegistry:
             self.trace_store.log_event("taskframe_anchor_registered", {"slot_ids": updated_slots})
         return updated_slots
 
-    def register_reasoning(self, task_frame: TaskFrame, reasoning_thought: ThoughtState) -> list[str]:
+    def register_evidence(self, task_frame: TaskFrame, evidence_thought: ThoughtState) -> list[str]:
         open_slots = task_frame.get_open_slots()
         if not open_slots:
             return []
 
-        texts = [reasoning_thought.objective + " " + reasoning_thought.grounding.to_text()] + [slot.text for slot in open_slots]
+        texts = [evidence_thought.content] + [slot.text for slot in open_slots]
         embeddings = self.embedder.embed_texts(texts, stage="taskframe_registry")
-        reasoning_vector = embeddings[0]
+        evidence_vector = embeddings[0]
         slot_vectors = embeddings[1:]
 
         updated_slots: list[str] = []
-        status = "verified" if reasoning_thought.status == "verified" else "supported"
+        status = "verified" if evidence_thought.status == "verified" else "supported"
         for slot, slot_vector in zip(open_slots, slot_vectors, strict=True):
-            similarity = max(cosine_similarity(reasoning_vector, slot_vector), 0.0)
+            similarity = max(cosine_similarity(evidence_vector, slot_vector), 0.0)
             if similarity >= self.threshold:
                 task_frame.mark_slot(
                     slot.slot_id,
-                    evidence_id=reasoning_thought.thought_id,
+                    evidence_id=evidence_thought.thought_id,
                     status=status,
-                    note=f"Registered via reasoning similarity {similarity:.3f}",
+                    note=f"Registered via evidence similarity {similarity:.3f}",
                 )
                 updated_slots.append(slot.slot_id)
 
         if updated_slots:
             self.logger.info(
-                "Registered reasoning thought %s to TaskFrame slots %s",
-                reasoning_thought.thought_id,
+                "Registered evidence thought %s to TaskFrame slots %s",
+                evidence_thought.thought_id,
                 ", ".join(updated_slots),
             )
             self.trace_store.log_event(
-                "taskframe_reasoning_registered",
-                {"reasoning_thought_id": reasoning_thought.thought_id, "slot_ids": updated_slots},
+                "taskframe_evidence_registered",
+                {"evidence_thought_id": evidence_thought.thought_id, "slot_ids": updated_slots},
             )
         return updated_slots

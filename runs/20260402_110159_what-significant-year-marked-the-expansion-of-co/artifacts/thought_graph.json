@@ -1,0 +1,3249 @@
+{
+  "question": "What significant year marked the expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools?",
+  "root_id": "th-0001",
+  "frontier_ids": [
+    "ev-th-0002-2",
+    "ev-th-0002-3",
+    "ev-th-0002-5",
+    "ev-th-0002-6",
+    "ev-th-0005-1",
+    "ev-th-0005-2",
+    "ev-th-0005-3",
+    "ev-th-0005-4",
+    "ev-th-0005-5",
+    "ev-th-0005-6",
+    "ev-th-0007-1",
+    "ev-th-0007-2",
+    "ev-th-0007-3",
+    "ev-th-0007-4",
+    "ev-th-0007-5",
+    "ev-th-0007-6",
+    "ev-th-0006-1",
+    "ev-th-0006-2",
+    "ev-th-0006-3",
+    "ev-th-0006-4",
+    "ev-th-0006-5",
+    "ev-th-0006-6",
+    "ev-th-0003-1",
+    "ev-th-0003-2",
+    "ev-th-0003-3",
+    "ev-th-0003-4",
+    "ev-th-0003-5",
+    "ev-th-0003-6",
+    "ev-th-0009-4",
+    "ev-th-0009-5",
+    "ev-th-0009-6",
+    "ev-th-0008-1",
+    "ev-th-0008-2",
+    "ev-th-0008-3",
+    "ev-th-0008-4",
+    "ev-th-0008-5",
+    "ev-th-0008-6",
+    "ev-th-0004-3",
+    "ev-th-0004-4",
+    "ev-th-0004-5",
+    "ev-th-0004-6"
+  ],
+  "status": "done",
+  "termination_reason": "no_active_frontier",
+  "final_answer": {
+    "answer": "2010",
+    "reasoning_summary": "The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools. Verified evidence indicates that by early 2010, the success of the Growing Gardens program in Portland led to increased requests for assistance from schools, highlighting the connection between Seattle's initiatives and the demand in Portland.",
+    "confidence": 0.9,
+    "remaining_gaps": []
+  },
+  "thoughts": {
+    "th-0001": {
+      "thought_id": "th-0001",
+      "role": "root",
+      "content": "What significant year marked the expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools?",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": [
+          "question-root"
+        ]
+      },
+      "score": 0.0,
+      "status": "expanded",
+      "parent_ids": [],
+      "metadata": {},
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; notes: question-root"
+    },
+    "th-0002": {
+      "thought_id": "th-0002",
+      "role": "hypothesis",
+      "content": "The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs.",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": [
+          "This hypothesis connects the expansion of initiatives in Seattle with the demand in Portland."
+        ]
+      },
+      "score": 1.4452016074979568,
+      "status": "verified",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.8740764856338501,
+          "grounding_score": 0.6534040570259094
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; notes: This hypothesis connects the expansion of initiatives in Seattle with the demand in Portland."
+    },
+    "th-0003": {
+      "thought_id": "th-0003",
+      "role": "constraint",
+      "content": "The year must be explicitly linked to both Seattle and Portland's community gardening initiatives.",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": [
+          "This constraint ensures that the identified year is relevant to both locations."
+        ]
+      },
+      "score": 1.1499305628822682,
+      "status": "verified",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.7526594996452332,
+          "grounding_score": 0.5278230905532837
+        }
+      },
+      "grounding_text": "notes: This constraint ensures that the identified year is relevant to both locations."
+    },
+    "th-0004": {
+      "thought_id": "th-0004",
+      "role": "constraint",
+      "content": "The answer should be verifiable through historical data or records of community gardening programs.",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": [
+          "This constraint emphasizes the need for reliable sources to support the identified year."
+        ]
+      },
+      "score": 0.7992927465025161,
+      "status": "verified",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.518866240978241,
+          "grounding_score": 0.5404601097106934
+        }
+      },
+      "grounding_text": "notes: This constraint emphasizes the need for reliable sources to support the identified year."
+    },
+    "th-0005": {
+      "thought_id": "th-0005",
+      "role": "bridge",
+      "content": "Connection between Seattle's community gardening initiatives and their timeline.",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "community gardening initiatives"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": [
+          "This bridge will help establish the historical context of the initiatives in Seattle."
+        ]
+      },
+      "score": 1.1774930959480798,
+      "status": "expanded",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.7186880111694336,
+          "grounding_score": 0.6383925676345825
+        }
+      },
+      "grounding_text": "anchors: Seattle, community gardening initiatives; notes: This bridge will help establish the historical context of the initiatives in Seattle."
+    },
+    "th-0006": {
+      "thought_id": "th-0006",
+      "role": "bridge",
+      "content": "Link between the demand for gardening programs in Portland schools and the year identified.",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": [
+          "This bridge will clarify how the identified year relates to the demand in Portland."
+        ]
+      },
+      "score": 1.2295933393520926,
+      "status": "revised",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.7491307854652405,
+          "grounding_score": 0.6413600444793701
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; notes: This bridge will clarify how the identified year relates to the demand in Portland."
+    },
+    "ev-th-0002-1": {
+      "thought_id": "ev-th-0002-1",
+      "role": "evidence",
+      "content": "**A group of committed community leaders is essential**. If a single person approaches the city with an idea for a new community garden, Richard MacDonald, manager of Seattle's P-Patch program (page 60), will tell him or her to return with five or six more people. One person is not sufficient to steward a new garden into fruition. \"When they have a good _group_ on board, then we sit down and create a strategy or map of how they will move the garden forward,\" says MacDonald. Key items to discuss are: • Identifying the skills and tasks required and recruiting other people for these roles • Making sure other community groups have opportunities to be involved, such as nearby food banks, native plant groups, or green building groups • Making the planning group inclusive, to reflect the neighborhood's multicultural population **Rely on collaborative decision making**. In our conversation, V...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Sustainability practices should be integrated into community gardening efforts.\"",
+          "\"SEATTLE'S BUDGET\"",
+          "\"COMMUNITY GARDEN INITIATIVE\"",
+          "\"COMMUNITY GARDENS\""
+        ],
+        "chunk_ids": [
+          "chunk-07f097aee6be0e05076e0e695419438a"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "chunk:The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs.",
+          "chunk:community gardening initiatives",
+          "entity:Seattle",
+          "entity:community gardening initiatives",
+          "hyperedge:community gardening initiatives"
+        ]
+      },
+      "score": 0.8124755001068116,
+      "status": "verified",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3250",
+          "edge-9919",
+          "edge-9920",
+          "edge-9921",
+          "edge-9937",
+          "edge-9938",
+          "edge-9959",
+          "edge-9960",
+          "edge-9981",
+          "edge-9982",
+          "edge-9983",
+          "edge-9984"
+        ],
+        "high_score_candidate": true
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; nodes: Sustainability practices should be integrated into community gardening efforts., SEATTLE'S BUDGET, COMMUNITY GARDEN INITIATIVE, COMMUNITY GARDENS; chunks: chunk-07f097aee6be0e05076e0e695419438a; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | chunk:The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs. | chunk:community gardening initiatives"
+    },
+    "ev-th-0002-2": {
+      "thought_id": "ev-th-0002-2",
+      "role": "evidence",
+      "content": "is the Tommy Thompson Community Garden, where residents of the city can lease small 25-foot-square plots to grow their own vegetables. This combination of activities means that the Intervale has become a vibrant and sometimes busy community farming center, with mutually supporting enterprises. #### Evaluating Success Early on in the development of the Intervale, founder Will Raap set the goal (no one is quite sure how or where this number came from) of the farms there providing 10 percent of the food needed by the city of Burlington. It's not clear what percentage the farms do provide, but there is no doubt that the amount of production is impressive – estimated at more than 1 million pounds per year. And as Raap notes, the Intervale continues to serve as a catalyst for community farming initiatives and projects around the state and nation. And finally, the approach of incubating new...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "\"COMMUNITY FARMING INITIATIVES\""
+        ],
+        "chunk_ids": [
+          "chunk-bd12c93ca420ae0dfd8107f51eec1886"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "entity:community gardening initiatives"
+        ]
+      },
+      "score": 0.5517095496626956,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3109",
+          "edge-3110",
+          "edge-3111",
+          "edge-3112",
+          "edge-3127",
+          "edge-3128",
+          "edge-3158",
+          "edge-3159",
+          "edge-3160",
+          "edge-3179",
+          "edge-3203",
+          "edge-3219"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.38728758692741394,
+          "grounding_score": 0.4245474636554718
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; nodes: COMMUNITY FARMING INITIATIVES; chunks: chunk-bd12c93ca420ae0dfd8107f51eec1886; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | entity:community gardening initiatives"
+    },
+    "ev-th-0002-3": {
+      "thought_id": "ev-th-0002-3",
+      "role": "evidence",
+      "content": "who may prefer living in an urban or suburban community rather than the rural countryside. It's a business with very low start-up costs – a minimal amount of equipment and a small backyard greenhouse for starting seedlings. Also, given McCrate's description of his company's work, another departure from the mind-set of the classic rural farmer – \"leave me alone so I can farm\" – is that the urban farmer needs to be entrepreneurial and enjoy constantly meeting and working with new people. Becoming an urban farmer is arguably an ideal profession for someone who wants to facilitate connecting people with the land and food. Neither Halm nor McCrate envisions staying in the city forever, and they talk about trying to find a model for small-scale farming that could be profitable and sustainable. But for now Seattle Urban Farm Company is proving good for them. \"It was important for me to have...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-123973bb8732b383c984f14c89a9aa5c"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "chunk:Seattle",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.4574241604119367,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14508",
+          "edge-14510",
+          "edge-14511",
+          "edge-16398",
+          "edge-16399",
+          "edge-16400",
+          "edge-16420",
+          "edge-16421",
+          "edge-16422",
+          "edge-16423",
+          "edge-16431",
+          "edge-16443"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3340136706829071,
+          "grounding_score": 0.36947736144065857
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; nodes: SEATTLE; chunks: chunk-123973bb8732b383c984f14c89a9aa5c; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | chunk:Seattle | entity:Seattle"
+    },
+    "ev-th-0002-4": {
+      "thought_id": "ev-th-0002-4",
+      "role": "evidence",
+      "content": "Wadud learned to articulate her philosophy. If a homeowner's fruit is likely going to waste, is it fair game to take? Some people might feel comfortable making off with the fallen fruit, but Wadud believes it is important to request permission – to build a neighborhood's awareness about its own food resources, while also building trust and a sense of community. In Seattle, Washington, Solid Ground, an antipoverty nonprofit, runs a sophisticated, finely tuned fruit-gleaning program called Community Fruit Tree Harvest. In 2009, for example, volunteers gathered 19,600 pounds of apples, plums, and pears from Seattle's yards. Only prime-condition fruits are given to the food bank; bruised or rotten fruits go to compost. Of course, volunteers may taste and take fruit, as well. When I joined a plum tree gleaning expedition, the old plum tree on a quiet residential street in Seattle's Univers...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-d6db795582f52e35a0bb9aea86e66f7f"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "chunk:Seattle",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.752673146724701,
+      "status": "verified",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-19375",
+          "edge-19376",
+          "edge-19377",
+          "edge-19378",
+          "edge-19389",
+          "edge-19390",
+          "edge-19391",
+          "edge-19620",
+          "edge-19621",
+          "edge-19674",
+          "edge-19675",
+          "edge-19676"
+        ],
+        "high_score_candidate": true
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; nodes: SEATTLE; chunks: chunk-d6db795582f52e35a0bb9aea86e66f7f; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | chunk:Seattle | entity:Seattle"
+    },
+    "ev-th-0002-5": {
+      "thought_id": "ev-th-0002-5",
+      "role": "evidence",
+      "content": ", \"A Case for Backyard Chickens in Salem [Oregon]\" (September 2010), <http://www.chicken-revolution.com/Research_Packet_Sept_2010.pdf>. **** Genetic Resources Action International (GRAIN), \"Fowl Play: The Poultry Industry's Central Role in the Bird Flu Crisis\" (February 2006), <http://www.grain.org/briefings/?id=194>. **** Consumer Reports Health Blog, \"Health Weekender: Egg Safety – In Defense of Home-Grown Eggs,\" July 24, 2009, <http://blogs.consumerreports.org/health/2009/07/egg-safety-organic-eggs-health-benefits-of-eggs-salmonella-protect-yourself-from-foodborne-illness-.html>. **** Council President Richard Conlin, \"One Small Step For Man, One Giant Leap For Goatkind,\" _Making It Work_ (newsletter) 9, no. 8 (October 4, 2007), <http://www.seattle.gov/Council/Conlin/miw/0708miw.htm#4>. **** Angela Galloway, \"Seattle Homeowners May Keep Miniature Goats as Pets,\" _Seattle Post-Intel...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-475015ec5f08648d774910da2fb23967"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.5322486169682339,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-20301",
+          "edge-20302",
+          "edge-20315",
+          "edge-20316",
+          "edge-20325",
+          "edge-20326",
+          "edge-20327",
+          "edge-20346",
+          "edge-20347",
+          "edge-20360",
+          "edge-20361",
+          "edge-20362"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3907220661640167,
+          "grounding_score": 0.3622179627418518
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; nodes: SEATTLE; chunks: chunk-475015ec5f08648d774910da2fb23967; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | entity:Seattle"
+    },
+    "ev-th-0002-6": {
+      "thought_id": "ev-th-0002-6",
+      "role": "evidence",
+      "content": "Goats like to climb and do best with some vertical spaces or stairs. • Goats require shelter from the weather, because they despise getting wet. • Goats are browsers, meaning they will eat mostly nongrassy species such as brambles, shrubs, and small trees. They will eat grass if that is all that is offered. Goats love nettles, thistles, dandelions, chickweed, leafy spurge, greasewood, and poison ivy. They enjoy bitter-flavored plants that other ruminants purposely avoid. These are heady arguments that might appeal most to political historians and philosophers. I suspect Grant was successful less for these arguments than for the supporting constituent passion carrying her forward. If there is one thing that will get an elected official's attention, it is constituent passion. Humor also played a role, says Grant, as the idea of legalizing goats and the name of her organization, the Goat...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Grant sees a pastoral future for Seattle, populated with small animals.\"",
+          "\"SEATTLE TILTH\"",
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-06b664b68583390f1a748abc957021ca"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "entity:Seattle",
+          "hyperedge:Seattle"
+        ]
+      },
+      "score": 0.15384221069759674,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-2520",
+          "edge-2538",
+          "edge-2561",
+          "edge-2562",
+          "edge-2563",
+          "edge-2564",
+          "edge-2580",
+          "edge-2599",
+          "edge-2600",
+          "edge-2617",
+          "edge-2618",
+          "edge-2633"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.12046623975038528,
+          "grounding_score": 0.27705663442611694
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; nodes: Grant sees a pastoral future for Seattle, populated with small animals., SEATTLE TILTH, SEATTLE; chunks: chunk-06b664b68583390f1a748abc957021ca; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | entity:Seattle | hyperedge:Seattle"
+    },
+    "ev-th-0005-1": {
+      "thought_id": "ev-th-0005-1",
+      "role": "evidence",
+      "content": "**A group of committed community leaders is essential**. If a single person approaches the city with an idea for a new community garden, Richard MacDonald, manager of Seattle's P-Patch program (page 60), will tell him or her to return with five or six more people. One person is not sufficient to steward a new garden into fruition. \"When they have a good _group_ on board, then we sit down and create a strategy or map of how they will move the garden forward,\" says MacDonald. Key items to discuss are: • Identifying the skills and tasks required and recruiting other people for these roles • Making sure other community groups have opportunities to be involved, such as nearby food banks, native plant groups, or green building groups • Making the planning group inclusive, to reflect the neighborhood's multicultural population **Rely on collaborative decision making**. In our conversation, V...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Sustainability practices should be integrated into community gardening efforts.\"",
+          "\"SEATTLE'S BUDGET\"",
+          "\"COMMUNITY GARDEN INITIATIVE\"",
+          "\"COMMUNITY GARDEN\"",
+          "\"COMMUNITY GARDENS\""
+        ],
+        "chunk_ids": [
+          "chunk-07f097aee6be0e05076e0e695419438a"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "chunk:Connection between Seattle's community gardening initiatives and their timeline.",
+          "chunk:community gardening initiatives",
+          "entity:Connection between Seattle's community gardening initiatives and their timeline.",
+          "entity:Seattle",
+          "entity:community gardening initiatives",
+          "hyperedge:community gardening initiatives"
+        ]
+      },
+      "score": 0.7720114847550974,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3250",
+          "edge-9919",
+          "edge-9920",
+          "edge-9921",
+          "edge-9937",
+          "edge-9938",
+          "edge-9959",
+          "edge-9960",
+          "edge-9981",
+          "edge-9982",
+          "edge-9983",
+          "edge-9984"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.49334168434143066,
+          "grounding_score": 0.5648616552352905
+        }
+      },
+      "grounding_text": "anchors: Seattle, community gardening initiatives; nodes: Sustainability practices should be integrated into community gardening efforts., SEATTLE'S BUDGET, COMMUNITY GARDEN INITIATIVE, COMMUNITY GARDEN, COMMUNITY GARDENS; chunks: chunk-07f097aee6be0e05076e0e695419438a; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | chunk:Connection between Seattle's community gardening initiatives and their timeline. | chunk:community gardening initiatives"
+    },
+    "ev-th-0005-2": {
+      "thought_id": "ev-th-0005-2",
+      "role": "evidence",
+      "content": "is the Tommy Thompson Community Garden, where residents of the city can lease small 25-foot-square plots to grow their own vegetables. This combination of activities means that the Intervale has become a vibrant and sometimes busy community farming center, with mutually supporting enterprises. #### Evaluating Success Early on in the development of the Intervale, founder Will Raap set the goal (no one is quite sure how or where this number came from) of the farms there providing 10 percent of the food needed by the city of Burlington. It's not clear what percentage the farms do provide, but there is no doubt that the amount of production is impressive – estimated at more than 1 million pounds per year. And as Raap notes, the Intervale continues to serve as a catalyst for community farming initiatives and projects around the state and nation. And finally, the approach of incubating new...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "\"COMMUNITY FARMING INITIATIVES\""
+        ],
+        "chunk_ids": [
+          "chunk-bd12c93ca420ae0dfd8107f51eec1886"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "entity:community gardening initiatives"
+        ]
+      },
+      "score": 0.5366109645480588,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3109",
+          "edge-3110",
+          "edge-3111",
+          "edge-3112",
+          "edge-3127",
+          "edge-3128",
+          "edge-3158",
+          "edge-3159",
+          "edge-3160",
+          "edge-3179",
+          "edge-3203",
+          "edge-3219"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.38728758692741394,
+          "grounding_score": 0.385562002658844
+        }
+      },
+      "grounding_text": "anchors: Seattle, community gardening initiatives; nodes: COMMUNITY FARMING INITIATIVES; chunks: chunk-bd12c93ca420ae0dfd8107f51eec1886; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | entity:community gardening initiatives"
+    },
+    "ev-th-0005-3": {
+      "thought_id": "ev-th-0005-3",
+      "role": "evidence",
+      "content": "who may prefer living in an urban or suburban community rather than the rural countryside. It's a business with very low start-up costs – a minimal amount of equipment and a small backyard greenhouse for starting seedlings. Also, given McCrate's description of his company's work, another departure from the mind-set of the classic rural farmer – \"leave me alone so I can farm\" – is that the urban farmer needs to be entrepreneurial and enjoy constantly meeting and working with new people. Becoming an urban farmer is arguably an ideal profession for someone who wants to facilitate connecting people with the land and food. Neither Halm nor McCrate envisions staying in the city forever, and they talk about trying to find a model for small-scale farming that could be profitable and sustainable. But for now Seattle Urban Farm Company is proving good for them. \"It was important for me to have...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The Seattle Urban Farm Company began with a focus on installing home gardens, but after only one year they learned that it would be important to balance the short-term home garden projects, which last one or two days, with longer-term commercial projects, to reduce the constant scramble from one job to the next.\"",
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-123973bb8732b383c984f14c89a9aa5c"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "chunk:Seattle",
+          "entity:Seattle",
+          "hyperedge:Connection between Seattle's community gardening initiatives and their timeline."
+        ]
+      },
+      "score": 0.5040895418765619,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14508",
+          "edge-14510",
+          "edge-14511",
+          "edge-16398",
+          "edge-16399",
+          "edge-16400",
+          "edge-16420",
+          "edge-16421",
+          "edge-16422",
+          "edge-16423",
+          "edge-16431",
+          "edge-16443"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3340136706829071,
+          "grounding_score": 0.5091883540153503
+        }
+      },
+      "grounding_text": "anchors: Seattle, community gardening initiatives; nodes: The Seattle Urban Farm Company began with a focus on installing home gardens, but after only one year they learned that it would be important to balance the short-term home garden projects, which last one or two days, with longer-term commercial projects, to reduce the constant scramble from one job to the next., SEATTLE; chunks: chunk-123973bb8732b383c984f14c89a9aa5c; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | chunk:Seattle | entity:Seattle"
+    },
+    "ev-th-0005-4": {
+      "thought_id": "ev-th-0005-4",
+      "role": "evidence",
+      "content": "Wadud learned to articulate her philosophy. If a homeowner's fruit is likely going to waste, is it fair game to take? Some people might feel comfortable making off with the fallen fruit, but Wadud believes it is important to request permission – to build a neighborhood's awareness about its own food resources, while also building trust and a sense of community. In Seattle, Washington, Solid Ground, an antipoverty nonprofit, runs a sophisticated, finely tuned fruit-gleaning program called Community Fruit Tree Harvest. In 2009, for example, volunteers gathered 19,600 pounds of apples, plums, and pears from Seattle's yards. Only prime-condition fruits are given to the food bank; bruised or rotten fruits go to compost. Of course, volunteers may taste and take fruit, as well. When I joined a plum tree gleaning expedition, the old plum tree on a quiet residential street in Seattle's Univers...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-d6db795582f52e35a0bb9aea86e66f7f"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "chunk:Seattle",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.680568007002492,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-19375",
+          "edge-19376",
+          "edge-19377",
+          "edge-19378",
+          "edge-19389",
+          "edge-19390",
+          "edge-19391",
+          "edge-19620",
+          "edge-19621",
+          "edge-19674",
+          "edge-19675",
+          "edge-19676"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.4681715965270996,
+          "grounding_score": 0.4536721408367157
+        }
+      },
+      "grounding_text": "anchors: Seattle, community gardening initiatives; nodes: SEATTLE; chunks: chunk-d6db795582f52e35a0bb9aea86e66f7f; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | chunk:Seattle | entity:Seattle"
+    },
+    "ev-th-0005-5": {
+      "thought_id": "ev-th-0005-5",
+      "role": "evidence",
+      "content": ", \"A Case for Backyard Chickens in Salem [Oregon]\" (September 2010), <http://www.chicken-revolution.com/Research_Packet_Sept_2010.pdf>. **** Genetic Resources Action International (GRAIN), \"Fowl Play: The Poultry Industry's Central Role in the Bird Flu Crisis\" (February 2006), <http://www.grain.org/briefings/?id=194>. **** Consumer Reports Health Blog, \"Health Weekender: Egg Safety – In Defense of Home-Grown Eggs,\" July 24, 2009, <http://blogs.consumerreports.org/health/2009/07/egg-safety-organic-eggs-health-benefits-of-eggs-salmonella-protect-yourself-from-foodborne-illness-.html>. **** Council President Richard Conlin, \"One Small Step For Man, One Giant Leap For Goatkind,\" _Making It Work_ (newsletter) 9, no. 8 (October 4, 2007), <http://www.seattle.gov/Council/Conlin/miw/0708miw.htm#4>. **** Angela Galloway, \"Seattle Homeowners May Keep Miniature Goats as Pets,\" _Seattle Post-Intel...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-475015ec5f08648d774910da2fb23967"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.5154575075248777,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-20301",
+          "edge-20302",
+          "edge-20315",
+          "edge-20316",
+          "edge-20325",
+          "edge-20326",
+          "edge-20327",
+          "edge-20346",
+          "edge-20347",
+          "edge-20360",
+          "edge-20361",
+          "edge-20362"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3907220661640167,
+          "grounding_score": 0.3192434012889862
+        }
+      },
+      "grounding_text": "anchors: Seattle, community gardening initiatives; nodes: SEATTLE; chunks: chunk-475015ec5f08648d774910da2fb23967; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | entity:Seattle"
+    },
+    "ev-th-0005-6": {
+      "thought_id": "ev-th-0005-6",
+      "role": "evidence",
+      "content": "Goats like to climb and do best with some vertical spaces or stairs. • Goats require shelter from the weather, because they despise getting wet. • Goats are browsers, meaning they will eat mostly nongrassy species such as brambles, shrubs, and small trees. They will eat grass if that is all that is offered. Goats love nettles, thistles, dandelions, chickweed, leafy spurge, greasewood, and poison ivy. They enjoy bitter-flavored plants that other ruminants purposely avoid. These are heady arguments that might appeal most to political historians and philosophers. I suspect Grant was successful less for these arguments than for the supporting constituent passion carrying her forward. If there is one thing that will get an elected official's attention, it is constituent passion. Humor also played a role, says Grant, as the idea of legalizing goats and the name of her organization, the Goat...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Grant sees a pastoral future for Seattle, populated with small animals.\"",
+          "\"SEATTLE TILTH\"",
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-06b664b68583390f1a748abc957021ca"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "entity:Seattle",
+          "hyperedge:Seattle"
+        ]
+      },
+      "score": 0.15498587848502,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-2520",
+          "edge-2538",
+          "edge-2561",
+          "edge-2562",
+          "edge-2563",
+          "edge-2564",
+          "edge-2580",
+          "edge-2599",
+          "edge-2600",
+          "edge-2617",
+          "edge-2618",
+          "edge-2633"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.12046623975038528,
+          "grounding_score": 0.2865503132343292
+        }
+      },
+      "grounding_text": "anchors: Seattle, community gardening initiatives; nodes: Grant sees a pastoral future for Seattle, populated with small animals., SEATTLE TILTH, SEATTLE; chunks: chunk-06b664b68583390f1a748abc957021ca; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | entity:Seattle | hyperedge:Seattle"
+    },
+    "th-0007": {
+      "thought_id": "th-0007",
+      "role": "bridge",
+      "content": "The expansion of community gardening initiatives in Seattle has led to increased interest and demand for similar programs in Portland schools.",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "Portland schools",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Sustainability practices should be integrated into community gardening efforts.\"",
+          "\"SEATTLE'S BUDGET\"",
+          "\"COMMUNITY GARDEN INITIATIVE\"",
+          "\"COMMUNITY GARDEN\"",
+          "\"COMMUNITY GARDENS\"",
+          "\"COMMUNITY FARMING INITIATIVES\""
+        ],
+        "chunk_ids": [
+          "chunk-07f097aee6be0e05076e0e695419438a",
+          "chunk-bd12c93ca420ae0dfd8107f51eec1886"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-1",
+          "ev-th-0005-2"
+        ],
+        "notes": [
+          "This bridge will help explore the impact of Seattle's initiatives on Portland's educational programs."
+        ]
+      },
+      "score": 1.4243922046454145,
+      "status": "expanded",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.8522577285766602,
+          "grounding_score": 0.6713162660598755
+        }
+      },
+      "grounding_text": "anchors: Seattle, Portland schools, community gardening initiatives; nodes: Sustainability practices should be integrated into community gardening efforts., SEATTLE'S BUDGET, COMMUNITY GARDEN INITIATIVE, COMMUNITY GARDEN, COMMUNITY GARDENS, COMMUNITY FARMING INITIATIVES; chunks: chunk-07f097aee6be0e05076e0e695419438a, chunk-bd12c93ca420ae0dfd8107f51eec1886; notes: This bridge will help explore the impact of Seattle's initiatives on Portland's educational programs."
+    },
+    "ev-th-0007-1": {
+      "thought_id": "ev-th-0007-1",
+      "role": "evidence",
+      "content": "?'\" When it came time for the Harvest of the Month day in the cafeteria, Sullivan and the garden teacher went to every classroom and gave out samples again, and they even gave students a recipe to bring home to their parents. Sullivan says parents were pulling her aside and asking, \"What have you done to my kids? They want Brussels sprouts!\" One parent even told her the story of being in the grocery store and allowing her son to pick out one treat; her son dragged her to the produce section and picked out Brussels sprouts. The program works, she says. When given a reason, an opportunity, and encouragement, kids will definitely eat fruits and vegetables. * * * ### Lessons Learned Building a School Gardening Program * * * **Develop a long-term budget and commitment to manage the gardens**. Growing Gardens of Portland, Oregon (page 17), has been working to support school garden programs,...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "Portland schools",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Growing Gardens of Portland, Oregon has been working to support school garden programs, inside and outside the classroom, for years.\"",
+          "\"PORTLAND, OREGON\""
+        ],
+        "chunk_ids": [
+          "chunk-0a7be9460651dfa3f1395f006df3ef8f"
+        ],
+        "evidence_ids": [
+          "ev-th-0007-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0007",
+          "chunk:Portland schools",
+          "chunk:The expansion of community gardening initiatives in Seattle has led to increased interest and demand for similar programs in Portland schools.",
+          "entity:Portland schools",
+          "hyperedge:Portland schools",
+          "hyperedge:The expansion of community gardening initiatives in Seattle has led to increased interest and demand for similar programs in Portland schools."
+        ]
+      },
+      "score": 0.8503722664647739,
+      "status": "active",
+      "parent_ids": [
+        "th-0007"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1050",
+          "edge-1051",
+          "edge-1052",
+          "edge-1068",
+          "edge-1069",
+          "edge-1070",
+          "edge-1083",
+          "edge-1093",
+          "edge-1094",
+          "edge-1095",
+          "edge-1111",
+          "edge-1112"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.550847053527832,
+          "grounding_score": 0.5437538623809814
+        }
+      },
+      "grounding_text": "anchors: Seattle, Portland schools, community gardening initiatives; nodes: Growing Gardens of Portland, Oregon has been working to support school garden programs, inside and outside the classroom, for years., PORTLAND, OREGON; chunks: chunk-0a7be9460651dfa3f1395f006df3ef8f; notes: global-hypergraph-retrieval | retrieved-for:th-0007 | chunk:Portland schools | chunk:The expansion of community gardening initiatives in Seattle has led to increased interest and demand for similar programs in Portland schools."
+    },
+    "ev-th-0007-2": {
+      "thought_id": "ev-th-0007-2",
+      "role": "evidence",
+      "content": "who may prefer living in an urban or suburban community rather than the rural countryside. It's a business with very low start-up costs – a minimal amount of equipment and a small backyard greenhouse for starting seedlings. Also, given McCrate's description of his company's work, another departure from the mind-set of the classic rural farmer – \"leave me alone so I can farm\" – is that the urban farmer needs to be entrepreneurial and enjoy constantly meeting and working with new people. Becoming an urban farmer is arguably an ideal profession for someone who wants to facilitate connecting people with the land and food. Neither Halm nor McCrate envisions staying in the city forever, and they talk about trying to find a model for small-scale farming that could be profitable and sustainable. But for now Seattle Urban Farm Company is proving good for them. \"It was important for me to have...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "Portland schools",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "\"PORTLAND\"",
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-123973bb8732b383c984f14c89a9aa5c"
+        ],
+        "evidence_ids": [
+          "ev-th-0007-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0007",
+          "chunk:Seattle",
+          "entity:Portland schools",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.43688755137015267,
+      "status": "active",
+      "parent_ids": [
+        "th-0007"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14508",
+          "edge-14510",
+          "edge-14511",
+          "edge-16398",
+          "edge-16399",
+          "edge-16400",
+          "edge-16420",
+          "edge-16421",
+          "edge-16422",
+          "edge-16423",
+          "edge-16431",
+          "edge-16443"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3340136706829071,
+          "grounding_score": 0.3079930245876312
+        }
+      },
+      "grounding_text": "anchors: Seattle, Portland schools, community gardening initiatives; nodes: PORTLAND, SEATTLE; chunks: chunk-123973bb8732b383c984f14c89a9aa5c; notes: global-hypergraph-retrieval | retrieved-for:th-0007 | chunk:Seattle | entity:Portland schools"
+    },
+    "ev-th-0007-3": {
+      "thought_id": "ev-th-0007-3",
+      "role": "evidence",
+      "content": "Wadud learned to articulate her philosophy. If a homeowner's fruit is likely going to waste, is it fair game to take? Some people might feel comfortable making off with the fallen fruit, but Wadud believes it is important to request permission – to build a neighborhood's awareness about its own food resources, while also building trust and a sense of community. In Seattle, Washington, Solid Ground, an antipoverty nonprofit, runs a sophisticated, finely tuned fruit-gleaning program called Community Fruit Tree Harvest. In 2009, for example, volunteers gathered 19,600 pounds of apples, plums, and pears from Seattle's yards. Only prime-condition fruits are given to the food bank; bruised or rotten fruits go to compost. Of course, volunteers may taste and take fruit, as well. When I joined a plum tree gleaning expedition, the old plum tree on a quiet residential street in Seattle's Univers...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "Portland schools",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-d6db795582f52e35a0bb9aea86e66f7f"
+        ],
+        "evidence_ids": [
+          "ev-th-0007-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0007",
+          "chunk:Portland schools",
+          "chunk:Seattle",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.6720313872229298,
+      "status": "active",
+      "parent_ids": [
+        "th-0007"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-19375",
+          "edge-19376",
+          "edge-19377",
+          "edge-19378",
+          "edge-19389",
+          "edge-19390",
+          "edge-19391",
+          "edge-19620",
+          "edge-19621",
+          "edge-19674",
+          "edge-19675",
+          "edge-19676"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.4681715965270996,
+          "grounding_score": 0.4354381859302521
+        }
+      },
+      "grounding_text": "anchors: Seattle, Portland schools, community gardening initiatives; nodes: SEATTLE; chunks: chunk-d6db795582f52e35a0bb9aea86e66f7f; notes: global-hypergraph-retrieval | retrieved-for:th-0007 | chunk:Portland schools | chunk:Seattle"
+    },
+    "ev-th-0007-4": {
+      "thought_id": "ev-th-0007-4",
+      "role": "evidence",
+      "content": ", \"A Case for Backyard Chickens in Salem [Oregon]\" (September 2010), <http://www.chicken-revolution.com/Research_Packet_Sept_2010.pdf>. **** Genetic Resources Action International (GRAIN), \"Fowl Play: The Poultry Industry's Central Role in the Bird Flu Crisis\" (February 2006), <http://www.grain.org/briefings/?id=194>. **** Consumer Reports Health Blog, \"Health Weekender: Egg Safety – In Defense of Home-Grown Eggs,\" July 24, 2009, <http://blogs.consumerreports.org/health/2009/07/egg-safety-organic-eggs-health-benefits-of-eggs-salmonella-protect-yourself-from-foodborne-illness-.html>. **** Council President Richard Conlin, \"One Small Step For Man, One Giant Leap For Goatkind,\" _Making It Work_ (newsletter) 9, no. 8 (October 4, 2007), <http://www.seattle.gov/Council/Conlin/miw/0708miw.htm#4>. **** Angela Galloway, \"Seattle Homeowners May Keep Miniature Goats as Pets,\" _Seattle Post-Intel...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "Portland schools",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-475015ec5f08648d774910da2fb23967"
+        ],
+        "evidence_ids": [
+          "ev-th-0007-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0007",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.5170913717270693,
+      "status": "active",
+      "parent_ids": [
+        "th-0007"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-20301",
+          "edge-20302",
+          "edge-20315",
+          "edge-20316",
+          "edge-20325",
+          "edge-20326",
+          "edge-20327",
+          "edge-20346",
+          "edge-20347",
+          "edge-20360",
+          "edge-20361",
+          "edge-20362"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3907220661640167,
+          "grounding_score": 0.3234250545501709
+        }
+      },
+      "grounding_text": "anchors: Seattle, Portland schools, community gardening initiatives; nodes: SEATTLE; chunks: chunk-475015ec5f08648d774910da2fb23967; notes: global-hypergraph-retrieval | retrieved-for:th-0007 | entity:Seattle"
+    },
+    "ev-th-0007-5": {
+      "thought_id": "ev-th-0007-5",
+      "role": "evidence",
+      "content": "Goats like to climb and do best with some vertical spaces or stairs. • Goats require shelter from the weather, because they despise getting wet. • Goats are browsers, meaning they will eat mostly nongrassy species such as brambles, shrubs, and small trees. They will eat grass if that is all that is offered. Goats love nettles, thistles, dandelions, chickweed, leafy spurge, greasewood, and poison ivy. They enjoy bitter-flavored plants that other ruminants purposely avoid. These are heady arguments that might appeal most to political historians and philosophers. I suspect Grant was successful less for these arguments than for the supporting constituent passion carrying her forward. If there is one thing that will get an elected official's attention, it is constituent passion. Humor also played a role, says Grant, as the idea of legalizing goats and the name of her organization, the Goat...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "Portland schools",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Grant sees a pastoral future for Seattle, populated with small animals.\"",
+          "\"SEATTLE TILTH\"",
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-06b664b68583390f1a748abc957021ca"
+        ],
+        "evidence_ids": [
+          "ev-th-0007-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0007",
+          "entity:Seattle",
+          "hyperedge:Seattle"
+        ]
+      },
+      "score": 0.15396030946191464,
+      "status": "active",
+      "parent_ids": [
+        "th-0007"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-2520",
+          "edge-2538",
+          "edge-2561",
+          "edge-2562",
+          "edge-2563",
+          "edge-2564",
+          "edge-2580",
+          "edge-2599",
+          "edge-2600",
+          "edge-2617",
+          "edge-2618",
+          "edge-2633"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.12046623975038528,
+          "grounding_score": 0.2780369818210602
+        }
+      },
+      "grounding_text": "anchors: Seattle, Portland schools, community gardening initiatives; nodes: Grant sees a pastoral future for Seattle, populated with small animals., SEATTLE TILTH, SEATTLE; chunks: chunk-06b664b68583390f1a748abc957021ca; notes: global-hypergraph-retrieval | retrieved-for:th-0007 | entity:Seattle | hyperedge:Seattle"
+    },
+    "ev-th-0007-6": {
+      "thought_id": "ev-th-0007-6",
+      "role": "evidence",
+      "content": "that people can dream up. Goats smell, make too much noise, and are an escape risk – imagine a goat on the loose! She is ready with answers. It is the male buck goat that smells, not the female dairy goat and neutered male goats. Goat urine is less odorous than cat urine, and goat manure is small, compact pellets, easy to remove and compost. In terms of noise, Grant says goats normally don't bleat much, and their bleats are usually not loud. In fact, when they feel threatened, instead of bleating more, goats generally become very still and quiet. As for the escape risk, as long as the goats have a secure pen, there's no fear of them getting out, like a cat slithering through the fence or a dog digging out under. Still, Grant did the most important thing of all: when she decided to raise a couple of miniature goats, she asked her neighbors if they might have objections. Thankfully, non...",
+      "grounding": {
+        "anchor_texts": [
+          "Seattle",
+          "Portland schools",
+          "community gardening initiatives"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Seattle had already earned a reputation for being a pioneer in matters of local food.\"",
+          "\"PORTLAND\"",
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-b3274fdc75290435635fca543d6b0957"
+        ],
+        "evidence_ids": [
+          "ev-th-0007-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0007",
+          "entity:Portland schools",
+          "entity:Seattle",
+          "hyperedge:Seattle"
+        ]
+      },
+      "score": 0.0,
+      "status": "active",
+      "parent_ids": [
+        "th-0007"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-24903",
+          "edge-24920",
+          "edge-24921",
+          "edge-24922",
+          "edge-24939",
+          "edge-24940",
+          "edge-24941",
+          "edge-24952",
+          "edge-24953",
+          "edge-24970",
+          "edge-24989",
+          "edge-24990"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.0,
+          "grounding_score": 0.015392972156405449
+        }
+      },
+      "grounding_text": "anchors: Seattle, Portland schools, community gardening initiatives; nodes: Seattle had already earned a reputation for being a pioneer in matters of local food., PORTLAND, SEATTLE; chunks: chunk-b3274fdc75290435635fca543d6b0957; notes: global-hypergraph-retrieval | retrieved-for:th-0007 | entity:Portland schools | entity:Seattle"
+    },
+    "th-0008": {
+      "thought_id": "th-0008",
+      "role": "hypothesis",
+      "content": "The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs.",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Growing Gardens of Portland, Oregon has been working to support school garden programs, inside and outside the classroom, for years.\"",
+          "\"PORTLAND, OREGON\"",
+          "\"PORTLAND\"",
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-0a7be9460651dfa3f1395f006df3ef8f",
+          "chunk-123973bb8732b383c984f14c89a9aa5c"
+        ],
+        "evidence_ids": [
+          "ev-th-0007-1",
+          "ev-th-0007-2"
+        ],
+        "notes": [
+          "This hypothesis connects the expansion of initiatives in Seattle with the demand in Portland."
+        ]
+      },
+      "score": 1.4475447608519687,
+      "status": "verified",
+      "parent_ids": [
+        "th-0007"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.8740764856338501,
+          "grounding_score": 0.6560847759246826
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools; nodes: Growing Gardens of Portland, Oregon has been working to support school garden programs, inside and outside the classroom, for years., PORTLAND, OREGON, PORTLAND, SEATTLE; chunks: chunk-0a7be9460651dfa3f1395f006df3ef8f, chunk-123973bb8732b383c984f14c89a9aa5c; notes: This hypothesis connects the expansion of initiatives in Seattle with the demand in Portland."
+    },
+    "ev-th-0006-1": {
+      "thought_id": "ev-th-0006-1",
+      "role": "evidence",
+      "content": "it was conducting after-school programs, and all 10 slots were filled. Not all parents who signed up had children in the after-school clubs, but some did. This is a creative way to connect the dots between learning in schools and learning at home, as well as between gardening for fun and gardening for fresh food. By connecting these dots Growing Gardens is weaving a complex community web to support healthy food and eating. #### Training School Garden Coordinators By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded. \"We've had about 40 schools in the last year and a half come to us for help,\" says Lippoldt. Unfazed, Growing Gardens turned its attention to figuring out how to meet this overwhelming demand in a way that would foster sustainable change throug...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded.\"",
+          "<hyperedge>\"In Portland the schools requesting help have a wide range of conditions – some with on-site gardens that were abandoned, some located near a community garden, some more well endowed.\"",
+          "<hyperedge>\"Growing Gardens focuses its efforts on those schools serving low-income communities, but it hopes the school garden coordinator certificate training will ultimately assist all Portland schools.\"",
+          "\"ALL PORTLAND SCHOOLS\"",
+          "\"FOUR SCHOOL GARDEN PROGRAMS\"",
+          "\"SUSTAIN GARDEN-BASED EDUCATION PROGRAMS\"",
+          "\"PORTLAND\"",
+          "\"DEMAND\""
+        ],
+        "chunk_ids": [
+          "chunk-8ed0d32c6d653b34677909bb2a4df08b"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "chunk:Link between the demand for gardening programs in Portland schools and the year identified.",
+          "entity:Link between the demand for gardening programs in Portland schools and the year identified.",
+          "entity:Portland schools",
+          "entity:surge in demand",
+          "hyperedge:Link between the demand for gardening programs in Portland schools and the year identified.",
+          "hyperedge:Portland schools"
+        ]
+      },
+      "score": 1.0578047778092063,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-4394",
+          "edge-4395",
+          "edge-4396",
+          "edge-4397",
+          "edge-4398",
+          "edge-4399",
+          "edge-4400",
+          "edge-7736",
+          "edge-7737",
+          "edge-7738",
+          "edge-7746",
+          "edge-7747"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.592529833316803,
+          "grounding_score": 0.7852346301078796
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded., In Portland the schools requesting help have a wide range of conditions – some with on-site gardens that were abandoned, some located near a community garden, some more well endowed., Growing Gardens focuses its efforts on those schools serving low-income communities, but it hopes the school garden coordinator certificate training will ultimately assist all Portland schools., ALL PORTLAND SCHOOLS, FOUR SCHOOL GARDEN PROGRAMS, SUSTAIN GARDEN-BASED EDUCATION PROGRAMS, PORTLAND, DEMAND; chunks: chunk-8ed0d32c6d653b34677909bb2a4df08b; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | chunk:Link between the demand for gardening programs in Portland schools and the year identified. | entity:Link between the demand for gardening programs in Portland schools and the year identified."
+    },
+    "ev-th-0006-2": {
+      "thought_id": "ev-th-0006-2",
+      "role": "evidence",
+      "content": "English. When she's sad, Isabel says, the garden cheers her. \"If it wasn't for Growing Gardens, this beautiful life of our flowers and plants and raspberries... I would give up, really and truly,\" says Violet, an elderly woman whose backyard is now brimming with plants. She says that she and her husband rarely shop for groceries because their garden is so productive. This is just a glimpse into the lives that Growing Gardens is changing – all by the simple act of providing home gardens. \"Our vision is to inspire as many people as possible to grow their own food,\" says Caitlin Blethen, manager of the Youth Grow program. \"Our focus is to work with low-income populations.\" Through years of learning by trial and error, Growing Gardens knows that installing the garden is just the gardener's first step in a long process of learning. To increase the first-time gardener's success, and to incr...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"In 2009 Growing Gardens worked with four Portland elementary schools.\"",
+          "<hyperedge>\"In 2009 Growing Gardens reserved 10 spaces in its home gardening program for parents at the schools where it was conducting after-school programs, and all 10 slots were filled.\"",
+          "\"FOUR PORTLAND ELEMENTARY SCHOOLS\""
+        ],
+        "chunk_ids": [
+          "chunk-3e70107854e0f943a28c957596ea5c0d"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "chunk:Link between the demand for gardening programs in Portland schools and the year identified.",
+          "entity:Portland schools",
+          "hyperedge:Link between the demand for gardening programs in Portland schools and the year identified.",
+          "hyperedge:Portland schools"
+        ]
+      },
+      "score": 0.5873853607024024,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3920",
+          "edge-3921",
+          "edge-3929",
+          "edge-3930",
+          "edge-3950",
+          "edge-3951",
+          "edge-3962",
+          "edge-3984",
+          "edge-3998",
+          "edge-3999",
+          "edge-4000",
+          "edge-4001"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3922893702983856,
+          "grounding_score": 0.49732673168182373
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: In 2009 Growing Gardens worked with four Portland elementary schools., In 2009 Growing Gardens reserved 10 spaces in its home gardening program for parents at the schools where it was conducting after-school programs, and all 10 slots were filled., FOUR PORTLAND ELEMENTARY SCHOOLS; chunks: chunk-3e70107854e0f943a28c957596ea5c0d; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | chunk:Link between the demand for gardening programs in Portland schools and the year identified. | entity:Portland schools"
+    },
+    "ev-th-0006-3": {
+      "thought_id": "ev-th-0006-3",
+      "role": "evidence",
+      "content": "?'\" When it came time for the Harvest of the Month day in the cafeteria, Sullivan and the garden teacher went to every classroom and gave out samples again, and they even gave students a recipe to bring home to their parents. Sullivan says parents were pulling her aside and asking, \"What have you done to my kids? They want Brussels sprouts!\" One parent even told her the story of being in the grocery store and allowing her son to pick out one treat; her son dragged her to the produce section and picked out Brussels sprouts. The program works, she says. When given a reason, an opportunity, and encouragement, kids will definitely eat fruits and vegetables. * * * ### Lessons Learned Building a School Gardening Program * * * **Develop a long-term budget and commitment to manage the gardens**. Growing Gardens of Portland, Oregon (page 17), has been working to support school garden programs,...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Growing Gardens of Portland, Oregon has been working to support school garden programs, inside and outside the classroom, for years.\"",
+          "\"PORTLAND, OREGON\""
+        ],
+        "chunk_ids": [
+          "chunk-0a7be9460651dfa3f1395f006df3ef8f"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "chunk:Link between the demand for gardening programs in Portland schools and the year identified.",
+          "chunk:Portland schools",
+          "entity:Portland schools",
+          "hyperedge:Link between the demand for gardening programs in Portland schools and the year identified.",
+          "hyperedge:Portland schools"
+        ]
+      },
+      "score": 0.8605576345499344,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1050",
+          "edge-1051",
+          "edge-1052",
+          "edge-1068",
+          "edge-1069",
+          "edge-1070",
+          "edge-1083",
+          "edge-1093",
+          "edge-1094",
+          "edge-1095",
+          "edge-1111",
+          "edge-1112"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.550847053527832,
+          "grounding_score": 0.5622442364692688
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: Growing Gardens of Portland, Oregon has been working to support school garden programs, inside and outside the classroom, for years., PORTLAND, OREGON; chunks: chunk-0a7be9460651dfa3f1395f006df3ef8f; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | chunk:Link between the demand for gardening programs in Portland schools and the year identified. | chunk:Portland schools"
+    },
+    "ev-th-0006-4": {
+      "thought_id": "ev-th-0006-4",
+      "role": "evidence",
+      "content": "take beef bones and turn them into stock, or little eggs and turn them into egg noodles and quiche.\" It would provide the marketing with a large showroom of different local products. It would provide the accounting by having one central cash register keeping track of sales, Salatin says, \"so these farmers don't have to sit here with their big, calloused, dirty fingers and punch little calculators.\" And it would provide the convenience and social space for customers, by offering a local dining space built on locally grown foods. Salatin explains that it is the overhead that kills little businesses, and a model like this would \"keep the cash register humming.\" The more you can funnel through that cash register, he says, the more efficient the overhead. This, he hopes, may be a possible future for our local food system: Instead of 100,000 Polyfaces scattered around Virginia, there could...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "\"GROWING DEMAND\""
+        ],
+        "chunk_ids": [
+          "chunk-3699752bc52dee1358ad76a26a9c6fb9"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "entity:surge in demand"
+        ]
+      },
+      "score": 0.2729359655754351,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1619",
+          "edge-1620",
+          "edge-1634",
+          "edge-1635",
+          "edge-1636",
+          "edge-1647",
+          "edge-1648",
+          "edge-1672",
+          "edge-1673",
+          "edge-1674",
+          "edge-1675",
+          "edge-1687"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.21600669622421265,
+          "grounding_score": 0.263553261756897
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: GROWING DEMAND; chunks: chunk-3699752bc52dee1358ad76a26a9c6fb9; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | entity:surge in demand"
+    },
+    "ev-th-0006-5": {
+      "thought_id": "ev-th-0006-5",
+      "role": "evidence",
+      "content": "who may prefer living in an urban or suburban community rather than the rural countryside. It's a business with very low start-up costs – a minimal amount of equipment and a small backyard greenhouse for starting seedlings. Also, given McCrate's description of his company's work, another departure from the mind-set of the classic rural farmer – \"leave me alone so I can farm\" – is that the urban farmer needs to be entrepreneurial and enjoy constantly meeting and working with new people. Becoming an urban farmer is arguably an ideal profession for someone who wants to facilitate connecting people with the land and food. Neither Halm nor McCrate envisions staying in the city forever, and they talk about trying to find a model for small-scale farming that could be profitable and sustainable. But for now Seattle Urban Farm Company is proving good for them. \"It was important for me to have...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "\"PORTLAND\""
+        ],
+        "chunk_ids": [
+          "chunk-123973bb8732b383c984f14c89a9aa5c"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "entity:Portland schools"
+        ]
+      },
+      "score": 0.3963750188916353,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14508",
+          "edge-14510",
+          "edge-14511",
+          "edge-16398",
+          "edge-16399",
+          "edge-16400",
+          "edge-16420",
+          "edge-16421",
+          "edge-16422",
+          "edge-16423",
+          "edge-16431",
+          "edge-16443"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3340136706829071,
+          "grounding_score": 0.18670298159122467
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: PORTLAND; chunks: chunk-123973bb8732b383c984f14c89a9aa5c; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | entity:Portland schools"
+    },
+    "ev-th-0006-6": {
+      "thought_id": "ev-th-0006-6",
+      "role": "evidence",
+      "content": "out of school – who, according to Baker, are \"blown away by the pace and nature of the work.\" **Pay staff a living wage and benefits**. Edwin Marty, cofounder of Jones Valley Urban Farm (page 158) in Birmingham, Alabama, says they used to have trouble keeping a farm manager because they weren't paying a sufficient wage. When a farm manager left, they had to find and train a new farm manager, which always meant more time, which means more money. When they raised the pay by $10,000 and added health insurance, suddenly they were able to keep their staff, which was better for everyone. **Stay focused**. Nonprofits often try to do a million and one things, because one good idea inevitably leads to two or three more good ideas. But a nonprofit that pursues every good idea that crosses its path will soon run itself ragged. To prevent this, creating a core mission and staying on a double, sho...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "\"PORTLAND\""
+        ],
+        "chunk_ids": [
+          "chunk-e0adcf3a18e5a064a6ed2b9d46dff75f"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "entity:Portland schools"
+        ]
+      },
+      "score": 0.35929733292276467,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-13808",
+          "edge-13809",
+          "edge-15498",
+          "edge-15499",
+          "edge-15500",
+          "edge-15501",
+          "edge-15516",
+          "edge-15534",
+          "edge-15535",
+          "edge-15545",
+          "edge-15546",
+          "edge-15547"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.2880091667175293,
+          "grounding_score": 0.24752047657966614
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: PORTLAND; chunks: chunk-e0adcf3a18e5a064a6ed2b9d46dff75f; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | entity:Portland schools"
+    },
+    "th-0009": {
+      "thought_id": "th-0009",
+      "role": "bridge",
+      "content": "The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded.\"",
+          "<hyperedge>\"In Portland the schools requesting help have a wide range of conditions – some with on-site gardens that were abandoned, some located near a community garden, some more well endowed.\"",
+          "<hyperedge>\"Growing Gardens focuses its efforts on those schools serving low-income communities, but it hopes the school garden coordinator certificate training will ultimately assist all Portland schools.\"",
+          "\"ALL PORTLAND SCHOOLS\"",
+          "\"FOUR SCHOOL GARDEN PROGRAMS\"",
+          "\"SUSTAIN GARDEN-BASED EDUCATION PROGRAMS\"",
+          "\"PORTLAND\"",
+          "\"DEMAND\"",
+          "<hyperedge>\"In 2009 Growing Gardens worked with four Portland elementary schools.\"",
+          "<hyperedge>\"In 2009 Growing Gardens reserved 10 spaces in its home gardening program for parents at the schools where it was conducting after-school programs, and all 10 slots were filled.\"",
+          "\"FOUR PORTLAND ELEMENTARY SCHOOLS\""
+        ],
+        "chunk_ids": [
+          "chunk-8ed0d32c6d653b34677909bb2a4df08b",
+          "chunk-3e70107854e0f943a28c957596ea5c0d"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-1",
+          "ev-th-0006-2"
+        ],
+        "notes": []
+      },
+      "score": 1.50159165330318,
+      "status": "verified",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.9083244800567627,
+          "grounding_score": 0.6531445384025574
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded., In Portland the schools requesting help have a wide range of conditions – some with on-site gardens that were abandoned, some located near a community garden, some more well endowed., Growing Gardens focuses its efforts on those schools serving low-income communities, but it hopes the school garden coordinator certificate training will ultimately assist all Portland schools., ALL PORTLAND SCHOOLS, FOUR SCHOOL GARDEN PROGRAMS, SUSTAIN GARDEN-BASED EDUCATION PROGRAMS, PORTLAND, DEMAND; chunks: chunk-8ed0d32c6d653b34677909bb2a4df08b, chunk-3e70107854e0f943a28c957596ea5c0d"
+    },
+    "ev-th-0003-1": {
+      "thought_id": "ev-th-0003-1",
+      "role": "evidence",
+      "content": "eping-on-chicago-rooftop-garden.aspx>. **** Lance Sundberg, American Beekeeping Federation, \"Honey Bee Facts,\" http://www.abfnet.org/displaycommon.cfm?an=1&subarticlenbr=71 **** USDA Agricultural Research Service, \"Colony Collapse Disorder,\" <http://www.ars.usda.gov/News/docs.htm?docid=15572>. **** USDA, National Agricultural Statistics Service, \"Honey\" (February 2010), <http://usda.mannlib.cornell.edu/usda/nass/Hone//2010s/2010/Hone-02-26-2010.pdf>. **** USDA Agricultural Research Service, \"Questions and Answers: Colony Collapse Disorder,\" <http://www.ars.usda.gov/News/docs.htm?docid=15572>. **** British Columbia Honey Producers Association, \"CSI Apiary: Season Three – The Continued Unravelling of Colony Collapse Disorder,\" _BeesCene_ 25, no 1, <http://maarec.psu.edu/CCDPpt/CSIonCCDMar09.pdf>. **** Mid-Atlantic Apiculture Research and Extension Consortium, \"Colony Collapse Disorder,\"...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"The P-Patch Community Garden Program aims to increase community engagement through urban gardening initiatives in Seattle.\""
+        ],
+        "chunk_ids": [
+          "chunk-62dde44a553987a2d4deba0864e69eeb"
+        ],
+        "evidence_ids": [
+          "ev-th-0003-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0003",
+          "chunk:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives.",
+          "hyperedge:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+        ]
+      },
+      "score": 0.2292350831484251,
+      "status": "active",
+      "parent_ids": [
+        "th-0003"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-21526",
+          "edge-21527",
+          "edge-21528",
+          "edge-21547",
+          "edge-21548",
+          "edge-21572",
+          "edge-21573",
+          "edge-21589",
+          "edge-21590",
+          "edge-21606",
+          "edge-21624",
+          "edge-21625"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.18054243922233582,
+          "grounding_score": 0.26970192790031433
+        }
+      },
+      "grounding_text": "nodes: The P-Patch Community Garden Program aims to increase community engagement through urban gardening initiatives in Seattle.; chunks: chunk-62dde44a553987a2d4deba0864e69eeb; notes: global-hypergraph-retrieval | retrieved-for:th-0003 | chunk:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives. | hyperedge:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+    },
+    "ev-th-0003-2": {
+      "thought_id": "ev-th-0003-2",
+      "role": "evidence",
+      "content": "exercise its political power. \"They're finding political power by coming together,\" says Rivera. \"And by bringing politicians and the community together, we can make things happen.\" She is also clear that the gardens are about far more than food. \"Transforming these spaces is changing how people feel about where they live.\" **Consider public parkland for community gardens**. Marra Farm, a historic farm in South Park, Seattle, offers an interesting model for a community garden in a public space. Owned by the City of Seattle's Department of Parks and Recreation, the farm hosts a variety of interconnected projects, including a community garden in the P-Patch program (page 60), a large plot for the city nonprofit Lettuce Link (which grows food for low-income residents), a subsistence garden for low-income Mien gardeners from Laos, and a pilot market-gardening project. The market-gardening...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"Moving beyond this barrier, Seattle's market-gardening project is designed to help low-income people grow food on a larger scale than that of a P-Patch garden plot.\"",
+          "\"SEATTLE'S MARKET-GARDENING PROJECT\""
+        ],
+        "chunk_ids": [
+          "chunk-959e33ece6a9fc720452b33659ca7996"
+        ],
+        "evidence_ids": [
+          "ev-th-0003-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0003",
+          "entity:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives.",
+          "hyperedge:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+        ]
+      },
+      "score": 0.9251911328206752,
+      "status": "active",
+      "parent_ids": [
+        "th-0003"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-19561",
+          "edge-19562",
+          "edge-19590",
+          "edge-19603",
+          "edge-19630",
+          "edge-19631",
+          "edge-22903",
+          "edge-22904",
+          "edge-22914",
+          "edge-22915",
+          "edge-22932",
+          "edge-22933"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.5658772587776184,
+          "grounding_score": 0.6349678635597229
+        }
+      },
+      "grounding_text": "nodes: Moving beyond this barrier, Seattle's market-gardening project is designed to help low-income people grow food on a larger scale than that of a P-Patch garden plot., SEATTLE'S MARKET-GARDENING PROJECT; chunks: chunk-959e33ece6a9fc720452b33659ca7996; notes: global-hypergraph-retrieval | retrieved-for:th-0003 | entity:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives. | hyperedge:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+    },
+    "ev-th-0003-3": {
+      "thought_id": "ev-th-0003-3",
+      "role": "evidence",
+      "content": "English. When she's sad, Isabel says, the garden cheers her. \"If it wasn't for Growing Gardens, this beautiful life of our flowers and plants and raspberries... I would give up, really and truly,\" says Violet, an elderly woman whose backyard is now brimming with plants. She says that she and her husband rarely shop for groceries because their garden is so productive. This is just a glimpse into the lives that Growing Gardens is changing – all by the simple act of providing home gardens. \"Our vision is to inspire as many people as possible to grow their own food,\" says Caitlin Blethen, manager of the Youth Grow program. \"Our focus is to work with low-income populations.\" Through years of learning by trial and error, Growing Gardens knows that installing the garden is just the gardener's first step in a long process of learning. To increase the first-time gardener's success, and to incr...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"In 2009 Growing Gardens worked with four Portland elementary schools.\""
+        ],
+        "chunk_ids": [
+          "chunk-3e70107854e0f943a28c957596ea5c0d"
+        ],
+        "evidence_ids": [
+          "ev-th-0003-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0003",
+          "hyperedge:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+        ]
+      },
+      "score": 0.5931936565077578,
+      "status": "active",
+      "parent_ids": [
+        "th-0003"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3920",
+          "edge-3921",
+          "edge-3929",
+          "edge-3930",
+          "edge-3950",
+          "edge-3951",
+          "edge-3962",
+          "edge-3984",
+          "edge-3998",
+          "edge-3999",
+          "edge-4000",
+          "edge-4001"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3922893702983856,
+          "grounding_score": 0.5121328830718994
+        }
+      },
+      "grounding_text": "nodes: In 2009 Growing Gardens worked with four Portland elementary schools.; chunks: chunk-3e70107854e0f943a28c957596ea5c0d; notes: global-hypergraph-retrieval | retrieved-for:th-0003 | hyperedge:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+    },
+    "ev-th-0003-4": {
+      "thought_id": "ev-th-0003-4",
+      "role": "evidence",
+      "content": "are meant to show and constantly remind people of their respective roles and, I suspect, their relative power. As a self-described \"outsider,\" Amber Baker, the Janus Youth Village Gardens Program Director, says that someone who isn't a resident of the community needs to be very attentive to figuring out her role. \"There may be times,\" she explains, \"when I have the skills to do something for the community project, but it may not be _appropriate_ for me to do it.\" Even if residents take longer or struggle with something, certain things are better done by them, for themselves. Baker says a lot of well-intentioned people jump into the idea of a community garden with enthusiasm, not realizing the importance of building relationships and listening to what the residents want and need. When she works with AmeriCorps volunteers who come in gung-ho to work in the garden, to write grants, to _d...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"The Seeds of Harmony community garden serves the mixed income residents of the New Columbia housing development in North Portland, Oregon.\"",
+          "\"SEEDS OF HARMONY COMMUNITY GARDEN\""
+        ],
+        "chunk_ids": [
+          "chunk-1a815073ae837fa29833af41e55990ca"
+        ],
+        "evidence_ids": [
+          "ev-th-0003-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0003",
+          "chunk:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives.",
+          "entity:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives.",
+          "hyperedge:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+        ]
+      },
+      "score": 0.44403477294889004,
+      "status": "active",
+      "parent_ids": [
+        "th-0003"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-16415",
+          "edge-16416",
+          "edge-16417",
+          "edge-19117",
+          "edge-19118",
+          "edge-19136",
+          "edge-19137",
+          "edge-19255",
+          "edge-19278",
+          "edge-19325",
+          "edge-19445",
+          "edge-19446"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3126395642757416,
+          "grounding_score": 0.4202769696712494
+        }
+      },
+      "grounding_text": "nodes: The Seeds of Harmony community garden serves the mixed income residents of the New Columbia housing development in North Portland, Oregon., SEEDS OF HARMONY COMMUNITY GARDEN; chunks: chunk-1a815073ae837fa29833af41e55990ca; notes: global-hypergraph-retrieval | retrieved-for:th-0003 | chunk:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives. | entity:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+    },
+    "ev-th-0003-5": {
+      "thought_id": "ev-th-0003-5",
+      "role": "evidence",
+      "content": "of the unique aspects of Village Homes. It is about as close as you can get to living immersed in a garden, which can lead to different views about acceptable methods for tending the garden – in Village Homes, for example, pesticides are forbidden. Together these developments demonstrate the immense value of including food production in any new housing or neighborhood design. Increasingly agriculture is seen not as a liability or a nuisance but as a positive amenity and a life-enhancing community feature. As the desire to know where our food comes from, and increasingly to participate directly in its production, grows, more and more housing consumers will look for ways to vote with their feet (that is, where they plant themselves) as well as their palates. ### City-Sponsored Community Gardening #### P-Patch Community Gardening Program _with research by Robin Proebsting_ Seattle's comm...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"Seattle's community gardening program, known locally as the 'P-Patch Program,' provides and manages garden plots in more than 70 locations throughout the city for more than two thousand people, most of whom wouldn't otherwise have physical space or financial means to create a garden.\"",
+          "<hyperedge>\"P-Patch gardeners represent only 1 percent of Seattle's population, yet the city clearly believes the program is an important service for the larger community, as it not only financially supports the program but continues when possible to expand the gardens.\"",
+          "\"COMMUNITY GARDEN PROGRAMS\""
+        ],
+        "chunk_ids": [
+          "chunk-fc825bb5fbec77abff4a02be6fc5fcec"
+        ],
+        "evidence_ids": [
+          "ev-th-0003-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0003",
+          "chunk:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives.",
+          "entity:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives.",
+          "hyperedge:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+        ]
+      },
+      "score": 0.6763645251780801,
+      "status": "active",
+      "parent_ids": [
+        "th-0003"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-5053",
+          "edge-5056",
+          "edge-5069",
+          "edge-7327",
+          "edge-7328",
+          "edge-7329",
+          "edge-7350",
+          "edge-7351",
+          "edge-7367",
+          "edge-7368",
+          "edge-7381",
+          "edge-7382"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.43812161684036255,
+          "grounding_score": 0.5437825918197632
+        }
+      },
+      "grounding_text": "nodes: Seattle's community gardening program, known locally as the 'P-Patch Program,' provides and manages garden plots in more than 70 locations throughout the city for more than two thousand people, most of whom wouldn't otherwise have physical space or financial means to create a garden., P-Patch gardeners represent only 1 percent of Seattle's population, yet the city clearly believes the program is an important service for the larger community, as it not only financially supports the program but continues when possible to expand the gardens., COMMUNITY GARDEN PROGRAMS; chunks: chunk-fc825bb5fbec77abff4a02be6fc5fcec; notes: global-hypergraph-retrieval | retrieved-for:th-0003 | chunk:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives. | entity:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+    },
+    "ev-th-0003-6": {
+      "thought_id": "ev-th-0003-6",
+      "role": "evidence",
+      "content": "**A group of committed community leaders is essential**. If a single person approaches the city with an idea for a new community garden, Richard MacDonald, manager of Seattle's P-Patch program (page 60), will tell him or her to return with five or six more people. One person is not sufficient to steward a new garden into fruition. \"When they have a good _group_ on board, then we sit down and create a strategy or map of how they will move the garden forward,\" says MacDonald. Key items to discuss are: • Identifying the skills and tasks required and recruiting other people for these roles • Making sure other community groups have opportunities to be involved, such as nearby food banks, native plant groups, or green building groups • Making the planning group inclusive, to reflect the neighborhood's multicultural population **Rely on collaborative decision making**. In our conversation, V...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "\"SEATTLE'S P-PATCH PROGRAM\"",
+          "\"COMMUNITY GARDEN INITIATIVE\""
+        ],
+        "chunk_ids": [
+          "chunk-07f097aee6be0e05076e0e695419438a"
+        ],
+        "evidence_ids": [
+          "ev-th-0003-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0003",
+          "chunk:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives.",
+          "entity:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+        ]
+      },
+      "score": 0.7667132979367608,
+      "status": "active",
+      "parent_ids": [
+        "th-0003"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3250",
+          "edge-9919",
+          "edge-9920",
+          "edge-9921",
+          "edge-9937",
+          "edge-9938",
+          "edge-9959",
+          "edge-9960",
+          "edge-9981",
+          "edge-9982",
+          "edge-9983",
+          "edge-9984"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.49334168434143066,
+          "grounding_score": 0.554122269153595
+        }
+      },
+      "grounding_text": "nodes: SEATTLE'S P-PATCH PROGRAM, COMMUNITY GARDEN INITIATIVE; chunks: chunk-07f097aee6be0e05076e0e695419438a; notes: global-hypergraph-retrieval | retrieved-for:th-0003 | chunk:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives. | entity:The year must be explicitly linked to both Seattle and Portland's community gardening initiatives."
+    },
+    "ev-th-0009-1": {
+      "thought_id": "ev-th-0009-1",
+      "role": "evidence",
+      "content": "it was conducting after-school programs, and all 10 slots were filled. Not all parents who signed up had children in the after-school clubs, but some did. This is a creative way to connect the dots between learning in schools and learning at home, as well as between gardening for fun and gardening for fresh food. By connecting these dots Growing Gardens is weaving a complex community web to support healthy food and eating. #### Training School Garden Coordinators By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded. \"We've had about 40 schools in the last year and a half come to us for help,\" says Lippoldt. Unfazed, Growing Gardens turned its attention to figuring out how to meet this overwhelming demand in a way that would foster sustainable change throug...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded.\"",
+          "<hyperedge>\"In Portland the schools requesting help have a wide range of conditions – some with on-site gardens that were abandoned, some located near a community garden, some more well endowed.\"",
+          "<hyperedge>\"In Portland, Oregon, the nonprofit Growing Gardens builds and installs an average of 60 or more home gardens each year with a volunteer program drawing on six hundred to seven hundred community members.\"",
+          "\"ALL PORTLAND SCHOOLS\"",
+          "\"PORTLAND\"",
+          "\"DEMAND\""
+        ],
+        "chunk_ids": [
+          "chunk-8ed0d32c6d653b34677909bb2a4df08b"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "chunk:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "entity:Portland schools",
+          "entity:surge in demand",
+          "grounding:existing-chunk",
+          "hyperedge:Portland schools",
+          "hyperedge:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools."
+        ]
+      },
+      "score": 0.7478659129142762,
+      "status": "verified",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-4394",
+          "edge-4395",
+          "edge-4396",
+          "edge-4397",
+          "edge-4398",
+          "edge-4399",
+          "edge-4400",
+          "edge-7736",
+          "edge-7737",
+          "edge-7738",
+          "edge-7746",
+          "edge-7747"
+        ],
+        "high_score_candidate": true
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded., In Portland the schools requesting help have a wide range of conditions – some with on-site gardens that were abandoned, some located near a community garden, some more well endowed., In Portland, Oregon, the nonprofit Growing Gardens builds and installs an average of 60 or more home gardens each year with a volunteer program drawing on six hundred to seven hundred community members., ALL PORTLAND SCHOOLS, PORTLAND, DEMAND; chunks: chunk-8ed0d32c6d653b34677909bb2a4df08b; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | chunk:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools. | entity:Portland schools"
+    },
+    "ev-th-0009-2": {
+      "thought_id": "ev-th-0009-2",
+      "role": "evidence",
+      "content": "?'\" When it came time for the Harvest of the Month day in the cafeteria, Sullivan and the garden teacher went to every classroom and gave out samples again, and they even gave students a recipe to bring home to their parents. Sullivan says parents were pulling her aside and asking, \"What have you done to my kids? They want Brussels sprouts!\" One parent even told her the story of being in the grocery store and allowing her son to pick out one treat; her son dragged her to the produce section and picked out Brussels sprouts. The program works, she says. When given a reason, an opportunity, and encouragement, kids will definitely eat fruits and vegetables. * * * ### Lessons Learned Building a School Gardening Program * * * **Develop a long-term budget and commitment to manage the gardens**. Growing Gardens of Portland, Oregon (page 17), has been working to support school garden programs,...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Growing Gardens of Portland, Oregon has been working to support school garden programs, inside and outside the classroom, for years.\"",
+          "\"PORTLAND, OREGON\""
+        ],
+        "chunk_ids": [
+          "chunk-0a7be9460651dfa3f1395f006df3ef8f"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "chunk:Portland schools",
+          "chunk:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "entity:Portland schools",
+          "hyperedge:Portland schools",
+          "hyperedge:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools."
+        ]
+      },
+      "score": 0.7333876657485962,
+      "status": "verified",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1050",
+          "edge-1051",
+          "edge-1052",
+          "edge-1068",
+          "edge-1069",
+          "edge-1070",
+          "edge-1083",
+          "edge-1093",
+          "edge-1094",
+          "edge-1095",
+          "edge-1111",
+          "edge-1112"
+        ],
+        "high_score_candidate": true
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: Growing Gardens of Portland, Oregon has been working to support school garden programs, inside and outside the classroom, for years., PORTLAND, OREGON; chunks: chunk-0a7be9460651dfa3f1395f006df3ef8f; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | chunk:Portland schools | chunk:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools."
+    },
+    "ev-th-0009-3": {
+      "thought_id": "ev-th-0009-3",
+      "role": "evidence",
+      "content": "English. When she's sad, Isabel says, the garden cheers her. \"If it wasn't for Growing Gardens, this beautiful life of our flowers and plants and raspberries... I would give up, really and truly,\" says Violet, an elderly woman whose backyard is now brimming with plants. She says that she and her husband rarely shop for groceries because their garden is so productive. This is just a glimpse into the lives that Growing Gardens is changing – all by the simple act of providing home gardens. \"Our vision is to inspire as many people as possible to grow their own food,\" says Caitlin Blethen, manager of the Youth Grow program. \"Our focus is to work with low-income populations.\" Through years of learning by trial and error, Growing Gardens knows that installing the garden is just the gardener's first step in a long process of learning. To increase the first-time gardener's success, and to incr...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"In 2009 Growing Gardens worked with four Portland elementary schools.\"",
+          "\"FOUR PORTLAND ELEMENTARY SCHOOLS\""
+        ],
+        "chunk_ids": [
+          "chunk-3e70107854e0f943a28c957596ea5c0d"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "chunk:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "entity:Portland schools",
+          "grounding:existing-chunk",
+          "hyperedge:Portland schools",
+          "hyperedge:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools."
+        ]
+      },
+      "score": 0.7220707702636718,
+      "status": "verified",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3920",
+          "edge-3921",
+          "edge-3929",
+          "edge-3930",
+          "edge-3950",
+          "edge-3951",
+          "edge-3962",
+          "edge-3984",
+          "edge-3998",
+          "edge-3999",
+          "edge-4000",
+          "edge-4001"
+        ],
+        "high_score_candidate": true
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: In 2009 Growing Gardens worked with four Portland elementary schools., FOUR PORTLAND ELEMENTARY SCHOOLS; chunks: chunk-3e70107854e0f943a28c957596ea5c0d; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | chunk:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools. | entity:Portland schools"
+    },
+    "ev-th-0009-4": {
+      "thought_id": "ev-th-0009-4",
+      "role": "evidence",
+      "content": "is one of the more remarkable – and unexpected – outcomes of Janus Youth's foray into the world of community gardening. Dennis Morrow says they began Food Works, a program for teen youth, at a time when Oregon had the highest food insecurity in the nation. As with all Janus Youth food projects, the idea for Food Works arose from the community itself. When community leaders began talking about an employment and empowerment program for teens, Janus Youth was ready to facilitate and support the realization of their vision. And the idea of a teen-managed garden, where teens could learn to plan, grow, and market produce, was born. In the beginning Food Works was just a tiny garden, the size of a meeting table. Its teen managers began by growing salad greens because they're easy to grow and easy to market. When the teens were successful at the farmers' market – selling out within an hour! –...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"It started small with Harry's Mother, as a small garden out front, became raised beds in the parking lot, then grew into a community garden in North Portland at St. Johns Woods, where in turn it spawned community gardens in other neighborhoods, as well as new focused programs such as Food Works.\"",
+          "\"COMMUNITY GARDENING\""
+        ],
+        "chunk_ids": [
+          "chunk-9f8b5f47647da9706f2d5877b878fae0"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "entity:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "hyperedge:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools."
+        ]
+      },
+      "score": 0.759234328917163,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-4605",
+          "edge-7184",
+          "edge-7185",
+          "edge-7186",
+          "edge-7187",
+          "edge-7188",
+          "edge-7200",
+          "edge-7201",
+          "edge-7208",
+          "edge-7223",
+          "edge-7239",
+          "edge-7255"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.4887627959251404,
+          "grounding_score": 0.5533799529075623
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: It started small with Harry's Mother, as a small garden out front, became raised beds in the parking lot, then grew into a community garden in North Portland at St. Johns Woods, where in turn it spawned community gardens in other neighborhoods, as well as new focused programs such as Food Works., COMMUNITY GARDENING; chunks: chunk-9f8b5f47647da9706f2d5877b878fae0; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | entity:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools. | hyperedge:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools."
+    },
+    "ev-th-0009-5": {
+      "thought_id": "ev-th-0009-5",
+      "role": "evidence",
+      "content": "of the unique aspects of Village Homes. It is about as close as you can get to living immersed in a garden, which can lead to different views about acceptable methods for tending the garden – in Village Homes, for example, pesticides are forbidden. Together these developments demonstrate the immense value of including food production in any new housing or neighborhood design. Increasingly agriculture is seen not as a liability or a nuisance but as a positive amenity and a life-enhancing community feature. As the desire to know where our food comes from, and increasingly to participate directly in its production, grows, more and more housing consumers will look for ways to vote with their feet (that is, where they plant themselves) as well as their palates. ### City-Sponsored Community Gardening #### P-Patch Community Gardening Program _with research by Robin Proebsting_ Seattle's comm...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "<hyperedge>\"If you're wondering whether community gardens would be a hot commodity in your area, consider this: In 2010 Seattle's 'P-Patch' community garden network had more than two thousand plots at more than 70 sites.\"",
+          "<hyperedge>\"Indeed, Seattle can't keep pace with the demand, for as the number of gardens increases, so does the demand.\"",
+          "\"COMMUNITY GARDEN PROGRAMS\"",
+          "\"DEMAND\""
+        ],
+        "chunk_ids": [
+          "chunk-fc825bb5fbec77abff4a02be6fc5fcec"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "chunk:Portland schools",
+          "chunk:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "entity:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "entity:surge in demand",
+          "hyperedge:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "hyperedge:surge in demand"
+        ]
+      },
+      "score": 0.6676273796304528,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-5053",
+          "edge-5056",
+          "edge-5069",
+          "edge-7327",
+          "edge-7328",
+          "edge-7329",
+          "edge-7350",
+          "edge-7351",
+          "edge-7367",
+          "edge-7368",
+          "edge-7381",
+          "edge-7382"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.43812161684036255,
+          "grounding_score": 0.5238403081893921
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: If you're wondering whether community gardens would be a hot commodity in your area, consider this: In 2010 Seattle's 'P-Patch' community garden network had more than two thousand plots at more than 70 sites., Indeed, Seattle can't keep pace with the demand, for as the number of gardens increases, so does the demand., COMMUNITY GARDEN PROGRAMS, DEMAND; chunks: chunk-fc825bb5fbec77abff4a02be6fc5fcec; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | chunk:Portland schools | chunk:The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools."
+    },
+    "ev-th-0009-6": {
+      "thought_id": "ev-th-0009-6",
+      "role": "evidence",
+      "content": "take beef bones and turn them into stock, or little eggs and turn them into egg noodles and quiche.\" It would provide the marketing with a large showroom of different local products. It would provide the accounting by having one central cash register keeping track of sales, Salatin says, \"so these farmers don't have to sit here with their big, calloused, dirty fingers and punch little calculators.\" And it would provide the convenience and social space for customers, by offering a local dining space built on locally grown foods. Salatin explains that it is the overhead that kills little businesses, and a model like this would \"keep the cash register humming.\" The more you can funnel through that cash register, he says, the more efficient the overhead. This, he hopes, may be a possible future for our local food system: Instead of 100,000 Polyfaces scattered around Virginia, there could...",
+      "grounding": {
+        "anchor_texts": [
+          "Portland schools",
+          "surge in demand"
+        ],
+        "node_ids": [
+          "\"GROWING DEMAND\""
+        ],
+        "chunk_ids": [
+          "chunk-3699752bc52dee1358ad76a26a9c6fb9"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "entity:surge in demand"
+        ]
+      },
+      "score": 0.2728760581892793,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1619",
+          "edge-1620",
+          "edge-1634",
+          "edge-1635",
+          "edge-1636",
+          "edge-1647",
+          "edge-1648",
+          "edge-1672",
+          "edge-1673",
+          "edge-1674",
+          "edge-1675",
+          "edge-1687"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.21600669622421265,
+          "grounding_score": 0.2632759213447571
+        }
+      },
+      "grounding_text": "anchors: Portland schools, surge in demand; nodes: GROWING DEMAND; chunks: chunk-3699752bc52dee1358ad76a26a9c6fb9; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | entity:surge in demand"
+    },
+    "ev-th-0008-1": {
+      "thought_id": "ev-th-0008-1",
+      "role": "evidence",
+      "content": "**A group of committed community leaders is essential**. If a single person approaches the city with an idea for a new community garden, Richard MacDonald, manager of Seattle's P-Patch program (page 60), will tell him or her to return with five or six more people. One person is not sufficient to steward a new garden into fruition. \"When they have a good _group_ on board, then we sit down and create a strategy or map of how they will move the garden forward,\" says MacDonald. Key items to discuss are: • Identifying the skills and tasks required and recruiting other people for these roles • Making sure other community groups have opportunities to be involved, such as nearby food banks, native plant groups, or green building groups • Making the planning group inclusive, to reflect the neighborhood's multicultural population **Rely on collaborative decision making**. In our conversation, V...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Sustainability practices should be integrated into community gardening efforts.\"",
+          "\"SEATTLE'S BUDGET\"",
+          "\"COMMUNITY GARDEN INITIATIVE\"",
+          "\"COMMUNITY GARDENS\""
+        ],
+        "chunk_ids": [
+          "chunk-07f097aee6be0e05076e0e695419438a"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "chunk:The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs.",
+          "chunk:community gardening initiatives",
+          "entity:Seattle",
+          "entity:community gardening initiatives",
+          "hyperedge:community gardening initiatives"
+        ]
+      },
+      "score": 0.7786227133934176,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3250",
+          "edge-9919",
+          "edge-9920",
+          "edge-9921",
+          "edge-9937",
+          "edge-9938",
+          "edge-9959",
+          "edge-9960",
+          "edge-9981",
+          "edge-9982",
+          "edge-9983",
+          "edge-9984"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.49334168434143066,
+          "grounding_score": 0.5782625675201416
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools; nodes: Sustainability practices should be integrated into community gardening efforts., SEATTLE'S BUDGET, COMMUNITY GARDEN INITIATIVE, COMMUNITY GARDENS; chunks: chunk-07f097aee6be0e05076e0e695419438a; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | chunk:The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs. | chunk:community gardening initiatives"
+    },
+    "ev-th-0008-2": {
+      "thought_id": "ev-th-0008-2",
+      "role": "evidence",
+      "content": "is the Tommy Thompson Community Garden, where residents of the city can lease small 25-foot-square plots to grow their own vegetables. This combination of activities means that the Intervale has become a vibrant and sometimes busy community farming center, with mutually supporting enterprises. #### Evaluating Success Early on in the development of the Intervale, founder Will Raap set the goal (no one is quite sure how or where this number came from) of the farms there providing 10 percent of the food needed by the city of Burlington. It's not clear what percentage the farms do provide, but there is no doubt that the amount of production is impressive – estimated at more than 1 million pounds per year. And as Raap notes, the Intervale continues to serve as a catalyst for community farming initiatives and projects around the state and nation. And finally, the approach of incubating new...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools"
+        ],
+        "node_ids": [
+          "\"COMMUNITY FARMING INITIATIVES\""
+        ],
+        "chunk_ids": [
+          "chunk-bd12c93ca420ae0dfd8107f51eec1886"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "entity:community gardening initiatives"
+        ]
+      },
+      "score": 0.546038700064968,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3109",
+          "edge-3110",
+          "edge-3111",
+          "edge-3112",
+          "edge-3127",
+          "edge-3128",
+          "edge-3158",
+          "edge-3159",
+          "edge-3160",
+          "edge-3179",
+          "edge-3203",
+          "edge-3219"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.38728758692741394,
+          "grounding_score": 0.40990498661994934
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools; nodes: COMMUNITY FARMING INITIATIVES; chunks: chunk-bd12c93ca420ae0dfd8107f51eec1886; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | entity:community gardening initiatives"
+    },
+    "ev-th-0008-3": {
+      "thought_id": "ev-th-0008-3",
+      "role": "evidence",
+      "content": "who may prefer living in an urban or suburban community rather than the rural countryside. It's a business with very low start-up costs – a minimal amount of equipment and a small backyard greenhouse for starting seedlings. Also, given McCrate's description of his company's work, another departure from the mind-set of the classic rural farmer – \"leave me alone so I can farm\" – is that the urban farmer needs to be entrepreneurial and enjoy constantly meeting and working with new people. Becoming an urban farmer is arguably an ideal profession for someone who wants to facilitate connecting people with the land and food. Neither Halm nor McCrate envisions staying in the city forever, and they talk about trying to find a model for small-scale farming that could be profitable and sustainable. But for now Seattle Urban Farm Company is proving good for them. \"It was important for me to have...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-123973bb8732b383c984f14c89a9aa5c"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "chunk:Seattle",
+          "entity:Seattle",
+          "grounding:existing-chunk"
+        ]
+      },
+      "score": 0.4537186213958373,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14508",
+          "edge-14510",
+          "edge-14511",
+          "edge-16398",
+          "edge-16399",
+          "edge-16400",
+          "edge-16420",
+          "edge-16421",
+          "edge-16422",
+          "edge-16423",
+          "edge-16431",
+          "edge-16443"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3340136706829071,
+          "grounding_score": 0.3583833873271942
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools; nodes: SEATTLE; chunks: chunk-123973bb8732b383c984f14c89a9aa5c; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | chunk:Seattle | entity:Seattle"
+    },
+    "ev-th-0008-4": {
+      "thought_id": "ev-th-0008-4",
+      "role": "evidence",
+      "content": "Wadud learned to articulate her philosophy. If a homeowner's fruit is likely going to waste, is it fair game to take? Some people might feel comfortable making off with the fallen fruit, but Wadud believes it is important to request permission – to build a neighborhood's awareness about its own food resources, while also building trust and a sense of community. In Seattle, Washington, Solid Ground, an antipoverty nonprofit, runs a sophisticated, finely tuned fruit-gleaning program called Community Fruit Tree Harvest. In 2009, for example, volunteers gathered 19,600 pounds of apples, plums, and pears from Seattle's yards. Only prime-condition fruits are given to the food bank; bruised or rotten fruits go to compost. Of course, volunteers may taste and take fruit, as well. When I joined a plum tree gleaning expedition, the old plum tree on a quiet residential street in Seattle's Univers...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-d6db795582f52e35a0bb9aea86e66f7f"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "chunk:Seattle",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.6929449266880852,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-19375",
+          "edge-19376",
+          "edge-19377",
+          "edge-19378",
+          "edge-19389",
+          "edge-19390",
+          "edge-19391",
+          "edge-19620",
+          "edge-19621",
+          "edge-19674",
+          "edge-19675",
+          "edge-19676"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.4681715965270996,
+          "grounding_score": 0.4801088571548462
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools; nodes: SEATTLE; chunks: chunk-d6db795582f52e35a0bb9aea86e66f7f; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | chunk:Seattle | entity:Seattle"
+    },
+    "ev-th-0008-5": {
+      "thought_id": "ev-th-0008-5",
+      "role": "evidence",
+      "content": ", \"A Case for Backyard Chickens in Salem [Oregon]\" (September 2010), <http://www.chicken-revolution.com/Research_Packet_Sept_2010.pdf>. **** Genetic Resources Action International (GRAIN), \"Fowl Play: The Poultry Industry's Central Role in the Bird Flu Crisis\" (February 2006), <http://www.grain.org/briefings/?id=194>. **** Consumer Reports Health Blog, \"Health Weekender: Egg Safety – In Defense of Home-Grown Eggs,\" July 24, 2009, <http://blogs.consumerreports.org/health/2009/07/egg-safety-organic-eggs-health-benefits-of-eggs-salmonella-protect-yourself-from-foodborne-illness-.html>. **** Council President Richard Conlin, \"One Small Step For Man, One Giant Leap For Goatkind,\" _Making It Work_ (newsletter) 9, no. 8 (October 4, 2007), <http://www.seattle.gov/Council/Conlin/miw/0708miw.htm#4>. **** Angela Galloway, \"Seattle Homeowners May Keep Miniature Goats as Pets,\" _Seattle Post-Intel...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools"
+        ],
+        "node_ids": [
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-475015ec5f08648d774910da2fb23967"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "entity:Seattle"
+        ]
+      },
+      "score": 0.529936255411319,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-20301",
+          "edge-20302",
+          "edge-20315",
+          "edge-20316",
+          "edge-20325",
+          "edge-20326",
+          "edge-20327",
+          "edge-20346",
+          "edge-20347",
+          "edge-20360",
+          "edge-20361",
+          "edge-20362"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.3907220661640167,
+          "grounding_score": 0.3562997877597809
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools; nodes: SEATTLE; chunks: chunk-475015ec5f08648d774910da2fb23967; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | entity:Seattle"
+    },
+    "ev-th-0008-6": {
+      "thought_id": "ev-th-0008-6",
+      "role": "evidence",
+      "content": "Goats like to climb and do best with some vertical spaces or stairs. • Goats require shelter from the weather, because they despise getting wet. • Goats are browsers, meaning they will eat mostly nongrassy species such as brambles, shrubs, and small trees. They will eat grass if that is all that is offered. Goats love nettles, thistles, dandelions, chickweed, leafy spurge, greasewood, and poison ivy. They enjoy bitter-flavored plants that other ruminants purposely avoid. These are heady arguments that might appeal most to political historians and philosophers. I suspect Grant was successful less for these arguments than for the supporting constituent passion carrying her forward. If there is one thing that will get an elected official's attention, it is constituent passion. Humor also played a role, says Grant, as the idea of legalizing goats and the name of her organization, the Goat...",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Grant sees a pastoral future for Seattle, populated with small animals.\"",
+          "\"SEATTLE TILTH\"",
+          "\"SEATTLE\""
+        ],
+        "chunk_ids": [
+          "chunk-06b664b68583390f1a748abc957021ca"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "entity:Seattle",
+          "hyperedge:Seattle"
+        ]
+      },
+      "score": 0.1556191240951943,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-2520",
+          "edge-2538",
+          "edge-2561",
+          "edge-2562",
+          "edge-2563",
+          "edge-2564",
+          "edge-2580",
+          "edge-2599",
+          "edge-2600",
+          "edge-2617",
+          "edge-2618",
+          "edge-2633"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.12046623975038528,
+          "grounding_score": 0.2918069362640381
+        }
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools; nodes: Grant sees a pastoral future for Seattle, populated with small animals., SEATTLE TILTH, SEATTLE; chunks: chunk-06b664b68583390f1a748abc957021ca; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | entity:Seattle | hyperedge:Seattle"
+    },
+    "ev-th-0004-1": {
+      "thought_id": "ev-th-0004-1",
+      "role": "evidence",
+      "content": "**A group of committed community leaders is essential**. If a single person approaches the city with an idea for a new community garden, Richard MacDonald, manager of Seattle's P-Patch program (page 60), will tell him or her to return with five or six more people. One person is not sufficient to steward a new garden into fruition. \"When they have a good _group_ on board, then we sit down and create a strategy or map of how they will move the garden forward,\" says MacDonald. Key items to discuss are: • Identifying the skills and tasks required and recruiting other people for these roles • Making sure other community groups have opportunities to be involved, such as nearby food banks, native plant groups, or green building groups • Making the planning group inclusive, to reflect the neighborhood's multicultural population **Rely on collaborative decision making**. In our conversation, V...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"Monitoring progress of community gardens can help adapt strategies over time.\"",
+          "<hyperedge>\"Evaluating the success of community gardens can provide insights for future initiatives.\""
+        ],
+        "chunk_ids": [
+          "chunk-07f097aee6be0e05076e0e695419438a"
+        ],
+        "evidence_ids": [
+          "ev-th-0004-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0004",
+          "chunk:The answer should be verifiable through historical data or records of community gardening programs.",
+          "hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+        ]
+      },
+      "score": 0.664365963935852,
+      "status": "verified",
+      "parent_ids": [
+        "th-0004"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-3250",
+          "edge-9919",
+          "edge-9920",
+          "edge-9921",
+          "edge-9937",
+          "edge-9938",
+          "edge-9959",
+          "edge-9960",
+          "edge-9981",
+          "edge-9982",
+          "edge-9983",
+          "edge-9984"
+        ],
+        "high_score_candidate": true
+      },
+      "grounding_text": "nodes: Monitoring progress of community gardens can help adapt strategies over time., Evaluating the success of community gardens can provide insights for future initiatives.; chunks: chunk-07f097aee6be0e05076e0e695419438a; notes: global-hypergraph-retrieval | retrieved-for:th-0004 | chunk:The answer should be verifiable through historical data or records of community gardening programs. | hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+    },
+    "ev-th-0004-2": {
+      "thought_id": "ev-th-0004-2",
+      "role": "evidence",
+      "content": "able to install six new household gardens by sending out three crews that are each able to complete two new gardens. Volunteers also teach workshops and serve as mentors for new home gardeners. #### **Create double-dug beds, not raised beds**. Conventional wisdom might suggest that the easiest way to install a new home garden is with raised beds. However, Growing Gardens found that after several years gardeners would request more soil to keep the beds \"raised.\" So instead, Growing Gardens creates gardens by double-digging in the spring and sheetmulching and cover-cropping in the fall. Each household garden consists of two 4-foot-by-8-foot beds. #### **Test the soil**. Soils can vary significantly in quality and contaminants, so it's important to establish a protocol for testing the soil prior to installing a home garden. Local governments are a good source of assistance, as they often...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"Over the years Growing Gardens has developed key requirements for participation in its home gardener program, to make sure its program continues to assist its target population.\""
+        ],
+        "chunk_ids": [
+          "chunk-9b822de4a60aeb5f83933b9cd0a946c9"
+        ],
+        "evidence_ids": [
+          "ev-th-0004-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0004",
+          "hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+        ]
+      },
+      "score": 0.6241616773605346,
+      "status": "verified",
+      "parent_ids": [
+        "th-0004"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-8248",
+          "edge-8251",
+          "edge-8252",
+          "edge-8282",
+          "edge-8283",
+          "edge-8284",
+          "edge-8295",
+          "edge-8296",
+          "edge-8297",
+          "edge-11742",
+          "edge-11743",
+          "edge-11744"
+        ],
+        "high_score_candidate": true
+      },
+      "grounding_text": "nodes: Over the years Growing Gardens has developed key requirements for participation in its home gardener program, to make sure its program continues to assist its target population.; chunks: chunk-9b822de4a60aeb5f83933b9cd0a946c9; notes: global-hypergraph-retrieval | retrieved-for:th-0004 | hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+    },
+    "ev-th-0004-3": {
+      "thought_id": "ev-th-0004-3",
+      "role": "evidence",
+      "content": "farmers have completed their own harvest, the Marin Organic Glean Team combs through the fields for the \"seconds,\" or produce that isn't exactly the right size or shape but tastes just as good. \"Marin Organic's gleaning program has been used as a blueprint for similar projects in farming communities from the Midwest to Hawaii,\" Hellberg concluded. And it deliberately led the way by founding National Gleaning Day on September 20, 2010. With National Gleaning Day and ongoing community gleanings throughout the year, Marin Organic continues to encourage communities, farms, and schools across the nation to glean healthy food for children. **A Simple Recipe for Gleaning** Faith Feeds, a cooperative of individuals and faith communities founded in 2010 to alleviate hunger in Kentucky, offers the following easy recipe for forming your own gleaning operation. **1. FIND A SOURCE OF FOOD**. Ident...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"The Impact of Home and Community Gardening in America (2009 survey), http://www.gardenresearch.com/home?q=show&id=3126.\""
+        ],
+        "chunk_ids": [
+          "chunk-f5f65dcd9bf73d5a51e1f5f20d7e1772"
+        ],
+        "evidence_ids": [
+          "ev-th-0004-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0004",
+          "hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+        ]
+      },
+      "score": 0.546655181911448,
+      "status": "active",
+      "parent_ids": [
+        "th-0004"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-19656",
+          "edge-19657",
+          "edge-19658",
+          "edge-19677",
+          "edge-19678",
+          "edge-19679",
+          "edge-19695",
+          "edge-19710",
+          "edge-19711",
+          "edge-19712",
+          "edge-19726",
+          "edge-19727"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.38184013962745667,
+          "grounding_score": 0.4316336214542389
+        }
+      },
+      "grounding_text": "nodes: The Impact of Home and Community Gardening in America (2009 survey), http://www.gardenresearch.com/home?q=show&id=3126.; chunks: chunk-f5f65dcd9bf73d5a51e1f5f20d7e1772; notes: global-hypergraph-retrieval | retrieved-for:th-0004 | hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+    },
+    "ev-th-0004-4": {
+      "thought_id": "ev-th-0004-4",
+      "role": "evidence",
+      "content": "_coauthored by Megan Bucknum_ The Beardsley Community Farm in **Knoxville, Tennessee** , is an urban demonstration garden with a focus on education, sustainability, and community empowerment. Its mission: to promote food security in Knoxville's low-income communities through self-sufficient practices focusing on vegetable gardening, food preparation, and preservation techniques. In 1997 a community food assessment of Knoxville found what some might consider the Sahara of food deserts: a neighborhood consisting of two subsidized housing developments, an abandoned middle school, and a park with a high crime rate, with no grocery stores, restaurants, or other sources of food. In an effort to help thwart the violence and drug activity occurring in the park, and to bring fresh food to the neighborhood, the city gave 7 acres of the park to the Knox County Community Action Committee (CAC) to...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"In 1998, the community farm provided 21,000 plants to assist local families in starting their gardens.\"",
+          "\"COMMUNITY FOOD GARDENS\""
+        ],
+        "chunk_ids": [
+          "chunk-488bc663aa4ded0ca40ac601222c065d"
+        ],
+        "evidence_ids": [
+          "ev-th-0004-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0004",
+          "entity:The answer should be verifiable through historical data or records of community gardening programs.",
+          "hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+        ]
+      },
+      "score": 0.6566000295727967,
+      "status": "active",
+      "parent_ids": [
+        "th-0004"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-992",
+          "edge-993",
+          "edge-994",
+          "edge-4770",
+          "edge-4771",
+          "edge-4791",
+          "edge-4792",
+          "edge-4793",
+          "edge-4794",
+          "edge-4795",
+          "edge-4796",
+          "edge-4811"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.43737632036209106,
+          "grounding_score": 0.5012244582176208
+        }
+      },
+      "grounding_text": "nodes: In 1998, the community farm provided 21,000 plants to assist local families in starting their gardens., COMMUNITY FOOD GARDENS; chunks: chunk-488bc663aa4ded0ca40ac601222c065d; notes: global-hypergraph-retrieval | retrieved-for:th-0004 | entity:The answer should be verifiable through historical data or records of community gardening programs. | hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+    },
+    "ev-th-0004-5": {
+      "thought_id": "ev-th-0004-5",
+      "role": "evidence",
+      "content": "of the unique aspects of Village Homes. It is about as close as you can get to living immersed in a garden, which can lead to different views about acceptable methods for tending the garden – in Village Homes, for example, pesticides are forbidden. Together these developments demonstrate the immense value of including food production in any new housing or neighborhood design. Increasingly agriculture is seen not as a liability or a nuisance but as a positive amenity and a life-enhancing community feature. As the desire to know where our food comes from, and increasingly to participate directly in its production, grows, more and more housing consumers will look for ways to vote with their feet (that is, where they plant themselves) as well as their palates. ### City-Sponsored Community Gardening #### P-Patch Community Gardening Program _with research by Robin Proebsting_ Seattle's comm...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "<hyperedge>\"And it offers sustained proof through nearly 40 years that community dwellers at all income levels do want to garden.\"",
+          "\"COMMUNITY GARDEN PROGRAMS\""
+        ],
+        "chunk_ids": [
+          "chunk-fc825bb5fbec77abff4a02be6fc5fcec"
+        ],
+        "evidence_ids": [
+          "ev-th-0004-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0004",
+          "chunk:The answer should be verifiable through historical data or records of community gardening programs.",
+          "entity:The answer should be verifiable through historical data or records of community gardening programs.",
+          "hyperedge:The answer should be verifiable through historical data or records of community gardening programs."
+        ]
+      },
+      "score": 0.689217380830538,
+      "status": "active",
+      "parent_ids": [
+        "th-0004"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-5053",
+          "edge-5056",
+          "edge-5069",
+          "edge-7327",
+          "edge-7328",
+          "edge-7329",
+          "edge-7350",
+          "edge-7351",
+          "edge-7367",
+          "edge-7368",
+          "edge-7381",
+          "edge-7382"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.43812161684036255,
+          "grounding_score": 0.5731188654899597
+        }
+      },
+      "grounding_text": "nodes: And it offers sustained proof through nearly 40 years that community dwellers at all income levels do want to garden., COMMUNITY GARDEN PROGRAMS; chunks: chunk-fc825bb5fbec77abff4a02be6fc5fcec; notes: global-hypergraph-retrieval | retrieved-for:th-0004 | chunk:The answer should be verifiable through historical data or records of community gardening programs. | entity:The answer should be verifiable through historical data or records of community gardening programs."
+    },
+    "ev-th-0004-6": {
+      "thought_id": "ev-th-0004-6",
+      "role": "evidence",
+      "content": "the toxic soil from a tiny garden, clean it, and then truck it back in. It was hugely expensive, she recalls, but it led her to contact the groups involved. The School of Public Health came to take soil samples at the Worcester Street Garden and concluded that the contaminated soil there was so extensive that it couldn't be hauled away for cleaning. Like so many substances once used for good reason and later found to be a carcinogen, creosote was used to help preserve railroad ties and only later was discovered to leach into surrounding soil. As if that wasn't bad enough, a Boston University School of Public Health associate professor of environmental health, Wendy Heiger-Bernays, suspected there might be another toxin associated with creosote and decided to investigate. She was right. She and her colleagues found that polycyclic aromatic hydrocarbons (PAHs), which can harm immune and...",
+      "grounding": {
+        "anchor_texts": [],
+        "node_ids": [
+          "\"COMMUNITY GARDENING\""
+        ],
+        "chunk_ids": [
+          "chunk-e04d6e50411798e18bdf72f9c1734a84"
+        ],
+        "evidence_ids": [
+          "ev-th-0004-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0004",
+          "chunk:The answer should be verifiable through historical data or records of community gardening programs.",
+          "entity:The answer should be verifiable through historical data or records of community gardening programs."
+        ]
+      },
+      "score": 0.4181797056764198,
+      "status": "active",
+      "parent_ids": [
+        "th-0004"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-19383",
+          "edge-19399",
+          "edge-19400",
+          "edge-19402",
+          "edge-24294",
+          "edge-24295",
+          "edge-24310",
+          "edge-24311",
+          "edge-24312",
+          "edge-24333",
+          "edge-24334",
+          "edge-24349"
+        ],
+        "high_score_candidate": true,
+        "score_breakdown": {
+          "task_score": 0.31037625670433044,
+          "grounding_score": 0.3473314940929413
+        }
+      },
+      "grounding_text": "nodes: COMMUNITY GARDENING; chunks: chunk-e04d6e50411798e18bdf72f9c1734a84; notes: global-hypergraph-retrieval | retrieved-for:th-0004 | chunk:The answer should be verifiable through historical data or records of community gardening programs. | entity:The answer should be verifiable through historical data or records of community gardening programs."
+    },
+    "th-0010": {
+      "thought_id": "th-0010",
+      "role": "answer",
+      "content": "2010",
+      "grounding": {
+        "anchor_texts": [
+          "community gardening initiatives",
+          "Seattle",
+          "Portland schools",
+          "significant year",
+          "surge in demand"
+        ],
+        "node_ids": [],
+        "chunk_ids": [
+          "chunk-07f097aee6be0e05076e0e695419438a",
+          "chunk-d6db795582f52e35a0bb9aea86e66f7f",
+          "chunk-8ed0d32c6d653b34677909bb2a4df08b",
+          "chunk-0a7be9460651dfa3f1395f006df3ef8f",
+          "chunk-3e70107854e0f943a28c957596ea5c0d",
+          "chunk-07f097aee6be0e05076e0e695419438a",
+          "chunk-9b822de4a60aeb5f83933b9cd0a946c9"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-1",
+          "ev-th-0002-4",
+          "ev-th-0009-1",
+          "ev-th-0009-2"
+        ],
+        "notes": [
+          "The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools. Verified evidence indicates that by early 2010, the success of the Growing Gardens program in Portland led to increased requests for assistance from schools, highlighting the connection between Seattle's initiatives and the demand in Portland."
+        ]
+      },
+      "score": 0.8124755001068116,
+      "status": "completed",
+      "parent_ids": [
+        "ev-th-0002-1",
+        "ev-th-0002-4",
+        "ev-th-0009-1",
+        "ev-th-0009-2"
+      ],
+      "metadata": {
+        "answer": "2010",
+        "reasoning_summary": "The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools. Verified evidence indicates that by early 2010, the success of the Growing Gardens program in Portland led to increased requests for assistance from schools, highlighting the connection between Seattle's initiatives and the demand in Portland.",
+        "confidence": 0.9,
+        "remaining_gaps": []
+      },
+      "grounding_text": "anchors: community gardening initiatives, Seattle, Portland schools, significant year, surge in demand; chunks: chunk-07f097aee6be0e05076e0e695419438a, chunk-d6db795582f52e35a0bb9aea86e66f7f, chunk-8ed0d32c6d653b34677909bb2a4df08b, chunk-0a7be9460651dfa3f1395f006df3ef8f, chunk-3e70107854e0f943a28c957596ea5c0d, chunk-07f097aee6be0e05076e0e695419438a, chunk-9b822de4a60aeb5f83933b9cd0a946c9; notes: The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools. Verified evidence indicates that by early 2010, the success of the Growing Gardens program in Portland led to increased requests for assistance from schools, highlighting the connection between Seattle's initiatives and the demand in Portland."
+    }
+  },
+  "history": [
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0002",
+        "operation": "verify",
+        "decision": {
+          "operation": "verify",
+          "reason": "The retrieved evidence supports the hypothesis that a significant year influenced community gardening in Seattle and impacted Portland schools' gardening programs.",
+          "new_status": "verified",
+          "revised_content": "The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs, as evidenced by the historical context and community initiatives.",
+          "merge_with_thought_ids": [],
+          "new_thoughts": [],
+          "verification": {
+            "verdict": "supported",
+            "confidence": 0.9,
+            "evidence_ids": [
+              "ev-th-0002-1",
+              "ev-th-0002-4"
+            ],
+            "notes": "The evidence indicates a strong connection between community gardening initiatives in Seattle and the demand for similar programs in Portland."
+          }
+        },
+        "new_thought_ids": [],
+        "verified_evidence_ids": [
+          "ev-th-0002-1",
+          "ev-th-0002-4"
+        ]
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0005",
+        "operation": "expand",
+        "decision": {
+          "operation": "expand",
+          "reason": "New evidence suggests a broader context for community gardening initiatives in Seattle and their influence on Portland schools, indicating the need for additional thoughts to explore this connection.",
+          "new_status": "expanded",
+          "revised_content": "Connection between Seattle's community gardening initiatives and their timeline, with implications for Portland schools.",
+          "merge_with_thought_ids": [],
+          "new_thoughts": [
+            {
+              "role": "bridge",
+              "content": "The expansion of community gardening initiatives in Seattle has led to increased interest and demand for similar programs in Portland schools.",
+              "grounding_hints": {
+                "anchors": [
+                  "Seattle",
+                  "Portland schools",
+                  "community gardening initiatives"
+                ],
+                "notes": [
+                  "This bridge will help explore the impact of Seattle's initiatives on Portland's educational programs."
+                ]
+              }
+            }
+          ],
+          "verification": {
+            "verdict": "insufficient",
+            "confidence": 0.0,
+            "evidence_ids": [
+              "ev-th-0002-1"
+            ],
+            "notes": "While there is evidence supporting the connection, more specific data is needed to identify the significant year."
+          }
+        },
+        "new_thought_ids": [
+          "th-0007"
+        ],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0007",
+        "operation": "expand",
+        "decision": {
+          "operation": "expand",
+          "reason": "New evidence indicates a significant connection between community gardening initiatives in Seattle and the demand for similar programs in Portland schools, suggesting the need for further exploration of this relationship.",
+          "new_status": "expanded",
+          "revised_content": "The expansion of community gardening initiatives in Seattle has led to increased interest and demand for similar programs in Portland schools, particularly in a significant year that needs to be identified.",
+          "merge_with_thought_ids": [],
+          "new_thoughts": [
+            {
+              "role": "hypothesis",
+              "content": "The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs.",
+              "grounding_hints": {
+                "anchors": [
+                  "community gardening initiatives",
+                  "Seattle",
+                  "Portland schools"
+                ],
+                "notes": [
+                  "This hypothesis connects the expansion of initiatives in Seattle with the demand in Portland."
+                ]
+              }
+            }
+          ],
+          "verification": {
+            "verdict": "insufficient",
+            "confidence": 0.0,
+            "evidence_ids": [
+              "ev-th-0002-1"
+            ],
+            "notes": "Further evidence is needed to pinpoint the specific year of significant influence."
+          }
+        },
+        "new_thought_ids": [
+          "th-0008"
+        ],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0006",
+        "operation": "revise",
+        "decision": {
+          "operation": "revise",
+          "reason": "The new evidence indicates that by early 2010, there was a significant increase in demand for gardening programs in Portland schools, which aligns with the expansion of community gardening initiatives in Seattle. This suggests a specific year of influence that needs to be incorporated into the existing thought.",
+          "new_status": "revised",
+          "revised_content": "The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "merge_with_thought_ids": [],
+          "new_thoughts": [],
+          "verification": {
+            "verdict": "supported",
+            "confidence": 0.85,
+            "evidence_ids": [
+              "ev-th-0006-1",
+              "ev-th-0006-2"
+            ],
+            "notes": "The evidence clearly supports the connection between the expansion of community gardening initiatives in Seattle and the increased demand in Portland schools during 2010."
+          }
+        },
+        "new_thought_ids": [
+          "th-0009"
+        ],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0003",
+        "operation": "verify",
+        "decision": {
+          "operation": "verify",
+          "reason": "The evidence retrieved supports the connection between the significant year and the expansion of community gardening initiatives in Seattle, as well as the surge in demand for similar programs in Portland schools.",
+          "new_status": "verified",
+          "revised_content": "The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs.",
+          "merge_with_thought_ids": [],
+          "new_thoughts": [],
+          "verification": {
+            "verdict": "supported",
+            "confidence": 0.85,
+            "evidence_ids": [
+              "ev-th-0002-1"
+            ],
+            "notes": "The evidence clearly establishes a link between the year and the gardening initiatives in both cities."
+          }
+        },
+        "new_thought_ids": [],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0009",
+        "operation": "verify",
+        "decision": {
+          "operation": "verify",
+          "reason": "The evidence supports the claim that 2010 marked a significant expansion of community gardening initiatives in Seattle and a surge in demand for similar programs in Portland schools.",
+          "new_status": "verified",
+          "revised_content": "The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "merge_with_thought_ids": [],
+          "new_thoughts": [],
+          "verification": {
+            "verdict": "supported",
+            "confidence": 0.9,
+            "evidence_ids": [
+              "ev-th-0009-1",
+              "ev-th-0009-2",
+              "ev-th-0009-3"
+            ],
+            "notes": "The evidence clearly links the year 2010 to both the expansion in Seattle and the increased demand in Portland."
+          }
+        },
+        "new_thought_ids": [],
+        "verified_evidence_ids": [
+          "ev-th-0009-1",
+          "ev-th-0009-2",
+          "ev-th-0009-3"
+        ]
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0008",
+        "operation": "verify",
+        "decision": {
+          "operation": "verify",
+          "reason": "The evidence supports the hypothesis that a significant year influenced community gardening in Seattle and impacted Portland schools' gardening programs.",
+          "new_status": "verified",
+          "revised_content": "The year that significantly influenced community gardening in Seattle also impacted Portland schools' gardening programs.",
+          "merge_with_thought_ids": [],
+          "new_thoughts": [],
+          "verification": {
+            "verdict": "supported",
+            "confidence": 0.85,
+            "evidence_ids": [
+              "ev-th-0002-1",
+              "ev-th-0007-1"
+            ],
+            "notes": "The evidence indicates a clear connection between the expansion of community gardening initiatives in Seattle and the demand for similar programs in Portland schools."
+          }
+        },
+        "new_thought_ids": [],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0004",
+        "operation": "verify",
+        "decision": {
+          "operation": "verify",
+          "reason": "The evidence supports the claim that 2010 marked a significant expansion of community gardening initiatives in Seattle and a surge in demand for similar programs in Portland schools.",
+          "new_status": "verified",
+          "revised_content": "The year 2010 marked a significant expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools.",
+          "merge_with_thought_ids": [
+            "th-0009"
+          ],
+          "new_thoughts": [],
+          "verification": {
+            "verdict": "supported",
+            "confidence": 0.9,
+            "evidence_ids": [
+              "ev-th-0004-1",
+              "ev-th-0004-2"
+            ],
+            "notes": "The evidence clearly links the year 2010 with the expansion of community gardening initiatives in both Seattle and Portland."
+          }
+        },
+        "new_thought_ids": [],
+        "verified_evidence_ids": [
+          "ev-th-0004-1",
+          "ev-th-0004-2"
+        ]
+      }
+    }
+  ]
+}

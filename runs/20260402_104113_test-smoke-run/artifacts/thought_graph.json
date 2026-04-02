@@ -1,0 +1,2558 @@
+{
+  "question": "How can urban farms build community support while dealing with lead contamination in soil?",
+  "root_id": "th-0001",
+  "frontier_ids": [
+    "th-0003",
+    "th-0004",
+    "ev-th-0002-1",
+    "ev-th-0002-2",
+    "ev-th-0002-3",
+    "ev-th-0002-4",
+    "ev-th-0002-5",
+    "ev-th-0002-6",
+    "ev-th-0005-1",
+    "ev-th-0005-2",
+    "ev-th-0005-3",
+    "ev-th-0005-4",
+    "ev-th-0005-5",
+    "ev-th-0005-6",
+    "th-0007",
+    "ev-th-0006-1",
+    "ev-th-0006-2",
+    "ev-th-0006-3",
+    "ev-th-0006-4",
+    "ev-th-0006-5",
+    "ev-th-0006-6",
+    "ev-th-0008-1",
+    "ev-th-0008-2",
+    "ev-th-0008-3",
+    "ev-th-0008-4",
+    "ev-th-0008-5",
+    "ev-th-0008-6",
+    "ev-th-0009-1",
+    "ev-th-0009-2",
+    "ev-th-0009-3",
+    "ev-th-0009-4",
+    "ev-th-0009-5",
+    "ev-th-0009-6",
+    "ev-th-0010-1",
+    "ev-th-0010-2",
+    "ev-th-0010-3",
+    "ev-th-0010-4",
+    "ev-th-0010-5",
+    "ev-th-0010-6",
+    "th-0011"
+  ],
+  "status": "done",
+  "termination_reason": "budget_exhausted",
+  "final_answer": {
+    "answer": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the w... were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the w...",
+    "reasoning_summary": "Mock synthesis over 2 verified evidence thoughts.",
+    "confidence": 0.55,
+    "remaining_gaps": []
+  },
+  "thoughts": {
+    "th-0001": {
+      "thought_id": "th-0001",
+      "role": "root",
+      "content": "How can urban farms build community support while dealing with lead contamination in soil?",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": [
+          "question-root"
+        ]
+      },
+      "score": 0.0,
+      "status": "expanded",
+      "parent_ids": [],
+      "metadata": {},
+      "grounding_text": "anchors: How, can, urban; notes: question-root"
+    },
+    "th-0002": {
+      "thought_id": "th-0002",
+      "role": "hypothesis",
+      "content": "The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": []
+      },
+      "score": 0.9375191688671016,
+      "status": "expanded",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.6831300854682922,
+          "grounding_score": 0.37238746881484985
+        }
+      },
+      "grounding_text": "anchors: How, can, urban"
+    },
+    "th-0003": {
+      "thought_id": "th-0003",
+      "role": "constraint",
+      "content": "Use grounded evidence from retrieved chunks.",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": []
+      },
+      "score": 0.0,
+      "status": "active",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.0,
+          "grounding_score": 0.026860766112804413
+        }
+      },
+      "grounding_text": "anchors: How, can, urban"
+    },
+    "th-0004": {
+      "thought_id": "th-0004",
+      "role": "constraint",
+      "content": "Prefer evidence chains over unsupported claims.",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": []
+      },
+      "score": 0.0,
+      "status": "active",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.0,
+          "grounding_score": 0.026860766112804413
+        }
+      },
+      "grounding_text": "anchors: How, can, urban"
+    },
+    "th-0005": {
+      "thought_id": "th-0005",
+      "role": "bridge",
+      "content": "Connect evidence that explains How",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence_ids": [],
+        "notes": []
+      },
+      "score": 0.12264558364276745,
+      "status": "expanded",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.11952286958694458,
+          "grounding_score": 0.026126498356461525
+        }
+      },
+      "grounding_text": "anchors: How, can, urban"
+    },
+    "ev-th-0002-1": {
+      "thought_id": "ev-th-0002-1",
+      "role": "evidence",
+      "content": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the wild rice grown in the United States was domesticated; most was grown in California and harvested by machines – though marketed as authentic Minnesota lake wild rice, with pictures of Native Americans harvesting the rice in canoes with paddles. LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by \"a favorite joke among most connoisseurs of real wild rice,\" which goes like this: \"How to Cook Paddy Rice: Put rice and water in a pot with a stone. When the stone is soft the rice is almost done.\" By contrast, lake-harvested wild rice has an \"amazing aroma\" and cooks in only 20 to 30 minutes. In 1988 the Ojibwe filed suit _(Wabizii v. Busch Agricultural Resources)_ against the agricultural research...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\"",
+          "\"LADUKE\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "chunk:How",
+          "entity:The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.19799554816391662,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1562",
+          "edge-1563",
+          "edge-1574",
+          "edge-1575",
+          "edge-1591",
+          "edge-1592",
+          "edge-1593",
+          "edge-1594",
+          "edge-1605",
+          "edge-1606",
+          "edge-1607",
+          "edge-1616"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12515655159950256,
+          "grounding_score": 0.5819830894470215
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.', LADUKE; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | chunk:How | entity:The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?"
+    },
+    "ev-th-0002-2": {
+      "thought_id": "ev-th-0002-2",
+      "role": "evidence",
+      "content": "FSI says the market is providing fresh, affordable, locally produced fruits and vegetables to the community. #### Running to Raise Awareness Youths are also getting involved in MFSI's efforts to raise awareness about the link between agriculture, food, health, and fitness literally by running. In an annual 420-mile relay, Muscogee National Walk/Run, youth cover the Muscogee (Creek) Nation boundaries, tracing the Opothle Yahola Trail (Trail of Tears). In other events the Muscogee youth participate in Spirit Walk/Runs and have joined with First Nations United, a nonprofit advocating prosperity and unity for First Nations people through redefining identity and connecting with the past to run another 290-mile relay along the Opothle Yahola Trail. Just as runs are used throughout the United States to raise awareness about specific issues, running is a powerful way for Mvskoke youth to brin...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\"",
+          "\"LADUKE\""
+        ],
+        "chunk_ids": [
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "chunk:How",
+          "entity:The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.14739268786033666,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-21331",
+          "edge-21333",
+          "edge-21336",
+          "edge-21337",
+          "edge-21338",
+          "edge-21361",
+          "edge-21365",
+          "edge-21366",
+          "edge-21367",
+          "edge-25279",
+          "edge-25280",
+          "edge-25281"
+        ],
+        "score_breakdown": {
+          "task_score": 0.11544600874185562,
+          "grounding_score": 0.2767239809036255
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by, LADUKE; chunks: chunk-362058f4451bd1ddd9fb9f152ff929ba; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | chunk:How | entity:The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?"
+    },
+    "ev-th-0002-3": {
+      "thought_id": "ev-th-0002-3",
+      "role": "evidence",
+      "content": "making a wise investment. First, consider the equipment's age and usage. A tractor's useful life is about 12,000 hours. If you use a tractor 600 hours per year, the useful life is 20 years. Wendell Bower, in his book _Modern Concepts of Farm Machinery Management_ , says that the first year of life for a new tractor is the most expensive; each year, operational costs get less until wear and tear causes repair costs to increase. At this time, Bower suggests trading tractors, because your average use-per-hour costs will increase. This normally occurs at about 10 years of age, or 6,000 to 7,000 hours of use. Next, figure the costs per hour and the costs per acre to see if this is a good investment. You should be able to figure these out quickly with a pocket calculator. It's not a bargain if it costs too much to use! Here are some tips on purchasing: * Do not get hung up on a particular b...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-3cdeba8bee9942d43ed93441dcd109d7"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.053661595204856694,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-9342",
+          "edge-9343",
+          "edge-9344",
+          "edge-9373",
+          "edge-9392",
+          "edge-9393",
+          "edge-11063",
+          "edge-11064",
+          "edge-11065",
+          "edge-11077",
+          "edge-11091",
+          "edge-11092"
+        ],
+        "score_breakdown": {
+          "task_score": 0.040862686932086945,
+          "grounding_score": 0.31321749091148376
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-3cdeba8bee9942d43ed93441dcd109d7; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | hyperedge:How"
+    },
+    "ev-th-0002-4": {
+      "thought_id": "ev-th-0002-4",
+      "role": "evidence",
+      "content": "imagination. Livestock that is sold off the farm will take with it some of the farm's nutrients, but in my example above, because I purchased the pigs, I also brought in nutrients. If you sell all your hay and do not feed it to livestock on your farm, you are depleting your soil fertility. The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure. None of these cycles is ever 100 percent effective, or at least is not practical to be so, but you should strive for 100 percent. If you do not reach this lofty goal, regroup, plan, and go forward again. As they say, \"Practice makes perfect.\" ### Recipe for Success All through this book I have talked about the principles of good farming. These principles are the same whether you live in New Mexico, Missouri, or Alaska. Principles of good far...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-17984d082222b7d2f1526b0b77119804"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.12865498949826915,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-11684",
+          "edge-11685",
+          "edge-11686",
+          "edge-11687",
+          "edge-11697",
+          "edge-11698",
+          "edge-11707",
+          "edge-11708",
+          "edge-11709",
+          "edge-11710",
+          "edge-14650",
+          "edge-14658"
+        ],
+        "score_breakdown": {
+          "task_score": 0.08099239319562912,
+          "grounding_score": 0.5884823799133301
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-17984d082222b7d2f1526b0b77119804; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | hyperedge:How"
+    },
+    "ev-th-0002-5": {
+      "thought_id": "ev-th-0002-5",
+      "role": "evidence",
+      "content": "the environmental issues that residents face. Mercury contamination in the Connecticut River, on whose banks the city was built, means that residents need to be educated about not eating any fish they take from the river. The prevalence of brownfields means that abandoned industrial lots, where people may want to start gardens, may have contaminated soils that need to be tested and replaced. Rivera is working with young people to create a video about brownfields, which will, in turn, educate their families. Also, she tells me that the city's very low air quality, a problem discovered by the EPA, coupled with chronic pulmonary health problems, means that people need to be educated about how to clean their homes without worsening asthma and other pulmonary conditions. As an example, Rivera, whose son has asthma, says she was shocked to learn that she should never use bleach in her house...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Now the graduating students are teaching other kids about gardening.\""
+        ],
+        "chunk_ids": [
+          "chunk-8dfe2a17435f059c92535241799795b4"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "hyperedge:can"
+        ]
+      },
+      "score": 0.14781424617951555,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14152",
+          "edge-15091",
+          "edge-15092",
+          "edge-15093",
+          "edge-15101",
+          "edge-15102",
+          "edge-15103",
+          "edge-15112",
+          "edge-15113",
+          "edge-15115",
+          "edge-15116",
+          "edge-16691"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12857143580913544,
+          "grounding_score": 0.14966629445552826
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Now the graduating students are teaching other kids about gardening.; chunks: chunk-8dfe2a17435f059c92535241799795b4; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | hyperedge:can"
+    },
+    "ev-th-0002-6": {
+      "thought_id": "ev-th-0002-6",
+      "role": "evidence",
+      "content": "'s A-Z Guide to Growing Organic Food, by Tanya L. K. Denckla. An invaluable resource about growing, harvesting, and storing for 765 varieties of vegetables, fruits, herbs, and nuts. 496 pages. Paper. Isbn 978-1-58017-370-4. Grass-Fed Cattle, by Julius Ruechel. The first complete manual in raising, caring for, and marketing grass-fed cattle. 384 pages. Paper. Isbn 978-1-58017-605-7. Small-Scale Livestock Farming, by Carol Ekarius. A natural, organic approach to livestock management to produce healthier animals, reduce feed and health care costs, and maximize profit. 224 pages. Paper. Isbn 978-1-58017-162-5. Starting & Running Your Own Small Farm Business, by Sarah Beth Aubrey. A business-savvy reference that covers everything from writing a business plan and applying for loans to marketing your farm-fresh goods. 176 pages. Paper. Isbn 978-1-58017-697-2. Storey's Barn Guide to Sheep. St...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The first complete manual in raising, caring for, and marketing grass-fed cattle.\""
+        ],
+        "chunk_ids": [
+          "chunk-516da735be61616733781bd48e941fba"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0002",
+          "chunk:The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.041095680211736096,
+      "status": "active",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-6674",
+          "edge-6675",
+          "edge-6676",
+          "edge-6677",
+          "edge-6699",
+          "edge-6700",
+          "edge-6701",
+          "edge-6702",
+          "edge-6719",
+          "edge-6720",
+          "edge-6721",
+          "edge-6722"
+        ],
+        "score_breakdown": {
+          "task_score": 0.03367175534367561,
+          "grounding_score": 0.22047929465770721
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The first complete manual in raising, caring for, and marketing grass-fed cattle.; chunks: chunk-516da735be61616733781bd48e941fba; notes: global-hypergraph-retrieval | retrieved-for:th-0002 | chunk:The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil? | hyperedge:How"
+    },
+    "th-0006": {
+      "thought_id": "th-0006",
+      "role": "bridge",
+      "content": "Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\"",
+          "\"LADUKE\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\"",
+          "\"LADUKE\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4",
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0002-1",
+          "ev-th-0002-2"
+        ],
+        "notes": []
+      },
+      "score": 0.7985505576203558,
+      "status": "expanded",
+      "parent_ids": [
+        "th-0002"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.6416890621185303,
+          "grounding_score": 0.24445094168186188
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.', LADUKE, LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by, LADUKE; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4, chunk-362058f4451bd1ddd9fb9f152ff929ba"
+    },
+    "ev-th-0005-1": {
+      "thought_id": "ev-th-0005-1",
+      "role": "evidence",
+      "content": "to steward the land with the goal of increasing biodiversity, primarily in four ways: First, expand the existing tree and shrub line. Second, expand habitat for beneficial birds and insects with species such as black locust, honey locust, highbush cranberry, mulberry, anise hyssop, and native wildflowers. Third, add ponds. Finally, manage the landscape consciously by paying attention to patterns and minimizing disturbance of animal habitat in farming practices. One key permaculture concept is that diversity builds diversity, and indeed, Frey says it is amazing how quickly biodiversity returns to the landscape as they establish more perennials, trees, and shrubs. In his book _Bioshelter Market Garden: A Permaculture Farm_ , Frey writes: The best way to describe the changes permaculture development has brought to our farm is to compare it to what came before. A small field that was prev...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Initially, we are trying to document rapid regeneration of land,\" says Peter Traverse.\""
+        ],
+        "chunk_ids": [
+          "chunk-6d5fedbfed862017a8523b8e6129ad35"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "hyperedge:Connect evidence that explains How"
+        ]
+      },
+      "score": 0.10352419568126714,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-16206",
+          "edge-16208",
+          "edge-16209",
+          "edge-16210",
+          "edge-16211",
+          "edge-16212",
+          "edge-16213",
+          "edge-16224",
+          "edge-16234",
+          "edge-16236",
+          "edge-16237",
+          "edge-20541"
+        ],
+        "score_breakdown": {
+          "task_score": 0.09152043610811234,
+          "grounding_score": 0.13115933537483215
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Initially, we are trying to document rapid regeneration of land,\" says Peter Traverse.; chunks: chunk-6d5fedbfed862017a8523b8e6129ad35; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | hyperedge:Connect evidence that explains How"
+    },
+    "ev-th-0005-2": {
+      "thought_id": "ev-th-0005-2",
+      "role": "evidence",
+      "content": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the wild rice grown in the United States was domesticated; most was grown in California and harvested by machines – though marketed as authentic Minnesota lake wild rice, with pictures of Native Americans harvesting the rice in canoes with paddles. LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by \"a favorite joke among most connoisseurs of real wild rice,\" which goes like this: \"How to Cook Paddy Rice: Put rice and water in a pot with a stone. When the stone is soft the rice is almost done.\" By contrast, lake-harvested wild rice has an \"amazing aroma\" and cooks in only 20 to 30 minutes. In 1988 the Ojibwe filed suit _(Wabizii v. Busch Agricultural Resources)_ against the agricultural research...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "chunk:How",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.18931688073420005,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1562",
+          "edge-1563",
+          "edge-1574",
+          "edge-1575",
+          "edge-1591",
+          "edge-1592",
+          "edge-1593",
+          "edge-1594",
+          "edge-1605",
+          "edge-1606",
+          "edge-1607",
+          "edge-1616"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12515655159950256,
+          "grounding_score": 0.5126405954360962
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | chunk:How | hyperedge:How"
+    },
+    "ev-th-0005-3": {
+      "thought_id": "ev-th-0005-3",
+      "role": "evidence",
+      "content": "Economy_ (2005), a collaboration of the Bar T Bar and Flying M Ranches, the Diablo Trust, and Coconino County; available from the Diablo Trust at info@diablotrust.org or as PDFs from the Diablo Trust website at www.diablotrust.org. **** FoodProductionDaily.com, \"Half of US Food Goes to Waste,\" November 25, 2004, <http://www.foodproduction daily.com/Supply-Chain/Half-of-US-food-goes-to-waste>. **** U.S. Environmental Protection Agency, \"Basic Information about Food Waste,\" 2009, <http://www.epa.gov/osw/conserve/materials/organics/food/index.htm>. **** J. Lundqvist, C. de Fraiture, and D. Molden, \"Saving Water: From Field to Fork – Curbing Losses and Wastage in the Food Chain,\" policy brief for the Stockholm International Water Institute (SIWI), 2008. **** Carol A. Breitinger, \"How the Society of St. Andrew Got Started,\" Society of St. Andrew, 2009. **** Society of St. Andrew, \"History,...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Thanks also to Sergei Kucherov, my attentive and supportive brother, who helped me navigate three of my first site visits, serving as 'audio man' and carefully instructing me on how to back up absolutely everything.\""
+        ],
+        "chunk_ids": [
+          "chunk-4ffa8b612642fa385d2af41e902aa75d"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "hyperedge:Connect evidence that explains How"
+        ]
+      },
+      "score": 0.01829280770343933,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-195",
+          "edge-196",
+          "edge-197",
+          "edge-198",
+          "edge-199",
+          "edge-223",
+          "edge-224",
+          "edge-240",
+          "edge-241",
+          "edge-254",
+          "edge-255",
+          "edge-256"
+        ],
+        "score_breakdown": {
+          "task_score": 0.01583119109272957,
+          "grounding_score": 0.15549156069755554
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Thanks also to Sergei Kucherov, my attentive and supportive brother, who helped me navigate three of my first site visits, serving as 'audio man' and carefully instructing me on how to back up absolutely everything.; chunks: chunk-4ffa8b612642fa385d2af41e902aa75d; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | hyperedge:Connect evidence that explains How"
+    },
+    "ev-th-0005-4": {
+      "thought_id": "ev-th-0005-4",
+      "role": "evidence",
+      "content": "FSI says the market is providing fresh, affordable, locally produced fruits and vegetables to the community. #### Running to Raise Awareness Youths are also getting involved in MFSI's efforts to raise awareness about the link between agriculture, food, health, and fitness literally by running. In an annual 420-mile relay, Muscogee National Walk/Run, youth cover the Muscogee (Creek) Nation boundaries, tracing the Opothle Yahola Trail (Trail of Tears). In other events the Muscogee youth participate in Spirit Walk/Runs and have joined with First Nations United, a nonprofit advocating prosperity and unity for First Nations people through redefining identity and connecting with the past to run another 290-mile relay along the Opothle Yahola Trail. Just as runs are used throughout the United States to raise awareness about specific issues, running is a powerful way for Mvskoke youth to brin...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\""
+        ],
+        "chunk_ids": [
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "chunk:How",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.12656928579311938,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-21331",
+          "edge-21333",
+          "edge-21336",
+          "edge-21337",
+          "edge-21338",
+          "edge-21361",
+          "edge-21365",
+          "edge-21366",
+          "edge-21367",
+          "edge-25279",
+          "edge-25280",
+          "edge-25281"
+        ],
+        "score_breakdown": {
+          "task_score": 0.11544600874185562,
+          "grounding_score": 0.09635046869516373
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by; chunks: chunk-362058f4451bd1ddd9fb9f152ff929ba; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | chunk:How | hyperedge:How"
+    },
+    "ev-th-0005-5": {
+      "thought_id": "ev-th-0005-5",
+      "role": "evidence",
+      "content": "controlling brush. Goat Patrol in North Carolina specifically advertises its goats for eradicating invasive species of poison ivy, honeysuckle, kudzu, and out-of-control privet hedges. \"Goats are becoming very popular with construction companies,\" writes Richard Graham for the TreeHugger website. \"They are finding that it's a win/win for everyone. Many companies use the goats to clear brush so surveys can be done. They have also found it can be very cost-effective when considering how much it is to clear the land, then haul the debris and dispose of it. Plus, permits are not needed for the goats to clear which saves time and money. And it also improves communities by bringing people together to see the goats, not to mention the lack of noise that heavy machinery generates.\" In an interview with \"Living the Country Life Radio,\" Tammy Dunakin, owner of Rent-A-Ruminant in Vashon, Washing...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Within a month or two, after she rotated the animals out of each 'pasture,' what had been a nice green lawn turned into a mess of thistles and other weeds that had never been there.\""
+        ],
+        "chunk_ids": [
+          "chunk-d27f0b8018ca6a374ee44c20b082d0b9"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "hyperedge:Connect evidence that explains How"
+        ]
+      },
+      "score": 0.1866257134735072,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-5253",
+          "edge-5254",
+          "edge-5255",
+          "edge-5256",
+          "edge-5257",
+          "edge-5258",
+          "edge-5273",
+          "edge-5274",
+          "edge-5275",
+          "edge-5287",
+          "edge-5288",
+          "edge-5302"
+        ],
+        "score_breakdown": {
+          "task_score": 0.1513069123029709,
+          "grounding_score": 0.23342490196228027
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Within a month or two, after she rotated the animals out of each 'pasture,' what had been a nice green lawn turned into a mess of thistles and other weeds that had never been there.; chunks: chunk-d27f0b8018ca6a374ee44c20b082d0b9; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | hyperedge:Connect evidence that explains How"
+    },
+    "ev-th-0005-6": {
+      "thought_id": "ev-th-0005-6",
+      "role": "evidence",
+      "content": "productivity and success_. It is best, of course, if your farm begins with good soil. If it does not, though, don't be discouraged. There are techniques that will increase your soil's fertility, including crop rotation, application of organic matter, and careful choice of crops. The 4-acre Student Garden in Santa Cruz, California, started as a hillside with a clay soil that would barely grow weeds. Within 3 years, using organic methods, the students created an excellent fertile soil. Note, though, that improving soil is not a quick fix. You can count on a minimum of two years, and probably more, before your soil is what you want it to be. **Principle** : _The foundation of your farm and your most important production tool is a living, healthy soil_. Here we will go into some technical detail, because good soil is the foundation of a good farm—and to attain good soil, you must understa...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The top layer is usually 6 to 7 inches in depth.\""
+        ],
+        "chunk_ids": [
+          "chunk-498630940c856e5feff77c3e963f5210"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0005",
+          "hyperedge:Connect evidence that explains How"
+        ]
+      },
+      "score": 0.08393446940372695,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-17978",
+          "edge-17979",
+          "edge-17980",
+          "edge-17981",
+          "edge-17983",
+          "edge-17993",
+          "edge-17994",
+          "edge-17996",
+          "edge-18014",
+          "edge-18016",
+          "edge-20032",
+          "edge-20033"
+        ],
+        "score_breakdown": {
+          "task_score": 0.07301021367311478,
+          "grounding_score": 0.14962640404701233
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The top layer is usually 6 to 7 inches in depth.; chunks: chunk-498630940c856e5feff77c3e963f5210; notes: global-hypergraph-retrieval | retrieved-for:th-0005 | hyperedge:Connect evidence that explains How"
+    },
+    "th-0007": {
+      "thought_id": "th-0007",
+      "role": "bridge",
+      "content": "Refine this reasoning branch: Connect evidence that explains How",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Initially, we are trying to document rapid regeneration of land,\" says Peter Traverse.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\""
+        ],
+        "chunk_ids": [
+          "chunk-6d5fedbfed862017a8523b8e6129ad35",
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+        ],
+        "evidence_ids": [
+          "ev-th-0005-1",
+          "ev-th-0005-2"
+        ],
+        "notes": []
+      },
+      "score": 0.09349216453458778,
+      "status": "active",
+      "parent_ids": [
+        "th-0005"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.0890870913863182,
+          "grounding_score": 0.049446817487478256
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Initially, we are trying to document rapid regeneration of land,\" says Peter Traverse., LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'; chunks: chunk-6d5fedbfed862017a8523b8e6129ad35, chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+    },
+    "ev-th-0006-1": {
+      "thought_id": "ev-th-0006-1",
+      "role": "evidence",
+      "content": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the wild rice grown in the United States was domesticated; most was grown in California and harvested by machines – though marketed as authentic Minnesota lake wild rice, with pictures of Native Americans harvesting the rice in canoes with paddles. LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by \"a favorite joke among most connoisseurs of real wild rice,\" which goes like this: \"How to Cook Paddy Rice: Put rice and water in a pot with a stone. When the stone is soft the rice is almost done.\" By contrast, lake-harvested wild rice has an \"amazing aroma\" and cooks in only 20 to 30 minutes. In 1988 the Ojibwe filed suit _(Wabizii v. Busch Agricultural Resources)_ against the agricultural research...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\"",
+          "\"LADUKE\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "chunk:How",
+          "entity:Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+          "grounding:existing-chunk",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.20034452519131207,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1562",
+          "edge-1563",
+          "edge-1574",
+          "edge-1575",
+          "edge-1591",
+          "edge-1592",
+          "edge-1593",
+          "edge-1594",
+          "edge-1605",
+          "edge-1606",
+          "edge-1607",
+          "edge-1616"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12515655159950256,
+          "grounding_score": 0.6007513999938965
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.', LADUKE; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | chunk:How | entity:Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?"
+    },
+    "ev-th-0006-2": {
+      "thought_id": "ev-th-0006-2",
+      "role": "evidence",
+      "content": "FSI says the market is providing fresh, affordable, locally produced fruits and vegetables to the community. #### Running to Raise Awareness Youths are also getting involved in MFSI's efforts to raise awareness about the link between agriculture, food, health, and fitness literally by running. In an annual 420-mile relay, Muscogee National Walk/Run, youth cover the Muscogee (Creek) Nation boundaries, tracing the Opothle Yahola Trail (Trail of Tears). In other events the Muscogee youth participate in Spirit Walk/Runs and have joined with First Nations United, a nonprofit advocating prosperity and unity for First Nations people through redefining identity and connecting with the past to run another 290-mile relay along the Opothle Yahola Trail. Just as runs are used throughout the United States to raise awareness about specific issues, running is a powerful way for Mvskoke youth to brin...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\"",
+          "\"LADUKE\""
+        ],
+        "chunk_ids": [
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "chunk:How",
+          "entity:Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+          "grounding:existing-chunk",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.15217724986295766,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-21331",
+          "edge-21333",
+          "edge-21336",
+          "edge-21337",
+          "edge-21338",
+          "edge-21361",
+          "edge-21365",
+          "edge-21366",
+          "edge-21367",
+          "edge-25279",
+          "edge-25280",
+          "edge-25281"
+        ],
+        "score_breakdown": {
+          "task_score": 0.11544600874185562,
+          "grounding_score": 0.31816813349723816
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by, LADUKE; chunks: chunk-362058f4451bd1ddd9fb9f152ff929ba; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | chunk:How | entity:Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?"
+    },
+    "ev-th-0006-3": {
+      "thought_id": "ev-th-0006-3",
+      "role": "evidence",
+      "content": "making a wise investment. First, consider the equipment's age and usage. A tractor's useful life is about 12,000 hours. If you use a tractor 600 hours per year, the useful life is 20 years. Wendell Bower, in his book _Modern Concepts of Farm Machinery Management_ , says that the first year of life for a new tractor is the most expensive; each year, operational costs get less until wear and tear causes repair costs to increase. At this time, Bower suggests trading tractors, because your average use-per-hour costs will increase. This normally occurs at about 10 years of age, or 6,000 to 7,000 hours of use. Next, figure the costs per hour and the costs per acre to see if this is a good investment. You should be able to figure these out quickly with a pocket calculator. It's not a bargain if it costs too much to use! Here are some tips on purchasing: * Do not get hung up on a particular b...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-3cdeba8bee9942d43ed93441dcd109d7"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.053661595204856694,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-9342",
+          "edge-9343",
+          "edge-9344",
+          "edge-9373",
+          "edge-9392",
+          "edge-9393",
+          "edge-11063",
+          "edge-11064",
+          "edge-11065",
+          "edge-11077",
+          "edge-11091",
+          "edge-11092"
+        ],
+        "score_breakdown": {
+          "task_score": 0.040862686932086945,
+          "grounding_score": 0.31321749091148376
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-3cdeba8bee9942d43ed93441dcd109d7; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | hyperedge:How"
+    },
+    "ev-th-0006-4": {
+      "thought_id": "ev-th-0006-4",
+      "role": "evidence",
+      "content": "imagination. Livestock that is sold off the farm will take with it some of the farm's nutrients, but in my example above, because I purchased the pigs, I also brought in nutrients. If you sell all your hay and do not feed it to livestock on your farm, you are depleting your soil fertility. The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure. None of these cycles is ever 100 percent effective, or at least is not practical to be so, but you should strive for 100 percent. If you do not reach this lofty goal, regroup, plan, and go forward again. As they say, \"Practice makes perfect.\" ### Recipe for Success All through this book I have talked about the principles of good farming. These principles are the same whether you live in New Mexico, Missouri, or Alaska. Principles of good far...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-17984d082222b7d2f1526b0b77119804"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.12865498949826915,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-11684",
+          "edge-11685",
+          "edge-11686",
+          "edge-11687",
+          "edge-11697",
+          "edge-11698",
+          "edge-11707",
+          "edge-11708",
+          "edge-11709",
+          "edge-11710",
+          "edge-14650",
+          "edge-14658"
+        ],
+        "score_breakdown": {
+          "task_score": 0.08099239319562912,
+          "grounding_score": 0.5884823799133301
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-17984d082222b7d2f1526b0b77119804; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | hyperedge:How"
+    },
+    "ev-th-0006-5": {
+      "thought_id": "ev-th-0006-5",
+      "role": "evidence",
+      "content": "the environmental issues that residents face. Mercury contamination in the Connecticut River, on whose banks the city was built, means that residents need to be educated about not eating any fish they take from the river. The prevalence of brownfields means that abandoned industrial lots, where people may want to start gardens, may have contaminated soils that need to be tested and replaced. Rivera is working with young people to create a video about brownfields, which will, in turn, educate their families. Also, she tells me that the city's very low air quality, a problem discovered by the EPA, coupled with chronic pulmonary health problems, means that people need to be educated about how to clean their homes without worsening asthma and other pulmonary conditions. As an example, Rivera, whose son has asthma, says she was shocked to learn that she should never use bleach in her house...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Now the graduating students are teaching other kids about gardening.\""
+        ],
+        "chunk_ids": [
+          "chunk-8dfe2a17435f059c92535241799795b4"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "hyperedge:can"
+        ]
+      },
+      "score": 0.14781424617951555,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14152",
+          "edge-15091",
+          "edge-15092",
+          "edge-15093",
+          "edge-15101",
+          "edge-15102",
+          "edge-15103",
+          "edge-15112",
+          "edge-15113",
+          "edge-15115",
+          "edge-15116",
+          "edge-16691"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12857143580913544,
+          "grounding_score": 0.14966629445552826
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Now the graduating students are teaching other kids about gardening.; chunks: chunk-8dfe2a17435f059c92535241799795b4; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | hyperedge:can"
+    },
+    "ev-th-0006-6": {
+      "thought_id": "ev-th-0006-6",
+      "role": "evidence",
+      "content": "'s A-Z Guide to Growing Organic Food, by Tanya L. K. Denckla. An invaluable resource about growing, harvesting, and storing for 765 varieties of vegetables, fruits, herbs, and nuts. 496 pages. Paper. Isbn 978-1-58017-370-4. Grass-Fed Cattle, by Julius Ruechel. The first complete manual in raising, caring for, and marketing grass-fed cattle. 384 pages. Paper. Isbn 978-1-58017-605-7. Small-Scale Livestock Farming, by Carol Ekarius. A natural, organic approach to livestock management to produce healthier animals, reduce feed and health care costs, and maximize profit. 224 pages. Paper. Isbn 978-1-58017-162-5. Starting & Running Your Own Small Farm Business, by Sarah Beth Aubrey. A business-savvy reference that covers everything from writing a business plan and applying for loans to marketing your farm-fresh goods. 176 pages. Paper. Isbn 978-1-58017-697-2. Storey's Barn Guide to Sheep. St...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The first complete manual in raising, caring for, and marketing grass-fed cattle.\""
+        ],
+        "chunk_ids": [
+          "chunk-516da735be61616733781bd48e941fba"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0006",
+          "chunk:Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.04106901630601906,
+      "status": "active",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-6674",
+          "edge-6675",
+          "edge-6676",
+          "edge-6677",
+          "edge-6699",
+          "edge-6700",
+          "edge-6701",
+          "edge-6702",
+          "edge-6719",
+          "edge-6720",
+          "edge-6721",
+          "edge-6722"
+        ],
+        "score_breakdown": {
+          "task_score": 0.03367175534367561,
+          "grounding_score": 0.21968741714954376
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The first complete manual in raising, caring for, and marketing grass-fed cattle.; chunks: chunk-516da735be61616733781bd48e941fba; notes: global-hypergraph-retrieval | retrieved-for:th-0006 | chunk:Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil? | hyperedge:How"
+    },
+    "th-0008": {
+      "thought_id": "th-0008",
+      "role": "bridge",
+      "content": "Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\"",
+          "\"LADUKE\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\"",
+          "\"LADUKE\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4",
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-1",
+          "ev-th-0006-2"
+        ],
+        "notes": []
+      },
+      "score": 0.6676183700122404,
+      "status": "expanded",
+      "parent_ids": [
+        "th-0006"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.5516772866249084,
+          "grounding_score": 0.21016106009483337
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.', LADUKE, LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by, LADUKE; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4, chunk-362058f4451bd1ddd9fb9f152ff929ba"
+    },
+    "ev-th-0008-1": {
+      "thought_id": "ev-th-0008-1",
+      "role": "evidence",
+      "content": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the wild rice grown in the United States was domesticated; most was grown in California and harvested by machines – though marketed as authentic Minnesota lake wild rice, with pictures of Native Americans harvesting the rice in canoes with paddles. LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by \"a favorite joke among most connoisseurs of real wild rice,\" which goes like this: \"How to Cook Paddy Rice: Put rice and water in a pot with a stone. When the stone is soft the rice is almost done.\" By contrast, lake-harvested wild rice has an \"amazing aroma\" and cooks in only 20 to 30 minutes. In 1988 the Ojibwe filed suit _(Wabizii v. Busch Agricultural Resources)_ against the agricultural research...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "chunk:How",
+          "grounding:existing-chunk",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.18931688073420005,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1562",
+          "edge-1563",
+          "edge-1574",
+          "edge-1575",
+          "edge-1591",
+          "edge-1592",
+          "edge-1593",
+          "edge-1594",
+          "edge-1605",
+          "edge-1606",
+          "edge-1607",
+          "edge-1616"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12515655159950256,
+          "grounding_score": 0.5126405954360962
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | chunk:How | grounding:existing-chunk"
+    },
+    "ev-th-0008-2": {
+      "thought_id": "ev-th-0008-2",
+      "role": "evidence",
+      "content": "FSI says the market is providing fresh, affordable, locally produced fruits and vegetables to the community. #### Running to Raise Awareness Youths are also getting involved in MFSI's efforts to raise awareness about the link between agriculture, food, health, and fitness literally by running. In an annual 420-mile relay, Muscogee National Walk/Run, youth cover the Muscogee (Creek) Nation boundaries, tracing the Opothle Yahola Trail (Trail of Tears). In other events the Muscogee youth participate in Spirit Walk/Runs and have joined with First Nations United, a nonprofit advocating prosperity and unity for First Nations people through redefining identity and connecting with the past to run another 290-mile relay along the Opothle Yahola Trail. Just as runs are used throughout the United States to raise awareness about specific issues, running is a powerful way for Mvskoke youth to brin...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\""
+        ],
+        "chunk_ids": [
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "chunk:How",
+          "grounding:existing-chunk",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.12353566391899856,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-21331",
+          "edge-21333",
+          "edge-21336",
+          "edge-21337",
+          "edge-21338",
+          "edge-21361",
+          "edge-21365",
+          "edge-21366",
+          "edge-21367",
+          "edge-25279",
+          "edge-25280",
+          "edge-25281"
+        ],
+        "score_breakdown": {
+          "task_score": 0.11544600874185562,
+          "grounding_score": 0.07007306069135666
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by; chunks: chunk-362058f4451bd1ddd9fb9f152ff929ba; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | chunk:How | grounding:existing-chunk"
+    },
+    "ev-th-0008-3": {
+      "thought_id": "ev-th-0008-3",
+      "role": "evidence",
+      "content": "making a wise investment. First, consider the equipment's age and usage. A tractor's useful life is about 12,000 hours. If you use a tractor 600 hours per year, the useful life is 20 years. Wendell Bower, in his book _Modern Concepts of Farm Machinery Management_ , says that the first year of life for a new tractor is the most expensive; each year, operational costs get less until wear and tear causes repair costs to increase. At this time, Bower suggests trading tractors, because your average use-per-hour costs will increase. This normally occurs at about 10 years of age, or 6,000 to 7,000 hours of use. Next, figure the costs per hour and the costs per acre to see if this is a good investment. You should be able to figure these out quickly with a pocket calculator. It's not a bargain if it costs too much to use! Here are some tips on purchasing: * Do not get hung up on a particular b...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-3cdeba8bee9942d43ed93441dcd109d7"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.053661595204856694,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-9342",
+          "edge-9343",
+          "edge-9344",
+          "edge-9373",
+          "edge-9392",
+          "edge-9393",
+          "edge-11063",
+          "edge-11064",
+          "edge-11065",
+          "edge-11077",
+          "edge-11091",
+          "edge-11092"
+        ],
+        "score_breakdown": {
+          "task_score": 0.040862686932086945,
+          "grounding_score": 0.31321749091148376
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-3cdeba8bee9942d43ed93441dcd109d7; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | hyperedge:How"
+    },
+    "ev-th-0008-4": {
+      "thought_id": "ev-th-0008-4",
+      "role": "evidence",
+      "content": "imagination. Livestock that is sold off the farm will take with it some of the farm's nutrients, but in my example above, because I purchased the pigs, I also brought in nutrients. If you sell all your hay and do not feed it to livestock on your farm, you are depleting your soil fertility. The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure. None of these cycles is ever 100 percent effective, or at least is not practical to be so, but you should strive for 100 percent. If you do not reach this lofty goal, regroup, plan, and go forward again. As they say, \"Practice makes perfect.\" ### Recipe for Success All through this book I have talked about the principles of good farming. These principles are the same whether you live in New Mexico, Missouri, or Alaska. Principles of good far...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-17984d082222b7d2f1526b0b77119804"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.12865498949826915,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-11684",
+          "edge-11685",
+          "edge-11686",
+          "edge-11687",
+          "edge-11697",
+          "edge-11698",
+          "edge-11707",
+          "edge-11708",
+          "edge-11709",
+          "edge-11710",
+          "edge-14650",
+          "edge-14658"
+        ],
+        "score_breakdown": {
+          "task_score": 0.08099239319562912,
+          "grounding_score": 0.5884823799133301
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-17984d082222b7d2f1526b0b77119804; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | hyperedge:How"
+    },
+    "ev-th-0008-5": {
+      "thought_id": "ev-th-0008-5",
+      "role": "evidence",
+      "content": "the environmental issues that residents face. Mercury contamination in the Connecticut River, on whose banks the city was built, means that residents need to be educated about not eating any fish they take from the river. The prevalence of brownfields means that abandoned industrial lots, where people may want to start gardens, may have contaminated soils that need to be tested and replaced. Rivera is working with young people to create a video about brownfields, which will, in turn, educate their families. Also, she tells me that the city's very low air quality, a problem discovered by the EPA, coupled with chronic pulmonary health problems, means that people need to be educated about how to clean their homes without worsening asthma and other pulmonary conditions. As an example, Rivera, whose son has asthma, says she was shocked to learn that she should never use bleach in her house...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Now the graduating students are teaching other kids about gardening.\""
+        ],
+        "chunk_ids": [
+          "chunk-8dfe2a17435f059c92535241799795b4"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "hyperedge:can"
+        ]
+      },
+      "score": 0.14781424617951555,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14152",
+          "edge-15091",
+          "edge-15092",
+          "edge-15093",
+          "edge-15101",
+          "edge-15102",
+          "edge-15103",
+          "edge-15112",
+          "edge-15113",
+          "edge-15115",
+          "edge-15116",
+          "edge-16691"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12857143580913544,
+          "grounding_score": 0.14966629445552826
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Now the graduating students are teaching other kids about gardening.; chunks: chunk-8dfe2a17435f059c92535241799795b4; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | hyperedge:can"
+    },
+    "ev-th-0008-6": {
+      "thought_id": "ev-th-0008-6",
+      "role": "evidence",
+      "content": "'s A-Z Guide to Growing Organic Food, by Tanya L. K. Denckla. An invaluable resource about growing, harvesting, and storing for 765 varieties of vegetables, fruits, herbs, and nuts. 496 pages. Paper. Isbn 978-1-58017-370-4. Grass-Fed Cattle, by Julius Ruechel. The first complete manual in raising, caring for, and marketing grass-fed cattle. 384 pages. Paper. Isbn 978-1-58017-605-7. Small-Scale Livestock Farming, by Carol Ekarius. A natural, organic approach to livestock management to produce healthier animals, reduce feed and health care costs, and maximize profit. 224 pages. Paper. Isbn 978-1-58017-162-5. Starting & Running Your Own Small Farm Business, by Sarah Beth Aubrey. A business-savvy reference that covers everything from writing a business plan and applying for loans to marketing your farm-fresh goods. 176 pages. Paper. Isbn 978-1-58017-697-2. Storey's Barn Guide to Sheep. St...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The first complete manual in raising, caring for, and marketing grass-fed cattle.\""
+        ],
+        "chunk_ids": [
+          "chunk-516da735be61616733781bd48e941fba"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0008",
+          "chunk:Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.040846188401148065,
+      "status": "active",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-6674",
+          "edge-6675",
+          "edge-6676",
+          "edge-6677",
+          "edge-6699",
+          "edge-6700",
+          "edge-6701",
+          "edge-6702",
+          "edge-6719",
+          "edge-6720",
+          "edge-6721",
+          "edge-6722"
+        ],
+        "score_breakdown": {
+          "task_score": 0.03367175534367561,
+          "grounding_score": 0.21306976675987244
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The first complete manual in raising, caring for, and marketing grass-fed cattle.; chunks: chunk-516da735be61616733781bd48e941fba; notes: global-hypergraph-retrieval | retrieved-for:th-0008 | chunk:Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil? | hyperedge:How"
+    },
+    "th-0009": {
+      "thought_id": "th-0009",
+      "role": "bridge",
+      "content": "Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4",
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0008-1",
+          "ev-th-0008-2"
+        ],
+        "notes": []
+      },
+      "score": 0.5415450597927483,
+      "status": "expanded",
+      "parent_ids": [
+        "th-0008"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.4605662524700165,
+          "grounding_score": 0.17582444846630096
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.', LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4, chunk-362058f4451bd1ddd9fb9f152ff929ba"
+    },
+    "ev-th-0009-1": {
+      "thought_id": "ev-th-0009-1",
+      "role": "evidence",
+      "content": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the wild rice grown in the United States was domesticated; most was grown in California and harvested by machines – though marketed as authentic Minnesota lake wild rice, with pictures of Native Americans harvesting the rice in canoes with paddles. LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by \"a favorite joke among most connoisseurs of real wild rice,\" which goes like this: \"How to Cook Paddy Rice: Put rice and water in a pot with a stone. When the stone is soft the rice is almost done.\" By contrast, lake-harvested wild rice has an \"amazing aroma\" and cooks in only 20 to 30 minutes. In 1988 the Ojibwe filed suit _(Wabizii v. Busch Agricultural Resources)_ against the agricultural research...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "chunk:How",
+          "grounding:existing-chunk",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.18931688073420005,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1562",
+          "edge-1563",
+          "edge-1574",
+          "edge-1575",
+          "edge-1591",
+          "edge-1592",
+          "edge-1593",
+          "edge-1594",
+          "edge-1605",
+          "edge-1606",
+          "edge-1607",
+          "edge-1616"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12515655159950256,
+          "grounding_score": 0.5126405954360962
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | chunk:How | grounding:existing-chunk"
+    },
+    "ev-th-0009-2": {
+      "thought_id": "ev-th-0009-2",
+      "role": "evidence",
+      "content": "FSI says the market is providing fresh, affordable, locally produced fruits and vegetables to the community. #### Running to Raise Awareness Youths are also getting involved in MFSI's efforts to raise awareness about the link between agriculture, food, health, and fitness literally by running. In an annual 420-mile relay, Muscogee National Walk/Run, youth cover the Muscogee (Creek) Nation boundaries, tracing the Opothle Yahola Trail (Trail of Tears). In other events the Muscogee youth participate in Spirit Walk/Runs and have joined with First Nations United, a nonprofit advocating prosperity and unity for First Nations people through redefining identity and connecting with the past to run another 290-mile relay along the Opothle Yahola Trail. Just as runs are used throughout the United States to raise awareness about specific issues, running is a powerful way for Mvskoke youth to brin...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\""
+        ],
+        "chunk_ids": [
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "chunk:How",
+          "grounding:existing-chunk",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.12353566477913835,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-21331",
+          "edge-21333",
+          "edge-21336",
+          "edge-21337",
+          "edge-21338",
+          "edge-21361",
+          "edge-21365",
+          "edge-21366",
+          "edge-21367",
+          "edge-25279",
+          "edge-25280",
+          "edge-25281"
+        ],
+        "score_breakdown": {
+          "task_score": 0.11544600874185562,
+          "grounding_score": 0.07007306814193726
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by; chunks: chunk-362058f4451bd1ddd9fb9f152ff929ba; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | chunk:How | grounding:existing-chunk"
+    },
+    "ev-th-0009-3": {
+      "thought_id": "ev-th-0009-3",
+      "role": "evidence",
+      "content": "making a wise investment. First, consider the equipment's age and usage. A tractor's useful life is about 12,000 hours. If you use a tractor 600 hours per year, the useful life is 20 years. Wendell Bower, in his book _Modern Concepts of Farm Machinery Management_ , says that the first year of life for a new tractor is the most expensive; each year, operational costs get less until wear and tear causes repair costs to increase. At this time, Bower suggests trading tractors, because your average use-per-hour costs will increase. This normally occurs at about 10 years of age, or 6,000 to 7,000 hours of use. Next, figure the costs per hour and the costs per acre to see if this is a good investment. You should be able to figure these out quickly with a pocket calculator. It's not a bargain if it costs too much to use! Here are some tips on purchasing: * Do not get hung up on a particular b...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-3cdeba8bee9942d43ed93441dcd109d7"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.053661595204856694,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-9342",
+          "edge-9343",
+          "edge-9344",
+          "edge-9373",
+          "edge-9392",
+          "edge-9393",
+          "edge-11063",
+          "edge-11064",
+          "edge-11065",
+          "edge-11077",
+          "edge-11091",
+          "edge-11092"
+        ],
+        "score_breakdown": {
+          "task_score": 0.040862686932086945,
+          "grounding_score": 0.31321749091148376
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-3cdeba8bee9942d43ed93441dcd109d7; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | hyperedge:How"
+    },
+    "ev-th-0009-4": {
+      "thought_id": "ev-th-0009-4",
+      "role": "evidence",
+      "content": "imagination. Livestock that is sold off the farm will take with it some of the farm's nutrients, but in my example above, because I purchased the pigs, I also brought in nutrients. If you sell all your hay and do not feed it to livestock on your farm, you are depleting your soil fertility. The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure. None of these cycles is ever 100 percent effective, or at least is not practical to be so, but you should strive for 100 percent. If you do not reach this lofty goal, regroup, plan, and go forward again. As they say, \"Practice makes perfect.\" ### Recipe for Success All through this book I have talked about the principles of good farming. These principles are the same whether you live in New Mexico, Missouri, or Alaska. Principles of good far...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-17984d082222b7d2f1526b0b77119804"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.12865498949826915,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-11684",
+          "edge-11685",
+          "edge-11686",
+          "edge-11687",
+          "edge-11697",
+          "edge-11698",
+          "edge-11707",
+          "edge-11708",
+          "edge-11709",
+          "edge-11710",
+          "edge-14650",
+          "edge-14658"
+        ],
+        "score_breakdown": {
+          "task_score": 0.08099239319562912,
+          "grounding_score": 0.5884823799133301
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-17984d082222b7d2f1526b0b77119804; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | hyperedge:How"
+    },
+    "ev-th-0009-5": {
+      "thought_id": "ev-th-0009-5",
+      "role": "evidence",
+      "content": "the environmental issues that residents face. Mercury contamination in the Connecticut River, on whose banks the city was built, means that residents need to be educated about not eating any fish they take from the river. The prevalence of brownfields means that abandoned industrial lots, where people may want to start gardens, may have contaminated soils that need to be tested and replaced. Rivera is working with young people to create a video about brownfields, which will, in turn, educate their families. Also, she tells me that the city's very low air quality, a problem discovered by the EPA, coupled with chronic pulmonary health problems, means that people need to be educated about how to clean their homes without worsening asthma and other pulmonary conditions. As an example, Rivera, whose son has asthma, says she was shocked to learn that she should never use bleach in her house...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Now the graduating students are teaching other kids about gardening.\""
+        ],
+        "chunk_ids": [
+          "chunk-8dfe2a17435f059c92535241799795b4"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "hyperedge:can"
+        ]
+      },
+      "score": 0.14781424617951555,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14152",
+          "edge-15091",
+          "edge-15092",
+          "edge-15093",
+          "edge-15101",
+          "edge-15102",
+          "edge-15103",
+          "edge-15112",
+          "edge-15113",
+          "edge-15115",
+          "edge-15116",
+          "edge-16691"
+        ],
+        "score_breakdown": {
+          "task_score": 0.12857143580913544,
+          "grounding_score": 0.14966629445552826
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Now the graduating students are teaching other kids about gardening.; chunks: chunk-8dfe2a17435f059c92535241799795b4; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | hyperedge:can"
+    },
+    "ev-th-0009-6": {
+      "thought_id": "ev-th-0009-6",
+      "role": "evidence",
+      "content": "'s A-Z Guide to Growing Organic Food, by Tanya L. K. Denckla. An invaluable resource about growing, harvesting, and storing for 765 varieties of vegetables, fruits, herbs, and nuts. 496 pages. Paper. Isbn 978-1-58017-370-4. Grass-Fed Cattle, by Julius Ruechel. The first complete manual in raising, caring for, and marketing grass-fed cattle. 384 pages. Paper. Isbn 978-1-58017-605-7. Small-Scale Livestock Farming, by Carol Ekarius. A natural, organic approach to livestock management to produce healthier animals, reduce feed and health care costs, and maximize profit. 224 pages. Paper. Isbn 978-1-58017-162-5. Starting & Running Your Own Small Farm Business, by Sarah Beth Aubrey. A business-savvy reference that covers everything from writing a business plan and applying for loans to marketing your farm-fresh goods. 176 pages. Paper. Isbn 978-1-58017-697-2. Storey's Barn Guide to Sheep. St...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The first complete manual in raising, caring for, and marketing grass-fed cattle.\""
+        ],
+        "chunk_ids": [
+          "chunk-516da735be61616733781bd48e941fba"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0009",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.041427745234242364,
+      "status": "active",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-6674",
+          "edge-6675",
+          "edge-6676",
+          "edge-6677",
+          "edge-6699",
+          "edge-6700",
+          "edge-6701",
+          "edge-6702",
+          "edge-6719",
+          "edge-6720",
+          "edge-6721",
+          "edge-6722"
+        ],
+        "score_breakdown": {
+          "task_score": 0.03367175534367561,
+          "grounding_score": 0.2303411215543747
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The first complete manual in raising, caring for, and marketing grass-fed cattle.; chunks: chunk-516da735be61616733781bd48e941fba; notes: global-hypergraph-retrieval | retrieved-for:th-0009 | hyperedge:How"
+    },
+    "th-0010": {
+      "thought_id": "th-0010",
+      "role": "bridge",
+      "content": "Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4",
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0009-1",
+          "ev-th-0009-2"
+        ],
+        "notes": []
+      },
+      "score": 0.44278002069098576,
+      "status": "expanded",
+      "parent_ids": [
+        "th-0009"
+      ],
+      "metadata": {
+        "score_breakdown": {
+          "task_score": 0.38592255115509033,
+          "grounding_score": 0.1473287045955658
+        }
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.', LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4, chunk-362058f4451bd1ddd9fb9f152ff929ba"
+    },
+    "ev-th-0010-1": {
+      "thought_id": "ev-th-0010-1",
+      "role": "evidence",
+      "content": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the wild rice grown in the United States was domesticated; most was grown in California and harvested by machines – though marketed as authentic Minnesota lake wild rice, with pictures of Native Americans harvesting the rice in canoes with paddles. LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by \"a favorite joke among most connoisseurs of real wild rice,\" which goes like this: \"How to Cook Paddy Rice: Put rice and water in a pot with a stone. When the stone is soft the rice is almost done.\" By contrast, lake-harvested wild rice has an \"amazing aroma\" and cooks in only 20 to 30 minutes. In 1988 the Ojibwe filed suit _(Wabizii v. Busch Agricultural Resources)_ against the agricultural research...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+        ],
+        "evidence_ids": [
+          "ev-th-0010-1"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0010",
+          "chunk:How",
+          "grounding:existing-chunk",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.18605882853269579,
+      "status": "active",
+      "parent_ids": [
+        "th-0010"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-1562",
+          "edge-1563",
+          "edge-1574",
+          "edge-1575",
+          "edge-1591",
+          "edge-1592",
+          "edge-1593",
+          "edge-1594",
+          "edge-1605",
+          "edge-1606",
+          "edge-1607",
+          "edge-1616"
+        ]
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4; notes: global-hypergraph-retrieval | retrieved-for:th-0010 | chunk:How | grounding:existing-chunk"
+    },
+    "ev-th-0010-2": {
+      "thought_id": "ev-th-0010-2",
+      "role": "evidence",
+      "content": "FSI says the market is providing fresh, affordable, locally produced fruits and vegetables to the community. #### Running to Raise Awareness Youths are also getting involved in MFSI's efforts to raise awareness about the link between agriculture, food, health, and fitness literally by running. In an annual 420-mile relay, Muscogee National Walk/Run, youth cover the Muscogee (Creek) Nation boundaries, tracing the Opothle Yahola Trail (Trail of Tears). In other events the Muscogee youth participate in Spirit Walk/Runs and have joined with First Nations United, a nonprofit advocating prosperity and unity for First Nations people through redefining identity and connecting with the past to run another 290-mile relay along the Opothle Yahola Trail. Just as runs are used throughout the United States to raise awareness about specific issues, running is a powerful way for Mvskoke youth to brin...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\""
+        ],
+        "chunk_ids": [
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0010-2"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0010",
+          "chunk:How",
+          "grounding:existing-chunk",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.18207998007535936,
+      "status": "active",
+      "parent_ids": [
+        "th-0010"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-21331",
+          "edge-21333",
+          "edge-21336",
+          "edge-21337",
+          "edge-21338",
+          "edge-21361",
+          "edge-21365",
+          "edge-21366",
+          "edge-21367",
+          "edge-25279",
+          "edge-25280",
+          "edge-25281"
+        ]
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by; chunks: chunk-362058f4451bd1ddd9fb9f152ff929ba; notes: global-hypergraph-retrieval | retrieved-for:th-0010 | chunk:How | grounding:existing-chunk"
+    },
+    "ev-th-0010-3": {
+      "thought_id": "ev-th-0010-3",
+      "role": "evidence",
+      "content": "making a wise investment. First, consider the equipment's age and usage. A tractor's useful life is about 12,000 hours. If you use a tractor 600 hours per year, the useful life is 20 years. Wendell Bower, in his book _Modern Concepts of Farm Machinery Management_ , says that the first year of life for a new tractor is the most expensive; each year, operational costs get less until wear and tear causes repair costs to increase. At this time, Bower suggests trading tractors, because your average use-per-hour costs will increase. This normally occurs at about 10 years of age, or 6,000 to 7,000 hours of use. Next, figure the costs per hour and the costs per acre to see if this is a good investment. You should be able to figure these out quickly with a pocket calculator. It's not a bargain if it costs too much to use! Here are some tips on purchasing: * Do not get hung up on a particular b...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-3cdeba8bee9942d43ed93441dcd109d7"
+        ],
+        "evidence_ids": [
+          "ev-th-0010-3"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0010",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.16760614693164827,
+      "status": "active",
+      "parent_ids": [
+        "th-0010"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-9342",
+          "edge-9343",
+          "edge-9344",
+          "edge-9373",
+          "edge-9392",
+          "edge-9393",
+          "edge-11063",
+          "edge-11064",
+          "edge-11065",
+          "edge-11077",
+          "edge-11091",
+          "edge-11092"
+        ]
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-3cdeba8bee9942d43ed93441dcd109d7; notes: global-hypergraph-retrieval | retrieved-for:th-0010 | hyperedge:How"
+    },
+    "ev-th-0010-4": {
+      "thought_id": "ev-th-0010-4",
+      "role": "evidence",
+      "content": "imagination. Livestock that is sold off the farm will take with it some of the farm's nutrients, but in my example above, because I purchased the pigs, I also brought in nutrients. If you sell all your hay and do not feed it to livestock on your farm, you are depleting your soil fertility. The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure. None of these cycles is ever 100 percent effective, or at least is not practical to be so, but you should strive for 100 percent. If you do not reach this lofty goal, regroup, plan, and go forward again. As they say, \"Practice makes perfect.\" ### Recipe for Success All through this book I have talked about the principles of good farming. These principles are the same whether you live in New Mexico, Missouri, or Alaska. Principles of good far...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.\""
+        ],
+        "chunk_ids": [
+          "chunk-17984d082222b7d2f1526b0b77119804"
+        ],
+        "evidence_ids": [
+          "ev-th-0010-4"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0010",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.16760614693164827,
+      "status": "active",
+      "parent_ids": [
+        "th-0010"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-11684",
+          "edge-11685",
+          "edge-11686",
+          "edge-11687",
+          "edge-11697",
+          "edge-11698",
+          "edge-11707",
+          "edge-11708",
+          "edge-11709",
+          "edge-11710",
+          "edge-14650",
+          "edge-14658"
+        ]
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The best program is to bale your hay and feed it back to sheep and cattle on your hay field and let these animals recycle their nutrients in the form of manure.; chunks: chunk-17984d082222b7d2f1526b0b77119804; notes: global-hypergraph-retrieval | retrieved-for:th-0010 | hyperedge:How"
+    },
+    "ev-th-0010-5": {
+      "thought_id": "ev-th-0010-5",
+      "role": "evidence",
+      "content": "the environmental issues that residents face. Mercury contamination in the Connecticut River, on whose banks the city was built, means that residents need to be educated about not eating any fish they take from the river. The prevalence of brownfields means that abandoned industrial lots, where people may want to start gardens, may have contaminated soils that need to be tested and replaced. Rivera is working with young people to create a video about brownfields, which will, in turn, educate their families. Also, she tells me that the city's very low air quality, a problem discovered by the EPA, coupled with chronic pulmonary health problems, means that people need to be educated about how to clean their homes without worsening asthma and other pulmonary conditions. As an example, Rivera, whose son has asthma, says she was shocked to learn that she should never use bleach in her house...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Now the graduating students are teaching other kids about gardening.\""
+        ],
+        "chunk_ids": [
+          "chunk-8dfe2a17435f059c92535241799795b4"
+        ],
+        "evidence_ids": [
+          "ev-th-0010-5"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0010",
+          "hyperedge:can"
+        ]
+      },
+      "score": 0.16551266789436342,
+      "status": "active",
+      "parent_ids": [
+        "th-0010"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-14152",
+          "edge-15091",
+          "edge-15092",
+          "edge-15093",
+          "edge-15101",
+          "edge-15102",
+          "edge-15103",
+          "edge-15112",
+          "edge-15113",
+          "edge-15115",
+          "edge-15116",
+          "edge-16691"
+        ]
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: Now the graduating students are teaching other kids about gardening.; chunks: chunk-8dfe2a17435f059c92535241799795b4; notes: global-hypergraph-retrieval | retrieved-for:th-0010 | hyperedge:can"
+    },
+    "ev-th-0010-6": {
+      "thought_id": "ev-th-0010-6",
+      "role": "evidence",
+      "content": "'s A-Z Guide to Growing Organic Food, by Tanya L. K. Denckla. An invaluable resource about growing, harvesting, and storing for 765 varieties of vegetables, fruits, herbs, and nuts. 496 pages. Paper. Isbn 978-1-58017-370-4. Grass-Fed Cattle, by Julius Ruechel. The first complete manual in raising, caring for, and marketing grass-fed cattle. 384 pages. Paper. Isbn 978-1-58017-605-7. Small-Scale Livestock Farming, by Carol Ekarius. A natural, organic approach to livestock management to produce healthier animals, reduce feed and health care costs, and maximize profit. 224 pages. Paper. Isbn 978-1-58017-162-5. Starting & Running Your Own Small Farm Business, by Sarah Beth Aubrey. A business-savvy reference that covers everything from writing a business plan and applying for loans to marketing your farm-fresh goods. 176 pages. Paper. Isbn 978-1-58017-697-2. Storey's Barn Guide to Sheep. St...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"The first complete manual in raising, caring for, and marketing grass-fed cattle.\""
+        ],
+        "chunk_ids": [
+          "chunk-516da735be61616733781bd48e941fba"
+        ],
+        "evidence_ids": [
+          "ev-th-0010-6"
+        ],
+        "notes": [
+          "global-hypergraph-retrieval",
+          "retrieved-for:th-0010",
+          "hyperedge:How"
+        ]
+      },
+      "score": 0.16442262560129167,
+      "status": "active",
+      "parent_ids": [
+        "th-0010"
+      ],
+      "metadata": {
+        "source_edge_ids": [
+          "edge-6674",
+          "edge-6675",
+          "edge-6676",
+          "edge-6677",
+          "edge-6699",
+          "edge-6700",
+          "edge-6701",
+          "edge-6702",
+          "edge-6719",
+          "edge-6720",
+          "edge-6721",
+          "edge-6722"
+        ]
+      },
+      "grounding_text": "anchors: How, can, urban; nodes: The first complete manual in raising, caring for, and marketing grass-fed cattle.; chunks: chunk-516da735be61616733781bd48e941fba; notes: global-hypergraph-retrieval | retrieved-for:th-0010 | hyperedge:How"
+    },
+    "th-0011": {
+      "thought_id": "th-0011",
+      "role": "bridge",
+      "content": "Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different.\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.'\"",
+          "<hyperedge>\"LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by\""
+        ],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4",
+          "chunk-362058f4451bd1ddd9fb9f152ff929ba"
+        ],
+        "evidence_ids": [
+          "ev-th-0010-1",
+          "ev-th-0010-2"
+        ],
+        "notes": []
+      },
+      "score": 0.0,
+      "status": "active",
+      "parent_ids": [
+        "th-0010"
+      ],
+      "metadata": {},
+      "grounding_text": "anchors: How, can, urban; nodes: LaDuke writes that lake wild rice and paddy rice are completely different., LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by 'a favorite joke among most connoisseurs of real wild rice.', LaDuke writes that lake wild rice and paddy rice are completely different, as illustrated by; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4, chunk-362058f4451bd1ddd9fb9f152ff929ba"
+    },
+    "th-0012": {
+      "thought_id": "th-0012",
+      "role": "answer",
+      "content": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the w... were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the w...",
+      "grounding": {
+        "anchor_texts": [
+          "How",
+          "can",
+          "urban"
+        ],
+        "node_ids": [],
+        "chunk_ids": [
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4",
+          "chunk-ef9c9aefa244f3e5e6f50b424cd984c4"
+        ],
+        "evidence_ids": [
+          "ev-th-0006-1",
+          "ev-th-0002-1"
+        ],
+        "notes": [
+          "Mock synthesis over 2 verified evidence thoughts."
+        ]
+      },
+      "score": 0.20034452519131207,
+      "status": "completed",
+      "parent_ids": [
+        "ev-th-0006-1",
+        "ev-th-0002-1"
+      ],
+      "metadata": {
+        "answer": "were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the w... were so successful that domesticated rice grown in paddies had outstripped the native wild rice lake harvest. By the late 1980s more than 95 percent of the w...",
+        "reasoning_summary": "Mock synthesis over 2 verified evidence thoughts.",
+        "confidence": 0.55,
+        "remaining_gaps": []
+      },
+      "grounding_text": "anchors: How, can, urban; chunks: chunk-ef9c9aefa244f3e5e6f50b424cd984c4, chunk-ef9c9aefa244f3e5e6f50b424cd984c4; notes: Mock synthesis over 2 verified evidence thoughts."
+    }
+  },
+  "history": [
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0002",
+        "operation": "expand",
+        "decision": {
+          "operation": "expand",
+          "reason": "Evidence is still weak, so the branch should be refined.",
+          "new_status": "expanded",
+          "new_thoughts": [
+            {
+              "role": "bridge",
+              "content": "Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+              "grounding_hints": {
+                "anchors": [
+                  "How",
+                  "can",
+                  "urban"
+                ]
+              }
+            }
+          ],
+          "merge_with_thought_ids": [],
+          "verification": {
+            "verdict": "insufficient",
+            "confidence": 0.2,
+            "evidence_ids": [],
+            "notes": "Need stronger evidence."
+          }
+        },
+        "new_thought_ids": [
+          "th-0006"
+        ],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0005",
+        "operation": "expand",
+        "decision": {
+          "operation": "expand",
+          "reason": "Evidence is still weak, so the branch should be refined.",
+          "new_status": "expanded",
+          "new_thoughts": [
+            {
+              "role": "bridge",
+              "content": "Refine this reasoning branch: Connect evidence that explains How",
+              "grounding_hints": {
+                "anchors": [
+                  "How",
+                  "can",
+                  "urban"
+                ]
+              }
+            }
+          ],
+          "merge_with_thought_ids": [],
+          "verification": {
+            "verdict": "insufficient",
+            "confidence": 0.2,
+            "evidence_ids": [],
+            "notes": "Need stronger evidence."
+          }
+        },
+        "new_thought_ids": [
+          "th-0007"
+        ],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0006",
+        "operation": "expand",
+        "decision": {
+          "operation": "expand",
+          "reason": "Evidence is still weak, so the branch should be refined.",
+          "new_status": "expanded",
+          "new_thoughts": [
+            {
+              "role": "bridge",
+              "content": "Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+              "grounding_hints": {
+                "anchors": [
+                  "How",
+                  "can",
+                  "urban"
+                ]
+              }
+            }
+          ],
+          "merge_with_thought_ids": [],
+          "verification": {
+            "verdict": "insufficient",
+            "confidence": 0.2,
+            "evidence_ids": [],
+            "notes": "Need stronger evidence."
+          }
+        },
+        "new_thought_ids": [
+          "th-0008"
+        ],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0008",
+        "operation": "expand",
+        "decision": {
+          "operation": "expand",
+          "reason": "Evidence is still weak, so the branch should be refined.",
+          "new_status": "expanded",
+          "new_thoughts": [
+            {
+              "role": "bridge",
+              "content": "Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+              "grounding_hints": {
+                "anchors": [
+                  "How",
+                  "can",
+                  "urban"
+                ]
+              }
+            }
+          ],
+          "merge_with_thought_ids": [],
+          "verification": {
+            "verdict": "insufficient",
+            "confidence": 0.2,
+            "evidence_ids": [],
+            "notes": "Need stronger evidence."
+          }
+        },
+        "new_thought_ids": [
+          "th-0009"
+        ],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0009",
+        "operation": "expand",
+        "decision": {
+          "operation": "expand",
+          "reason": "Evidence is still weak, so the branch should be refined.",
+          "new_status": "expanded",
+          "new_thoughts": [
+            {
+              "role": "bridge",
+              "content": "Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+              "grounding_hints": {
+                "anchors": [
+                  "How",
+                  "can",
+                  "urban"
+                ]
+              }
+            }
+          ],
+          "merge_with_thought_ids": [],
+          "verification": {
+            "verdict": "insufficient",
+            "confidence": 0.2,
+            "evidence_ids": [],
+            "notes": "Need stronger evidence."
+          }
+        },
+        "new_thought_ids": [
+          "th-0010"
+        ],
+        "verified_evidence_ids": []
+      }
+    },
+    {
+      "event": "operation_executed",
+      "payload": {
+        "thought_id": "th-0010",
+        "operation": "expand",
+        "decision": {
+          "operation": "expand",
+          "reason": "Evidence is still weak, so the branch should be refined.",
+          "new_status": "expanded",
+          "new_thoughts": [
+            {
+              "role": "bridge",
+              "content": "Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: Refine this reasoning branch: The answer should connect the anchors to the target question: How can urban farms build community support while dealing with lead contamination in soil?",
+              "grounding_hints": {
+                "anchors": [
+                  "How",
+                  "can",
+                  "urban"
+                ]
+              }
+            }
+          ],
+          "merge_with_thought_ids": [],
+          "verification": {
+            "verdict": "insufficient",
+            "confidence": 0.2,
+            "evidence_ids": [],
+            "notes": "Need stronger evidence."
+          }
+        },
+        "new_thought_ids": [
+          "th-0011"
+        ],
+        "verified_evidence_ids": []
+      }
+    }
+  ]
+}

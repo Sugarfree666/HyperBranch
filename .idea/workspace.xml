@@ -5,14 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a9a8072-ddae-4340-8354-17943ee9c24b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions/agriculture/query_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/questions/agriculture/query_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/agriculture.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/agriculture.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/cli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/llm/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/llm/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/reasoning/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/reasoning/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/reasoning/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/reasoning/operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/reasoning/scoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/reasoning/scoring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/reasoning/taskframe.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/reasoning/taskframe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts/final_answer.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/final_answer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts/task_frame.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/task_frame.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts/thought_operations.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/thought_operations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts/thought_selector.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/thought_selector.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="102" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,7 +82,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMThirdPartyAiProvidersConfigurable&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -109,6 +128,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
         <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
       </set>
     </attachedChunks>
@@ -129,6 +149,8 @@
       <workItem from="1775019614306" duration="10396000" />
       <workItem from="1775040299598" duration="905000" />
       <workItem from="1775041685006" duration="118000" />
+      <workItem from="1775042085524" duration="11347000" />
+      <workItem from="1775098687201" duration="333000" />
     </task>
     <servers />
   </component>

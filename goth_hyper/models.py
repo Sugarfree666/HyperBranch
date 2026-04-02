@@ -92,6 +92,7 @@ class TaskFrame:
     target: str
     constraints: list[str]
     bridges: list[str]
+    hypothesis_template: str
     checklist: dict[str, list[TaskChecklistItem]] = field(default_factory=dict)
 
     @classmethod
@@ -100,8 +101,11 @@ class TaskFrame:
         target = str(payload.get("target", "")).strip()
         constraints = [str(item).strip() for item in payload.get("constraints", []) if str(item).strip()]
         bridges = [str(item).strip() for item in payload.get("bridges", []) if str(item).strip()]
+        hypothesis_template = str(payload.get("hypothesis_template", "")).strip()
         if not target:
             target = question
+        if not hypothesis_template:
+            hypothesis_template = f"Answer the question '{question}' by connecting the most relevant evidence."
 
         checklist = {
             "anchors": [
@@ -124,6 +128,7 @@ class TaskFrame:
             target=target,
             constraints=constraints,
             bridges=bridges,
+            hypothesis_template=hypothesis_template,
             checklist=checklist,
         )
 
@@ -179,6 +184,7 @@ class TaskFrame:
             "target": self.target,
             "constraints": self.constraints,
             "bridges": self.bridges,
+            "hypothesis_template": self.hypothesis_template,
             "checklist": self.progress_snapshot(),
         }
 
@@ -188,21 +194,8 @@ class Grounding:
     anchor_texts: list[str] = field(default_factory=list)
     node_ids: list[str] = field(default_factory=list)
     chunk_ids: list[str] = field(default_factory=list)
-    evidence: list[EvidenceItem] = field(default_factory=list)
+    evidence_ids: list[str] = field(default_factory=list)
     notes: list[str] = field(default_factory=list)
-
-    def update_with_evidence(self, evidence_items: list[EvidenceItem]) -> None:
-        existing = {item.evidence_id for item in self.evidence}
-        for item in evidence_items:
-            if item.evidence_id in existing:
-                continue
-            self.evidence.append(item)
-            existing.add(item.evidence_id)
-            if item.chunk_id and item.chunk_id not in self.chunk_ids:
-                self.chunk_ids.append(item.chunk_id)
-            for node_id in item.source_node_ids:
-                if node_id not in self.node_ids:
-                    self.node_ids.append(node_id)
 
     def to_text(self) -> str:
         parts: list[str] = []
@@ -212,11 +205,6 @@ class Grounding:
             parts.append("nodes: " + ", ".join(normalize_label(node_id) for node_id in self.node_ids[:8]))
         if self.chunk_ids:
             parts.append("chunks: " + ", ".join(self.chunk_ids[:8]))
-        if self.evidence:
-            evidence_bits = []
-            for item in self.evidence[:3]:
-                evidence_bits.append(item.content[:220])
-            parts.append("evidence: " + " | ".join(evidence_bits))
         if self.notes:
             parts.append("notes: " + " | ".join(self.notes[:4]))
         return "; ".join(parts)
@@ -225,10 +213,8 @@ class Grounding:
 @dataclass(slots=True)
 class ThoughtState:
     thought_id: str
-    kind: str
+    role: str
     content: str
-    objective: str
-    slot_id: str | None
     grounding: Grounding = field(default_factory=Grounding)
     score: float = 0.0
     status: str = "active"
@@ -243,12 +229,10 @@ class ThoughtState:
     def brief(self) -> dict[str, Any]:
         return {
             "thought_id": self.thought_id,
-            "kind": self.kind,
+            "role": self.role,
             "status": self.status,
             "score": round(self.score, 4),
             "content": self.content,
-            "objective": self.objective,
-            "slot_id": self.slot_id,
             "grounding_text": self.grounding.to_text(),
         }
 
@@ -279,7 +263,7 @@ class ThoughtGraph:
         self.frontier_ids = [
             thought_id
             for thought_id, thought in self.thoughts.items()
-            if thought.status == "active" and thought.kind == "reasoning"
+            if thought.status == "active" and thought.role != "answer"
         ]
 
     def active_frontier(self) -> list[ThoughtState]:

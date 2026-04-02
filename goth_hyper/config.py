@@ -40,7 +40,7 @@ class ReasoningConfig:
     coarse_top_k: int = 6
     llm_top_k: int = 3
     thought_score_threshold: float = 0.12
-    min_verified_reasoning: int = 2
+    min_verified_evidence: int = 2
     evidence_score_threshold: float = 0.2
 
 
@@ -106,7 +106,7 @@ def load_config(config_path: Path, project_root: Path) -> Config:
         coarse_top_k=int(reasoning.get("coarse_top_k", 6)),
         llm_top_k=int(reasoning.get("llm_top_k", 3)),
         thought_score_threshold=float(reasoning.get("thought_score_threshold", 0.12)),
-        min_verified_reasoning=int(reasoning.get("min_verified_reasoning", reasoning.get("min_verified_evidence", 2))),
+        min_verified_evidence=int(reasoning.get("min_verified_evidence", 2)),
         evidence_score_threshold=float(reasoning.get("evidence_score_threshold", 0.2)),
     )
     llm_cfg = LLMConfig(

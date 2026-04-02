@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 import unicodedata
+from pathlib import Path
 from typing import Any
 
 import numpy as np
@@ -99,3 +101,31 @@ def ensure_list(value: Any) -> list[Any]:
 
 def pretty_json(data: Any) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False)
+
+
+def load_dotenv(path: Path, override: bool = False) -> dict[str, str]:
+    if not path.exists():
+        return {}
+
+    loaded: dict[str, str] = {}
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("export "):
+            line = line[7:].strip()
+        if "=" not in line:
+            continue
+
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip()
+        if not key:
+            continue
+        if value and value[0] == value[-1] and value[0] in {"'", '"'}:
+            value = value[1:-1]
+
+        if override or key not in os.environ:
+            os.environ[key] = value
+        loaded[key] = value
+    return loaded

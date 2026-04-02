@@ -10,4 +10,4 @@ Return JSON only:
 Requirements:
 - Select at most `top_k`.
 - Prefer thoughts that are both task-relevant and likely to gain from evidence retrieval.
-- Diversify across unresolved task slots when that improves coverage.
+- Diversify across hypothesis / bridge / constraint branches when that improves coverage.

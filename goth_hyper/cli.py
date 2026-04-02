@@ -6,6 +6,7 @@ from pathlib import Path
 from .config import load_config
 from .logging_utils import TraceStore, configure_logging, create_run_dir
 from .pipeline import GoTHyperPipeline
+from .utils import load_dotenv
 
 
 def main() -> None:
@@ -14,11 +15,13 @@ def main() -> None:
     parser.add_argument("--question-file", help="Optional file containing the question.")
     parser.add_argument("--question-index", type=int, default=0, help="When --question-file is a JSON list, select this item index.")
     parser.add_argument("--config", default="configs/agriculture.yaml", help="Path to YAML config.")
+    parser.add_argument("--env-file", default=".env", help="Optional dotenv file to load before initializing the pipeline.")
     parser.add_argument("--mock-llm", action="store_true", help="Use mock reasoning service and local hash embeddings.")
     args = parser.parse_args()
 
-    question = _resolve_question(args.question, args.question_file, args.question_index)
     project_root = Path.cwd()
+    load_dotenv(project_root / args.env_file)
+    question = _resolve_question(args.question, args.question_file, args.question_index)
     config = load_config(Path(args.config), project_root)
     if args.mock_llm:
         config.llm.use_mock = True

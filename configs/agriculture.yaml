@@ -13,11 +13,11 @@ retrieval:
   taskframe_registration_threshold: 0.33
 
 reasoning:
-  max_steps: 5
+  max_steps: 6
   coarse_top_k: 6
   llm_top_k: 3
   thought_score_threshold: 0.12
-  min_verified_reasoning: 2
+  min_verified_evidence: 2
   evidence_score_threshold: 0.20
 
 llm:
