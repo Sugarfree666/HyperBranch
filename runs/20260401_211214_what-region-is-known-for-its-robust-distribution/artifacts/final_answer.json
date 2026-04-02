@@ -1,6 +1,0 @@
-{
-  "answer": "Resolve task slot 'constraint-1' for question 'What region is known for its robust distribution network for local food and has a college operating a farm for... Resolve task slot 'target-0' for question 'What region is known for its robust distribution network for local food and has a college operating a farm for ove...",
-  "reasoning_summary": "Mock synthesis over 2 verified reasoning thoughts.",
-  "confidence": 0.55,
-  "remaining_gaps": []
-}
