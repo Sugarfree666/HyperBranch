@@ -10,6 +10,6 @@ Return JSON only:
 
 Requirements:
 - Answer the user's question directly.
-- Use the verified evidence and reasoning graph summary.
+- Use the verified reasoning thoughts and their grounding evidence.
 - If evidence is incomplete, say so in `remaining_gaps` instead of fabricating certainty.
 - Keep `confidence` between 0 and 1.

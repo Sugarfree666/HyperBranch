@@ -15,11 +15,11 @@ Return JSON only:
   "merge_with_thought_ids": ["th-0003"],
   "new_thoughts": [
     {
-      "role": "hypothesis|constraint|bridge",
       "content": "...",
-      "grounding_hints": {
-        "anchors": ["..."],
-        "notes": ["..."]
+      "objective": "...",
+      "slot_id": "constraint-0",
+      "metadata": {
+        "intent": "followup"
       }
     }
   ],
@@ -32,8 +32,9 @@ Return JSON only:
 }
 
 Requirements:
-- `expand`: create new child thoughts that move the reasoning frontier.
-- `merge`: only use when another thought materially complements this one.
-- `revise`: repair the current thought using the new evidence.
-- `verify`: use when the evidence is enough to support or refute the thought.
+- All operations act on reasoning thoughts only.
+- `expand`: create new child reasoning thoughts that move the reasoning frontier.
+- `merge`: only use when another reasoning thought materially complements this one.
+- `revise`: repair the current reasoning thought using the new evidence.
+- `verify`: use when the evidence is enough to support or refute the reasoning thought.
 - Keep outputs minimal and executable by a controller.

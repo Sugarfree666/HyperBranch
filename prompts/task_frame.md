@@ -5,8 +5,7 @@ Return JSON only with this schema:
   "anchors": ["..."],
   "target": "...",
   "constraints": ["..."],
-  "bridges": ["..."],
-  "hypothesis_template": "..."
+  "bridges": ["..."]
 }
 
 Requirements:
@@ -14,5 +13,4 @@ Requirements:
 - `target` must restate the answer objective.
 - `constraints` should be answer conditions or verification criteria, not generic filler.
 - `bridges` should name the missing intermediate connections needed for multi-hop reasoning.
-- `hypothesis_template` should be one concise hypothesis-oriented sentence that can seed a reasoning branch.
 - Stay grounded in the provided dataset summary.

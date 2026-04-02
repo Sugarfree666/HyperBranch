@@ -15,14 +15,6 @@ class ReasoningService(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def initialize_seed_thoughts(
-        self,
-        question: str,
-        task_frame: TaskFrame,
-    ) -> list[dict[str, Any]]:
-        raise NotImplementedError
-
-    @abstractmethod
     def select_thoughts(
         self,
         question: str,
@@ -49,7 +41,7 @@ class ReasoningService(ABC):
         question: str,
         task_frame: TaskFrame,
         thought_graph: ThoughtGraph,
-        verified_evidence: list[ThoughtState],
+        verified_reasoning: list[ThoughtState],
     ) -> dict[str, Any]:
         raise NotImplementedError
 
@@ -70,21 +62,7 @@ class OpenAIReasoningService(ReasoningService):
             "target": response.get("target", question),
             "constraints": response.get("constraints", []),
             "bridges": response.get("bridges", []),
-            "hypothesis_template": response.get("hypothesis_template", ""),
         }
-
-    def initialize_seed_thoughts(
-        self,
-        question: str,
-        task_frame: TaskFrame,
-    ) -> list[dict[str, Any]]:
-        payload = {
-            "question": question,
-            "task_frame": task_frame.to_dict(),
-        }
-        response = self.client.chat_json("seed_thoughts", self.prompts.get("seed_thoughts"), payload)
-        thoughts = response.get("thoughts", [])
-        return thoughts if isinstance(thoughts, list) else []
 
     def select_thoughts(
         self,
@@ -137,7 +115,7 @@ class OpenAIReasoningService(ReasoningService):
         question: str,
         task_frame: TaskFrame,
         thought_graph: ThoughtGraph,
-        verified_evidence: list[ThoughtState],
+        verified_reasoning: list[ThoughtState],
     ) -> dict[str, Any]:
         payload = {
             "question": question,
@@ -147,7 +125,7 @@ class OpenAIReasoningService(ReasoningService):
                 "frontier_ids": thought_graph.frontier_ids,
                 "thoughts": [thought.brief() for thought in thought_graph.thoughts.values()],
             },
-            "verified_evidence": [thought.brief() for thought in verified_evidence],
+            "verified_reasoning": [thought.brief() for thought in verified_reasoning],
         }
         response = self.client.chat_json("final_answer", self.prompts.get("final_answer"), payload)
         response.setdefault("answer", "")
@@ -169,38 +147,7 @@ class MockReasoningService(ReasoningService):
             "target": target,
             "constraints": constraints,
             "bridges": bridges,
-            "hypothesis_template": f"The answer should connect the anchors to the target question: {question}",
         }
-
-    def initialize_seed_thoughts(
-        self,
-        question: str,
-        task_frame: TaskFrame,
-    ) -> list[dict[str, Any]]:
-        thoughts: list[dict[str, Any]] = [
-            {
-                "role": "hypothesis",
-                "content": task_frame.hypothesis_template,
-                "grounding_hints": {"anchors": task_frame.anchors},
-            }
-        ]
-        for constraint in task_frame.constraints[:2]:
-            thoughts.append(
-                {
-                    "role": "constraint",
-                    "content": constraint,
-                    "grounding_hints": {"anchors": task_frame.anchors},
-                }
-            )
-        for bridge in task_frame.bridges[:2]:
-            thoughts.append(
-                {
-                    "role": "bridge",
-                    "content": bridge,
-                    "grounding_hints": {"anchors": task_frame.anchors},
-                }
-            )
-        return thoughts
 
     def select_thoughts(
         self,
@@ -241,9 +188,10 @@ class MockReasoningService(ReasoningService):
             "new_status": "expanded",
             "new_thoughts": [
                 {
-                    "role": "bridge",
                     "content": expansion,
-                    "grounding_hints": {"anchors": thought.grounding.anchor_texts},
+                    "objective": thought.objective,
+                    "slot_id": thought.slot_id,
+                    "metadata": {"intent": thought.metadata.get("intent", "followup")},
                 }
             ],
             "merge_with_thought_ids": [],
@@ -260,18 +208,18 @@ class MockReasoningService(ReasoningService):
         question: str,
         task_frame: TaskFrame,
         thought_graph: ThoughtGraph,
-        verified_evidence: list[ThoughtState],
+        verified_reasoning: list[ThoughtState],
     ) -> dict[str, Any]:
         snippets = [
             short_text(thought.content, 160)
-            for thought in verified_evidence[:3]
+            for thought in verified_reasoning[:3]
         ]
         if not snippets:
-            snippets = [short_text(thought.content, 160) for thought in thought_graph.thoughts.values() if thought.role != "root"][:3]
+            snippets = [short_text(thought.content, 160) for thought in thought_graph.thoughts.values() if thought.kind == "reasoning"][:3]
         answer = " ".join(snippets) if snippets else f"No grounded answer was produced for: {question}"
         return {
             "answer": answer,
-            "reasoning_summary": f"Mock synthesis over {len(verified_evidence)} verified evidence thoughts.",
-            "confidence": 0.55 if verified_evidence else 0.25,
-            "remaining_gaps": [] if verified_evidence else ["No verified evidence was available."],
+            "reasoning_summary": f"Mock synthesis over {len(verified_reasoning)} verified reasoning thoughts.",
+            "confidence": 0.55 if verified_reasoning else 0.25,
+            "remaining_gaps": [] if verified_reasoning else ["No verified reasoning thoughts were available."],
         }

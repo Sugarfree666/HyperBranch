@@ -12,4 +12,18 @@
       "Jackson, a North Carolina native, began his work with farmers in western North Carolina, whose tobacco farming heritage was ending."
     ],
     "nhops": 6
-  }]
+  },
+      {
+    "question": "What significant year marked the expansion of community gardening initiatives in Seattle and saw a surge in demand for similar programs in Portland schools?",
+    "golden_answers": [
+      "2010"
+    ],
+    "context": [
+      "In 2002 Growing Power branched out to Chicago, where it helped establish community gardens in low-income neighborhoods, model urban farms, training programs for farm interns, and educational initiatives for neighborhood kids.",
+      "If you're wondering whether community gardens would be a hot commodity in your area, consider this: In 2010 Seattle's 'P-Patch' community garden network had more than two thousand plots at more than 70 sites.",
+      "In Portland, Oregon, Abernethy Elementary School highlights how a program that begins with one passionate individual can eventually, having gained the support of administrators, school chefs, teachers, and parents, transform kids' relationship with fresh fruits and vegetables.",
+      "By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded."
+    ],
+    "nhops": 4
+  }
+  ]
