@@ -1,0 +1,1648 @@
+{
+  "question": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+  "root_id": "th-0001",
+  "frontier_ids": [],
+  "status": "done",
+  "termination_reason": "evidence_sufficient",
+  "final_answer": {
+    "answer": "COLONY",
+    "reasoning_summary": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, s... | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs. Worms | Worms for fish bait Goldfish and tropical f... | Bees favor an elevated location, preferably about 10 feet off the ground. -style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep...",
+    "confidence": 0.52,
+    "remaining_gaps": []
+  },
+  "thoughts": {
+    "th-0001": {
+      "thought_id": "th-0001",
+      "kind": "reasoning",
+      "content": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+      "objective": "location",
+      "slot_id": null,
+      "grounding": {
+        "anchor_texts": [
+          "What"
+        ],
+        "node_ids": [],
+        "chunk_ids": [],
+        "evidence": [],
+        "notes": [
+          "question-root"
+        ]
+      },
+      "score": 0.0,
+      "status": "root",
+      "parent_ids": [],
+      "metadata": {
+        "iteration": 0,
+        "branch_kind": "root"
+      },
+      "grounding_text": "anchors: What; notes: question-root"
+    },
+    "th-0002": {
+      "thought_id": "th-0002",
+      "kind": "reasoning",
+      "content": "Initial anchoring over topic entities and candidate hyperedges.",
+      "objective": "Initial E0 and H0 anchoring",
+      "slot_id": "anchor-0",
+      "grounding": {
+        "anchor_texts": [
+          "What"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "\"MARITIME LOCATION\"",
+          "\"SEAFOOD\"",
+          "\"HANDS-ON CLASSES\"",
+          "\"FISHING\"",
+          "\"NATIVE EELS\"",
+          "\"CRABS\"",
+          "\"SEAWEED\"",
+          "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+          "\"LABOR\"",
+          "\"WATER\"",
+          "\"EQUIPMENT\"",
+          "\"LAND\"",
+          "\"SKILLS\"",
+          "\"SOILS\"",
+          "\"CAPITAL\"",
+          "\"CLIMATE\"",
+          "\"LOCATION/ACCESS\""
+        ],
+        "chunk_ids": [
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-736ea6711636125c220e214941062b61"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "ev-th-0002-1",
+            "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+            "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+            "score": 0.6290476190476191,
+            "source_node_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "\"MARITIME LOCATION\"",
+              "\"SEAFOOD\"",
+              "\"HANDS-ON CLASSES\"",
+              "\"FISHING\"",
+              "\"NATIVE EELS\"",
+              "\"CRABS\"",
+              "\"SEAWEED\""
+            ],
+            "source_edge_ids": [
+              "edge-5546",
+              "edge-5547",
+              "edge-5548",
+              "edge-5549",
+              "edge-5550",
+              "edge-5551",
+              "edge-5552"
+            ],
+            "notes": [
+              "branch:initial",
+              "hyperedge:Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "matched_topics=1",
+              "entity_degree=7"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0002-2",
+            "chunk_id": "chunk-736ea6711636125c220e214941062b61",
+            "content": "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fishing | Consumers pay a daily fee or a per-pound fee for fish they catch on the farm Food fish | Catfish, trout, and other fish are raised for sale to stores, restaurants, and consumers _Exotic animals_ Elk, bison, deer, mountain sheep, donkeys, ratites (e.g., ostriches, emus, and rheas) | Raised for meat, hides, and specialty by-products such as emu oil or velvet from elk antlers (used medicinally) # What Is Added Value? Value is added when a raw commodity is changed in a way that makes it more convenient to market and gives it a longer marketing life. Examples of value-added crops include cornmeal, jams and jellies, and tomato juice. for example) and how you will market it (roadside stand, farmers' market, sale barn, value added) before you purchase the land. On the other hand, it is difficult...",
+            "score": 0.5955786914833718,
+            "source_node_ids": [
+              "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+              "\"LABOR\"",
+              "\"WATER\"",
+              "\"EQUIPMENT\"",
+              "\"LAND\"",
+              "\"SKILLS\"",
+              "\"SOILS\"",
+              "\"CAPITAL\"",
+              "\"CLIMATE\""
+            ],
+            "source_edge_ids": [
+              "edge-17851",
+              "edge-17852",
+              "edge-17853",
+              "edge-17854",
+              "edge-17855",
+              "edge-17856",
+              "edge-17857",
+              "edge-17858",
+              "edge-17859"
+            ],
+            "notes": [
+              "branch:initial",
+              "hyperedge:Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.",
+              "matched_topics=1",
+              "entity_degree=9"
+            ]
+          }
+        ],
+        "notes": [
+          "initial-anchor"
+        ]
+      },
+      "score": 0.6290476190476191,
+      "status": "grounded",
+      "parent_ids": [
+        "th-0001"
+      ],
+      "metadata": {
+        "iteration": 0,
+        "branch_kind": "initial",
+        "selected_hyperedge_ids": [
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\""
+        ],
+        "candidate_answer": "",
+        "confidence": 0.6290476190476191
+      },
+      "grounding_text": "anchors: What; nodes: Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more., MARITIME LOCATION, SEAFOOD, HANDS-ON CLASSES, FISHING, NATIVE EELS, CRABS, SEAWEED; chunks: chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-736ea6711636125c220e214941062b61; evidence: Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical  | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fish; notes: initial-anchor"
+    },
+    "th-0003": {
+      "thought_id": "th-0003",
+      "kind": "reasoning",
+      "content": "SWARMS",
+      "objective": "constraint reasoning branch",
+      "slot_id": "target-0",
+      "grounding": {
+        "anchor_texts": [
+          "What"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+          "\"SWARMS\"",
+          "\"BEES\"",
+          "\"ELEVATED LOCATION\"",
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "\"MARITIME LOCATION\"",
+          "\"SEAFOOD\"",
+          "\"HANDS-ON CLASSES\"",
+          "\"FISHING\"",
+          "\"NATIVE EELS\"",
+          "\"CRABS\"",
+          "\"SEAWEED\"",
+          "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+          "\"COLONY\"",
+          "\"COLONY LOCATION\"",
+          "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+          "\"LOCATION OF ELECTRIC FENCES\""
+        ],
+        "chunk_ids": [
+          "chunk-048ad5fead1e52a66cfd2e40b5467d7b",
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-5a4a1a431b94a27a92d263b7dde5aa5a",
+          "chunk-4d53cc613c52fd5080e556f9abb248a0"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "ev-th-0003-1",
+            "chunk_id": "chunk-048ad5fead1e52a66cfd2e40b5467d7b",
+            "content": "Bees favor an elevated location, preferably about 10 feet off the ground.\n\n-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obvious because you have limitations that restrict your choice of spots—a small yard, for instance, or perhaps specific areas of a larger property that must be avoided. Others may have no serious limitations. Let's assume that you are one of the fortunate ones who has an unrestricted choice of locations. What are some of the considerations? And if you are limited in your choice of hive location, how can you compensate for potential problems? ### **Hive Location** First, what are the bees' preferences? From studies done with swarms seeking new homes, certain preferences are known. Bees favor an elevated location, preferably about 10 feet off the ground. Humans can rarely accommodate them on this, since we must be able to get to the hive ourselves...",
+            "score": 0.49551234892436435,
+            "source_node_ids": [
+              "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+              "\"SWARMS\"",
+              "\"BEES\"",
+              "\"ELEVATED LOCATION\""
+            ],
+            "source_edge_ids": [
+              "edge-4236",
+              "edge-4237",
+              "edge-4238"
+            ],
+            "notes": [
+              "branch:constraint",
+              "hyperedge:Bees favor an elevated location, preferably about 10 feet off the ground.",
+              "matched_topics=1",
+              "entity_degree=3"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0003-2",
+            "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+            "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+            "score": 0.4033333333333333,
+            "source_node_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "\"MARITIME LOCATION\"",
+              "\"SEAFOOD\"",
+              "\"HANDS-ON CLASSES\"",
+              "\"FISHING\"",
+              "\"NATIVE EELS\"",
+              "\"CRABS\"",
+              "\"SEAWEED\""
+            ],
+            "source_edge_ids": [
+              "edge-5546",
+              "edge-5547",
+              "edge-5548",
+              "edge-5549",
+              "edge-5550",
+              "edge-5551",
+              "edge-5552"
+            ],
+            "notes": [
+              "branch:constraint",
+              "hyperedge:Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "matched_topics=1",
+              "entity_degree=7"
+            ]
+          }
+        ],
+        "notes": [
+          "branch:constraint",
+          "iteration:1",
+          "Bees favor an elevated location, preferably about 10 feet off the ground.",
+          "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more."
+        ]
+      },
+      "score": 0.49551234892436435,
+      "status": "verified",
+      "parent_ids": [
+        "th-0002",
+        "th-0001"
+      ],
+      "metadata": {
+        "iteration": 1,
+        "branch_kind": "constraint",
+        "selected_hyperedge_ids": [
+          "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+          "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\""
+        ],
+        "candidate_answer": "SWARMS",
+        "supporting_facts": [
+          "Bees favor an elevated location, preferably about 10 feet off the ground.",
+          "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more."
+        ],
+        "missing_requirements": [],
+        "confidence": 0.49551234892436435,
+        "notes": "Mock constraint branch used the highest-ranked hyperedges."
+      },
+      "grounding_text": "anchors: What; nodes: Bees favor an elevated location, preferably about 10 feet off the ground., SWARMS, BEES, ELEVATED LOCATION, Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more., MARITIME LOCATION, SEAFOOD, HANDS-ON CLASSES; chunks: chunk-048ad5fead1e52a66cfd2e40b5467d7b, chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-5a4a1a431b94a27a92d263b7dde5aa5a, chunk-4d53cc613c52fd5080e556f9abb248a0; evidence: Bees favor an elevated location, preferably about 10 feet off the ground.\n\n-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obv | Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical ; notes: branch:constraint | iteration:1 | Bees favor an elevated location, preferably about 10 feet off the ground. | Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more."
+    },
+    "th-0004": {
+      "thought_id": "th-0004",
+      "kind": "reasoning",
+      "content": "CLIMATE",
+      "objective": "relation reasoning branch",
+      "slot_id": "target-0",
+      "grounding": {
+        "anchor_texts": [
+          "What"
+        ],
+        "node_ids": [
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "\"MARITIME LOCATION\"",
+          "\"SEAFOOD\"",
+          "\"HANDS-ON CLASSES\"",
+          "\"FISHING\"",
+          "\"NATIVE EELS\"",
+          "\"CRABS\"",
+          "\"SEAWEED\"",
+          "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+          "\"LABOR\"",
+          "\"WATER\"",
+          "\"EQUIPMENT\"",
+          "\"LAND\"",
+          "\"SKILLS\"",
+          "\"SOILS\"",
+          "\"CAPITAL\"",
+          "\"CLIMATE\"",
+          "\"LOCATION/ACCESS\"",
+          "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+          "\"SWARMS\"",
+          "\"BEES\"",
+          "\"ELEVATED LOCATION\"",
+          "<hyperedge>\"Climate relates to your farm location.\"",
+          "\"FARM LOCATION\""
+        ],
+        "chunk_ids": [
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-736ea6711636125c220e214941062b61",
+          "chunk-048ad5fead1e52a66cfd2e40b5467d7b",
+          "chunk-2f3d99de4967b60e7e74b3639abc430c"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "ev-th-0004-1",
+            "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+            "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+            "score": 0.39666666666666667,
+            "source_node_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "\"MARITIME LOCATION\"",
+              "\"SEAFOOD\"",
+              "\"HANDS-ON CLASSES\"",
+              "\"FISHING\"",
+              "\"NATIVE EELS\"",
+              "\"CRABS\"",
+              "\"SEAWEED\""
+            ],
+            "source_edge_ids": [
+              "edge-5546",
+              "edge-5547",
+              "edge-5548",
+              "edge-5549",
+              "edge-5550",
+              "edge-5551",
+              "edge-5552"
+            ],
+            "notes": [
+              "branch:relation",
+              "hyperedge:Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "matched_topics=1",
+              "entity_degree=7"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0004-2",
+            "chunk_id": "chunk-736ea6711636125c220e214941062b61",
+            "content": "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fishing | Consumers pay a daily fee or a per-pound fee for fish they catch on the farm Food fish | Catfish, trout, and other fish are raised for sale to stores, restaurants, and consumers _Exotic animals_ Elk, bison, deer, mountain sheep, donkeys, ratites (e.g., ostriches, emus, and rheas) | Raised for meat, hides, and specialty by-products such as emu oil or velvet from elk antlers (used medicinally) # What Is Added Value? Value is added when a raw commodity is changed in a way that makes it more convenient to market and gives it a longer marketing life. Examples of value-added crops include cornmeal, jams and jellies, and tomato juice. for example) and how you will market it (roadside stand, farmers' market, sale barn, value added) before you purchase the land. On the other hand, it is difficult...",
+            "score": 0.35923452429473396,
+            "source_node_ids": [
+              "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+              "\"LABOR\"",
+              "\"WATER\"",
+              "\"EQUIPMENT\"",
+              "\"LAND\"",
+              "\"SKILLS\"",
+              "\"SOILS\"",
+              "\"CAPITAL\"",
+              "\"CLIMATE\""
+            ],
+            "source_edge_ids": [
+              "edge-17851",
+              "edge-17852",
+              "edge-17853",
+              "edge-17854",
+              "edge-17855",
+              "edge-17856",
+              "edge-17857",
+              "edge-17858",
+              "edge-17859"
+            ],
+            "notes": [
+              "branch:relation",
+              "hyperedge:Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.",
+              "matched_topics=1",
+              "entity_degree=9"
+            ]
+          }
+        ],
+        "notes": [
+          "branch:relation",
+          "iteration:1",
+          "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+          "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs."
+        ]
+      },
+      "score": 0.39666666666666667,
+      "status": "verified",
+      "parent_ids": [
+        "th-0002",
+        "th-0001"
+      ],
+      "metadata": {
+        "iteration": 1,
+        "branch_kind": "relation",
+        "selected_hyperedge_ids": [
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+          "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+          "<hyperedge>\"Climate relates to your farm location.\""
+        ],
+        "candidate_answer": "CLIMATE",
+        "supporting_facts": [
+          "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+          "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs."
+        ],
+        "missing_requirements": [],
+        "confidence": 0.39666666666666667,
+        "notes": "Mock relation branch used the highest-ranked hyperedges."
+      },
+      "grounding_text": "anchors: What; nodes: Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more., MARITIME LOCATION, SEAFOOD, HANDS-ON CLASSES, FISHING, NATIVE EELS, CRABS, SEAWEED; chunks: chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-736ea6711636125c220e214941062b61, chunk-048ad5fead1e52a66cfd2e40b5467d7b, chunk-2f3d99de4967b60e7e74b3639abc430c; evidence: Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical  | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fish; notes: branch:relation | iteration:1 | Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more. | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs."
+    },
+    "th-0005": {
+      "thought_id": "th-0005",
+      "kind": "reasoning",
+      "content": "COLONY",
+      "objective": "anchor reasoning branch",
+      "slot_id": "target-0",
+      "grounding": {
+        "anchor_texts": [
+          "What"
+        ],
+        "node_ids": [
+          "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+          "\"COLONY\"",
+          "\"COLONY LOCATION\"",
+          "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+          "\"LOCATION OF ELECTRIC FENCES\"",
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "\"MARITIME LOCATION\"",
+          "\"SEAFOOD\"",
+          "\"HANDS-ON CLASSES\"",
+          "\"FISHING\"",
+          "\"NATIVE EELS\"",
+          "\"CRABS\"",
+          "\"SEAWEED\"",
+          "<hyperedge>\"Climate relates to your farm location.\"",
+          "\"FARM LOCATION\"",
+          "\"CLIMATE\""
+        ],
+        "chunk_ids": [
+          "chunk-5a4a1a431b94a27a92d263b7dde5aa5a",
+          "chunk-4d53cc613c52fd5080e556f9abb248a0",
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-2f3d99de4967b60e7e74b3639abc430c"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "ev-th-0005-1",
+            "chunk_id": "chunk-5a4a1a431b94a27a92d263b7dde5aa5a",
+            "content": "These people walk near a colony of bees and find themselves being stung.\n\nis this defensive behavior that allows a colony of bees to store away large quantities of honey with minimum likelihood that it will be taken from them by predators. They are able to defend themselves, their home, and their wealth. Because they can store surplus honey, bees can survive the winter in relatively large numbers and can greet the new growing season ready to work. Under normal circumstances, that work results in more stores of honey—some for us, some for them. So stinging has a positive side. But it can create problems. A bee sting itself is an interesting event, not a particularly scary one. A single sting, although momentarily painful, normally has no persistent aftereffects. A beekeeper probably does not even experience any distinct pain. I will discuss this later, but first, let's consider bee sting reactions, especially as perceived by the general public. **B EE STINGS...",
+            "score": 0.609193772673607,
+            "source_node_ids": [
+              "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+              "\"COLONY\"",
+              "\"COLONY LOCATION\""
+            ],
+            "source_edge_ids": [
+              "edge-22410",
+              "edge-22411"
+            ],
+            "notes": [
+              "branch:anchor",
+              "hyperedge:These people walk near a colony of bees and find themselves being stung.",
+              "matched_topics=1",
+              "entity_degree=2"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0005-2",
+            "chunk_id": "chunk-4d53cc613c52fd5080e556f9abb248a0",
+            "content": "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\n\nponic greens. Then, to gain the attention and business of the influential Philadelphia horticulture clubs, the farm transformed its greenhouses into a full-fledged nursery and began cultivating flowers. Today Greensgrow offers a broad range of nursery plants that sell from early spring through late fall, including fruit trees, shrubs, vines, grasses, perennial flowers and hanging baskets, and vegetable starts. The nursery brings in as much as 30 percent of the farm's revenues over the first two to three months of the year. It also brings in customers who become interested in other aspects of the farm, such as the CSA, bolstering overall sales. **Identify and build on your farm's \"unfair advantage.\"** Every farm has its own \"unfair advantage,\" says Amy Ager of Hickory Nut Gap Farm. Every farm has some unique characteristic. In the case of Hickory Nut Gap Farm, the Agers capitalized on...",
+            "score": 0.6069911593943835,
+            "source_node_ids": [
+              "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+              "\"LOCATION OF ELECTRIC FENCES\""
+            ],
+            "source_edge_ids": [
+              "edge-16026"
+            ],
+            "notes": [
+              "branch:anchor",
+              "hyperedge:Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.",
+              "matched_topics=1",
+              "entity_degree=1"
+            ]
+          }
+        ],
+        "notes": [
+          "branch:anchor",
+          "iteration:1",
+          "These people walk near a colony of bees and find themselves being stung.",
+          "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety."
+        ]
+      },
+      "score": 0.609193772673607,
+      "status": "verified",
+      "parent_ids": [
+        "th-0002",
+        "th-0001"
+      ],
+      "metadata": {
+        "iteration": 1,
+        "branch_kind": "anchor",
+        "selected_hyperedge_ids": [
+          "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+          "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "<hyperedge>\"Climate relates to your farm location.\""
+        ],
+        "candidate_answer": "COLONY",
+        "supporting_facts": [
+          "These people walk near a colony of bees and find themselves being stung.",
+          "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety."
+        ],
+        "missing_requirements": [],
+        "confidence": 0.609193772673607,
+        "notes": "Mock anchor branch used the highest-ranked hyperedges."
+      },
+      "grounding_text": "anchors: What; nodes: These people walk near a colony of bees and find themselves being stung., COLONY, COLONY LOCATION, Educating visitors about what to avoid, such as the location of electric fences, is critical for safety., LOCATION OF ELECTRIC FENCES, Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more., MARITIME LOCATION, SEAFOOD; chunks: chunk-5a4a1a431b94a27a92d263b7dde5aa5a, chunk-4d53cc613c52fd5080e556f9abb248a0, chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-2f3d99de4967b60e7e74b3639abc430c; evidence: These people walk near a colony of bees and find themselves being stung.\n\nis this defensive behavior that allows a colony of bees to store away large quantities of honey with minimum likelihood that it will be taken from | Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\n\nponic greens. Then, to gain the attention and business of the influential Philadelphia horticulture clubs, the far; notes: branch:anchor | iteration:1 | These people walk near a colony of bees and find themselves being stung. | Educating visitors about what to avoid, such as the location of electric fences, is critical for safety."
+    },
+    "th-0006": {
+      "thought_id": "th-0006",
+      "kind": "reasoning",
+      "content": "COLONY",
+      "objective": "Merge and contrast branch answers",
+      "slot_id": "target-0",
+      "grounding": {
+        "anchor_texts": [
+          "What"
+        ],
+        "node_ids": [],
+        "chunk_ids": [
+          "chunk-048ad5fead1e52a66cfd2e40b5467d7b",
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-736ea6711636125c220e214941062b61",
+          "chunk-5a4a1a431b94a27a92d263b7dde5aa5a",
+          "chunk-4d53cc613c52fd5080e556f9abb248a0"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "ev-th-0003-1",
+            "chunk_id": "chunk-048ad5fead1e52a66cfd2e40b5467d7b",
+            "content": "Bees favor an elevated location, preferably about 10 feet off the ground.\n\n-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obvious because you have limitations that restrict your choice of spots—a small yard, for instance, or perhaps specific areas of a larger property that must be avoided. Others may have no serious limitations. Let's assume that you are one of the fortunate ones who has an unrestricted choice of locations. What are some of the considerations? And if you are limited in your choice of hive location, how can you compensate for potential problems? ### **Hive Location** First, what are the bees' preferences? From studies done with swarms seeking new homes, certain preferences are known. Bees favor an elevated location, preferably about 10 feet off the ground. Humans can rarely accommodate them on this, since we must be able to get to the hive ourselves...",
+            "score": 0.49551234892436435,
+            "source_node_ids": [
+              "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+              "\"SWARMS\"",
+              "\"BEES\"",
+              "\"ELEVATED LOCATION\""
+            ],
+            "source_edge_ids": [
+              "edge-4236",
+              "edge-4237",
+              "edge-4238"
+            ],
+            "notes": [
+              "branch:constraint",
+              "hyperedge:Bees favor an elevated location, preferably about 10 feet off the ground.",
+              "matched_topics=1",
+              "entity_degree=3"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0003-2",
+            "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+            "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+            "score": 0.4033333333333333,
+            "source_node_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "\"MARITIME LOCATION\"",
+              "\"SEAFOOD\"",
+              "\"HANDS-ON CLASSES\"",
+              "\"FISHING\"",
+              "\"NATIVE EELS\"",
+              "\"CRABS\"",
+              "\"SEAWEED\""
+            ],
+            "source_edge_ids": [
+              "edge-5546",
+              "edge-5547",
+              "edge-5548",
+              "edge-5549",
+              "edge-5550",
+              "edge-5551",
+              "edge-5552"
+            ],
+            "notes": [
+              "branch:constraint",
+              "hyperedge:Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "matched_topics=1",
+              "entity_degree=7"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0004-1",
+            "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+            "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+            "score": 0.39666666666666667,
+            "source_node_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "\"MARITIME LOCATION\"",
+              "\"SEAFOOD\"",
+              "\"HANDS-ON CLASSES\"",
+              "\"FISHING\"",
+              "\"NATIVE EELS\"",
+              "\"CRABS\"",
+              "\"SEAWEED\""
+            ],
+            "source_edge_ids": [
+              "edge-5546",
+              "edge-5547",
+              "edge-5548",
+              "edge-5549",
+              "edge-5550",
+              "edge-5551",
+              "edge-5552"
+            ],
+            "notes": [
+              "branch:relation",
+              "hyperedge:Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "matched_topics=1",
+              "entity_degree=7"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0004-2",
+            "chunk_id": "chunk-736ea6711636125c220e214941062b61",
+            "content": "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fishing | Consumers pay a daily fee or a per-pound fee for fish they catch on the farm Food fish | Catfish, trout, and other fish are raised for sale to stores, restaurants, and consumers _Exotic animals_ Elk, bison, deer, mountain sheep, donkeys, ratites (e.g., ostriches, emus, and rheas) | Raised for meat, hides, and specialty by-products such as emu oil or velvet from elk antlers (used medicinally) # What Is Added Value? Value is added when a raw commodity is changed in a way that makes it more convenient to market and gives it a longer marketing life. Examples of value-added crops include cornmeal, jams and jellies, and tomato juice. for example) and how you will market it (roadside stand, farmers' market, sale barn, value added) before you purchase the land. On the other hand, it is difficult...",
+            "score": 0.35923452429473396,
+            "source_node_ids": [
+              "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+              "\"LABOR\"",
+              "\"WATER\"",
+              "\"EQUIPMENT\"",
+              "\"LAND\"",
+              "\"SKILLS\"",
+              "\"SOILS\"",
+              "\"CAPITAL\"",
+              "\"CLIMATE\""
+            ],
+            "source_edge_ids": [
+              "edge-17851",
+              "edge-17852",
+              "edge-17853",
+              "edge-17854",
+              "edge-17855",
+              "edge-17856",
+              "edge-17857",
+              "edge-17858",
+              "edge-17859"
+            ],
+            "notes": [
+              "branch:relation",
+              "hyperedge:Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.",
+              "matched_topics=1",
+              "entity_degree=9"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0005-1",
+            "chunk_id": "chunk-5a4a1a431b94a27a92d263b7dde5aa5a",
+            "content": "These people walk near a colony of bees and find themselves being stung.\n\nis this defensive behavior that allows a colony of bees to store away large quantities of honey with minimum likelihood that it will be taken from them by predators. They are able to defend themselves, their home, and their wealth. Because they can store surplus honey, bees can survive the winter in relatively large numbers and can greet the new growing season ready to work. Under normal circumstances, that work results in more stores of honey—some for us, some for them. So stinging has a positive side. But it can create problems. A bee sting itself is an interesting event, not a particularly scary one. A single sting, although momentarily painful, normally has no persistent aftereffects. A beekeeper probably does not even experience any distinct pain. I will discuss this later, but first, let's consider bee sting reactions, especially as perceived by the general public. **B EE STINGS...",
+            "score": 0.609193772673607,
+            "source_node_ids": [
+              "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+              "\"COLONY\"",
+              "\"COLONY LOCATION\""
+            ],
+            "source_edge_ids": [
+              "edge-22410",
+              "edge-22411"
+            ],
+            "notes": [
+              "branch:anchor",
+              "hyperedge:These people walk near a colony of bees and find themselves being stung.",
+              "matched_topics=1",
+              "entity_degree=2"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0005-2",
+            "chunk_id": "chunk-4d53cc613c52fd5080e556f9abb248a0",
+            "content": "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\n\nponic greens. Then, to gain the attention and business of the influential Philadelphia horticulture clubs, the farm transformed its greenhouses into a full-fledged nursery and began cultivating flowers. Today Greensgrow offers a broad range of nursery plants that sell from early spring through late fall, including fruit trees, shrubs, vines, grasses, perennial flowers and hanging baskets, and vegetable starts. The nursery brings in as much as 30 percent of the farm's revenues over the first two to three months of the year. It also brings in customers who become interested in other aspects of the farm, such as the CSA, bolstering overall sales. **Identify and build on your farm's \"unfair advantage.\"** Every farm has its own \"unfair advantage,\" says Amy Ager of Hickory Nut Gap Farm. Every farm has some unique characteristic. In the case of Hickory Nut Gap Farm, the Agers capitalized on...",
+            "score": 0.6069911593943835,
+            "source_node_ids": [
+              "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+              "\"LOCATION OF ELECTRIC FENCES\""
+            ],
+            "source_edge_ids": [
+              "edge-16026"
+            ],
+            "notes": [
+              "branch:anchor",
+              "hyperedge:Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.",
+              "matched_topics=1",
+              "entity_degree=1"
+            ]
+          }
+        ],
+        "notes": [
+          "merge-iteration:1",
+          "anchor"
+        ]
+      },
+      "score": 1.0,
+      "status": "merged",
+      "parent_ids": [
+        "th-0003",
+        "th-0004",
+        "th-0005"
+      ],
+      "metadata": {
+        "iteration": 1,
+        "branch_kind": "merge",
+        "consensus_answer": "COLONY",
+        "preferred_branches": [
+          "anchor"
+        ],
+        "conflicts": [
+          {
+            "answer": "SWARMS",
+            "branches": [
+              "constraint"
+            ]
+          },
+          {
+            "answer": "CLIMATE",
+            "branches": [
+              "relation"
+            ]
+          }
+        ],
+        "missing_requirements": [],
+        "notes": "Mock reconciliation prefers answers supported by multiple branches."
+      },
+      "grounding_text": "anchors: What; chunks: chunk-048ad5fead1e52a66cfd2e40b5467d7b, chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-736ea6711636125c220e214941062b61, chunk-5a4a1a431b94a27a92d263b7dde5aa5a, chunk-4d53cc613c52fd5080e556f9abb248a0; evidence: Bees favor an elevated location, preferably about 10 feet off the ground.\n\n-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obv | Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical  | Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical ; notes: merge-iteration:1 | anchor"
+    },
+    "th-0007": {
+      "thought_id": "th-0007",
+      "kind": "answer",
+      "content": "COLONY",
+      "objective": "location",
+      "slot_id": "target-0",
+      "grounding": {
+        "anchor_texts": [
+          "What"
+        ],
+        "node_ids": [],
+        "chunk_ids": [
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-736ea6711636125c220e214941062b61",
+          "chunk-048ad5fead1e52a66cfd2e40b5467d7b",
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+          "chunk-736ea6711636125c220e214941062b61",
+          "chunk-5a4a1a431b94a27a92d263b7dde5aa5a",
+          "chunk-4d53cc613c52fd5080e556f9abb248a0"
+        ],
+        "evidence": [
+          {
+            "evidence_id": "ev-th-0002-1",
+            "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+            "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+            "score": 0.6290476190476191,
+            "source_node_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "\"MARITIME LOCATION\"",
+              "\"SEAFOOD\"",
+              "\"HANDS-ON CLASSES\"",
+              "\"FISHING\"",
+              "\"NATIVE EELS\"",
+              "\"CRABS\"",
+              "\"SEAWEED\""
+            ],
+            "source_edge_ids": [
+              "edge-5546",
+              "edge-5547",
+              "edge-5548",
+              "edge-5549",
+              "edge-5550",
+              "edge-5551",
+              "edge-5552"
+            ],
+            "notes": [
+              "branch:initial",
+              "hyperedge:Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "matched_topics=1",
+              "entity_degree=7"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0002-2",
+            "chunk_id": "chunk-736ea6711636125c220e214941062b61",
+            "content": "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fishing | Consumers pay a daily fee or a per-pound fee for fish they catch on the farm Food fish | Catfish, trout, and other fish are raised for sale to stores, restaurants, and consumers _Exotic animals_ Elk, bison, deer, mountain sheep, donkeys, ratites (e.g., ostriches, emus, and rheas) | Raised for meat, hides, and specialty by-products such as emu oil or velvet from elk antlers (used medicinally) # What Is Added Value? Value is added when a raw commodity is changed in a way that makes it more convenient to market and gives it a longer marketing life. Examples of value-added crops include cornmeal, jams and jellies, and tomato juice. for example) and how you will market it (roadside stand, farmers' market, sale barn, value added) before you purchase the land. On the other hand, it is difficult...",
+            "score": 0.5955786914833718,
+            "source_node_ids": [
+              "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+              "\"LABOR\"",
+              "\"WATER\"",
+              "\"EQUIPMENT\"",
+              "\"LAND\"",
+              "\"SKILLS\"",
+              "\"SOILS\"",
+              "\"CAPITAL\"",
+              "\"CLIMATE\""
+            ],
+            "source_edge_ids": [
+              "edge-17851",
+              "edge-17852",
+              "edge-17853",
+              "edge-17854",
+              "edge-17855",
+              "edge-17856",
+              "edge-17857",
+              "edge-17858",
+              "edge-17859"
+            ],
+            "notes": [
+              "branch:initial",
+              "hyperedge:Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.",
+              "matched_topics=1",
+              "entity_degree=9"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0003-1",
+            "chunk_id": "chunk-048ad5fead1e52a66cfd2e40b5467d7b",
+            "content": "Bees favor an elevated location, preferably about 10 feet off the ground.\n\n-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obvious because you have limitations that restrict your choice of spots—a small yard, for instance, or perhaps specific areas of a larger property that must be avoided. Others may have no serious limitations. Let's assume that you are one of the fortunate ones who has an unrestricted choice of locations. What are some of the considerations? And if you are limited in your choice of hive location, how can you compensate for potential problems? ### **Hive Location** First, what are the bees' preferences? From studies done with swarms seeking new homes, certain preferences are known. Bees favor an elevated location, preferably about 10 feet off the ground. Humans can rarely accommodate them on this, since we must be able to get to the hive ourselves...",
+            "score": 0.49551234892436435,
+            "source_node_ids": [
+              "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+              "\"SWARMS\"",
+              "\"BEES\"",
+              "\"ELEVATED LOCATION\""
+            ],
+            "source_edge_ids": [
+              "edge-4236",
+              "edge-4237",
+              "edge-4238"
+            ],
+            "notes": [
+              "branch:constraint",
+              "hyperedge:Bees favor an elevated location, preferably about 10 feet off the ground.",
+              "matched_topics=1",
+              "entity_degree=3"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0003-2",
+            "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+            "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+            "score": 0.4033333333333333,
+            "source_node_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "\"MARITIME LOCATION\"",
+              "\"SEAFOOD\"",
+              "\"HANDS-ON CLASSES\"",
+              "\"FISHING\"",
+              "\"NATIVE EELS\"",
+              "\"CRABS\"",
+              "\"SEAWEED\""
+            ],
+            "source_edge_ids": [
+              "edge-5546",
+              "edge-5547",
+              "edge-5548",
+              "edge-5549",
+              "edge-5550",
+              "edge-5551",
+              "edge-5552"
+            ],
+            "notes": [
+              "branch:constraint",
+              "hyperedge:Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "matched_topics=1",
+              "entity_degree=7"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0004-1",
+            "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+            "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+            "score": 0.39666666666666667,
+            "source_node_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "\"MARITIME LOCATION\"",
+              "\"SEAFOOD\"",
+              "\"HANDS-ON CLASSES\"",
+              "\"FISHING\"",
+              "\"NATIVE EELS\"",
+              "\"CRABS\"",
+              "\"SEAWEED\""
+            ],
+            "source_edge_ids": [
+              "edge-5546",
+              "edge-5547",
+              "edge-5548",
+              "edge-5549",
+              "edge-5550",
+              "edge-5551",
+              "edge-5552"
+            ],
+            "notes": [
+              "branch:relation",
+              "hyperedge:Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "matched_topics=1",
+              "entity_degree=7"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0004-2",
+            "chunk_id": "chunk-736ea6711636125c220e214941062b61",
+            "content": "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fishing | Consumers pay a daily fee or a per-pound fee for fish they catch on the farm Food fish | Catfish, trout, and other fish are raised for sale to stores, restaurants, and consumers _Exotic animals_ Elk, bison, deer, mountain sheep, donkeys, ratites (e.g., ostriches, emus, and rheas) | Raised for meat, hides, and specialty by-products such as emu oil or velvet from elk antlers (used medicinally) # What Is Added Value? Value is added when a raw commodity is changed in a way that makes it more convenient to market and gives it a longer marketing life. Examples of value-added crops include cornmeal, jams and jellies, and tomato juice. for example) and how you will market it (roadside stand, farmers' market, sale barn, value added) before you purchase the land. On the other hand, it is difficult...",
+            "score": 0.35923452429473396,
+            "source_node_ids": [
+              "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+              "\"LABOR\"",
+              "\"WATER\"",
+              "\"EQUIPMENT\"",
+              "\"LAND\"",
+              "\"SKILLS\"",
+              "\"SOILS\"",
+              "\"CAPITAL\"",
+              "\"CLIMATE\""
+            ],
+            "source_edge_ids": [
+              "edge-17851",
+              "edge-17852",
+              "edge-17853",
+              "edge-17854",
+              "edge-17855",
+              "edge-17856",
+              "edge-17857",
+              "edge-17858",
+              "edge-17859"
+            ],
+            "notes": [
+              "branch:relation",
+              "hyperedge:Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.",
+              "matched_topics=1",
+              "entity_degree=9"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0005-1",
+            "chunk_id": "chunk-5a4a1a431b94a27a92d263b7dde5aa5a",
+            "content": "These people walk near a colony of bees and find themselves being stung.\n\nis this defensive behavior that allows a colony of bees to store away large quantities of honey with minimum likelihood that it will be taken from them by predators. They are able to defend themselves, their home, and their wealth. Because they can store surplus honey, bees can survive the winter in relatively large numbers and can greet the new growing season ready to work. Under normal circumstances, that work results in more stores of honey—some for us, some for them. So stinging has a positive side. But it can create problems. A bee sting itself is an interesting event, not a particularly scary one. A single sting, although momentarily painful, normally has no persistent aftereffects. A beekeeper probably does not even experience any distinct pain. I will discuss this later, but first, let's consider bee sting reactions, especially as perceived by the general public. **B EE STINGS...",
+            "score": 0.609193772673607,
+            "source_node_ids": [
+              "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+              "\"COLONY\"",
+              "\"COLONY LOCATION\""
+            ],
+            "source_edge_ids": [
+              "edge-22410",
+              "edge-22411"
+            ],
+            "notes": [
+              "branch:anchor",
+              "hyperedge:These people walk near a colony of bees and find themselves being stung.",
+              "matched_topics=1",
+              "entity_degree=2"
+            ]
+          },
+          {
+            "evidence_id": "ev-th-0005-2",
+            "chunk_id": "chunk-4d53cc613c52fd5080e556f9abb248a0",
+            "content": "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\n\nponic greens. Then, to gain the attention and business of the influential Philadelphia horticulture clubs, the farm transformed its greenhouses into a full-fledged nursery and began cultivating flowers. Today Greensgrow offers a broad range of nursery plants that sell from early spring through late fall, including fruit trees, shrubs, vines, grasses, perennial flowers and hanging baskets, and vegetable starts. The nursery brings in as much as 30 percent of the farm's revenues over the first two to three months of the year. It also brings in customers who become interested in other aspects of the farm, such as the CSA, bolstering overall sales. **Identify and build on your farm's \"unfair advantage.\"** Every farm has its own \"unfair advantage,\" says Amy Ager of Hickory Nut Gap Farm. Every farm has some unique characteristic. In the case of Hickory Nut Gap Farm, the Agers capitalized on...",
+            "score": 0.6069911593943835,
+            "source_node_ids": [
+              "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+              "\"LOCATION OF ELECTRIC FENCES\""
+            ],
+            "source_edge_ids": [
+              "edge-16026"
+            ],
+            "notes": [
+              "branch:anchor",
+              "hyperedge:Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.",
+              "matched_topics=1",
+              "entity_degree=1"
+            ]
+          }
+        ],
+        "notes": [
+          "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, s... | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs. Worms | Worms for fish bait Goldfish and tropical f... | Bees favor an elevated location, preferably about 10 feet off the ground. -style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep..."
+        ]
+      },
+      "score": 0.52,
+      "status": "completed",
+      "parent_ids": [
+        "th-0006",
+        "th-0003",
+        "th-0004",
+        "th-0005"
+      ],
+      "metadata": {
+        "answer": "COLONY",
+        "reasoning_summary": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, s... | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs. Worms | Worms for fish bait Goldfish and tropical f... | Bees favor an elevated location, preferably about 10 feet off the ground. -style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep...",
+        "confidence": 0.52,
+        "remaining_gaps": []
+      },
+      "grounding_text": "anchors: What; chunks: chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-736ea6711636125c220e214941062b61, chunk-048ad5fead1e52a66cfd2e40b5467d7b, chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-3dbce12e45fe13ef4f6973f92e57e779, chunk-736ea6711636125c220e214941062b61, chunk-5a4a1a431b94a27a92d263b7dde5aa5a, chunk-4d53cc613c52fd5080e556f9abb248a0; evidence: Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical  | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fish | Bees favor an elevated location, preferably about 10 feet off the ground.\n\n-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obv; notes: Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, s... | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs. Worms | Worms for fish bait Goldfish and tropical f... | Bees favor an elevated location, preferably about 10 feet off the ground. -style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep..."
+    }
+  },
+  "history": [
+    {
+      "event": "iteration_completed",
+      "payload": {
+        "iteration": 1,
+        "branch_results": [
+          {
+            "branch_kind": "constraint",
+            "thought_id": "th-0003",
+            "candidate_answer": "SWARMS",
+            "confidence": 0.49551234892436435,
+            "selected_hyperedge_ids": [
+              "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+              "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\""
+            ],
+            "supporting_facts": [
+              "Bees favor an elevated location, preferably about 10 feet off the ground.",
+              "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more."
+            ],
+            "missing_requirements": [],
+            "selected_hyperedges": [
+              {
+                "hyperedge_id": "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+                "hyperedge_text": "Bees favor an elevated location, preferably about 10 feet off the ground.",
+                "score": 0.49551234892436435,
+                "branch_kind": "constraint",
+                "entity_ids": [
+                  "\"SWARMS\"",
+                  "\"BEES\"",
+                  "\"ELEVATED LOCATION\""
+                ],
+                "chunk_ids": [
+                  "chunk-048ad5fead1e52a66cfd2e40b5467d7b"
+                ],
+                "matched_topic_entities": [
+                  "\"ELEVATED LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obvious because you have limitations that restrict your choice of spots—a s..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0217,
+                  "relation": 0.0,
+                  "constraint": 0.2857,
+                  "coverage": 1.0,
+                  "connector": 0.0,
+                  "novelty": 1.0,
+                  "known_bonus": 0.0
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=3"
+                ],
+                "display_hyperedge": "Bees favor an elevated location, preferably about 10 feet off the ground.",
+                "entity_labels": [
+                  "SWARMS",
+                  "BEES",
+                  "ELEVATED LOCATION"
+                ],
+                "matched_topic_labels": [
+                  "ELEVATED LOCATION"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+                "hyperedge_text": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+                "score": 0.4033333333333333,
+                "branch_kind": "constraint",
+                "entity_ids": [
+                  "\"MARITIME LOCATION\"",
+                  "\"SEAFOOD\"",
+                  "\"HANDS-ON CLASSES\"",
+                  "\"FISHING\"",
+                  "\"NATIVE EELS\"",
+                  "\"CRABS\"",
+                  "\"SEAWEED\""
+                ],
+                "chunk_ids": [
+                  "chunk-3dbce12e45fe13ef4f6973f92e57e779"
+                ],
+                "matched_topic_entities": [
+                  "\"MARITIME LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "Some are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or pos..."
+                ],
+                "score_breakdown": {
+                  "question": 0.1667,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 1.0,
+                  "novelty": 0.0,
+                  "known_bonus": 0.05
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=7"
+                ],
+                "display_hyperedge": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+                "entity_labels": [
+                  "MARITIME LOCATION",
+                  "SEAFOOD",
+                  "HANDS-ON CLASSES",
+                  "FISHING",
+                  "NATIVE EELS",
+                  "CRABS",
+                  "SEAWEED"
+                ],
+                "matched_topic_labels": [
+                  "MARITIME LOCATION"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+                "hyperedge_text": "These people walk near a colony of bees and find themselves being stung.",
+                "score": 0.3913154125213623,
+                "branch_kind": "constraint",
+                "entity_ids": [
+                  "\"COLONY\"",
+                  "\"COLONY LOCATION\""
+                ],
+                "chunk_ids": [
+                  "chunk-5a4a1a431b94a27a92d263b7dde5aa5a"
+                ],
+                "matched_topic_entities": [
+                  "\"COLONY LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "is this defensive behavior that allows a colony of bees to store away large quantities of honey with minimum likelihood that it will be taken from them by predators. They are able to defend themselves, their home, and..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0354,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 0.0,
+                  "novelty": 1.0,
+                  "known_bonus": 0.0
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=2"
+                ],
+                "display_hyperedge": "These people walk near a colony of bees and find themselves being stung.",
+                "entity_labels": [
+                  "COLONY",
+                  "COLONY LOCATION"
+                ],
+                "matched_topic_labels": [
+                  "COLONY LOCATION"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+                "hyperedge_text": "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.",
+                "score": 0.3886045038700104,
+                "branch_kind": "constraint",
+                "entity_ids": [
+                  "\"LOCATION OF ELECTRIC FENCES\""
+                ],
+                "chunk_ids": [
+                  "chunk-4d53cc613c52fd5080e556f9abb248a0"
+                ],
+                "matched_topic_entities": [
+                  "\"LOCATION OF ELECTRIC FENCES\""
+                ],
+                "supporting_chunks": [
+                  "ponic greens. Then, to gain the attention and business of the influential Philadelphia horticulture clubs, the farm transformed its greenhouses into a full-fledged nursery and began cultivating flowers. Today Greensgr..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0269,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 0.0,
+                  "novelty": 1.0,
+                  "known_bonus": 0.0
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=1"
+                ],
+                "display_hyperedge": "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.",
+                "entity_labels": [
+                  "LOCATION OF ELECTRIC FENCES"
+                ],
+                "matched_topic_labels": [
+                  "LOCATION OF ELECTRIC FENCES"
+                ]
+              }
+            ]
+          },
+          {
+            "branch_kind": "relation",
+            "thought_id": "th-0004",
+            "candidate_answer": "CLIMATE",
+            "confidence": 0.39666666666666667,
+            "selected_hyperedge_ids": [
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+              "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+              "<hyperedge>\"Climate relates to your farm location.\""
+            ],
+            "supporting_facts": [
+              "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+              "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs."
+            ],
+            "missing_requirements": [],
+            "selected_hyperedges": [
+              {
+                "hyperedge_id": "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+                "hyperedge_text": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+                "score": 0.39666666666666667,
+                "branch_kind": "relation",
+                "entity_ids": [
+                  "\"MARITIME LOCATION\"",
+                  "\"SEAFOOD\"",
+                  "\"HANDS-ON CLASSES\"",
+                  "\"FISHING\"",
+                  "\"NATIVE EELS\"",
+                  "\"CRABS\"",
+                  "\"SEAWEED\""
+                ],
+                "chunk_ids": [
+                  "chunk-3dbce12e45fe13ef4f6973f92e57e779"
+                ],
+                "matched_topic_entities": [
+                  "\"MARITIME LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "Some are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or pos..."
+                ],
+                "score_breakdown": {
+                  "question": 0.1667,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 1.0,
+                  "novelty": 0.0,
+                  "known_bonus": 0.05
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=7"
+                ],
+                "display_hyperedge": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+                "entity_labels": [
+                  "MARITIME LOCATION",
+                  "SEAFOOD",
+                  "HANDS-ON CLASSES",
+                  "FISHING",
+                  "NATIVE EELS",
+                  "CRABS",
+                  "SEAWEED"
+                ],
+                "matched_topic_labels": [
+                  "MARITIME LOCATION"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+                "hyperedge_text": "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.",
+                "score": 0.35923452429473396,
+                "branch_kind": "relation",
+                "entity_ids": [
+                  "\"LABOR\"",
+                  "\"WATER\"",
+                  "\"EQUIPMENT\"",
+                  "\"LAND\"",
+                  "\"SKILLS\"",
+                  "\"SOILS\"",
+                  "\"CAPITAL\"",
+                  "\"CLIMATE\"",
+                  "\"LOCATION/ACCESS\""
+                ],
+                "chunk_ids": [
+                  "chunk-736ea6711636125c220e214941062b61"
+                ],
+                "matched_topic_entities": [
+                  "\"LOCATION/ACCESS\""
+                ],
+                "supporting_chunks": [
+                  "Worms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fishing | Consumers pay a daily fee or a per-pound fee for fish they catch on the farm Food fish | Catfish, trout, and other fis..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0195,
+                  "relation": 0.009,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 1.0,
+                  "novelty": 0.0,
+                  "known_bonus": 0.05
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=9"
+                ],
+                "display_hyperedge": "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.",
+                "entity_labels": [
+                  "LABOR",
+                  "WATER",
+                  "EQUIPMENT",
+                  "LAND",
+                  "SKILLS",
+                  "SOILS",
+                  "CAPITAL",
+                  "CLIMATE",
+                  "LOCATION/ACCESS"
+                ],
+                "matched_topic_labels": [
+                  "LOCATION/ACCESS"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+                "hyperedge_text": "Bees favor an elevated location, preferably about 10 feet off the ground.",
+                "score": 0.3560733053088188,
+                "branch_kind": "relation",
+                "entity_ids": [
+                  "\"SWARMS\"",
+                  "\"BEES\"",
+                  "\"ELEVATED LOCATION\""
+                ],
+                "chunk_ids": [
+                  "chunk-048ad5fead1e52a66cfd2e40b5467d7b"
+                ],
+                "matched_topic_entities": [
+                  "\"ELEVATED LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obvious because you have limitations that restrict your choice of spots—a s..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0217,
+                  "relation": 0.0,
+                  "constraint": 0.2857,
+                  "coverage": 1.0,
+                  "connector": 1.0,
+                  "novelty": 0.0,
+                  "known_bonus": 0.05
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=3"
+                ],
+                "display_hyperedge": "Bees favor an elevated location, preferably about 10 feet off the ground.",
+                "entity_labels": [
+                  "SWARMS",
+                  "BEES",
+                  "ELEVATED LOCATION"
+                ],
+                "matched_topic_labels": [
+                  "ELEVATED LOCATION"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"Climate relates to your farm location.\"",
+                "hyperedge_text": "Climate relates to your farm location.",
+                "score": 0.33333333333333337,
+                "branch_kind": "relation",
+                "entity_ids": [
+                  "\"FARM LOCATION\"",
+                  "\"CLIMATE\""
+                ],
+                "chunk_ids": [
+                  "chunk-2f3d99de4967b60e7e74b3639abc430c"
+                ],
+                "matched_topic_entities": [
+                  "\"FARM LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "considered. To direct-market your produce, you should be within 40 miles of a fairly large population. This is also important if you plan to sell some of your products through restaurants and grocery stores, for examp..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0833,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 0.5,
+                  "novelty": 0.5,
+                  "known_bonus": 0.0
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=2"
+                ],
+                "display_hyperedge": "Climate relates to your farm location.",
+                "entity_labels": [
+                  "FARM LOCATION",
+                  "CLIMATE"
+                ],
+                "matched_topic_labels": [
+                  "FARM LOCATION"
+                ]
+              }
+            ]
+          },
+          {
+            "branch_kind": "anchor",
+            "thought_id": "th-0005",
+            "candidate_answer": "COLONY",
+            "confidence": 0.609193772673607,
+            "selected_hyperedge_ids": [
+              "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+              "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+              "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+              "<hyperedge>\"Climate relates to your farm location.\""
+            ],
+            "supporting_facts": [
+              "These people walk near a colony of bees and find themselves being stung.",
+              "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety."
+            ],
+            "missing_requirements": [],
+            "selected_hyperedges": [
+              {
+                "hyperedge_id": "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+                "hyperedge_text": "These people walk near a colony of bees and find themselves being stung.",
+                "score": 0.609193772673607,
+                "branch_kind": "anchor",
+                "entity_ids": [
+                  "\"COLONY\"",
+                  "\"COLONY LOCATION\""
+                ],
+                "chunk_ids": [
+                  "chunk-5a4a1a431b94a27a92d263b7dde5aa5a"
+                ],
+                "matched_topic_entities": [
+                  "\"COLONY LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "is this defensive behavior that allows a colony of bees to store away large quantities of honey with minimum likelihood that it will be taken from them by predators. They are able to defend themselves, their home, and..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0354,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 0.0,
+                  "novelty": 1.0,
+                  "known_bonus": 0.0
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=2"
+                ],
+                "display_hyperedge": "These people walk near a colony of bees and find themselves being stung.",
+                "entity_labels": [
+                  "COLONY",
+                  "COLONY LOCATION"
+                ],
+                "matched_topic_labels": [
+                  "COLONY LOCATION"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+                "hyperedge_text": "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.",
+                "score": 0.6069911593943835,
+                "branch_kind": "anchor",
+                "entity_ids": [
+                  "\"LOCATION OF ELECTRIC FENCES\""
+                ],
+                "chunk_ids": [
+                  "chunk-4d53cc613c52fd5080e556f9abb248a0"
+                ],
+                "matched_topic_entities": [
+                  "\"LOCATION OF ELECTRIC FENCES\""
+                ],
+                "supporting_chunks": [
+                  "ponic greens. Then, to gain the attention and business of the influential Philadelphia horticulture clubs, the farm transformed its greenhouses into a full-fledged nursery and began cultivating flowers. Today Greensgr..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0269,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 0.0,
+                  "novelty": 1.0,
+                  "known_bonus": 0.0
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=1"
+                ],
+                "display_hyperedge": "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.",
+                "entity_labels": [
+                  "LOCATION OF ELECTRIC FENCES"
+                ],
+                "matched_topic_labels": [
+                  "LOCATION OF ELECTRIC FENCES"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+                "hyperedge_text": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+                "score": 0.5933333333333334,
+                "branch_kind": "anchor",
+                "entity_ids": [
+                  "\"MARITIME LOCATION\"",
+                  "\"SEAFOOD\"",
+                  "\"HANDS-ON CLASSES\"",
+                  "\"FISHING\"",
+                  "\"NATIVE EELS\"",
+                  "\"CRABS\"",
+                  "\"SEAWEED\""
+                ],
+                "chunk_ids": [
+                  "chunk-3dbce12e45fe13ef4f6973f92e57e779"
+                ],
+                "matched_topic_entities": [
+                  "\"MARITIME LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "Some are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or pos..."
+                ],
+                "score_breakdown": {
+                  "question": 0.1667,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 1.0,
+                  "novelty": 0.0,
+                  "known_bonus": 0.05
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=7"
+                ],
+                "display_hyperedge": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.",
+                "entity_labels": [
+                  "MARITIME LOCATION",
+                  "SEAFOOD",
+                  "HANDS-ON CLASSES",
+                  "FISHING",
+                  "NATIVE EELS",
+                  "CRABS",
+                  "SEAWEED"
+                ],
+                "matched_topic_labels": [
+                  "MARITIME LOCATION"
+                ]
+              },
+              {
+                "hyperedge_id": "<hyperedge>\"Climate relates to your farm location.\"",
+                "hyperedge_text": "Climate relates to your farm location.",
+                "score": 0.5716666666666667,
+                "branch_kind": "anchor",
+                "entity_ids": [
+                  "\"FARM LOCATION\"",
+                  "\"CLIMATE\""
+                ],
+                "chunk_ids": [
+                  "chunk-2f3d99de4967b60e7e74b3639abc430c"
+                ],
+                "matched_topic_entities": [
+                  "\"FARM LOCATION\""
+                ],
+                "supporting_chunks": [
+                  "considered. To direct-market your produce, you should be within 40 miles of a fairly large population. This is also important if you plan to sell some of your products through restaurants and grocery stores, for examp..."
+                ],
+                "score_breakdown": {
+                  "question": 0.0833,
+                  "relation": 0.0,
+                  "constraint": 0.0,
+                  "coverage": 1.0,
+                  "connector": 0.5,
+                  "novelty": 0.5,
+                  "known_bonus": 0.0
+                },
+                "notes": [
+                  "matched_topics=1",
+                  "entity_degree=2"
+                ],
+                "display_hyperedge": "Climate relates to your farm location.",
+                "entity_labels": [
+                  "FARM LOCATION",
+                  "CLIMATE"
+                ],
+                "matched_topic_labels": [
+                  "FARM LOCATION"
+                ]
+              }
+            ]
+          }
+        ],
+        "merge_result": {
+          "consensus_answer": "COLONY",
+          "agreement_groups": [
+            [
+              "anchor"
+            ]
+          ],
+          "conflicts": [
+            {
+              "answer": "SWARMS",
+              "branches": [
+                "constraint"
+              ]
+            },
+            {
+              "answer": "CLIMATE",
+              "branches": [
+                "relation"
+              ]
+            }
+          ],
+          "preferred_branches": [
+            "anchor"
+          ],
+          "missing_requirements": [],
+          "notes": "Mock reconciliation prefers answers supported by multiple branches."
+        },
+        "sufficiency": {
+          "enough": true,
+          "confidence": 0.75,
+          "reason": "Mock sufficiency requires a non-empty consensus answer plus multi-branch or evidence support.",
+          "missing_requirements": [],
+          "next_focus": []
+        }
+      }
+    }
+  ]
+}

@@ -1,12 +1,12 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 import tempfile
 import unittest
 from pathlib import Path
 
-from goth_hyper.cli import _load_question_from_file
-from goth_hyper.utils import extract_json_payload, normalize_label
+from hyper_branch.cli import _load_question_from_file
+from hyper_branch.utils import extract_json_payload, normalize_label
 
 
 class UtilsTest(unittest.TestCase):
@@ -39,3 +39,4 @@ class UtilsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

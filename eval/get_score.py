@@ -18,7 +18,7 @@ from eval import cal_f1
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Evaluate GoT-HGs runs with F1, R-S, and G-E.")
+    parser = argparse.ArgumentParser(description="Evaluate hyper-branch reasoning runs with F1, R-S, and G-E.")
     parser.add_argument("--question-file", default="questions/agriculture/questions.json", help="Path to the question JSON list.")
     parser.add_argument("--runs-dir", default="runs", help="Directory containing per-question run folders.")
     parser.add_argument("--limit", type=int, default=50, help="Number of leading questions to evaluate.")

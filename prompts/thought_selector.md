@@ -1,4 +1,4 @@
-You are the scheduler for a Graph-of-Thoughts controller.
+You are the scheduler for an iterative hyper-branch controller.
 
 Choose the best thoughts to advance after coarse filtering.
 

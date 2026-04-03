@@ -1,11 +1,11 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import unittest
 from pathlib import Path
 
-from goth_hyper.config import load_config
-from goth_hyper.logging_utils import TraceStore, configure_logging, create_run_dir
-from goth_hyper.pipeline import GoTHyperPipeline
+from hyper_branch.config import load_config
+from hyper_branch.logging_utils import TraceStore, configure_logging, create_run_dir
+from hyper_branch.pipeline import HyperBranchPipeline
 
 
 class PipelineSmokeTest(unittest.TestCase):
@@ -19,7 +19,7 @@ class PipelineSmokeTest(unittest.TestCase):
         logger = configure_logging(run_dir, config.runtime.log_level)
         trace_store = TraceStore(run_dir)
 
-        pipeline = GoTHyperPipeline(config=config, run_dir=run_dir, logger=logger, trace_store=trace_store)
+        pipeline = HyperBranchPipeline(config=config, run_dir=run_dir, logger=logger, trace_store=trace_store)
         result = pipeline.run(question)
 
         self.assertTrue(result["final_answer"]["answer"])
@@ -30,3 +30,4 @@ class PipelineSmokeTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

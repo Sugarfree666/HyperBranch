@@ -13,6 +13,7 @@ retrieval:
   taskframe_registration_threshold: 0.33
   lexical_anchor_top_k: 12
   branch_candidate_pool: 18
+  focus_match_min_score: 0.08
 
 reasoning:
   max_steps: 5
@@ -30,6 +31,13 @@ reasoning:
   branch_top_k: 4
   evidence_top_k_per_branch: 2
   min_branch_agreement: 2
+  base_constraint_weight: 1.0
+  base_relation_weight: 1.0
+  base_anchor_weight: 1.0
+  fused_novelty_weight: 0.12
+  fused_penalty_weight: 0.18
+  fused_focus_weight: 0.16
+  control_weight_step: 0.35
 
 llm:
   api_key_env: OPENAI_API_KEY

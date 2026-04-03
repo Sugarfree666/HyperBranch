@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from types import SimpleNamespace
 
-from goth_hyper.config import (
+from hyper_branch.config import (
     Config,
     DatasetConfig,
     LLMConfig,
@@ -15,11 +15,20 @@ from goth_hyper.config import (
     RetrievalConfig,
     RuntimeConfig,
 )
-from goth_hyper.logging_utils import TraceStore
-from goth_hyper.models import EvidenceItem, GraphNode, HyperedgeCandidate, TaskFrame, ThoughtGraph, ThoughtState, VectorMatch
-from goth_hyper.reasoning.controller import ThoughtController
-from goth_hyper.reasoning.operations import ThoughtOperationExecutor
-from goth_hyper.retrieval.evidence import EvidenceRetriever
+from hyper_branch.logging_utils import TraceStore
+from hyper_branch.models import (
+    EvidenceItem,
+    GraphNode,
+    HyperedgeCandidate,
+    RetrievalControlState,
+    TaskFrame,
+    ThoughtGraph,
+    ThoughtState,
+    VectorMatch,
+)
+from hyper_branch.reasoning.controller import ThoughtController
+from hyper_branch.reasoning.operations import ThoughtOperationExecutor
+from hyper_branch.retrieval.evidence import EvidenceRetriever
 
 
 class ThoughtOperationExecutorTest(unittest.TestCase):
@@ -60,21 +69,25 @@ class ThoughtOperationExecutorTest(unittest.TestCase):
                 task_frame=task_frame,
                 branch_kind="constraint",
                 iteration=1,
-                selection_payload={
-                    "candidate_answer": "RESPONSIBILITY",
-                    "confidence": 0.91,
-                    "supporting_facts": ["Responsibility appears in youth farming programs."],
-                    "missing_requirements": [],
-                    "notes": "Strong overlap with the question constraints.",
+                branch_result={
+                    "recommended_hyperedges": [candidate.to_dict()],
+                    "query_texts": ["What concept appears in both settings?", "shared concept"],
+                    "control_state": {
+                        "iteration": 1,
+                        "branch_weights": {"constraint": 0.5, "relation": 0.25, "anchor": 0.25},
+                    },
+                    "notes": "Constraint operator ranked this hyperedge first.",
                 },
                 candidates=[candidate],
                 evidence_items=[evidence_item],
                 parent_ids=["th-root"],
             )
 
-            self.assertEqual(thought.status, "verified")
+            self.assertEqual(thought.status, "searched")
             self.assertEqual(thought.metadata["branch_kind"], "constraint")
-            self.assertEqual(thought.metadata["candidate_answer"], "RESPONSIBILITY")
+            self.assertEqual(thought.metadata["recommended_count"], 1)
+            self.assertEqual(len(thought.metadata["frontier_hyperedges"]), 1)
+            self.assertIn("recommended hyperedges", thought.content)
             self.assertEqual(thought.grounding.chunk_ids, ["chunk-1"])
             self.assertEqual(len(thought.grounding.evidence), 1)
 
@@ -202,6 +215,9 @@ class FakeRegistry:
 
 
 class FakeEvidenceRetriever:
+    def __init__(self) -> None:
+        self.retrieve_calls: list[dict[str, object]] = []
+
     def anchor_task_frame(self, question: str, task_frame: TaskFrame) -> dict[str, object]:
         del question, task_frame
         candidate = HyperedgeCandidate(
@@ -209,8 +225,13 @@ class FakeEvidenceRetriever:
             hyperedge_text="Urban farms build community support.",
             score=0.92,
             branch_kind="anchor",
+            branch_score=0.92,
+            coverage_gain=0.8,
+            connector_gain=0.7,
+            novelty_gain=0.3,
             entity_ids=['"COMMUNITY SUPPORT"'],
             chunk_ids=["chunk-1"],
+            support_entities=['"COMMUNITY SUPPORT"'],
         )
         return {
             "entity_matches": [VectorMatch(item_id="entity-1", label='"COMMUNITY SUPPORT"', score=0.81)],
@@ -224,21 +245,97 @@ class FakeEvidenceRetriever:
         question: str,
         task_frame: TaskFrame,
         branch_kind: str,
+        control_state: RetrievalControlState,
         evidence_subgraph: dict[str, object] | None = None,
         exclude_hyperedge_ids: set[str] | None = None,
     ) -> list[HyperedgeCandidate]:
-        del question, task_frame, evidence_subgraph, exclude_hyperedge_ids
+        del evidence_subgraph, exclude_hyperedge_ids
+        focus = list(control_state.current_focus())
+        query_texts = [question, branch_kind, *task_frame.topic_entities, *focus]
+        control_state.branch_queries[branch_kind] = query_texts
+        control_state.candidate_filters[branch_kind] = {
+            "prefer_focus_match": bool(focus),
+            "focus_terms": focus,
+        }
+        self.retrieve_calls.append(
+            {
+                "iteration": control_state.iteration,
+                "branch_kind": branch_kind,
+                "focus": focus,
+                "weights": dict(control_state.branch_weights),
+                "query_texts": list(query_texts),
+            }
+        )
         suffix = branch_kind.upper()
+        focus_bonus = 0.18 if focus and branch_kind == "relation" else 0.0
+        constraint_gain = 0.82 if branch_kind == "constraint" else 0.24
+        relation_gain = 0.9 if branch_kind == "relation" else 0.28
+        connector_gain = 0.78 if branch_kind == "anchor" else 0.36
+        coverage_gain = 0.62 if branch_kind == "anchor" else 0.42
+        novelty_gain = 0.33 if branch_kind == "anchor" else 0.12
+        branch_score = 0.64 + focus_bonus
         return [
             HyperedgeCandidate(
                 hyperedge_id=f'<hyperedge>"{suffix} branch supports community support."',
                 hyperedge_text=f"{suffix} branch supports community support.",
-                score=0.8,
+                score=branch_score,
                 branch_kind=branch_kind,
+                branch_score=branch_score,
+                coverage_gain=coverage_gain,
+                constraint_gain=constraint_gain,
+                relation_gain=relation_gain,
+                connector_gain=connector_gain,
+                novelty_gain=novelty_gain,
+                focus_gain=focus_bonus,
                 entity_ids=['"COMMUNITY SUPPORT"'],
                 chunk_ids=[f"chunk-{branch_kind}"],
+                support_entities=['"COMMUNITY SUPPORT"'],
+                reason=f"{branch_kind} branch ranked this hyperedge via explicit scoring.",
             )
         ]
+
+    def fuse_frontier(
+        self,
+        task_frame: TaskFrame,
+        branch_candidates: dict[str, list[HyperedgeCandidate]],
+        evidence_subgraph: dict[str, object],
+        control_state: RetrievalControlState,
+        top_k: int,
+    ) -> tuple[list[HyperedgeCandidate], dict[str, object]]:
+        del task_frame
+        fused: list[HyperedgeCandidate] = []
+        for branch_kind, candidates in branch_candidates.items():
+            weight = control_state.branch_weights.get(branch_kind, 0.0)
+            for candidate in candidates:
+                candidate.fused_score = candidate.branch_score * (1.0 + weight)
+                candidate.score = candidate.fused_score
+                fused.append(candidate)
+        fused.sort(key=lambda item: item.fused_score, reverse=True)
+        selected = fused[:top_k]
+        preferred_branches = sorted(
+            branch_candidates,
+            key=lambda kind: max((candidate.branch_score for candidate in branch_candidates[kind]), default=0.0),
+            reverse=True,
+        )
+        merge_result = {
+            "frontier_hyperedge_ids": [candidate.hyperedge_id for candidate in selected],
+            "frontier": [candidate.to_dict() for candidate in selected],
+            "branch_contributions": {
+                kind: [candidate.hyperedge_id for candidate in candidates]
+                for kind, candidates in branch_candidates.items()
+            },
+            "preferred_branches": preferred_branches,
+            "coverage_summary": {
+                "frontier_size": len(selected),
+                "evidence_hyperedges": len(evidence_subgraph.get("hyperedge_ids", [])),
+                "topic_entity_coverage": 0.75,
+            },
+            "answer_hypotheses": ["COMMUNITY SUPPORT"],
+            "missing_requirements": list(control_state.missing_requirements),
+            "next_focus": list(control_state.next_focus),
+            "notes": "Fake fused frontier based on branch_score and branch weight.",
+        }
+        return selected, merge_result
 
     def build_evidence_items(
         self,
@@ -263,57 +360,32 @@ class FakeEvidenceRetriever:
 
 
 class FakeLLMService:
-    def select_branch_candidates(
-        self,
-        question: str,
-        task_frame: TaskFrame,
-        branch_kind: str,
-        candidate_hyperedges: list[HyperedgeCandidate],
-        evidence_subgraph: dict[str, object],
-        top_k: int,
-    ) -> dict[str, object]:
-        del question, task_frame, evidence_subgraph, top_k
-        candidate = candidate_hyperedges[0]
-        return {
-            "selected_hyperedge_ids": [candidate.hyperedge_id],
-            "candidate_answer": "COMMUNITY SUPPORT",
-            "supporting_facts": [f"{branch_kind} branch found support evidence."],
-            "missing_requirements": [],
-            "confidence": 0.9,
-            "notes": "Stub branch selection.",
-        }
-
-    def reconcile_branches(
-        self,
-        question: str,
-        task_frame: TaskFrame,
-        branch_results: list[dict[str, object]],
-        evidence_subgraph: dict[str, object],
-    ) -> dict[str, object]:
-        del question, task_frame, evidence_subgraph
-        return {
-            "consensus_answer": "COMMUNITY SUPPORT",
-            "agreement_groups": [[record["branch_kind"] for record in branch_results]],
-            "conflicts": [],
-            "preferred_branches": [record["branch_kind"] for record in branch_results],
-            "missing_requirements": [],
-            "notes": "All three branches agree.",
-        }
-
     def judge_sufficiency(
         self,
         question: str,
         task_frame: TaskFrame,
-        branch_results: list[dict[str, object]],
         merge_result: dict[str, object],
         evidence_subgraph: dict[str, object],
         iteration: int,
+        retrieval_control_state: dict[str, object],
     ) -> dict[str, object]:
-        del question, task_frame, branch_results, evidence_subgraph, iteration
+        del question, task_frame, merge_result, evidence_subgraph, retrieval_control_state
+        if iteration == 1:
+            return {
+                "enough": False,
+                "confidence": 0.61,
+                "reason": "Need stronger relation closure before final answer synthesis.",
+                "missing_requirements": [
+                    "Need stronger relation closure between urban farms and community support.",
+                ],
+                "next_focus": [
+                    "relation closure around community support",
+                ],
+            }
         return {
-            "enough": bool(merge_result.get("consensus_answer")),
+            "enough": True,
             "confidence": 0.93,
-            "reason": "Consensus answer already grounded by all branches.",
+            "reason": "Frontier coverage and relation closure are now sufficient.",
             "missing_requirements": [],
             "next_focus": [],
         }
@@ -328,21 +400,22 @@ class FakeLLMService:
     ) -> dict[str, object]:
         del question, task_frame, thought_graph, evidence_subgraph
         return {
-            "answer": str(merge_result.get("consensus_answer", "")),
-            "reasoning_summary": "Three branches converged on the same grounded answer.",
+            "answer": str(merge_result.get("answer_hypotheses", [""])[0]),
+            "reasoning_summary": "Final answer synthesized from fused frontier hyperedges.",
             "confidence": 0.93,
             "remaining_gaps": [],
         }
 
 
 class ThoughtControllerSelectionTest(unittest.TestCase):
-    def test_controller_runs_three_branches_and_builds_evidence_subgraph(self) -> None:
+    def test_controller_runs_retrieval_led_loop_and_updates_control_state(self) -> None:
         logger = logging.getLogger("test.controller")
         logger.handlers.clear()
         logger.addHandler(logging.NullHandler())
 
         with tempfile.TemporaryDirectory() as tmp_dir:
             trace_store = TraceStore(Path(tmp_dir))
+            fake_retriever = FakeEvidenceRetriever()
             config = Config(
                 project_root=Path(tmp_dir),
                 dataset=DatasetConfig(root=Path(tmp_dir)),
@@ -358,7 +431,7 @@ class ThoughtControllerSelectionTest(unittest.TestCase):
                 taskframe_builder=FakeTaskFrameBuilder(),
                 registry=FakeRegistry(),
                 scorer=SimpleNamespace(),
-                evidence_retriever=FakeEvidenceRetriever(),
+                evidence_retriever=fake_retriever,
                 executor=ThoughtOperationExecutor(logger=logger, trace_store=trace_store),
                 llm_service=FakeLLMService(),
                 logger=logger,
@@ -372,7 +445,32 @@ class ThoughtControllerSelectionTest(unittest.TestCase):
             self.assertIn("relation", result["evidence_subgraph"]["branch_support"])
             self.assertIn("anchor", result["evidence_subgraph"]["branch_support"])
             self.assertTrue(result["thought_graph"]["final_answer"]["answer"])
+            self.assertGreaterEqual(len(result["evidence_subgraph"]["control_history"]), 3)
+            relation_calls = [
+                call
+                for call in fake_retriever.retrieve_calls
+                if call["branch_kind"] == "relation"
+            ]
+            self.assertEqual(len(relation_calls), 2)
+            self.assertEqual(relation_calls[0]["focus"], [])
+            self.assertIn("relation closure around community support", relation_calls[1]["focus"])
+
+            latest_control = result["evidence_subgraph"]["control_history"][-1]
+            self.assertIn(
+                "Need stronger relation closure between urban farms and community support.",
+                latest_control["missing_requirements"],
+            )
+            self.assertIn("relation closure around community support", latest_control["next_focus"])
+            self.assertGreater(
+                latest_control["branch_weights"]["relation"],
+                latest_control["branch_weights"]["constraint"],
+            )
+            self.assertIn(
+                "relation closure around community support",
+                latest_control["branch_queries"]["relation"],
+            )
 
 
 if __name__ == "__main__":
     unittest.main()
+

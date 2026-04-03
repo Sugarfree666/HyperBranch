@@ -2,31 +2,19 @@ from __future__ import annotations
 
 import os
 from functools import lru_cache
-from pathlib import Path
 from typing import Any
 
 import numpy as np
 from openai import APIConnectionError, OpenAI, RateLimitError, Timeout
 from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_exponential
 
-
-CURRENT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = CURRENT_DIR.parent
-
-
-def _read_optional_text(path: Path) -> str:
-    if path.exists():
-        return path.read_text(encoding="utf-8").strip()
-    return ""
-
-
 @lru_cache(maxsize=1)
 def _build_client() -> OpenAI:
-    api_key = os.getenv("OPENAI_API_KEY", "").strip() or _read_optional_text(PROJECT_ROOT / "PRoH-main" / "openai_api_key.txt")
+    api_key = os.getenv("OPENAI_API_KEY", "").strip()
     if not api_key:
         raise RuntimeError("OPENAI_API_KEY is required for G-E evaluation.")
 
-    base_url = os.getenv("OPENAI_BASE_URL", "").strip() or _read_optional_text(PROJECT_ROOT / "PRoH-main" / "openai_base_url.txt")
+    base_url = os.getenv("OPENAI_BASE_URL", "").strip()
     kwargs: dict[str, Any] = {"api_key": api_key}
     if base_url:
         kwargs["base_url"] = base_url

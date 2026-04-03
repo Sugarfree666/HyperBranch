@@ -1,0 +1,18 @@
+2026-04-03 16:39:41,431 | INFO | Loading dataset from D:\GitHub\GoT_HGs_RAG\datasets\agriculture
+2026-04-03 16:39:41,431 | INFO | Using GraphML file graph_chunk_entity_relation.graphml
+2026-04-03 16:39:45,740 | INFO | Starting HyperBranch pipeline for question: How can urban farms build community support while dealing with lead contamination in soil?
+2026-04-03 16:39:45,740 | INFO | TaskFrame created with 1 anchors, 0 constraints, 1 bridges
+2026-04-03 16:39:46,565 | INFO | Anchored task frame with 6 initial entities and 6 initial hyperedges
+2026-04-03 16:39:46,565 | INFO | Created reasoning thought th-0001 (root)
+2026-04-03 16:39:46,566 | INFO | Created reasoning thought th-0002 (grounded)
+2026-04-03 16:39:46,567 | INFO | Registered reasoning thought th-0002 to TaskFrame slots bridge-0
+2026-04-03 16:39:46,567 | INFO | Iterative reasoning step 1/5
+2026-04-03 16:39:46,879 | INFO | Retrieved 18 branch candidates for constraint
+2026-04-03 16:39:46,880 | INFO | Created reasoning thought th-0003 (verified)
+2026-04-03 16:39:47,276 | INFO | Retrieved 18 branch candidates for relation
+2026-04-03 16:39:47,279 | INFO | Created reasoning thought th-0004 (verified)
+2026-04-03 16:39:47,641 | INFO | Retrieved 18 branch candidates for anchor
+2026-04-03 16:39:47,642 | INFO | Created reasoning thought th-0005 (verified)
+2026-04-03 16:39:47,644 | INFO | Created reasoning thought th-0006 (merged)
+2026-04-03 16:39:47,645 | INFO | Created answer thought th-0007 (completed)
+2026-04-03 16:39:47,649 | INFO | Pipeline finished. Artifacts saved under D:\GitHub\GoT_HGs_RAG\runs\20260403_163941_test-smoke-run

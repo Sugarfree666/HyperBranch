@@ -1,0 +1,17 @@
+2026-04-03 16:39:41,375 | INFO | Loading dataset from D:\GitHub\GoT_HGs_RAG\datasets\agriculture
+2026-04-03 16:39:41,375 | INFO | Using GraphML file graph_chunk_entity_relation.graphml
+2026-04-03 16:39:45,617 | INFO | Starting HyperBranch pipeline for question: What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?
+2026-04-03 16:39:45,618 | INFO | TaskFrame created with 1 anchors, 2 constraints, 1 bridges
+2026-04-03 16:39:46,827 | INFO | Anchored task frame with 6 initial entities and 6 initial hyperedges
+2026-04-03 16:39:46,828 | INFO | Created reasoning thought th-0001 (root)
+2026-04-03 16:39:46,829 | INFO | Created reasoning thought th-0002 (grounded)
+2026-04-03 16:39:46,830 | INFO | Iterative reasoning step 1/5
+2026-04-03 16:39:47,397 | INFO | Retrieved 18 branch candidates for constraint
+2026-04-03 16:39:47,400 | INFO | Created reasoning thought th-0003 (verified)
+2026-04-03 16:39:47,889 | INFO | Retrieved 18 branch candidates for relation
+2026-04-03 16:39:47,890 | INFO | Created reasoning thought th-0004 (verified)
+2026-04-03 16:39:48,290 | INFO | Retrieved 18 branch candidates for anchor
+2026-04-03 16:39:48,292 | INFO | Created reasoning thought th-0005 (verified)
+2026-04-03 16:39:48,293 | INFO | Created reasoning thought th-0006 (merged)
+2026-04-03 16:39:48,295 | INFO | Created answer thought th-0007 (completed)
+2026-04-03 16:39:48,300 | INFO | Pipeline finished. Artifacts saved under D:\GitHub\GoT_HGs_RAG\runs\20260403_163941_what-region-is-known-for-its-robust-distribution

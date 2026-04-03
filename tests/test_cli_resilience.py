@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import io
 import os
@@ -9,9 +9,9 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 from urllib import error
 
-from goth_hyper import cli
-from goth_hyper.config import Config, DatasetConfig, LLMConfig, PromptConfig, ReasoningConfig, RetrievalConfig, RuntimeConfig
-from goth_hyper.llm.client import OpenAICompatibleClient
+from hyper_branch import cli
+from hyper_branch.config import Config, DatasetConfig, LLMConfig, PromptConfig, ReasoningConfig, RetrievalConfig, RuntimeConfig
+from hyper_branch.llm.client import OpenAICompatibleClient
 
 
 class FakeHTTPResponse:
@@ -40,8 +40,8 @@ class LLMClientRetryTest(unittest.TestCase):
                 FakeHTTPResponse('{"ok": true}'),
             ]
 
-            with patch("goth_hyper.llm.client.request.urlopen", side_effect=responses) as mocked_urlopen, patch(
-                "goth_hyper.llm.client.time.sleep"
+            with patch("hyper_branch.llm.client.request.urlopen", side_effect=responses) as mocked_urlopen, patch(
+                "hyper_branch.llm.client.time.sleep"
             ):
                 payload = client._post_json("/chat/completions", {"ping": "pong"})
 
@@ -66,8 +66,8 @@ class CLIAllowFailureTest(unittest.TestCase):
             fake_pipeline.run.side_effect = RuntimeError("The handshake operation timed out")
 
             stdout = io.StringIO()
-            with patch("goth_hyper.cli.load_config", return_value=config), patch(
-                "goth_hyper.cli.GoTHyperPipeline", return_value=fake_pipeline
+            with patch("hyper_branch.cli.load_config", return_value=config), patch(
+                "hyper_branch.cli.HyperBranchPipeline", return_value=fake_pipeline
             ), patch(
                 "sys.argv",
                 ["cli.py", "--question", "Test question?", "--allow-failure"],
@@ -84,3 +84,4 @@ class CLIAllowFailureTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
