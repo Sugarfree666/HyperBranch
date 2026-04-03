@@ -2,6 +2,9 @@ from __future__ import annotations
 
 import json
 import os
+import socket
+import ssl
+import time
 from typing import Any
 from urllib import error, request
 
@@ -83,16 +86,67 @@ class OpenAICompatibleClient:
             "Content-Type": "application/json",
             "Authorization": f"Bearer {self.api_key}",
         }
-        req = request.Request(url=url, data=raw_payload, headers=headers, method="POST")
-        try:
-            with request.urlopen(req, timeout=self.config.timeout_seconds) as resp:
-                body = resp.read().decode("utf-8")
-        except error.HTTPError as exc:
-            body = exc.read().decode("utf-8", errors="replace")
-            raise RuntimeError(f"LLM request failed with HTTP {exc.code}: {body}") from exc
-        except error.URLError as exc:
-            raise RuntimeError(f"LLM request failed: {exc.reason}") from exc
-        return json.loads(body)
+        attempts = max(1, self.config.max_retries + 1)
+
+        for attempt in range(1, attempts + 1):
+            req = request.Request(url=url, data=raw_payload, headers=headers, method="POST")
+            try:
+                with request.urlopen(req, timeout=self.config.timeout_seconds) as resp:
+                    body = resp.read().decode("utf-8")
+                return json.loads(body)
+            except error.HTTPError as exc:
+                body = exc.read().decode("utf-8", errors="replace")
+                if self._should_retry_http(exc.code) and attempt < attempts:
+                    self._before_retry(endpoint, attempt, attempts, f"HTTP {exc.code}")
+                    continue
+                raise RuntimeError(
+                    f"LLM request failed with HTTP {exc.code} after {attempt} attempt(s): {body}"
+                ) from exc
+            except (error.URLError, TimeoutError, socket.timeout, ssl.SSLError) as exc:
+                reason = exc.reason if isinstance(exc, error.URLError) else exc
+                if self._should_retry_transport(reason) and attempt < attempts:
+                    self._before_retry(endpoint, attempt, attempts, reason)
+                    continue
+                raise RuntimeError(
+                    f"LLM request failed after {attempt} attempt(s): {reason}"
+                ) from exc
+
+        raise RuntimeError(f"LLM request failed after {attempts} attempt(s): exhausted retries.")
+
+    def _before_retry(self, endpoint: str, attempt: int, attempts: int, reason: object) -> None:
+        if self.trace_store is not None:
+            self.trace_store.log_event(
+                "llm_request_retry",
+                {
+                    "endpoint": endpoint,
+                    "attempt": attempt,
+                    "max_attempts": attempts,
+                    "reason": str(reason),
+                },
+            )
+        delay_seconds = self.config.retry_backoff_seconds * (2 ** (attempt - 1))
+        if delay_seconds > 0:
+            time.sleep(delay_seconds)
+
+    def _should_retry_http(self, status_code: int) -> bool:
+        return status_code in {408, 409, 425, 429, 500, 502, 503, 504}
+
+    def _should_retry_transport(self, reason: object) -> bool:
+        if isinstance(reason, (TimeoutError, socket.timeout, ssl.SSLError, ConnectionResetError)):
+            return True
+        text = str(reason).lower()
+        transient_markers = (
+            "timed out",
+            "timeout",
+            "temporarily unavailable",
+            "temporary failure",
+            "connection reset",
+            "connection aborted",
+            "connection refused",
+            "handshake operation timed out",
+            "ssl",
+        )
+        return any(marker in text for marker in transient_markers)
 
 
 class LocalHashEmbeddingClient:

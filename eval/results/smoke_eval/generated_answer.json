@@ -1,0 +1,23 @@
+[
+  {
+    "question": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+    "golden_answers": [
+      "WESTERN NORTH CAROLINA"
+    ],
+    "context": [
+      "He got hooked early. While his brothers were involved in sports, his father would bring him down to work on the farm.",
+      "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+      "While ASAP uses a strategy similar to that of co-ops such as Country Natural Beef in creating its own brand to build recognition, value, and trust, three things set ASAP apart: it is not a producer, it does not make money on the sale of Appalachian Grown products, and it doesn't operate its own distribution network.",
+      "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+      "Brushy Mountain Bee Farm, Moravian Falls, North Carolina 800-233-7929, www.brushymountainbeefarm.com",
+      "Jackson, a North Carolina native, began his work with farmers in western North Carolina, whose tobacco farming heritage was ending."
+    ],
+    "nhops": 6,
+    "run_dir": null,
+    "run_status": "missing",
+    "answer": "",
+    "generation": "",
+    "retrieved": [],
+    "retrieved_knowledge": ""
+  }
+]

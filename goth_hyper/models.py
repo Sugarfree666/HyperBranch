@@ -71,6 +71,106 @@ class EvidenceItem:
 
 
 @dataclass(slots=True)
+class HyperedgeCandidate:
+    hyperedge_id: str
+    hyperedge_text: str
+    score: float
+    branch_kind: str
+    entity_ids: list[str] = field(default_factory=list)
+    chunk_ids: list[str] = field(default_factory=list)
+    matched_topic_entities: list[str] = field(default_factory=list)
+    supporting_chunks: list[str] = field(default_factory=list)
+    score_breakdown: dict[str, float] = field(default_factory=dict)
+    notes: list[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict[str, Any]:
+        payload = asdict(self)
+        payload["display_hyperedge"] = normalize_label(self.hyperedge_id)
+        payload["entity_labels"] = [normalize_label(entity_id) for entity_id in self.entity_ids]
+        payload["matched_topic_labels"] = [normalize_label(entity_id) for entity_id in self.matched_topic_entities]
+        return payload
+
+
+@dataclass(slots=True)
+class EvidenceSubgraph:
+    hyperedge_ids: list[str] = field(default_factory=list)
+    entity_ids: list[str] = field(default_factory=list)
+    chunk_ids: list[str] = field(default_factory=list)
+    evidence: list[EvidenceItem] = field(default_factory=list)
+    branch_support: dict[str, list[str]] = field(default_factory=dict)
+    branch_answers: dict[str, dict[str, Any]] = field(default_factory=dict)
+    notes: list[str] = field(default_factory=list)
+
+    def add_support(
+        self,
+        branch_kind: str,
+        candidates: list[HyperedgeCandidate],
+        evidence_items: list[EvidenceItem],
+        branch_answer: dict[str, Any] | None = None,
+    ) -> None:
+        seen_hyperedges = set(self.hyperedge_ids)
+        seen_entities = set(self.entity_ids)
+        seen_chunks = set(self.chunk_ids)
+        seen_evidence_ids = {item.evidence_id for item in self.evidence}
+
+        support_ids = self.branch_support.setdefault(branch_kind, [])
+        for candidate in candidates:
+            if candidate.hyperedge_id not in seen_hyperedges:
+                self.hyperedge_ids.append(candidate.hyperedge_id)
+                seen_hyperedges.add(candidate.hyperedge_id)
+            if candidate.hyperedge_id not in support_ids:
+                support_ids.append(candidate.hyperedge_id)
+            for entity_id in candidate.entity_ids:
+                if entity_id not in seen_entities:
+                    self.entity_ids.append(entity_id)
+                    seen_entities.add(entity_id)
+            for chunk_id in candidate.chunk_ids:
+                if chunk_id not in seen_chunks:
+                    self.chunk_ids.append(chunk_id)
+                    seen_chunks.add(chunk_id)
+
+        for item in evidence_items:
+            if item.evidence_id in seen_evidence_ids:
+                continue
+            self.evidence.append(item)
+            seen_evidence_ids.add(item.evidence_id)
+            if item.chunk_id and item.chunk_id not in seen_chunks:
+                self.chunk_ids.append(item.chunk_id)
+                seen_chunks.add(item.chunk_id)
+            for node_id in item.source_node_ids:
+                if node_id not in seen_entities and node_id not in seen_hyperedges:
+                    self.entity_ids.append(node_id)
+                    seen_entities.add(node_id)
+
+        if branch_answer is not None:
+            self.branch_answers[branch_kind] = dict(branch_answer)
+
+    def to_text(self, limit: int = 5) -> str:
+        parts: list[str] = []
+        if self.hyperedge_ids:
+            parts.append(
+                "hyperedges: " + " | ".join(normalize_label(item) for item in self.hyperedge_ids[:limit])
+            )
+        if self.entity_ids:
+            parts.append("entities: " + ", ".join(normalize_label(item) for item in self.entity_ids[:limit]))
+        if self.evidence:
+            parts.append("evidence: " + " | ".join(item.content[:220] for item in self.evidence[:limit]))
+        return "; ".join(parts)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "hyperedge_ids": list(self.hyperedge_ids),
+            "entity_ids": list(self.entity_ids),
+            "chunk_ids": list(self.chunk_ids),
+            "branch_support": dict(self.branch_support),
+            "branch_answers": dict(self.branch_answers),
+            "notes": list(self.notes),
+            "evidence": [item.to_dict() for item in self.evidence],
+            "summary_text": self.to_text(),
+        }
+
+
+@dataclass(slots=True)
 class TaskChecklistItem:
     slot_id: str
     kind: str
@@ -92,16 +192,50 @@ class TaskFrame:
     target: str
     constraints: list[str]
     bridges: list[str]
+    topic_entities: list[str] = field(default_factory=list)
+    answer_type_hint: str = ""
+    relation_intent: str = ""
+    hard_constraints: list[str] = field(default_factory=list)
+    relation_skeleton: str = ""
+    initial_entity_ids: list[str] = field(default_factory=list)
+    initial_hyperedge_ids: list[str] = field(default_factory=list)
+    metadata: dict[str, Any] = field(default_factory=dict)
     checklist: dict[str, list[TaskChecklistItem]] = field(default_factory=dict)
 
     @classmethod
     def from_payload(cls, question: str, payload: dict[str, Any]) -> "TaskFrame":
-        anchors = [str(item).strip() for item in payload.get("anchors", []) if str(item).strip()]
-        target = str(payload.get("target", "")).strip()
-        constraints = [str(item).strip() for item in payload.get("constraints", []) if str(item).strip()]
+        topic_entities = [
+            str(item).strip()
+            for item in payload.get("topic_entities", payload.get("anchors", []))
+            if str(item).strip()
+        ]
+        answer_type_hint = str(payload.get("answer_type_hint", payload.get("target", ""))).strip()
+        relation_intent = str(payload.get("relation_intent", "")).strip()
+        hard_constraints = [
+            str(item).strip()
+            for item in payload.get("hard_constraints", payload.get("constraints", []))
+            if str(item).strip()
+        ]
+        relation_skeleton = str(payload.get("relation_skeleton", "")).strip()
+
+        anchors = [str(item).strip() for item in payload.get("anchors", topic_entities) if str(item).strip()]
+        target = str(payload.get("target", answer_type_hint)).strip()
+        constraints = [str(item).strip() for item in payload.get("constraints", hard_constraints) if str(item).strip()]
         bridges = [str(item).strip() for item in payload.get("bridges", []) if str(item).strip()]
+        if relation_intent and relation_intent not in bridges:
+            bridges = [relation_intent, *bridges]
         if not target:
             target = question
+        if not answer_type_hint:
+            answer_type_hint = target
+        if not anchors:
+            anchors = topic_entities
+        if not topic_entities:
+            topic_entities = anchors
+        if not constraints:
+            constraints = hard_constraints
+        if not hard_constraints:
+            hard_constraints = constraints
 
         checklist = {
             "anchors": [
@@ -124,6 +258,18 @@ class TaskFrame:
             target=target,
             constraints=constraints,
             bridges=bridges,
+            topic_entities=topic_entities,
+            answer_type_hint=answer_type_hint,
+            relation_intent=relation_intent,
+            hard_constraints=hard_constraints,
+            relation_skeleton=relation_skeleton,
+            initial_entity_ids=[
+                str(item).strip() for item in payload.get("initial_entity_ids", []) if str(item).strip()
+            ],
+            initial_hyperedge_ids=[
+                str(item).strip() for item in payload.get("initial_hyperedge_ids", []) if str(item).strip()
+            ],
+            metadata=dict(payload.get("metadata", {})),
             checklist=checklist,
         )
 
@@ -156,6 +302,13 @@ class TaskFrame:
     def progress_snapshot(self) -> dict[str, Any]:
         return {
             "question": self.question,
+            "topic_entities": list(self.topic_entities),
+            "answer_type_hint": self.answer_type_hint,
+            "relation_intent": self.relation_intent,
+            "hard_constraints": list(self.hard_constraints),
+            "relation_skeleton": self.relation_skeleton,
+            "initial_entity_ids": list(self.initial_entity_ids),
+            "initial_hyperedge_ids": list(self.initial_hyperedge_ids),
             "anchors": [asdict(item) for item in self.checklist.get("anchors", [])],
             "target": [asdict(item) for item in self.checklist.get("target", [])],
             "constraints": [asdict(item) for item in self.checklist.get("constraints", [])],
@@ -179,6 +332,14 @@ class TaskFrame:
             "target": self.target,
             "constraints": self.constraints,
             "bridges": self.bridges,
+            "topic_entities": self.topic_entities,
+            "answer_type_hint": self.answer_type_hint,
+            "relation_intent": self.relation_intent,
+            "hard_constraints": self.hard_constraints,
+            "relation_skeleton": self.relation_skeleton,
+            "initial_entity_ids": self.initial_entity_ids,
+            "initial_hyperedge_ids": self.initial_hyperedge_ids,
+            "metadata": self.metadata,
             "checklist": self.progress_snapshot(),
         }
 

@@ -32,16 +32,27 @@ class RetrievalConfig:
     chunk_top_k: int = 8
     evidence_keep: int = 6
     taskframe_registration_threshold: float = 0.33
+    lexical_anchor_top_k: int = 12
+    branch_candidate_pool: int = 18
 
 
 @dataclass(slots=True)
 class ReasoningConfig:
     max_steps: int = 5
+    max_step_extensions: int = 2
+    max_stalled_steps: int = 2
     coarse_top_k: int = 6
     llm_top_k: int = 3
+    min_fresh_thoughts_per_step: int = 1
+    max_considered_without_selection: int = 3
     thought_score_threshold: float = 0.12
     min_verified_reasoning: int = 2
     evidence_score_threshold: float = 0.2
+    selection_penalty: float = 0.18
+    fresh_thought_bonus: float = 0.08
+    branch_top_k: int = 4
+    evidence_top_k_per_branch: int = 2
+    min_branch_agreement: int = 2
 
 
 @dataclass(slots=True)
@@ -51,6 +62,8 @@ class LLMConfig:
     model: str = "gpt-4o-mini"
     embedding_model: str = "text-embedding-3-small"
     timeout_seconds: int = 120
+    max_retries: int = 3
+    retry_backoff_seconds: float = 2.0
     temperature: float = 0.2
     use_mock: bool = False
 
@@ -100,14 +113,25 @@ def load_config(config_path: Path, project_root: Path) -> Config:
         chunk_top_k=int(retrieval.get("chunk_top_k", 8)),
         evidence_keep=int(retrieval.get("evidence_keep", 6)),
         taskframe_registration_threshold=float(retrieval.get("taskframe_registration_threshold", 0.33)),
+        lexical_anchor_top_k=int(retrieval.get("lexical_anchor_top_k", 12)),
+        branch_candidate_pool=int(retrieval.get("branch_candidate_pool", 18)),
     )
     reasoning_cfg = ReasoningConfig(
         max_steps=int(reasoning.get("max_steps", 5)),
+        max_step_extensions=int(reasoning.get("max_step_extensions", 2)),
+        max_stalled_steps=int(reasoning.get("max_stalled_steps", 2)),
         coarse_top_k=int(reasoning.get("coarse_top_k", 6)),
         llm_top_k=int(reasoning.get("llm_top_k", 3)),
+        min_fresh_thoughts_per_step=int(reasoning.get("min_fresh_thoughts_per_step", 1)),
+        max_considered_without_selection=int(reasoning.get("max_considered_without_selection", 3)),
         thought_score_threshold=float(reasoning.get("thought_score_threshold", 0.12)),
         min_verified_reasoning=int(reasoning.get("min_verified_reasoning", reasoning.get("min_verified_evidence", 2))),
         evidence_score_threshold=float(reasoning.get("evidence_score_threshold", 0.2)),
+        selection_penalty=float(reasoning.get("selection_penalty", 0.18)),
+        fresh_thought_bonus=float(reasoning.get("fresh_thought_bonus", 0.08)),
+        branch_top_k=int(reasoning.get("branch_top_k", 4)),
+        evidence_top_k_per_branch=int(reasoning.get("evidence_top_k_per_branch", 2)),
+        min_branch_agreement=int(reasoning.get("min_branch_agreement", 2)),
     )
     llm_cfg = LLMConfig(
         api_key_env=str(llm.get("api_key_env", "OPENAI_API_KEY")),
@@ -115,6 +139,8 @@ def load_config(config_path: Path, project_root: Path) -> Config:
         model=str(llm.get("model", "gpt-4o-mini")),
         embedding_model=str(llm.get("embedding_model", "text-embedding-3-small")),
         timeout_seconds=int(llm.get("timeout_seconds", 120)),
+        max_retries=int(llm.get("max_retries", 3)),
+        retry_backoff_seconds=float(llm.get("retry_backoff_seconds", 2.0)),
         temperature=float(llm.get("temperature", 0.2)),
         use_mock=bool(llm.get("use_mock", False)),
     )

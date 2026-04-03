@@ -11,14 +11,25 @@ retrieval:
   chunk_top_k: 8
   evidence_keep: 6
   taskframe_registration_threshold: 0.33
+  lexical_anchor_top_k: 12
+  branch_candidate_pool: 18
 
 reasoning:
   max_steps: 5
+  max_step_extensions: 2
+  max_stalled_steps: 2
   coarse_top_k: 6
   llm_top_k: 3
+  min_fresh_thoughts_per_step: 1
+  max_considered_without_selection: 3
   thought_score_threshold: 0.12
   min_verified_reasoning: 2
   evidence_score_threshold: 0.20
+  selection_penalty: 0.18
+  fresh_thought_bonus: 0.08
+  branch_top_k: 4
+  evidence_top_k_per_branch: 2
+  min_branch_agreement: 2
 
 llm:
   api_key_env: OPENAI_API_KEY
@@ -26,6 +37,8 @@ llm:
   model: gpt-4o-mini
   embedding_model: text-embedding-3-small
   timeout_seconds: 120
+  max_retries: 3
+  retry_backoff_seconds: 2.0
   temperature: 0.2
   use_mock: false
 

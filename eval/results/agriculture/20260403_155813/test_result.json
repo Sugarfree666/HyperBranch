@@ -1,0 +1,127 @@
+[
+  {
+    "question": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+    "golden_answers": [
+      "WESTERN NORTH CAROLINA"
+    ],
+    "context": [
+      "He got hooked early. While his brothers were involved in sports, his father would bring him down to work on the farm.",
+      "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+      "While ASAP uses a strategy similar to that of co-ops such as Country Natural Beef in creating its own brand to build recognition, value, and trust, three things set ASAP apart: it is not a producer, it does not make money on the sale of Appalachian Grown products, and it doesn't operate its own distribution network.",
+      "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+      "Brushy Mountain Bee Farm, Moravian Falls, North Carolina 800-233-7929, www.brushymountainbeefarm.com",
+      "Jackson, a North Carolina native, began his work with farmers in western North Carolina, whose tobacco farming heritage was ending."
+    ],
+    "nhops": 6,
+    "run_dir": "D:\\GitHub\\GoT_HGs_RAG\\runs\\20260403_155753_what-region-is-known-for-its-robust-distribution",
+    "run_status": "success",
+    "answer": "LOCATION OF ELECTRIC FENCES",
+    "generation": "LOCATION OF ELECTRIC FENCES\n\nReasoning summary: Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, s... | Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs. Worms | Worms for fish bait Goldfish and tropical f... | Bees favor an elevated location, preferably about 10 feet off the ground. -style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep...",
+    "retrieved": [
+      {
+        "chunk_id": "chunk-3dbce12e45fe13ef4f6973f92e57e779",
+        "content": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...",
+        "source_node_ids": [
+          "<hyperedge>\"Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\"",
+          "\"MARITIME LOCATION\"",
+          "\"SEAFOOD\"",
+          "\"HANDS-ON CLASSES\"",
+          "\"FISHING\"",
+          "\"NATIVE EELS\"",
+          "\"CRABS\"",
+          "\"SEAWEED\""
+        ],
+        "source_edge_ids": [
+          "edge-5546",
+          "edge-5547",
+          "edge-5548",
+          "edge-5549",
+          "edge-5550",
+          "edge-5551",
+          "edge-5552"
+        ],
+        "thought_id": "th-0007",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-736ea6711636125c220e214941062b61",
+        "content": "Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fishing | Consumers pay a daily fee or a per-pound fee for fish they catch on the farm Food fish | Catfish, trout, and other fish are raised for sale to stores, restaurants, and consumers _Exotic animals_ Elk, bison, deer, mountain sheep, donkeys, ratites (e.g., ostriches, emus, and rheas) | Raised for meat, hides, and specialty by-products such as emu oil or velvet from elk antlers (used medicinally) # What Is Added Value? Value is added when a raw commodity is changed in a way that makes it more convenient to market and gives it a longer marketing life. Examples of value-added crops include cornmeal, jams and jellies, and tomato juice. for example) and how you will market it (roadside stand, farmers' market, sale barn, value added) before you purchase the land. On the other hand, it is difficult...",
+        "source_node_ids": [
+          "<hyperedge>\"Evaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\"",
+          "\"LABOR\"",
+          "\"WATER\"",
+          "\"EQUIPMENT\"",
+          "\"LAND\"",
+          "\"SKILLS\"",
+          "\"SOILS\"",
+          "\"CAPITAL\"",
+          "\"CLIMATE\""
+        ],
+        "source_edge_ids": [
+          "edge-17851",
+          "edge-17852",
+          "edge-17853",
+          "edge-17854",
+          "edge-17855",
+          "edge-17856",
+          "edge-17857",
+          "edge-17858",
+          "edge-17859"
+        ],
+        "thought_id": "th-0007",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-048ad5fead1e52a66cfd2e40b5467d7b",
+        "content": "Bees favor an elevated location, preferably about 10 feet off the ground.\n\n-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obvious because you have limitations that restrict your choice of spots—a small yard, for instance, or perhaps specific areas of a larger property that must be avoided. Others may have no serious limitations. Let's assume that you are one of the fortunate ones who has an unrestricted choice of locations. What are some of the considerations? And if you are limited in your choice of hive location, how can you compensate for potential problems? ### **Hive Location** First, what are the bees' preferences? From studies done with swarms seeking new homes, certain preferences are known. Bees favor an elevated location, preferably about 10 feet off the ground. Humans can rarely accommodate them on this, since we must be able to get to the hive ourselves...",
+        "source_node_ids": [
+          "<hyperedge>\"Bees favor an elevated location, preferably about 10 feet off the ground.\"",
+          "\"SWARMS\"",
+          "\"BEES\"",
+          "\"ELEVATED LOCATION\""
+        ],
+        "source_edge_ids": [
+          "edge-4236",
+          "edge-4237",
+          "edge-4238"
+        ],
+        "thought_id": "th-0007",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-4d53cc613c52fd5080e556f9abb248a0",
+        "content": "Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\n\nponic greens. Then, to gain the attention and business of the influential Philadelphia horticulture clubs, the farm transformed its greenhouses into a full-fledged nursery and began cultivating flowers. Today Greensgrow offers a broad range of nursery plants that sell from early spring through late fall, including fruit trees, shrubs, vines, grasses, perennial flowers and hanging baskets, and vegetable starts. The nursery brings in as much as 30 percent of the farm's revenues over the first two to three months of the year. It also brings in customers who become interested in other aspects of the farm, such as the CSA, bolstering overall sales. **Identify and build on your farm's \"unfair advantage.\"** Every farm has its own \"unfair advantage,\" says Amy Ager of Hickory Nut Gap Farm. Every farm has some unique characteristic. In the case of Hickory Nut Gap Farm, the Agers capitalized on...",
+        "source_node_ids": [
+          "<hyperedge>\"Educating visitors about what to avoid, such as the location of electric fences, is critical for safety.\"",
+          "\"LOCATION OF ELECTRIC FENCES\""
+        ],
+        "source_edge_ids": [
+          "edge-16026"
+        ],
+        "thought_id": "th-0007",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-5a4a1a431b94a27a92d263b7dde5aa5a",
+        "content": "These people walk near a colony of bees and find themselves being stung.\n\nis this defensive behavior that allows a colony of bees to store away large quantities of honey with minimum likelihood that it will be taken from them by predators. They are able to defend themselves, their home, and their wealth. Because they can store surplus honey, bees can survive the winter in relatively large numbers and can greet the new growing season ready to work. Under normal circumstances, that work results in more stores of honey—some for us, some for them. So stinging has a positive side. But it can create problems. A bee sting itself is an interesting event, not a particularly scary one. A single sting, although momentarily painful, normally has no persistent aftereffects. A beekeeper probably does not even experience any distinct pain. I will discuss this later, but first, let's consider bee sting reactions, especially as perceived by the general public. **B EE STINGS...",
+        "source_node_ids": [
+          "<hyperedge>\"These people walk near a colony of bees and find themselves being stung.\"",
+          "\"COLONY\"",
+          "\"COLONY LOCATION\""
+        ],
+        "source_edge_ids": [
+          "edge-22410",
+          "edge-22411"
+        ],
+        "thought_id": "th-0007",
+        "thought_status": "completed"
+      }
+    ],
+    "retrieved_knowledge": "Given the city's maritime location, seafood is considered a staple of the local food system, and ForageSF offers hands-on classes on fishing and harvesting native eels, crabs, seaweed, and more.\n\nSome are legal (typical limits placed on chickens and farm animals), while others are aesthetic and perceptual (lawns are for growing grass, not food), historical (not many of us know how to grow food anymore), or posed by a harried American lifestyle. The downturn of the economy and the growing interest in local food, though, might suggest that never has there been a better time to rediscover the home victory garden. _— by Tim Beatley_ ### Supporting Backyard Foragers #### ForageSF ForageSF, based in **San Francisco** , is a wild-foods advocacy group whose mission is \"to connect Bay Area dwellers with the wild foods all around them.\" The group offers wild-foods harvesting tours and classes, a community-supported foraging (CSF) monthly basket, and The Underground Market, a private, members-only club where foragers and at-home food producers can sell their wares. Foraging is a largely...\n\nEvaluate your capital, skills, labor available, land, soils, water, location/access, climate, equipment, and marketing needs.\n\nWorms | Worms for fish bait Goldfish and tropical fish | Fish for the aquarium trade Fee fishing | Consumers pay a daily fee or a per-pound fee for fish they catch on the farm Food fish | Catfish, trout, and other fish are raised for sale to stores, restaurants, and consumers _Exotic animals_ Elk, bison, deer, mountain sheep, donkeys, ratites (e.g., ostriches, emus, and rheas) | Raised for meat, hides, and specialty by-products such as emu oil or velvet from elk antlers (used medicinally) # What Is Added Value? Value is added when a raw commodity is changed in a way that makes it more convenient to market and gives it a longer marketing life. Examples of value-added crops include cornmeal, jams and jellies, and tomato juice. for example) and how you will market it (roadside stand, farmers' market, sale barn, value added) before you purchase the land. On the other hand, it is difficult...\n\nBees favor an elevated location, preferably about 10 feet off the ground.\n\n-style by enhancing the pollination process. ## **CHAPTER 3 GETTING STARTED** **W** here will you keep your new hive? For some, the answer is obvious because you have limitations that restrict your choice of spots—a small yard, for instance, or perhaps specific areas of a larger property that must be avoided. Others may have no serious limitations. Let's assume that you are one of the fortunate ones who has an unrestricted choice of locations. What are some of the considerations? And if you are limited in your choice of hive location, how can you compensate for potential problems? ### **Hive Location** First, what are the bees' preferences? From studies done with swarms seeking new homes, certain preferences are known. Bees favor an elevated location, preferably about 10 feet off the ground. Humans can rarely accommodate them on this, since we must be able to get to the hive ourselves...\n\nEducating visitors about what to avoid, such as the location of electric fences, is critical for safety.\n\nponic greens. Then, to gain the attention and business of the influential Philadelphia horticulture clubs, the farm transformed its greenhouses into a full-fledged nursery and began cultivating flowers. Today Greensgrow offers a broad range of nursery plants that sell from early spring through late fall, including fruit trees, shrubs, vines, grasses, perennial flowers and hanging baskets, and vegetable starts. The nursery brings in as much as 30 percent of the farm's revenues over the first two to three months of the year. It also brings in customers who become interested in other aspects of the farm, such as the CSA, bolstering overall sales. **Identify and build on your farm's \"unfair advantage.\"** Every farm has its own \"unfair advantage,\" says Amy Ager of Hickory Nut Gap Farm. Every farm has some unique characteristic. In the case of Hickory Nut Gap Farm, the Agers capitalized on...\n\nThese people walk near a colony of bees and find themselves being stung.\n\nis this defensive behavior that allows a colony of bees to store away large quantities of honey with minimum likelihood that it will be taken from them by predators. They are able to defend themselves, their home, and their wealth. Because they can store surplus honey, bees can survive the winter in relatively large numbers and can greet the new growing season ready to work. Under normal circumstances, that work results in more stores of honey—some for us, some for them. So stinging has a positive side. But it can create problems. A bee sting itself is an interesting event, not a particularly scary one. A single sting, although momentarily painful, normally has no persistent aftereffects. A beekeeper probably does not even experience any distinct pain. I will discuss this later, but first, let's consider bee sting reactions, especially as perceived by the general public. **B EE STINGS...",
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  }
+]

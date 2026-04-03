@@ -59,7 +59,9 @@ def create_run_dir(base_dir: Path, question: str) -> Path:
 def configure_logging(run_dir: Path, log_level: str = "INFO") -> logging.Logger:
     logger = logging.getLogger("goth_hyper")
     logger.setLevel(getattr(logging, log_level.upper(), logging.INFO))
-    logger.handlers.clear()
+    for handler in list(logger.handlers):
+        handler.close()
+        logger.removeHandler(handler)
 
     formatter = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
     file_handler = logging.FileHandler(run_dir / "run.log", encoding="utf-8")

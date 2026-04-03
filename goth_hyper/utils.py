@@ -9,6 +9,48 @@ import numpy as np
 
 
 JSON_BLOCK_RE = re.compile(r"```(?:json)?\s*(\{.*\}|\[.*\])\s*```", re.DOTALL)
+TOKEN_RE = re.compile(r"[a-z0-9]+")
+STOPWORDS = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "by",
+    "did",
+    "do",
+    "does",
+    "for",
+    "from",
+    "had",
+    "has",
+    "have",
+    "how",
+    "in",
+    "is",
+    "it",
+    "its",
+    "known",
+    "of",
+    "on",
+    "or",
+    "that",
+    "the",
+    "their",
+    "this",
+    "to",
+    "was",
+    "were",
+    "what",
+    "when",
+    "where",
+    "which",
+    "who",
+    "why",
+    "with",
+}
 
 
 def normalize_label(text: str) -> str:
@@ -99,3 +141,29 @@ def ensure_list(value: Any) -> list[Any]:
 
 def pretty_json(data: Any) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False)
+
+
+def tokenize(text: str) -> list[str]:
+    return TOKEN_RE.findall(normalize_label(text).lower())
+
+
+def content_tokens(text: str) -> list[str]:
+    return [token for token in tokenize(text) if token not in STOPWORDS]
+
+
+def lexical_overlap_score(query_texts: list[str], candidate_text: str) -> float:
+    candidate_tokens = set(content_tokens(candidate_text))
+    if not candidate_tokens:
+        return 0.0
+
+    scores: list[float] = []
+    for text in query_texts:
+        query_tokens = set(content_tokens(text))
+        if not query_tokens:
+            continue
+        overlap = len(query_tokens & candidate_tokens)
+        if overlap == 0:
+            scores.append(0.0)
+            continue
+        scores.append(overlap / max(len(query_tokens), 1))
+    return max(scores, default=0.0)

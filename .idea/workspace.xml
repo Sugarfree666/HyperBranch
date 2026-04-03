@@ -6,9 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="3a9a8072-ddae-4340-8354-17943ee9c24b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/agriculture.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/agriculture.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/cli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/data/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/data/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/llm/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/llm/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/llm/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/llm/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/logging_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/logging_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/reasoning/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/reasoning/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/reasoning/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/reasoning/operations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/reasoning/scoring.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/reasoning/scoring.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/retrieval/evidence.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/retrieval/evidence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goth_hyper/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/goth_hyper/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts/final_answer.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/final_answer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts/task_frame.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/task_frame.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts/thought_operations.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/thought_operations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompts/thought_selector.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/thought_selector.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/20260402_134938_what-significant-year-marked-the-expansion-of-co/artifacts/dataset_summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/20260402_134938_what-significant-year-marked-the-expansion-of-co/artifacts/final_answer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/20260402_134938_what-significant-year-marked-the-expansion-of-co/artifacts/task_frame.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/20260402_134938_what-significant-year-marked-the-expansion-of-co/artifacts/thought_graph.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/20260402_134938_what-significant-year-marked-the-expansion-of-co/events.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/20260402_134938_what-significant-year-marked-the-expansion-of-co/llm_calls.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/20260402_134938_what-significant-year-marked-the-expansion-of-co/run.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_pipeline_smoke.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_pipeline_smoke.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +40,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="59" />
+    <option name="cachedIndexableFilesCount" value="78" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">

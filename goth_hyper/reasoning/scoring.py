@@ -34,10 +34,16 @@ class ThoughtScorer:
         ):
             task_score = max(cosine_similarity(thought_vector, question_vector), 0.0)
             grounding_score = max(cosine_similarity(thought_vector, grounding_vector), 0.0) if grounding_text else 0.0
-            thought.score = task_score * (1.0 + grounding_score)
+            selection_count = int(thought.metadata.get("selection_count", 0) or 0)
+            selection_penalty = 1.0 / (1.0 + (selection_count * self.config.selection_penalty))
+            fresh_bonus = self.config.fresh_thought_bonus if selection_count == 0 else 0.0
+            thought.score = (task_score * (1.0 + grounding_score) + fresh_bonus) * selection_penalty
             thought.metadata["score_breakdown"] = {
                 "task_score": task_score,
                 "grounding_score": grounding_score,
+                "selection_count": selection_count,
+                "selection_penalty": selection_penalty,
+                "fresh_bonus": fresh_bonus,
             }
         self.logger.info("Scored %s thoughts", len(thoughts))
         return thoughts

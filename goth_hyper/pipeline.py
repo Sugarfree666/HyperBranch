@@ -55,13 +55,7 @@ class GoTHyperPipeline:
             config=config.retrieval,
             logger=logger,
         )
-        executor = ThoughtOperationExecutor(
-            llm_service=self.llm_service,
-            registry=registry,
-            evidence_score_threshold=config.reasoning.evidence_score_threshold,
-            logger=logger,
-            trace_store=trace_store,
-        )
+        executor = ThoughtOperationExecutor(logger=logger, trace_store=trace_store)
         self.controller = ThoughtController(
             config=config,
             dataset=self.dataset,
@@ -80,6 +74,7 @@ class GoTHyperPipeline:
         result = self.controller.run(question)
         self.trace_store.save_artifact("artifacts/task_frame.json", result["task_frame"])
         self.trace_store.save_artifact("artifacts/thought_graph.json", result["thought_graph"])
+        self.trace_store.save_artifact("artifacts/evidence_subgraph.json", result["evidence_subgraph"])
         self.trace_store.save_artifact("artifacts/final_answer.json", result["final_answer"])
         result["run_dir"] = str(self.run_dir)
         self.logger.info("Pipeline finished. Artifacts saved under %s", self.run_dir)

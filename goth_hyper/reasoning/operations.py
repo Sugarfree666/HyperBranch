@@ -1,164 +1,228 @@
 from __future__ import annotations
 
 import logging
-from typing import Any, Callable
+from typing import Any
 
 from ..logging_utils import TraceStore
-from ..models import EvidenceItem, Grounding, TaskFrame, ThoughtGraph, ThoughtState
-from .taskframe import TaskFrameRegistry
+from ..models import EvidenceItem, Grounding, HyperedgeCandidate, TaskFrame, ThoughtState
 
 
 class ThoughtOperationExecutor:
-    def __init__(
-        self,
-        llm_service: Any,
-        registry: TaskFrameRegistry,
-        evidence_score_threshold: float,
-        logger: logging.Logger,
-        trace_store: TraceStore,
-    ) -> None:
-        self.llm_service = llm_service
-        self.registry = registry
-        self.evidence_score_threshold = evidence_score_threshold
+    def __init__(self, logger: logging.Logger, trace_store: TraceStore) -> None:
         self.logger = logger
         self.trace_store = trace_store
 
-    def execute(
-        self,
-        question: str,
-        task_frame: TaskFrame,
-        thought_graph: ThoughtGraph,
-        thought: ThoughtState,
-        evidence_items: list[EvidenceItem],
-        related_thoughts: list[ThoughtState],
-        id_factory: Callable[[str], str],
-    ) -> dict[str, Any]:
-        thought.grounding.update_with_evidence(evidence_items)
-        decision = self.llm_service.decide_operation(question, task_frame, thought, evidence_items, related_thoughts)
-        operation = str(decision.get("operation", "verify")).lower()
-
-        result: dict[str, Any] = {
-            "operation": operation,
-            "new_thought_ids": [],
-            "verified_reasoning_ids": [],
-        }
-
-        if operation == "expand":
-            thought.status = "expanded"
-            new_thoughts = decision.get("new_thoughts", []) or [
-                {
-                    "content": f"Refine branch from: {thought.content}",
-                    "objective": thought.objective,
-                    "slot_id": thought.slot_id,
-                    "metadata": {"intent": thought.metadata.get("intent", "followup")},
-                }
-            ]
-            for payload in new_thoughts:
-                new_state = self._build_child_thought(id_factory, thought, payload)
-                thought_graph.add_thought(new_state)
-                result["new_thought_ids"].append(new_state.thought_id)
-
-        elif operation == "revise":
-            thought.status = "revised"
-            revised_payload = {
-                "content": decision.get("revised_content") or thought.content,
-                "objective": thought.objective,
-                "slot_id": thought.slot_id,
-                "metadata": {"intent": thought.metadata.get("intent", "revise")},
-            }
-            revised_state = self._build_child_thought(id_factory, thought, revised_payload)
-            thought_graph.add_thought(revised_state)
-            result["new_thought_ids"].append(revised_state.thought_id)
-
-        elif operation == "merge":
-            thought.status = "merged"
-            merge_with = [thought_id for thought_id in decision.get("merge_with_thought_ids", []) if thought_id in thought_graph.thoughts]
-            for merge_id in merge_with:
-                thought_graph.get(merge_id).status = "merged"
-            merged_payload = (
-                decision.get("new_thoughts")
-                or [
-                    {
-                        "content": decision.get("revised_content") or thought.content,
-                        "objective": thought.objective,
-                        "slot_id": thought.slot_id,
-                        "metadata": {"intent": "merge"},
-                    }
-                ]
-            )[0]
-            merged_state = self._build_child_thought(
-                id_factory,
-                thought,
-                merged_payload,
-                extra_parent_ids=merge_with,
-            )
-            thought_graph.add_thought(merged_state)
-            result["new_thought_ids"].append(merged_state.thought_id)
-
-        else:
-            verification = decision.get("verification", {})
-            verdict = str(verification.get("verdict", "insufficient")).lower()
-            if verdict == "supported":
-                thought.status = "verified"
-                selected_ids = verification.get("evidence_ids", [])
-                if isinstance(selected_ids, list) and selected_ids:
-                    selected_items = [item for item in evidence_items if item.evidence_id in set(selected_ids)]
-                    if selected_items:
-                        thought.grounding.evidence = []
-                        thought.grounding.chunk_ids = []
-                        thought.grounding.node_ids = []
-                        thought.grounding.update_with_evidence(selected_items)
-                thought.score = max(thought.score, self.evidence_score_threshold)
-                self.registry.register_reasoning(task_frame, thought)
-                result["verified_reasoning_ids"].append(thought.thought_id)
-            elif verdict == "refuted":
-                thought.status = "rejected"
-            else:
-                thought.status = str(decision.get("new_status", "active"))
-
-        thought_graph.recompute_frontier()
-        thought_graph.append_history(
-            "operation_executed",
-            {
-                "thought_id": thought.thought_id,
-                "operation": operation,
-                "decision": decision,
-                "new_thought_ids": result["new_thought_ids"],
-                "verified_reasoning_ids": result["verified_reasoning_ids"],
-            },
-        )
-        self.trace_store.log_event(
-            "operation_executed",
-            {
-                "thought_id": thought.thought_id,
-                "operation": operation,
-                "new_thought_ids": result["new_thought_ids"],
-                "verified_reasoning_ids": result["verified_reasoning_ids"],
-            },
-        )
-        return result
-
-    def _build_child_thought(
-        self,
-        id_factory: Callable[[str], str],
-        parent_thought: ThoughtState,
-        payload: dict[str, Any],
-        extra_parent_ids: list[str] | None = None,
-    ) -> ThoughtState:
-        return ThoughtState(
-            thought_id=id_factory("th"),
+    def create_root_thought(self, thought_id: str, question: str, task_frame: TaskFrame) -> ThoughtState:
+        thought = ThoughtState(
+            thought_id=thought_id,
             kind="reasoning",
-            content=str(payload.get("content", parent_thought.content)),
-            objective=str(payload.get("objective", parent_thought.objective)),
-            slot_id=str(payload.get("slot_id")) if payload.get("slot_id") is not None else parent_thought.slot_id,
-            grounding=Grounding(
-                anchor_texts=list(parent_thought.grounding.anchor_texts),
-                node_ids=list(parent_thought.grounding.node_ids),
-                chunk_ids=list(parent_thought.grounding.chunk_ids),
-                evidence=list(parent_thought.grounding.evidence),
-                notes=list(parent_thought.grounding.notes),
-            ),
-            status="active",
-            parent_ids=[parent_thought.thought_id] + list(extra_parent_ids or []),
-            metadata=dict(payload.get("metadata", parent_thought.metadata)),
+            content=question,
+            objective=task_frame.target,
+            slot_id=None,
+            grounding=Grounding(anchor_texts=list(task_frame.topic_entities or task_frame.anchors), notes=["question-root"]),
+            status="root",
+            metadata={"iteration": 0, "branch_kind": "root"},
         )
+        self._log_creation("root_created", thought, {})
+        return thought
+
+    def create_initial_anchor_thought(
+        self,
+        thought_id: str,
+        task_frame: TaskFrame,
+        candidates: list[HyperedgeCandidate],
+        evidence_items: list[EvidenceItem],
+        parent_ids: list[str],
+    ) -> ThoughtState:
+        content = "Initial anchoring over topic entities and candidate hyperedges."
+        metadata = {
+            "iteration": 0,
+            "branch_kind": "initial",
+            "selected_hyperedge_ids": [candidate.hyperedge_id for candidate in candidates],
+            "candidate_answer": "",
+            "confidence": max((candidate.score for candidate in candidates), default=0.0),
+        }
+        thought = ThoughtState(
+            thought_id=thought_id,
+            kind="reasoning",
+            content=content,
+            objective="Initial E0 and H0 anchoring",
+            slot_id="anchor-0" if task_frame.anchors else None,
+            grounding=self._build_grounding(task_frame, candidates, evidence_items, notes=["initial-anchor"]),
+            score=metadata["confidence"],
+            status="grounded",
+            parent_ids=list(parent_ids),
+            metadata=metadata,
+        )
+        self._log_creation("initial_anchor_created", thought, {"candidate_count": len(candidates)})
+        return thought
+
+    def create_branch_thought(
+        self,
+        thought_id: str,
+        task_frame: TaskFrame,
+        branch_kind: str,
+        iteration: int,
+        selection_payload: dict[str, Any],
+        candidates: list[HyperedgeCandidate],
+        evidence_items: list[EvidenceItem],
+        parent_ids: list[str],
+    ) -> ThoughtState:
+        supporting_facts = [str(item).strip() for item in selection_payload.get("supporting_facts", []) if str(item).strip()]
+        candidate_answer = str(selection_payload.get("candidate_answer", "")).strip()
+        content = candidate_answer or " | ".join(supporting_facts) or f"{branch_kind} branch iteration {iteration}"
+        confidence = float(selection_payload.get("confidence", 0.0) or 0.0)
+        missing_requirements = [
+            str(item).strip() for item in selection_payload.get("missing_requirements", []) if str(item).strip()
+        ]
+        thought = ThoughtState(
+            thought_id=thought_id,
+            kind="reasoning",
+            content=content,
+            objective=f"{branch_kind} reasoning branch",
+            slot_id="target-0",
+            grounding=self._build_grounding(
+                task_frame,
+                candidates,
+                evidence_items,
+                notes=[f"branch:{branch_kind}", f"iteration:{iteration}", *supporting_facts[:2]],
+            ),
+            score=max(confidence, max((candidate.score for candidate in candidates), default=0.0)),
+            status="verified" if candidates else "active",
+            parent_ids=list(parent_ids),
+            metadata={
+                "iteration": iteration,
+                "branch_kind": branch_kind,
+                "selected_hyperedge_ids": [candidate.hyperedge_id for candidate in candidates],
+                "candidate_answer": candidate_answer,
+                "supporting_facts": supporting_facts,
+                "missing_requirements": missing_requirements,
+                "confidence": confidence,
+                "notes": str(selection_payload.get("notes", "") or "").strip(),
+            },
+        )
+        self._log_creation(
+            "branch_thought_created",
+            thought,
+            {
+                "branch_kind": branch_kind,
+                "iteration": iteration,
+                "candidate_count": len(candidates),
+            },
+        )
+        return thought
+
+    def create_merge_thought(
+        self,
+        thought_id: str,
+        task_frame: TaskFrame,
+        iteration: int,
+        merge_result: dict[str, Any],
+        evidence_items: list[EvidenceItem],
+        parent_ids: list[str],
+    ) -> ThoughtState:
+        consensus_answer = str(merge_result.get("consensus_answer", "")).strip()
+        content = consensus_answer or str(merge_result.get("notes", "") or "").strip() or "Branch reconciliation"
+        preferred_branches = [str(item).strip() for item in merge_result.get("preferred_branches", []) if str(item).strip()]
+        thought = ThoughtState(
+            thought_id=thought_id,
+            kind="reasoning",
+            content=content,
+            objective="Merge and contrast branch answers",
+            slot_id="target-0",
+            grounding=Grounding(
+                anchor_texts=list(task_frame.topic_entities or task_frame.anchors),
+                chunk_ids=[item.chunk_id for item in evidence_items],
+                evidence=list(evidence_items),
+                notes=[f"merge-iteration:{iteration}", *preferred_branches],
+            ),
+            score=float(len(preferred_branches)),
+            status="merged",
+            parent_ids=list(parent_ids),
+            metadata={
+                "iteration": iteration,
+                "branch_kind": "merge",
+                "consensus_answer": consensus_answer,
+                "preferred_branches": preferred_branches,
+                "conflicts": merge_result.get("conflicts", []),
+                "missing_requirements": merge_result.get("missing_requirements", []),
+                "notes": str(merge_result.get("notes", "") or "").strip(),
+            },
+        )
+        self._log_creation("merge_thought_created", thought, {"iteration": iteration})
+        return thought
+
+    def create_answer_thought(
+        self,
+        thought_id: str,
+        task_frame: TaskFrame,
+        final_payload: dict[str, Any],
+        evidence_items: list[EvidenceItem],
+        parent_ids: list[str],
+    ) -> ThoughtState:
+        thought = ThoughtState(
+            thought_id=thought_id,
+            kind="answer",
+            content=str(final_payload.get("answer", "") or "").strip(),
+            objective=task_frame.target,
+            slot_id="target-0",
+            grounding=Grounding(
+                anchor_texts=list(task_frame.topic_entities or task_frame.anchors),
+                chunk_ids=[item.chunk_id for item in evidence_items],
+                evidence=list(evidence_items),
+                notes=[
+                    str(final_payload.get("reasoning_summary", "") or "").strip(),
+                    *[str(item).strip() for item in final_payload.get("remaining_gaps", []) if str(item).strip()],
+                ],
+            ),
+            score=float(final_payload.get("confidence", 0.0) or 0.0),
+            status="completed",
+            parent_ids=list(parent_ids),
+            metadata=dict(final_payload),
+        )
+        self._log_creation("answer_thought_created", thought, {"parent_count": len(parent_ids)})
+        return thought
+
+    def retire_previous_branch(self, thought: ThoughtState | None) -> None:
+        if thought is None:
+            return
+        if thought.status in {"verified", "active", "grounded"}:
+            thought.status = "expanded"
+
+    def _build_grounding(
+        self,
+        task_frame: TaskFrame,
+        candidates: list[HyperedgeCandidate],
+        evidence_items: list[EvidenceItem],
+        notes: list[str] | None = None,
+    ) -> Grounding:
+        node_ids: list[str] = []
+        chunk_ids: list[str] = []
+        for candidate in candidates:
+            if candidate.hyperedge_id not in node_ids:
+                node_ids.append(candidate.hyperedge_id)
+            for entity_id in candidate.entity_ids:
+                if entity_id not in node_ids:
+                    node_ids.append(entity_id)
+            for chunk_id in candidate.chunk_ids:
+                if chunk_id not in chunk_ids:
+                    chunk_ids.append(chunk_id)
+        return Grounding(
+            anchor_texts=list(task_frame.topic_entities or task_frame.anchors),
+            node_ids=node_ids,
+            chunk_ids=chunk_ids,
+            evidence=list(evidence_items),
+            notes=list(notes or []),
+        )
+
+    def _log_creation(self, event: str, thought: ThoughtState, payload: dict[str, Any]) -> None:
+        self.trace_store.log_event(
+            event,
+            {
+                "thought_id": thought.thought_id,
+                "kind": thought.kind,
+                "status": thought.status,
+                **payload,
+            },
+        )
+        self.logger.info("Created %s thought %s (%s)", thought.kind, thought.thought_id, thought.status)

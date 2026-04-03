@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "question_file": "D:\\GitHub\\GoT_HGs_RAG\\questions\\agriculture\\questions.json",
+    "runs_dir": "D:\\GitHub\\GoT_HGs_RAG\\runs",
+    "output_dir": "D:\\GitHub\\GoT_HGs_RAG\\eval\\results\\smoke_eval",
+    "start_index": 0,
+    "limit": 1,
+    "skip_rsim": true,
+    "skip_gen": true,
+    "workers": 1
+  },
+  "counts": {
+    "total": 1,
+    "success": 0,
+    "failed": 0,
+    "missing": 1
+  },
+  "overall": {
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  "by_nhops": {
+    "6": {
+      "count": 1,
+      "f1": 0.0,
+      "r_s": null,
+      "g_e": null
+    }
+  }
+}
