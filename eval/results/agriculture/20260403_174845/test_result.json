@@ -1,0 +1,1254 @@
+[
+  {
+    "question": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+    "golden_answers": [
+      "WESTERN NORTH CAROLINA"
+    ],
+    "context": [
+      "He got hooked early. While his brothers were involved in sports, his father would bring him down to work on the farm.",
+      "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+      "While ASAP uses a strategy similar to that of co-ops such as Country Natural Beef in creating its own brand to build recognition, value, and trust, three things set ASAP apart: it is not a producer, it does not make money on the sale of Appalachian Grown products, and it doesn't operate its own distribution network.",
+      "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+      "Brushy Mountain Bee Farm, Moravian Falls, North Carolina 800-233-7929, www.brushymountainbeefarm.com",
+      "Jackson, a North Carolina native, began his work with farmers in western North Carolina, whose tobacco farming heritage was ending."
+    ],
+    "nhops": 6,
+    "run_dir": "D:\\GitHub\\GoT_HGs_RAG\\runs\\20260403_174122_what-region-is-known-for-its-robust-distribution",
+    "run_status": "success",
+    "answer": "Western North Carolina",
+    "generation": "Western North Carolina\n\nReasoning summary: The evidence indicates that Warren Wilson College, located in Western North Carolina, has been operating a farm for over a hundred years and is part of a robust distribution network for local food.\n\nRemaining gaps: Specific details about the distribution network's structure and effectiveness.",
+    "retrieved": [
+      {
+        "chunk_id": "chunk-5d4150698732f393c235b8b3e1cb2d88",
+        "content": "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\n\nstrategy to empower this underserved population, ACEnet identifies the 32 counties in this region as its primary service region and offers a hefty 50 percent discount on kitchen-facility rent to its inhabitants. ### Growers, Millers, Bakers: Rebuilding a Local Grain Economy #### Local and Heritage Grains _coauthored by Regine Kennedy_ **Across the nation** , the grassroots food movement is expanding into the production, milling, and distribution of whole grains. Though they may be one of our oldest sources of nourishment, appealing to a sense of deep heritage, grains are a relative newcomer to the local food scene. The leaders and groups described here are pioneers in a broad-based effort to reestablish locally grown and milled grains as a prized staple in our community food pantry. Advocates of local food decry the centralized, mass production of food, based on the availability of ch...",
+        "source_node_ids": [
+          "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+          "\"ADVOCATES OF LOCAL FOOD\"",
+          "\"CENTRALIZED MASS PRODUCTION\"",
+          "\"REGIONAL FOOD PRODUCTION\"",
+          "\"SUSTAINABILITY\"",
+          "\"FOOD SECURITY\""
+        ],
+        "source_edge_ids": [
+          "edge-26692",
+          "edge-26693",
+          "edge-26694",
+          "edge-26695",
+          "edge-26696"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-a8cfe86ed3c97ccb7c9629ee2dac08b4",
+        "content": "Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\n\nDrain winter oil and change filters. Change the transmission fluid and antifreeze, if needed. * Invest in a scheduled equipment preventive maintenance program. Set regular cycles to change oil and filters. During the growing season, preventive maintenance is one element of farming that operators can control. * Use oil and hydraulic fluid analyses to help prolong equipment life through early detection of abnormal wear. # Equipment Costs Here are some formulas to help you figure your costs for machinery. They do not include property taxes or labor of the operator. ## Fixed Costs 1. Annual depreciation = new cost ÷ years of useful life 2. Average annual insurance = new cost x g x insurance rate Insurance rate: nonmotorized at .012 ($12/$100 valuation) motorized at 0.010 ($10/$1000 valuation) 3. Annual housing = square feet storage × cost per square foot Cost per square foot = new cost pe...",
+        "source_node_ids": [
+          "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+          "\"TRUCK FARM\"",
+          "\"CROP AND LIVESTOCK FARM\"",
+          "\"HAY FARM\""
+        ],
+        "source_edge_ids": [
+          "edge-9259",
+          "edge-9260",
+          "edge-9261"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-ba841e41630d5b5e46b271cb1a11d579",
+        "content": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\n\ndifferent. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would be assured of consistently high quality, farmers would gain access to new markets, and the public would have a way of knowing it was buying something truly local. #### Creating a Certified Local Brand When ASAP's local food guide and educational efforts took off, people began to ask for local food. But unforeseen problems began to emerge as stores jumped on the \"local\" bandwagon: There was no unified definition for local. Stores were deciding for themselves what they would call local, creating confusion and disagreement among consumers and producers. Does local mean anywhere in North Carolina? What about food from just a few miles away over the border in Tennessee? Can a...",
+        "source_node_ids": [
+          "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+          "\"INFRASTRUCTURE\"",
+          "\"DISTRIBUTION NETWORK\"",
+          "\"COMMUNITIES\"",
+          "\"WESTERN NORTH CAROLINA\""
+        ],
+        "source_edge_ids": [
+          "edge-2866",
+          "edge-2867",
+          "edge-2868",
+          "edge-2869"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-ad0d4e7d44014acab56e26cbaa12a896",
+        "content": "In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\n\nfarming. But a cooperative isn't the only aggregation model that works. Gladheart Farms in Asheville, North Carolina (page 87), shows that a farm can double as a wholesale distributor, marketing and selling products for other farms. And Appalachian Sustainable Development, based in Virginia (page 253), shows that a nonprofit working as a distributor for a network of small-scale farmers can be tremendously effective in building a local food system to support farmers. The experience of Warren Wilson College (page 165), also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity. A campus food-service program needs a consistent, dependable supply of food, whether it is serving a few thousand meals per day, as at Warren Wilson College, or tens of thousands of meals per day, as at larger...",
+        "source_node_ids": [
+          "<hyperedge>\"In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\"",
+          "\"LOCAL GROWERS\"",
+          "\"CENTRAL DISTRIBUTION CENTER\""
+        ],
+        "source_edge_ids": [
+          "edge-12832",
+          "edge-12833"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-5944a88ca415780f3d4838a47d068512",
+        "content": "farmers all over the world are connected to companies through an intricate network of distributors who aggregate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores.\n\nfarmers all over the world. And connected to these companies is an intricate network of distributors who aggregrate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores. Today, if farmers are not serving the industrialized system of aggregation and distribution – if they want to stay small and serve their local community – they face many challenges. While there is the obvious challenge of long hours of hard physical work, many challenges have little to do with knowing how to grow crops or raise animals. They concern the business of farming: identifying the right crops or products that in smaller quantities will bring in a profit; finding markets that will consistently buy smaller quantities; branding, packaging, transporting the products safely to avoid spoilage; and meeting food safety, liability, and insurance requirements. Many of those cha...",
+        "source_node_ids": [
+          "<hyperedge>\"farmers all over the world are connected to companies through an intricate network of distributors who aggregate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores.\"",
+          "\"SCHOOLS\"",
+          "\"COMPANIES\"",
+          "\"HOSPITALS\"",
+          "\"RETIREMENT HOMES\"",
+          "\"FARMERS\"",
+          "\"GROCERY STORES\"",
+          "\"RESTAURANTS\"",
+          "\"DISTRIBUTORS\""
+        ],
+        "source_edge_ids": [
+          "edge-21968",
+          "edge-21969",
+          "edge-21970",
+          "edge-21971",
+          "edge-21972",
+          "edge-21973",
+          "edge-21974",
+          "edge-21975"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-5f8baa196ceabfc9bc0a6cc79c04127e",
+        "content": "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\n\nworld to think critically about what, when, where, why, and how we eat. Whatever the goals may be for these varied programs, they share a common motivation: fresh food is something students want the opportunity to enjoy. And as a subject for academic inquiry, the study of our food system is coming into its own, enabling students to understand core community issues through the lens of food. In this way the farm-to-college food movement is changing not only what we eat, but how we think about and understand the impacts of what we eat. ### Cultivating Confident, Competent Leaders #### Warren Wilson College Farm _with research by Benjamin Chrisinger_ For more than a hundred years, Warren Wilson College in **western North Carolina** has operated a farm of about 340 acres to serve its students and community. Today this student-run farm produces a variety of rotated crops along with grass-fe...",
+        "source_node_ids": [
+          "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+          "\"FARM\"",
+          "\"WARREN WILSON COLLEGE\"",
+          "\"WESTERN NORTH CAROLINA\""
+        ],
+        "source_edge_ids": [
+          "edge-20721",
+          "edge-20722",
+          "edge-20723"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-a0ebf31ca8cf0e8a5dbe6d09c3efa272",
+        "content": "A partnership with the local high school and community college brings special-needs 'transitional' youth (so called because they are transitioning out of school), ages 18 to 21, to the farm once a week to work as 'Farmer for a Day,' during which they participate in a variety of farm chores.\n\ncleaning up another neglected lot to make it into a park. Within only four weeks, because the neighborhood itself was excited, because the idea of their neighborhood garden had been grown _by them_ over four years, the community now wanted to double the size of their garden. Van Ness says proudly, \"This is what it means to grow a project with community.\" #### Financial Stability through a CSA The Lynchburg Grows community-supported agriculture (CSA) program provides more than weekly baskets of freshly grown food to shareholders from May through October; it also provides a steady, dependable stream of income for the nonprofit. The group produces all its vegetables, herbs, and flowers in its glass-enclosed greenhouses, even during summer months. The historic greenhouses are the group's greatest asset, and it has found a way to use them by draping shade cloth under the ceiling during sum...",
+        "source_node_ids": [
+          "<hyperedge>\"A partnership with the local high school and community college brings special-needs 'transitional' youth (so called because they are transitioning out of school), ages 18 to 21, to the farm once a week to work as 'Farmer for a Day,' during which they participate in a variety of farm chores.\"",
+          "\"LOCAL HIGH SCHOOL\"",
+          "\"COMMUNITY COLLEGE\"",
+          "\"TRANSITIONAL YOUTH\"",
+          "\"FARMER FOR A DAY\""
+        ],
+        "source_edge_ids": [
+          "edge-10843",
+          "edge-10844",
+          "edge-10845",
+          "edge-10846"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-553c0f788a5df6c23a481c0a3efdaabb",
+        "content": "Establishing a College Farming Program.\n\nfrom there. Not including the start-up costs, which are significant, Hubbard thinks a college farm can be run at a fairly low cost. The Warren Wilson farm grosses about $200,000 a year on 275 working acres from sales of its broilers, beef cows, and hogs, which covers all operating expenses and a portion of student and management labor. The additional annual cost outlay, he says, is about $25,000. To my ears, that sounds like a very small amount for a flagship college program with so much to offer. \"We are a long way from turning a true profit,\" says Hubbard, \"but as a nonprofit our goal is to offer real-life experience for students for education.\" If students want to make lots of money, Hubbard wouldn't encourage them to take up farming. After all, he explains, Warren Wilson isn't trying to make farmers; it's creating students who are better prepared for whatever they want to become,...",
+        "source_node_ids": [
+          "<hyperedge>\"Establishing a College Farming Program.\"",
+          "\"COLLEGE FARMING PROGRAM\""
+        ],
+        "source_edge_ids": [
+          "edge-3621"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-b26f04bc8df6a747ead835cc8d210eec",
+        "content": "Any community trying to grow a local food system faces a similar dilemma: customers won't surface unless there are farmers providing the products, and farmers won't provide the products unless there are customers.\n\n, as its mission states, \"development that is sustainable and beneficial for nature and people, for culture and community.\" As part of its mission to facilitate the development of a robust local food system, ASD promotes the growth of organic and sustainable farmers through education and training, market development for local food, and distribution services. Forget about the organic arugula and lavender. If you want to build a local food system, you need to grow ordinary food for ordinary people, says Anthony Flaccovento, founder and former executive director of Appalachian Sustainable Development (ASD). Squash, melons, beans, meats, eggs – these are not just food staples but food _system_ staples. ASD's work is evidence that the local and organic food movement is not necessarily elitist, as some insist, but in fact can specifically address issues of social justice. Indeed, it was Fla...",
+        "source_node_ids": [
+          "<hyperedge>\"Any community trying to grow a local food system faces a similar dilemma: customers won't surface unless there are farmers providing the products, and farmers won't provide the products unless there are customers.\"",
+          "\"FARMERS\"",
+          "\"CUSTOMERS\""
+        ],
+        "source_edge_ids": [
+          "edge-18758",
+          "edge-18759"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-7ef5e8f2029677f15d6ee8815b5828c4",
+        "content": "Another important piece in the network is creating a 'slot' – or scheduled appointment – with a slaughterhouse, so the farmers can be assured that their animals will be accepted by the processor at the appropriate time.\n\nfarms and to create a menu around the whole animal. He is also working the other side of the equation by helping local meat distribution expand into the local markets. The Capital Meat Company now buys whole animals from Maryland and Virginia farms and distributes cuts individually to their customers. Another distributor, Saval Foods, a large food distributor for the Baltimore region, has ventured into local beef by offering naturally grown beef from Grayson Natural, a farm cooperative in southwest Virginia. Saval is hoping eventually to market other beef cuts, to transition to the whole-animal approach. #### Restaurants as Change Agents Molovinsky has been a remarkable change agent, almost single-handedly creating innovative pathways for farmers, restaurants, and distributors to build new, mutually beneficial relationships. \"It's _not_ difficult, it's just different,\" says Molovinsky...",
+        "source_node_ids": [
+          "<hyperedge>\"Another important piece in the network is creating a 'slot' – or scheduled appointment – with a slaughterhouse, so the farmers can be assured that their animals will be accepted by the processor at the appropriate time.\"",
+          "\"SLAUGHTERHOUSE\"",
+          "\"FARMERS\""
+        ],
+        "source_edge_ids": [
+          "edge-11944",
+          "edge-11945"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-38d2ea190331fa57b51edf78d0352738",
+        "content": "Warren Wilson's goal is to have the college food vendor source 40 to 50 percent of its food locally, with 30 percent coming from the college farm and garden initially and increasing over time.\n\nlets from the mother sow. The managers also help students sort through important life issues. But production is what makes all these other lessons possible, says Chase Hubbard, farm manager. \"If it was only about education, then the farm would be more like a watered-down petting zoo. By focusing on production, we create really intense learning opportunities.\" **Include all stakeholders in decisions about serving campus products on campus**. For a college to consider serving food from its campus garden or farm in its cafeterias, one of the first key steps is to create an inclusive campus stakeholder committee to discuss the issues, concerns, and goals. The foodservice manager, contracted food vendor, and business manager are all obvious key players who must be at the negotiation table, says Robertson. The real issue is who else needs to be invited to the table. At Warren Wilson College...",
+        "source_node_ids": [
+          "<hyperedge>\"Warren Wilson's goal is to have the college food vendor source 40 to 50 percent of its food locally, with 30 percent coming from the college farm and garden initially and increasing over time.\"",
+          "\"COLLEGE FOOD VENDOR\"",
+          "\"COLLEGE FARM AND GARDEN\"",
+          "\"40 TO 50 PERCENT LOCAL SOURCING GOAL\"",
+          "\"30 PERCENT INITIAL SOURCING GOAL\""
+        ],
+        "source_edge_ids": [
+          "edge-9440",
+          "edge-9441",
+          "edge-9442",
+          "edge-9443"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-ee261677ef65b4f0bf53fae46bfcfb75",
+        "content": "Different parts of the farm may require managing more than one type of rotation because of different soil types or varied terrain.\n\nTool Rotations increase the total yield of crops over the years of the rotation. Rotations improve soil by the use of soil-building legume crops; they also help even out the distribution of both labor and machinery use. For instance, a small-grain crop (wheat, oats) eliminates the need for plowing if it follows a row crop like corn or soybeans. Legume hays or pasture seeding following small grains eliminates plowing and sometimes even disking. Normal rotations of 3 to 5 years usually consist of a row crop, a small-grain crop, and a sod crop. Different parts of the farm may require managing more than one type of rotation because of different soil types or varied terrain. Rotations, according to Nicolas Lampkin in _Organic Farming_ , have to maintain soil fertility, organic matter levels, and structure, while ensuring that sufficient nutrients, especially nitrogen, are available and tha...",
+        "source_node_ids": [
+          "<hyperedge>\"Different parts of the farm may require managing more than one type of rotation because of different soil types or varied terrain.\"",
+          "\"FARM\"",
+          "\"TERRAIN\"",
+          "\"SOIL TYPES\""
+        ],
+        "source_edge_ids": [
+          "edge-22268",
+          "edge-22269",
+          "edge-22270"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      }
+    ],
+    "retrieved_knowledge": "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\n\nstrategy to empower this underserved population, ACEnet identifies the 32 counties in this region as its primary service region and offers a hefty 50 percent discount on kitchen-facility rent to its inhabitants. ### Growers, Millers, Bakers: Rebuilding a Local Grain Economy #### Local and Heritage Grains _coauthored by Regine Kennedy_ **Across the nation** , the grassroots food movement is expanding into the production, milling, and distribution of whole grains. Though they may be one of our oldest sources of nourishment, appealing to a sense of deep heritage, grains are a relative newcomer to the local food scene. The leaders and groups described here are pioneers in a broad-based effort to reestablish locally grown and milled grains as a prized staple in our community food pantry. Advocates of local food decry the centralized, mass production of food, based on the availability of ch...\n\nTruck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\n\nDrain winter oil and change filters. Change the transmission fluid and antifreeze, if needed. * Invest in a scheduled equipment preventive maintenance program. Set regular cycles to change oil and filters. During the growing season, preventive maintenance is one element of farming that operators can control. * Use oil and hydraulic fluid analyses to help prolong equipment life through early detection of abnormal wear. # Equipment Costs Here are some formulas to help you figure your costs for machinery. They do not include property taxes or labor of the operator. ## Fixed Costs 1. Annual depreciation = new cost ÷ years of useful life 2. Average annual insurance = new cost x g x insurance rate Insurance rate: nonmotorized at .012 ($12/$100 valuation) motorized at 0.010 ($10/$1000 valuation) 3. Annual housing = square feet storage × cost per square foot Cost per square foot = new cost pe...\n\nThough Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\n\ndifferent. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would be assured of consistently high quality, farmers would gain access to new markets, and the public would have a way of knowing it was buying something truly local. #### Creating a Certified Local Brand When ASAP's local food guide and educational efforts took off, people began to ask for local food. But unforeseen problems began to emerge as stores jumped on the \"local\" bandwagon: There was no unified definition for local. Stores were deciding for themselves what they would call local, creating confusion and disagreement among consumers and producers. Does local mean anywhere in North Carolina? What about food from just a few miles away over the border in Tennessee? Can a...\n\nIn this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\n\nfarming. But a cooperative isn't the only aggregation model that works. Gladheart Farms in Asheville, North Carolina (page 87), shows that a farm can double as a wholesale distributor, marketing and selling products for other farms. And Appalachian Sustainable Development, based in Virginia (page 253), shows that a nonprofit working as a distributor for a network of small-scale farmers can be tremendously effective in building a local food system to support farmers. The experience of Warren Wilson College (page 165), also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity. A campus food-service program needs a consistent, dependable supply of food, whether it is serving a few thousand meals per day, as at Warren Wilson College, or tens of thousands of meals per day, as at larger...\n\nfarmers all over the world are connected to companies through an intricate network of distributors who aggregate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores.\n\nfarmers all over the world. And connected to these companies is an intricate network of distributors who aggregrate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores. Today, if farmers are not serving the industrialized system of aggregation and distribution – if they want to stay small and serve their local community – they face many challenges. While there is the obvious challenge of long hours of hard physical work, many challenges have little to do with knowing how to grow crops or raise animals. They concern the business of farming: identifying the right crops or products that in smaller quantities will bring in a profit; finding markets that will consistently buy smaller quantities; branding, packaging, transporting the products safely to avoid spoilage; and meeting food safety, liability, and insurance requirements. Many of those cha...\n\nFor more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\n\nworld to think critically about what, when, where, why, and how we eat. Whatever the goals may be for these varied programs, they share a common motivation: fresh food is something students want the opportunity to enjoy. And as a subject for academic inquiry, the study of our food system is coming into its own, enabling students to understand core community issues through the lens of food. In this way the farm-to-college food movement is changing not only what we eat, but how we think about and understand the impacts of what we eat. ### Cultivating Confident, Competent Leaders #### Warren Wilson College Farm _with research by Benjamin Chrisinger_ For more than a hundred years, Warren Wilson College in **western North Carolina** has operated a farm of about 340 acres to serve its students and community. Today this student-run farm produces a variety of rotated crops along with grass-fe...\n\nA partnership with the local high school and community college brings special-needs 'transitional' youth (so called because they are transitioning out of school), ages 18 to 21, to the farm once a week to work as 'Farmer for a Day,' during which they participate in a variety of farm chores.\n\ncleaning up another neglected lot to make it into a park. Within only four weeks, because the neighborhood itself was excited, because the idea of their neighborhood garden had been grown _by them_ over four years, the community now wanted to double the size of their garden. Van Ness says proudly, \"This is what it means to grow a project with community.\" #### Financial Stability through a CSA The Lynchburg Grows community-supported agriculture (CSA) program provides more than weekly baskets of freshly grown food to shareholders from May through October; it also provides a steady, dependable stream of income for the nonprofit. The group produces all its vegetables, herbs, and flowers in its glass-enclosed greenhouses, even during summer months. The historic greenhouses are the group's greatest asset, and it has found a way to use them by draping shade cloth under the ceiling during sum...\n\nEstablishing a College Farming Program.\n\nfrom there. Not including the start-up costs, which are significant, Hubbard thinks a college farm can be run at a fairly low cost. The Warren Wilson farm grosses about $200,000 a year on 275 working acres from sales of its broilers, beef cows, and hogs, which covers all operating expenses and a portion of student and management labor. The additional annual cost outlay, he says, is about $25,000. To my ears, that sounds like a very small amount for a flagship college program with so much to offer. \"We are a long way from turning a true profit,\" says Hubbard, \"but as a nonprofit our goal is to offer real-life experience for students for education.\" If students want to make lots of money, Hubbard wouldn't encourage them to take up farming. After all, he explains, Warren Wilson isn't trying to make farmers; it's creating students who are better prepared for whatever they want to become,...\n\nAny community trying to grow a local food system faces a similar dilemma: customers won't surface unless there are farmers providing the products, and farmers won't provide the products unless there are customers.\n\n, as its mission states, \"development that is sustainable and beneficial for nature and people, for culture and community.\" As part of its mission to facilitate the development of a robust local food system, ASD promotes the growth of organic and sustainable farmers through education and training, market development for local food, and distribution services. Forget about the organic arugula and lavender. If you want to build a local food system, you need to grow ordinary food for ordinary people, says Anthony Flaccovento, founder and former executive director of Appalachian Sustainable Development (ASD). Squash, melons, beans, meats, eggs – these are not just food staples but food _system_ staples. ASD's work is evidence that the local and organic food movement is not necessarily elitist, as some insist, but in fact can specifically address issues of social justice. Indeed, it was Fla...\n\nAnother important piece in the network is creating a 'slot' – or scheduled appointment – with a slaughterhouse, so the farmers can be assured that their animals will be accepted by the processor at the appropriate time.\n\nfarms and to create a menu around the whole animal. He is also working the other side of the equation by helping local meat distribution expand into the local markets. The Capital Meat Company now buys whole animals from Maryland and Virginia farms and distributes cuts individually to their customers. Another distributor, Saval Foods, a large food distributor for the Baltimore region, has ventured into local beef by offering naturally grown beef from Grayson Natural, a farm cooperative in southwest Virginia. Saval is hoping eventually to market other beef cuts, to transition to the whole-animal approach. #### Restaurants as Change Agents Molovinsky has been a remarkable change agent, almost single-handedly creating innovative pathways for farmers, restaurants, and distributors to build new, mutually beneficial relationships. \"It's _not_ difficult, it's just different,\" says Molovinsky...\n\nWarren Wilson's goal is to have the college food vendor source 40 to 50 percent of its food locally, with 30 percent coming from the college farm and garden initially and increasing over time.\n\nlets from the mother sow. The managers also help students sort through important life issues. But production is what makes all these other lessons possible, says Chase Hubbard, farm manager. \"If it was only about education, then the farm would be more like a watered-down petting zoo. By focusing on production, we create really intense learning opportunities.\" **Include all stakeholders in decisions about serving campus products on campus**. For a college to consider serving food from its campus garden or farm in its cafeterias, one of the first key steps is to create an inclusive campus stakeholder committee to discuss the issues, concerns, and goals. The foodservice manager, contracted food vendor, and business manager are all obvious key players who must be at the negotiation table, says Robertson. The real issue is who else needs to be invited to the table. At Warren Wilson College...\n\nDifferent parts of the farm may require managing more than one type of rotation because of different soil types or varied terrain.\n\nTool Rotations increase the total yield of crops over the years of the rotation. Rotations improve soil by the use of soil-building legume crops; they also help even out the distribution of both labor and machinery use. For instance, a small-grain crop (wheat, oats) eliminates the need for plowing if it follows a row crop like corn or soybeans. Legume hays or pasture seeding following small grains eliminates plowing and sometimes even disking. Normal rotations of 3 to 5 years usually consist of a row crop, a small-grain crop, and a sod crop. Different parts of the farm may require managing more than one type of rotation because of different soil types or varied terrain. Rotations, according to Nicolas Lampkin in _Organic Farming_ , have to maintain soil fertility, organic matter levels, and structure, while ensuring that sufficient nutrients, especially nitrogen, are available and tha...",
+    "f1": 1.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "What concept is highlighted in both ecological horticulture apprenticeships and summer programs focused on community and service, as well as being a crucial trait taught to children who grow up on farms?",
+    "golden_answers": [
+      "RESPONSIBILITY"
+    ],
+    "context": [
+      "Based at the University of California at Santa Cruz, this program offers an apprenticeship in ecological horticulture, which provides training for organic gardening and small-scale farming.",
+      "You must be prepared to pay as much as a job of comparable responsibility in town would pay—unless it is an apprenticeship, where the person is working for experience.",
+      "They say, struggling through a business plan would probably have robbed them of their enthusiasm and initiative.",
+      "Through the summer the program builds on a series of themes in a specific order: community, responsibility, service, initiative, commitment, hope, courage, and (again) community.",
+      "What supermarkets desire more than anything else is reliability and predictability.",
+      "Children who grow up on a farm learn responsibility and reliability."
+    ],
+    "nhops": 6,
+    "run_dir": "D:\\GitHub\\GoT_HGs_RAG\\runs\\20260403_174312_what-concept-is-highlighted-in-both-ecological-h",
+    "run_status": "success",
+    "answer": "Responsibility",
+    "generation": "Responsibility\n\nReasoning summary: The evidence indicates a strong emphasis on 'responsibility' in both ecological horticulture apprenticeships and community programs, as well as being a fundamental trait taught to children raised on farms. Concepts from multiple sources highlight the importance of responsibility in learning and community engagement.\n\nRemaining gaps: A detailed identification of the specific concept or trait that connects ecological horticulture apprenticeships, summer programs, and the experiences of children raised on farms.",
+    "retrieved": [
+      {
+        "chunk_id": "chunk-6376ac179a2df4bf1471d8fed5f7bc23",
+        "content": "Through the summer the program builds on a series of themes in a specific order: community, responsibility, service, initiative, commitment, hope, courage, and (again) community.\n\nassistant crew leader who participated in the program the previous year. Every day includes a mix of education, work, and purposive fun. The teens begin the day with a group orientation, game, or presentation about the veggie of the week. The morning I'm there, the crew leaders seem like cheerleaders – high energy, positive, pumped – and it's not long before the sleepy teens are energized. Then the crews break off and head in different directions. Today some will weed the melon patch, plant a succession crop of broccoli, or trellis tomatoes. Other crews head to small shaded structures where they begin a hands-on mini workshop, learning about weeds or soils or insects. Midmorning, the crews will rotate, with those in workshops heading out to the fields and vice versa. Suddenly, I notice that almost all of the crews headed into the field are actually _running_. It's a rare sight to beho...",
+        "source_node_ids": [
+          "<hyperedge>\"Through the summer the program builds on a series of themes in a specific order: community, responsibility, service, initiative, commitment, hope, courage, and (again) community.\"",
+          "\"SERVICE\"",
+          "\"COMMITMENT\"",
+          "\"COMMUNITY\"",
+          "\"INITIATIVE\"",
+          "\"RESPONSIBILITY\"",
+          "\"SUMMER PROGRAM\"",
+          "\"THEMES\"",
+          "\"HOPE\""
+        ],
+        "source_edge_ids": [
+          "edge-9638",
+          "edge-9639",
+          "edge-9640",
+          "edge-9641",
+          "edge-9642",
+          "edge-9643",
+          "edge-9644",
+          "edge-9645",
+          "edge-9646"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-8ed0d32c6d653b34677909bb2a4df08b",
+        "content": "Like the training offered by the American Community Gardening Association in starting sustainable community gardens, and like the Food Project's training in starting youth-based community farms, this certificate training emphasizes the importance of beginning with the community itself.\n\nit was conducting after-school programs, and all 10 slots were filled. Not all parents who signed up had children in the after-school clubs, but some did. This is a creative way to connect the dots between learning in schools and learning at home, as well as between gardening for fun and gardening for fresh food. By connecting these dots Growing Gardens is weaving a complex community web to support healthy food and eating. #### Training School Garden Coordinators By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded. \"We've had about 40 schools in the last year and a half come to us for help,\" says Lippoldt. Unfazed, Growing Gardens turned its attention to figuring out how to meet this overwhelming demand in a way that would foster sustainable change throug...",
+        "source_node_ids": [
+          "<hyperedge>\"Like the training offered by the American Community Gardening Association in starting sustainable community gardens, and like the Food Project's training in starting youth-based community farms, this certificate training emphasizes the importance of beginning with the community itself.\"",
+          "\"YOUTH-BASED COMMUNITY FARMS\"",
+          "\"CERTIFICATE TRAINING\"",
+          "\"AMERICAN COMMUNITY GARDENING ASSOCIATION\"",
+          "\"FOOD PROJECT\"",
+          "\"COMMUNITY GARDENS\""
+        ],
+        "source_edge_ids": [
+          "edge-7981",
+          "edge-7982",
+          "edge-7983",
+          "edge-7984",
+          "edge-7985"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-cf60421969007759eb279ddb028ec67b",
+        "content": "And reconnecting with food is no less important, as communities blur the edge between urban and rural by fostering the formation of weekly or year-round farmers' markets, local food festivals, community gardens, rooftop gardens, school gardens, farm-to-institution programs, and urban farms.\n\ncreate raised beds in its Worcester Street Garden were potentially leaching toxins into the soil, they were left scrambling to find something to replace them with. Carol Bonnar, the garden manager, went to a local business, McVey Stone Company, and asked if they would help – and they were happy to make a donation. The results are raised beds made of beautiful (and inert) hunks of bluestone, laid deep into the ground for stability. SELROSLT knew that the task of digging up the old railroad ties, installing the donated stone, and replacing the soil would be immense, so it asked for help. It found volunteers in City Year's Young Heroes, a local leadership program for middle-school children, which brought more than a hundred volunteers to assist. ## 3: Urban Farming Growing Food in the City Agriculture has not always been banished from our cities. In fact, an argument might be made, howev...",
+        "source_node_ids": [
+          "<hyperedge>\"And reconnecting with food is no less important, as communities blur the edge between urban and rural by fostering the formation of weekly or year-round farmers' markets, local food festivals, community gardens, rooftop gardens, school gardens, farm-to-institution programs, and urban farms.\"",
+          "\"SCHOOL GARDENS\"",
+          "\"COMMUNITY GARDENS\"",
+          "\"URBAN FARMS\"",
+          "\"FARMERS' MARKETS\"",
+          "\"LOCAL FOOD FESTIVALS\"",
+          "\"ROOFTOP GARDENS\"",
+          "\"FARM-TO-INSTITUTION PROGRAMS\""
+        ],
+        "source_edge_ids": [
+          "edge-13763",
+          "edge-13764",
+          "edge-13765",
+          "edge-13766",
+          "edge-13767",
+          "edge-13768",
+          "edge-13769"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-8c46a7f814f9b988da76a9ac71bdab30",
+        "content": "The program fosters a sense of community among its participants and staff.\n\nThe kitchen staff for Fresh Start are graduates of DCCK's food service training program, and, says executive chef Allison Sosna, they often serve as unofficial mentors for the students, sharing with them stories of their own struggles. The staff have disparate backgrounds. Caterer's assistant Derek Nelson had been in a drug rehabilitation program when he learned about DCCK from a friend. He applied as a way to get back on his feet and fell in love with being in the kitchen. He was helped, Nelson says, and now wants to pass along that service to others, through the common denominator of food. Cook Derwin Gaines, on the other hand, had been an electrician before he was hurt and retired; he saw DCCK as an opportunity to retrain. Sous chef Howard Thomas had been a drug dealer, but after two friends were murdered while in a car that he also was supposed to be in, he decided to change his l...",
+        "source_node_ids": [
+          "<hyperedge>\"The program fosters a sense of community among its participants and staff.\"",
+          "\"COMMUNITY\""
+        ],
+        "source_edge_ids": [
+          "edge-13946"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-79fcf59d7b63a10ed28124a2923fc0f1",
+        "content": "American Community Gardening Association provides resources for community gardens.\n\n.food-corps.org** A new branch of the AmeriCorps program, FoodCorps offers opportunities for young adults to work for a year in food-oriented public service, to help bring fresh foods into America's schools through gardens and nutrition- and agriculture-based education. #### _French Fries and the Food System_ THE FOOD PROJECT **<http://thefoodproject.org/books-manuals>** Written by Sara Coblyn for the Food Project in Boston (page 136), this book provides curricula for building a school gardening program. It's available for purchase from the Food Project or booksellers nationwide. #### KidsGardening.org NATIONAL GARDENING ASSOCIATION 800-538-7476 **www.kidsgardening.org** This website, a project of the National Gardening Association, has a wealth of information on grants, activities, resources, and advice for school gardens. Learn about other school projects here. Also, you can find fr...",
+        "source_node_ids": [
+          "<hyperedge>\"American Community Gardening Association provides resources for community gardens.\"",
+          "\"AMERICAN COMMUNITY GARDENING ASSOCIATION\""
+        ],
+        "source_edge_ids": [
+          "edge-26713"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-463bc71b9c03d72246d0c3904090b54a",
+        "content": "Troy Gardens is an unusual story of a community coming together to restore a more natural relationship between people, nature, and food.\n\n, and federal food policies. Community farms and gardens may be the first gateway for creating a local food system, and they are often an important stepping-stone leading to broader community food action. The projects featured here represent just the tip of the iceberg of what is happening in our country and other nations. I hope you'll find them as inspiring as I do and perhaps even be motivated to initiate or join an effort in your own community. Food, it turns out, does more than nourish the body. When integrated into the community fabric, a strong local food system can build community relationships, promote social and physical health, and foster community resilience. ### A Collaboration to Connect Community with the Land #### Community GroundWorks _coauthored by Regine Kennedy_ Community GroundWorks is a nonprofit organization managing Troy Gardens, a 31-acre mixed-use parcel comb...",
+        "source_node_ids": [
+          "<hyperedge>\"Troy Gardens is an unusual story of a community coming together to restore a more natural relationship between people, nature, and food.\"",
+          "\"COMMUNITY\""
+        ],
+        "source_edge_ids": [
+          "edge-5956"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-8aaeba6a87de6589129068300a4f26db",
+        "content": "Some projects are working through after-school programs, while others are focused on creating curricula for classrooms, and still others are offering field trips to farms and other special events focused on exposing children to local food and agriculture.\n\nin their right position in the row, a second and third would leapfrog in digging the holes, a fourth and fifth would leapfrog to place the broccoli in the hole and refill the hole, a sixth and seventh would leapfrog in carefully tamping the soil around the seedling and finishing it off, and another was following behind for quality control and cleaning up the row so it looked good. They were doing it naturally and were proud of their speed, efficiency, and quality of work. We can't doubt teens' ability to be excellent production workers. It's all a matter of learning and teaching a system, and the Food Project shows how to teach it. **College students can be powerful change agents**. If your community has a college nearby, count yourself lucky. When it comes to community food projects, students can be a significant asset, starting projects that take on a life of their own. While still...",
+        "source_node_ids": [
+          "<hyperedge>\"Some projects are working through after-school programs, while others are focused on creating curricula for classrooms, and still others are offering field trips to farms and other special events focused on exposing children to local food and agriculture.\"",
+          "\"CURRICULA FOR CLASSROOMS\"",
+          "\"FIELD TRIPS TO FARMS\"",
+          "\"LOCAL FOOD AND AGRICULTURE\"",
+          "\"SPECIAL EVENTS\"",
+          "\"AFTER-SCHOOL PROGRAMS\""
+        ],
+        "source_edge_ids": [
+          "edge-21619",
+          "edge-21620",
+          "edge-21621",
+          "edge-21622",
+          "edge-21623"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-e6fd2b31420a632f31dfe7120da040d9",
+        "content": "Corboy wants people to understand that urban farms are real farms, growing real food for real people.\n\nabandoned, concrete-capped, fenced-in Superfund site contaminated by a steel-galvanizing factory, just minutes from the I-95 traffic corridor, could become an urban farm. A series of open tanks containing lead, cadmium, zinc, and arsenic had been abandoned when the industry left town, and Corboy says the tanks eventually filled with water and offered a tempting place for local children to swim. People started getting sick. \"A lot of people died young around here,\" Corboy says. When the neighborhood fought to have the lot cleaned up, the Environmental Protection Agency declared it a Superfund site, removed the tanks, and contained the remaining contamination with a three-foot layer of concrete. Then it erected a fence, locked the gate, and left. When Corboy and Sereduk found the site, it had been abandoned for eight years, and though it was stigmatized by contamination, it was affordab...",
+        "source_node_ids": [
+          "<hyperedge>\"Corboy wants people to understand that urban farms are real farms, growing real food for real people.\"",
+          "\"URBAN FARMS\""
+        ],
+        "source_edge_ids": [
+          "edge-5349"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-4d72291c86cdc15cc9b42dccc6b106a1",
+        "content": "give older children more responsibility, and listen to their ideas.\n\nit. Many old farmers would be glad to teach you their skills. Talk to them about volunteering in exchange for instruction, at sale barns, at feed and supply stores, or at their farms. # Skills a Farmer Needs Following are lists of skills that are needed for some basic types of farming. Of course, you might research what is needed for the operation you are planning. For example, elk farming, although similar to cattle farming, has very different requirements for each skill, and knowledge of collecting velvet (a product of the antlers) will also be necessary. Some of these may not be as simple as they appear. Moving cattle, for example, requires knowledge of the best places to stand to appear in the animals' fields of vision without alarming them, and what types of motion and movement work best. Field-crop skills Soils Plowing, disking, harrowing Planting, cultivation, harvesting Skills...",
+        "source_node_ids": [
+          "<hyperedge>\"give older children more responsibility, and listen to their ideas.\"",
+          "\"RESPONSIBILITY\""
+        ],
+        "source_edge_ids": [
+          "edge-22068"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-ea6dd73e41a475c9933ac4783be5f57a",
+        "content": "Some projects work through after-school programs, while others focus on creating curricula for classrooms.\n\n– and their parents – to change their food buying and eating behavior. Some projects are working through after-school programs, while others are focused on creating curricula for classrooms, and still others are offering field trips to farms and other special events focused on exposing children to local food and agriculture. Some are working to catalyze change by teaching children and their parents about where our food comes from, the principles of nutrition, and how to prepare fresh foods. Others are focused on the school lunchroom, educating cafeteria workers in nutrition and the old-fashioned skill of from-scratch cooking and working to bring more fresh, locally sourced foods into the cafeteria. Some are working to change policies, such as banning sugary drinks and snacks from vending machines, removing fryers from the cafeteria kitchens, and keeping physical education as a require...",
+        "source_node_ids": [
+          "<hyperedge>\"Some projects work through after-school programs, while others focus on creating curricula for classrooms.\"",
+          "\"CURRICULA\"",
+          "\"AFTER-SCHOOL PROGRAMS\""
+        ],
+        "source_edge_ids": [
+          "edge-22887",
+          "edge-22888"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-8b11383420e2171e9a69799dbddd3b13",
+        "content": "Children who grow up on a farm learn responsibility and reliability.\n\nyou are new to farming and you know any farmers, talk to them and do chores with them whenever you get the chance. People who grew up on farms do not always discuss their finances in depth, nor do they necessarily know why they do things the way they do. They may simply be carrying out the instructions they learned about _how_ to do it, without understanding the principles of _why_ they do it. To be a successful agripreneur, you must understand your operations completely, from the how to the why. ### The Farming Life Principle: _Farming goals must be family goals. To move to a farm, the entire family needs to be prepared for what life will be like_. Although life on the farm is much easier than it was in the past—due to the advent of electricity, county water, and the automobile—a farm is still a rural environment, and when it gets dark, there are no streetlights. Dust and mud are \"up...",
+        "source_node_ids": [
+          "<hyperedge>\"Children who grow up on a farm learn responsibility and reliability.\"",
+          "\"CHILDREN WHO GROW UP ON A FARM\""
+        ],
+        "source_edge_ids": [
+          "edge-12126"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-6a2fd52898d080f7706c67afe05d27ff",
+        "content": "Among other things, the program helps communities establish community gardens.\n\nto use and save heirloom seeds, growing traditional squash that can't be found in their local supermarkets. But Jensen says that each year it's a bit of a struggle to obtain sources of traditional heirloom seed. \"Eventually, I'd like to get us a seed bank so we really don't have to worry about it.\" Jensen also thinks it's possible the community could become more self-sufficient through its community farm. \"It's not too radical. That's within our grasp. What we need is more support, more resources. Farming on the reservation has always been a family affair. Families would always help other families. We're trying to bring that back. It's starting to come around again. I know when I first came here everyone kept to their own field. We're really seeing a change. I see good things out of this farm, a lot of potential.\" ### A New Generation of Navajo Farmers #### Navajo Nation Traditional A...",
+        "source_node_ids": [
+          "<hyperedge>\"Among other things, the program helps communities establish community gardens.\"",
+          "\"COMMUNITY GARDENS\""
+        ],
+        "source_edge_ids": [
+          "edge-20318"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-fbeff72000d21039cdbac6ba65f75077",
+        "content": "Small farms furnish a set of children with a work ethic and a good set of values.\n\n. Second, we must recognize that farmers and agriculture are disappearing from the American countryside and mind. But there is good news! Though the number of farms has decreased in recent years, the number of small farmers is increasing and will likely continue to do so. In the 1990s, we have about 1.9 million farms; 75 percent of them are small farmers, with 178 acres or fewer, who produce 20 percent of our farm commodities. Given society's choice of where its food is grown and how it is grown, this could well be more than 50 percent in a few short years. Local farm production leads to stable local communities and citizen participation in local government. Small farms furnish a set of children with a work ethic and a good set of values. Isn't this the kind of nation we want to live in? We need more farmers growing more crops for different reasons, not fewer farmers going to town for...",
+        "source_node_ids": [
+          "<hyperedge>\"Small farms furnish a set of children with a work ethic and a good set of values.\"",
+          "\"CHILDREN\""
+        ],
+        "source_edge_ids": [
+          "edge-8835"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-603aed086b5eda0ec62eae7fa8c0f1b4",
+        "content": "Community gardens, by their very nature of bringing together people in a closely shared space, are a perfect breeding ground for conflict.\n\n.\" This unusual partnership has allowed SCLT to run a productive urban farm without funding a farm manager staff position. SCLT has plans – big plans – for the future. It has established the Urban Agriculture Resource Center website to share information about high-yield urban gardening, lead testing for urban sites, and other topics specific to the challenges of growing food in urban settings. With assistance from the Greater Providence Urban Agriculture Task Force, a 50-member citywide coalition founded by SCLT in 2004, the group has hired a coordinator to assist it in expanding by adding 16 new gardens to the network, with space for four hundred more family plots. And to ramp up its work with schools, especially those with low-income children, SCLT is more than doubling the number of visiting schoolchildren from three hundred to eight hundred. _— coauthored by Regine Kennedy_ #### M...",
+        "source_node_ids": [
+          "<hyperedge>\"Community gardens, by their very nature of bringing together people in a closely shared space, are a perfect breeding ground for conflict.\"",
+          "\"COMMUNITY GARDENS\""
+        ],
+        "source_edge_ids": [
+          "edge-19046"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-07373ff8a8e2c42149614780aa736a26",
+        "content": "support the ecology of its local community.\n\nsupport the ecology of its local community. Salatin believes that industrial processing plants \"destroy the community ecology\" when poor working conditions and low pay mean the industry must rely on low-paid foreign workers who often require additional support from the community. Polyface believes that a healthy farm doesn't externalize costs to society; it doesn't create environmental damage, increase risks of food safety, or increase a social burden on a community. People answer the phone. Polyface is committed to never having a robot answer the phone. Salatin believes the human touch is not only more personable and satisfying for a customer-oriented business, but it also can be more efficient than the fancy answering systems that annoy and alienate people. He argues that farmers are in the relationship business and that Westerners are starved for human contact. \"Shame on me if I sh...",
+        "source_node_ids": [
+          "<hyperedge>\"support the ecology of its local community.\"",
+          "\"ECOLOGY\"",
+          "\"COMMUNITY\""
+        ],
+        "source_edge_ids": [
+          "edge-18029",
+          "edge-18030"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-f3099841c9e59bebef5ddbb5acdb1e41",
+        "content": "Farmers instill in their children a strong work ethic and a good set of values.\n\nhelp beginning and established farmers make their farms profitable and their livelihoods satisfying, moving us forward to a more consistently sustainable agriculture and ultimately fostering sustainable communities. ### What Is Agripreneurship? Agripreneurship is the profitable marriage of agriculture and entrepreneurship—more plainly, turning your farm into a business. Most farmers regard agriculture as a combination of philosophy and lifestyle, so in its broadest sense agripreneurship binds together philosophy, lifestyle, and business, yielding ideals that give you purpose and goals to strive for. Agripreneurship is a mental attitude that can give you the strength and motivation to break from tradition. ### About Sustainable Agriculture Sustainable agriculture is a site-specific, whole-farm approach to agriculture. Land, people, goals, capital, crops, and livestock are managed to yi...",
+        "source_node_ids": [
+          "<hyperedge>\"Farmers instill in their children a strong work ethic and a good set of values.\"",
+          "\"STRONG WORK ETHIC\""
+        ],
+        "source_edge_ids": [
+          "edge-23425"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-626a48dbfe67b1f55d1d46c5b8d30097",
+        "content": "Not coincidentally, Dorchester also has the highest percentage of children with elevated blood levels of lead.\n\nPower's increasingly complex system of interconnected pieces is built on the simple foundation of healthy soil and community connections. **To gain political and community support, promote the advantages of urban farms**. Advantages of locating a farm in an urban area are many. Rather than spending money on packaging, lengthy refrigeration, and transport of produce to market, you'll find the market is right there, all around you. Both Philadelphia's Greensgrow (page 96) and Virginia's Lynchburg Grows (page 116) say their customers come from every section of the city, not just the immediate neighborhood. Also, urban farms have ready access to labor. This may seem counterintuitive, as city people are not often considered prime candidates for farm labor. Yet Mary Seton Corboy, CEO of Greensgrow, notes, \"Greensgrow has found that there are a lot of very smart, motivated, and hardworking p...",
+        "source_node_ids": [
+          "<hyperedge>\"Not coincidentally, Dorchester also has the highest percentage of children with elevated blood levels of lead.\"",
+          "\"CHILDREN\""
+        ],
+        "source_edge_ids": [
+          "edge-25010"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-f5f65dcd9bf73d5a51e1f5f20d7e1772",
+        "content": "With National Gleaning Day and ongoing community gleanings throughout the year, Marin Organic continues to encourage communities, farms, and schools across the nation to glean healthy food for children.\n\nfarmers have completed their own harvest, the Marin Organic Glean Team combs through the fields for the \"seconds,\" or produce that isn't exactly the right size or shape but tastes just as good. \"Marin Organic's gleaning program has been used as a blueprint for similar projects in farming communities from the Midwest to Hawaii,\" Hellberg concluded. And it deliberately led the way by founding National Gleaning Day on September 20, 2010. With National Gleaning Day and ongoing community gleanings throughout the year, Marin Organic continues to encourage communities, farms, and schools across the nation to glean healthy food for children. **A Simple Recipe for Gleaning** Faith Feeds, a cooperative of individuals and faith communities founded in 2010 to alleviate hunger in Kentucky, offers the following easy recipe for forming your own gleaning operation. **1. FIND A SOURCE OF FOOD**. Ident...",
+        "source_node_ids": [
+          "<hyperedge>\"With National Gleaning Day and ongoing community gleanings throughout the year, Marin Organic continues to encourage communities, farms, and schools across the nation to glean healthy food for children.\"",
+          "\"HEALTHY FOOD\"",
+          "\"CHILDREN\"",
+          "\"COMMUNITY GLEANINGS\""
+        ],
+        "source_edge_ids": [
+          "edge-19710",
+          "edge-19711",
+          "edge-19712"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-69499413d16357f9a2d75749d72ecca8",
+        "content": "Julia Rivera says that Nuestras Raíces has made countless changes in the community, transforming vacant lots into beautiful gardens, changing how people view and understand food, helping people start their own farms, helping women start businesses, and teaching children about healthy food and gardening.\n\nthis is a creative, learning farm.\" Van Ness tells the story of one student intern who asked another, \"Have you learned anything from working here?\" The intern looked at another nearby who had cerebral palsy and replied, \"Normally, I would beat the s--- out of him at school. I would normally make fun of him.\" At which the intern with cerebral palsy also spoke up. \"Normally,\" he said, \"I would feel sorry for myself.\" Here, though, their sense of \"normal\" had expanded to include empathy and self-respect. ### Reclaiming Community through Heritage and Food #### Nuestras Raíces _with research by Benjamin Chrisinger_ Nuestras Raíces is a grassroots nonprofit organization founded in **Holyoke, Massachusetts** , by Puerto Rican immigrants who sought to put their agricultural experience to good use by growing food for their tables in a community garden. As the organization worked to help resid...",
+        "source_node_ids": [
+          "<hyperedge>\"Julia Rivera says that Nuestras Raíces has made countless changes in the community, transforming vacant lots into beautiful gardens, changing how people view and understand food, helping people start their own farms, helping women start businesses, and teaching children about healthy food and gardening.\"",
+          "\"WOMEN\"",
+          "\"VACANT LOTS\"",
+          "\"FARMS\"",
+          "\"CHILDREN\""
+        ],
+        "source_edge_ids": [
+          "edge-14987",
+          "edge-14988",
+          "edge-14989",
+          "edge-14990"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      }
+    ],
+    "retrieved_knowledge": "Through the summer the program builds on a series of themes in a specific order: community, responsibility, service, initiative, commitment, hope, courage, and (again) community.\n\nassistant crew leader who participated in the program the previous year. Every day includes a mix of education, work, and purposive fun. The teens begin the day with a group orientation, game, or presentation about the veggie of the week. The morning I'm there, the crew leaders seem like cheerleaders – high energy, positive, pumped – and it's not long before the sleepy teens are energized. Then the crews break off and head in different directions. Today some will weed the melon patch, plant a succession crop of broccoli, or trellis tomatoes. Other crews head to small shaded structures where they begin a hands-on mini workshop, learning about weeds or soils or insects. Midmorning, the crews will rotate, with those in workshops heading out to the fields and vice versa. Suddenly, I notice that almost all of the crews headed into the field are actually _running_. It's a rare sight to beho...\n\nLike the training offered by the American Community Gardening Association in starting sustainable community gardens, and like the Food Project's training in starting youth-based community farms, this certificate training emphasizes the importance of beginning with the community itself.\n\nit was conducting after-school programs, and all 10 slots were filled. Not all parents who signed up had children in the after-school clubs, but some did. This is a creative way to connect the dots between learning in schools and learning at home, as well as between gardening for fun and gardening for fresh food. By connecting these dots Growing Gardens is weaving a complex community web to support healthy food and eating. #### Training School Garden Coordinators By early 2010 the word was out about Growing Gardens' success in working with schools, and the demand for its services from parents and teachers at other Portland schools had exploded. \"We've had about 40 schools in the last year and a half come to us for help,\" says Lippoldt. Unfazed, Growing Gardens turned its attention to figuring out how to meet this overwhelming demand in a way that would foster sustainable change throug...\n\nAnd reconnecting with food is no less important, as communities blur the edge between urban and rural by fostering the formation of weekly or year-round farmers' markets, local food festivals, community gardens, rooftop gardens, school gardens, farm-to-institution programs, and urban farms.\n\ncreate raised beds in its Worcester Street Garden were potentially leaching toxins into the soil, they were left scrambling to find something to replace them with. Carol Bonnar, the garden manager, went to a local business, McVey Stone Company, and asked if they would help – and they were happy to make a donation. The results are raised beds made of beautiful (and inert) hunks of bluestone, laid deep into the ground for stability. SELROSLT knew that the task of digging up the old railroad ties, installing the donated stone, and replacing the soil would be immense, so it asked for help. It found volunteers in City Year's Young Heroes, a local leadership program for middle-school children, which brought more than a hundred volunteers to assist. ## 3: Urban Farming Growing Food in the City Agriculture has not always been banished from our cities. In fact, an argument might be made, howev...\n\nThe program fosters a sense of community among its participants and staff.\n\nThe kitchen staff for Fresh Start are graduates of DCCK's food service training program, and, says executive chef Allison Sosna, they often serve as unofficial mentors for the students, sharing with them stories of their own struggles. The staff have disparate backgrounds. Caterer's assistant Derek Nelson had been in a drug rehabilitation program when he learned about DCCK from a friend. He applied as a way to get back on his feet and fell in love with being in the kitchen. He was helped, Nelson says, and now wants to pass along that service to others, through the common denominator of food. Cook Derwin Gaines, on the other hand, had been an electrician before he was hurt and retired; he saw DCCK as an opportunity to retrain. Sous chef Howard Thomas had been a drug dealer, but after two friends were murdered while in a car that he also was supposed to be in, he decided to change his l...\n\nAmerican Community Gardening Association provides resources for community gardens.\n\n.food-corps.org** A new branch of the AmeriCorps program, FoodCorps offers opportunities for young adults to work for a year in food-oriented public service, to help bring fresh foods into America's schools through gardens and nutrition- and agriculture-based education. #### _French Fries and the Food System_ THE FOOD PROJECT **<http://thefoodproject.org/books-manuals>** Written by Sara Coblyn for the Food Project in Boston (page 136), this book provides curricula for building a school gardening program. It's available for purchase from the Food Project or booksellers nationwide. #### KidsGardening.org NATIONAL GARDENING ASSOCIATION 800-538-7476 **www.kidsgardening.org** This website, a project of the National Gardening Association, has a wealth of information on grants, activities, resources, and advice for school gardens. Learn about other school projects here. Also, you can find fr...\n\nTroy Gardens is an unusual story of a community coming together to restore a more natural relationship between people, nature, and food.\n\n, and federal food policies. Community farms and gardens may be the first gateway for creating a local food system, and they are often an important stepping-stone leading to broader community food action. The projects featured here represent just the tip of the iceberg of what is happening in our country and other nations. I hope you'll find them as inspiring as I do and perhaps even be motivated to initiate or join an effort in your own community. Food, it turns out, does more than nourish the body. When integrated into the community fabric, a strong local food system can build community relationships, promote social and physical health, and foster community resilience. ### A Collaboration to Connect Community with the Land #### Community GroundWorks _coauthored by Regine Kennedy_ Community GroundWorks is a nonprofit organization managing Troy Gardens, a 31-acre mixed-use parcel comb...\n\nSome projects are working through after-school programs, while others are focused on creating curricula for classrooms, and still others are offering field trips to farms and other special events focused on exposing children to local food and agriculture.\n\nin their right position in the row, a second and third would leapfrog in digging the holes, a fourth and fifth would leapfrog to place the broccoli in the hole and refill the hole, a sixth and seventh would leapfrog in carefully tamping the soil around the seedling and finishing it off, and another was following behind for quality control and cleaning up the row so it looked good. They were doing it naturally and were proud of their speed, efficiency, and quality of work. We can't doubt teens' ability to be excellent production workers. It's all a matter of learning and teaching a system, and the Food Project shows how to teach it. **College students can be powerful change agents**. If your community has a college nearby, count yourself lucky. When it comes to community food projects, students can be a significant asset, starting projects that take on a life of their own. While still...\n\nCorboy wants people to understand that urban farms are real farms, growing real food for real people.\n\nabandoned, concrete-capped, fenced-in Superfund site contaminated by a steel-galvanizing factory, just minutes from the I-95 traffic corridor, could become an urban farm. A series of open tanks containing lead, cadmium, zinc, and arsenic had been abandoned when the industry left town, and Corboy says the tanks eventually filled with water and offered a tempting place for local children to swim. People started getting sick. \"A lot of people died young around here,\" Corboy says. When the neighborhood fought to have the lot cleaned up, the Environmental Protection Agency declared it a Superfund site, removed the tanks, and contained the remaining contamination with a three-foot layer of concrete. Then it erected a fence, locked the gate, and left. When Corboy and Sereduk found the site, it had been abandoned for eight years, and though it was stigmatized by contamination, it was affordab...\n\ngive older children more responsibility, and listen to their ideas.\n\nit. Many old farmers would be glad to teach you their skills. Talk to them about volunteering in exchange for instruction, at sale barns, at feed and supply stores, or at their farms. # Skills a Farmer Needs Following are lists of skills that are needed for some basic types of farming. Of course, you might research what is needed for the operation you are planning. For example, elk farming, although similar to cattle farming, has very different requirements for each skill, and knowledge of collecting velvet (a product of the antlers) will also be necessary. Some of these may not be as simple as they appear. Moving cattle, for example, requires knowledge of the best places to stand to appear in the animals' fields of vision without alarming them, and what types of motion and movement work best. Field-crop skills Soils Plowing, disking, harrowing Planting, cultivation, harvesting Skills...\n\nSome projects work through after-school programs, while others focus on creating curricula for classrooms.\n\n– and their parents – to change their food buying and eating behavior. Some projects are working through after-school programs, while others are focused on creating curricula for classrooms, and still others are offering field trips to farms and other special events focused on exposing children to local food and agriculture. Some are working to catalyze change by teaching children and their parents about where our food comes from, the principles of nutrition, and how to prepare fresh foods. Others are focused on the school lunchroom, educating cafeteria workers in nutrition and the old-fashioned skill of from-scratch cooking and working to bring more fresh, locally sourced foods into the cafeteria. Some are working to change policies, such as banning sugary drinks and snacks from vending machines, removing fryers from the cafeteria kitchens, and keeping physical education as a require...\n\nChildren who grow up on a farm learn responsibility and reliability.\n\nyou are new to farming and you know any farmers, talk to them and do chores with them whenever you get the chance. People who grew up on farms do not always discuss their finances in depth, nor do they necessarily know why they do things the way they do. They may simply be carrying out the instructions they learned about _how_ to do it, without understanding the principles of _why_ they do it. To be a successful agripreneur, you must understand your operations completely, from the how to the why. ### The Farming Life Principle: _Farming goals must be family goals. To move to a farm, the entire family needs to be prepared for what life will be like_. Although life on the farm is much easier than it was in the past—due to the advent of electricity, county water, and the automobile—a farm is still a rural environment, and when it gets dark, there are no streetlights. Dust and mud are \"up...\n\nAmong other things, the program helps communities establish community gardens.\n\nto use and save heirloom seeds, growing traditional squash that can't be found in their local supermarkets. But Jensen says that each year it's a bit of a struggle to obtain sources of traditional heirloom seed. \"Eventually, I'd like to get us a seed bank so we really don't have to worry about it.\" Jensen also thinks it's possible the community could become more self-sufficient through its community farm. \"It's not too radical. That's within our grasp. What we need is more support, more resources. Farming on the reservation has always been a family affair. Families would always help other families. We're trying to bring that back. It's starting to come around again. I know when I first came here everyone kept to their own field. We're really seeing a change. I see good things out of this farm, a lot of potential.\" ### A New Generation of Navajo Farmers #### Navajo Nation Traditional A...\n\nSmall farms furnish a set of children with a work ethic and a good set of values.\n\n. Second, we must recognize that farmers and agriculture are disappearing from the American countryside and mind. But there is good news! Though the number of farms has decreased in recent years, the number of small farmers is increasing and will likely continue to do so. In the 1990s, we have about 1.9 million farms; 75 percent of them are small farmers, with 178 acres or fewer, who produce 20 percent of our farm commodities. Given society's choice of where its food is grown and how it is grown, this could well be more than 50 percent in a few short years. Local farm production leads to stable local communities and citizen participation in local government. Small farms furnish a set of children with a work ethic and a good set of values. Isn't this the kind of nation we want to live in? We need more farmers growing more crops for different reasons, not fewer farmers going to town for...\n\nCommunity gardens, by their very nature of bringing together people in a closely shared space, are a perfect breeding ground for conflict.\n\n.\" This unusual partnership has allowed SCLT to run a productive urban farm without funding a farm manager staff position. SCLT has plans – big plans – for the future. It has established the Urban Agriculture Resource Center website to share information about high-yield urban gardening, lead testing for urban sites, and other topics specific to the challenges of growing food in urban settings. With assistance from the Greater Providence Urban Agriculture Task Force, a 50-member citywide coalition founded by SCLT in 2004, the group has hired a coordinator to assist it in expanding by adding 16 new gardens to the network, with space for four hundred more family plots. And to ramp up its work with schools, especially those with low-income children, SCLT is more than doubling the number of visiting schoolchildren from three hundred to eight hundred. _— coauthored by Regine Kennedy_ #### M...\n\nsupport the ecology of its local community.\n\nsupport the ecology of its local community. Salatin believes that industrial processing plants \"destroy the community ecology\" when poor working conditions and low pay mean the industry must rely on low-paid foreign workers who often require additional support from the community. Polyface believes that a healthy farm doesn't externalize costs to society; it doesn't create environmental damage, increase risks of food safety, or increase a social burden on a community. People answer the phone. Polyface is committed to never having a robot answer the phone. Salatin believes the human touch is not only more personable and satisfying for a customer-oriented business, but it also can be more efficient than the fancy answering systems that annoy and alienate people. He argues that farmers are in the relationship business and that Westerners are starved for human contact. \"Shame on me if I sh...\n\nFarmers instill in their children a strong work ethic and a good set of values.\n\nhelp beginning and established farmers make their farms profitable and their livelihoods satisfying, moving us forward to a more consistently sustainable agriculture and ultimately fostering sustainable communities. ### What Is Agripreneurship? Agripreneurship is the profitable marriage of agriculture and entrepreneurship—more plainly, turning your farm into a business. Most farmers regard agriculture as a combination of philosophy and lifestyle, so in its broadest sense agripreneurship binds together philosophy, lifestyle, and business, yielding ideals that give you purpose and goals to strive for. Agripreneurship is a mental attitude that can give you the strength and motivation to break from tradition. ### About Sustainable Agriculture Sustainable agriculture is a site-specific, whole-farm approach to agriculture. Land, people, goals, capital, crops, and livestock are managed to yi...\n\nNot coincidentally, Dorchester also has the highest percentage of children with elevated blood levels of lead.\n\nPower's increasingly complex system of interconnected pieces is built on the simple foundation of healthy soil and community connections. **To gain political and community support, promote the advantages of urban farms**. Advantages of locating a farm in an urban area are many. Rather than spending money on packaging, lengthy refrigeration, and transport of produce to market, you'll find the market is right there, all around you. Both Philadelphia's Greensgrow (page 96) and Virginia's Lynchburg Grows (page 116) say their customers come from every section of the city, not just the immediate neighborhood. Also, urban farms have ready access to labor. This may seem counterintuitive, as city people are not often considered prime candidates for farm labor. Yet Mary Seton Corboy, CEO of Greensgrow, notes, \"Greensgrow has found that there are a lot of very smart, motivated, and hardworking p...\n\nWith National Gleaning Day and ongoing community gleanings throughout the year, Marin Organic continues to encourage communities, farms, and schools across the nation to glean healthy food for children.\n\nfarmers have completed their own harvest, the Marin Organic Glean Team combs through the fields for the \"seconds,\" or produce that isn't exactly the right size or shape but tastes just as good. \"Marin Organic's gleaning program has been used as a blueprint for similar projects in farming communities from the Midwest to Hawaii,\" Hellberg concluded. And it deliberately led the way by founding National Gleaning Day on September 20, 2010. With National Gleaning Day and ongoing community gleanings throughout the year, Marin Organic continues to encourage communities, farms, and schools across the nation to glean healthy food for children. **A Simple Recipe for Gleaning** Faith Feeds, a cooperative of individuals and faith communities founded in 2010 to alleviate hunger in Kentucky, offers the following easy recipe for forming your own gleaning operation. **1. FIND A SOURCE OF FOOD**. Ident...\n\nJulia Rivera says that Nuestras Raíces has made countless changes in the community, transforming vacant lots into beautiful gardens, changing how people view and understand food, helping people start their own farms, helping women start businesses, and teaching children about healthy food and gardening.\n\nthis is a creative, learning farm.\" Van Ness tells the story of one student intern who asked another, \"Have you learned anything from working here?\" The intern looked at another nearby who had cerebral palsy and replied, \"Normally, I would beat the s--- out of him at school. I would normally make fun of him.\" At which the intern with cerebral palsy also spoke up. \"Normally,\" he said, \"I would feel sorry for myself.\" Here, though, their sense of \"normal\" had expanded to include empathy and self-respect. ### Reclaiming Community through Heritage and Food #### Nuestras Raíces _with research by Benjamin Chrisinger_ Nuestras Raíces is a grassroots nonprofit organization founded in **Holyoke, Massachusetts** , by Puerto Rican immigrants who sought to put their agricultural experience to good use by growing food for their tables in a community garden. As the organization worked to help resid...",
+    "f1": 1.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "What farm animals are known for providing milk and cheese, facing worm problems due to rain, and requiring significant land space on a farm?",
+    "golden_answers": [
+      "GOATS"
+    ],
+    "context": [
+      "Hides and eggs have value-added potential; ostrich feathers and emu oil are also possible products.",
+      "Years later, with two goats that provide her family with milk, chèvre, and mozzarella cheese, and six chickens that put eggs on the table, Grant has no regrets.",
+      "Cattle cycles are normally long, whereas hogs and sheep—multibirth animals with short gestation periods—are normally shorter.",
+      "Rain is the main cause of worm problems in sheep and goats, particularly when combined with warm temperatures.",
+      "The text provides labor time estimates for various farm animals and crops, stating the hours required per animal unit and per acre.",
+      "Classified as farm animals, the goats required a minimum of 20,000 square feet – over four times the size of Grant's small city lot."
+    ],
+    "nhops": 6,
+    "run_dir": "D:\\GitHub\\GoT_HGs_RAG\\runs\\20260403_174454_what-farm-animals-are-known-for-providing-milk-a",
+    "run_status": "success",
+    "answer": "['COW', 'GOAT', 'SHEEP']",
+    "generation": "['COW', 'GOAT', 'SHEEP']\n\nReasoning summary: The evidence indicates that cows, goats, and sheep are known for providing milk and cheese. Additionally, they face worm problems due to rain and require significant land space for their upkeep, particularly for dairy operations.\n\nRemaining gaps: Evidence specifically detailing the land space requirements for each animal type was not fully gathered.",
+    "retrieved": [
+      {
+        "chunk_id": "chunk-2e143d750d8e9b45fec3f4d1a9ec2a04",
+        "content": "A Greensgrow weekly basket can include an array of local products – locally produced cheddar, chèvre, and mozzarella cheeses; locally raised chicken, lamb, or chorizo sausage; locally produced potato pierogi or seitan; a choice of local yogurt, butter, eggs, or milk; and seasonal items such as bread, cider, honey, beer, or soaps.\n\n-owners,\" as Corboy calls those who have bought a CSA share, come to collect their weekly share of food. Nearby, so shareholders will be able to shop when they pick up their CSA basket, Greensgrow hosts a farmers' market. Corboy believes farmers' markets do better when they have more competition. So in a counterintuitive business move, Corboy decided to open the Greensgrow CSA farmers' market to other farmers, and in 2009 it was hosting 80 producers. She suggests that customers believe competition will give them a better deal and that they'll find better quality for less money. So the more vendors and products, the more people come. Corboy laughs, remembering the early days of her nursery business. Like everything else used on the farm, the greenhouse was junk to someone else but gold to her. She rescued it from someone who was going out of business. When Corboy and Sereduk brought it...",
+        "source_node_ids": [
+          "<hyperedge>\"A Greensgrow weekly basket can include an array of local products – locally produced cheddar, chèvre, and mozzarella cheeses; locally raised chicken, lamb, or chorizo sausage; locally produced potato pierogi or seitan; a choice of local yogurt, butter, eggs, or milk; and seasonal items such as bread, cider, honey, beer, or soaps.\"",
+          "\"GREENSGROW WEEKLY BASKET\"",
+          "\"LAMB\"",
+          "\"LOCAL PRODUCTS\"",
+          "\"CHEDDAR CHEESE\"",
+          "\"CHÈVRE CHEESE\"",
+          "\"MOZZARELLA CHEESE\"",
+          "\"CHORIZO SAUSAGE\"",
+          "\"POTATO PIEROGI\""
+        ],
+        "source_edge_ids": [
+          "edge-10536",
+          "edge-10537",
+          "edge-10538",
+          "edge-10539",
+          "edge-10540",
+          "edge-10541",
+          "edge-10542",
+          "edge-10543",
+          "edge-10544",
+          "edge-10545",
+          "edge-10546",
+          "edge-10547"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-50ae2b642515d199b40d344346490776",
+        "content": "Rain is the main cause of worm problems in sheep and goats, particularly when combined with warm temperatures.\n\nof water to produce 1 pound of dry matter. Less efficient plants (pumpkin, squash, cucumber, for example) may use 1,000 pounds of water to produce 1 pound of dry matter. Corn may transpire up to 2 quarts of water per plant per day, or 300,000 gallons of water per acre. Aquatic plants merely need to absorb the water—about 10 pounds per pound of growth. Which plants you choose will depend on your climate. # Climate And Livestock Climate and weather affect livestock both directly and indirectly: 1. The climate can cause species to evolve with specific adaptations to that temperature. Some breeds of cattle, like Santa Gertrudis, were developed for hot-weather areas and have shaker muscles that help them get rid of flies, which are more numerous in hot areas. Some woolly animals, like alpacas, will find it difficult to cope with high temperatures, but do well in colder regions. 2. Indirect...",
+        "source_node_ids": [
+          "<hyperedge>\"Rain is the main cause of worm problems in sheep and goats, particularly when combined with warm temperatures.\"",
+          "\"SHEEP\"",
+          "\"GOATS\"",
+          "\"WORM PROBLEMS\""
+        ],
+        "source_edge_ids": [
+          "edge-24676",
+          "edge-24677",
+          "edge-24678"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-6d5fedbfed862017a8523b8e6129ad35",
+        "content": "They have space for a thousand meat chickens a year, or they could have dairy goats or value-added products such as herbal vinegars and oils.\n\nto steward the land with the goal of increasing biodiversity, primarily in four ways: First, expand the existing tree and shrub line. Second, expand habitat for beneficial birds and insects with species such as black locust, honey locust, highbush cranberry, mulberry, anise hyssop, and native wildflowers. Third, add ponds. Finally, manage the landscape consciously by paying attention to patterns and minimizing disturbance of animal habitat in farming practices. One key permaculture concept is that diversity builds diversity, and indeed, Frey says it is amazing how quickly biodiversity returns to the landscape as they establish more perennials, trees, and shrubs. In his book _Bioshelter Market Garden: A Permaculture Farm_ , Frey writes: The best way to describe the changes permaculture development has brought to our farm is to compare it to what came before. A small field that was prev...",
+        "source_node_ids": [
+          "<hyperedge>\"They have space for a thousand meat chickens a year, or they could have dairy goats or value-added products such as herbal vinegars and oils.\"",
+          "\"OILS\"",
+          "\"MEAT CHICKENS\"",
+          "\"DAIRY GOATS\"",
+          "\"HERBAL VINEGARS\"",
+          "\"VALUE-ADDED PRODUCTS\""
+        ],
+        "source_edge_ids": [
+          "edge-20914",
+          "edge-20915",
+          "edge-20916",
+          "edge-20917",
+          "edge-20918"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-a9a4c4a87611b19fd1b27e7ae81974b6",
+        "content": "Sheep obviously need some water, but can usually do quite well on range or pasture with what nature provides.\n\n, but also soaks up any new rain and virtually eliminates weed problems. Season extenders will also save moisture. Covering garden beds with black plastic or mulch early in spring will hold in moisture enough for you to grow a good tomato crop with little or no added water. Mulch such as straw keeps the ground moist through the hottest summer months. ### Caring for Livestock in Winter **Principle :** _Let your animals learn to cope with winter_. Your livestock may need better shelter in winter to protect them from the wind. Overall, though, the best thing you can do for your animals is to let them learn to cope. In northern areas, cattle will learn to graze through snow and can use the snow as a water source. We are apt to do too many things for our animals that are not conducive to developing good, hardy breeding stock. Stock that can survive on the land on its own will minimize our...",
+        "source_node_ids": [
+          "<hyperedge>\"Sheep obviously need some water, but can usually do quite well on range or pasture with what nature provides.\"",
+          "\"SHEEP\""
+        ],
+        "source_edge_ids": [
+          "edge-13691"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-445fbff3137d26bce84d879934fb156e",
+        "content": "When they eat organic matter and it passes through their body, the result is worm manure—worm castings.\n\nloose ball of dirt and drop it from about waist high. If it breaks apart, your soil is ready to work. If it does not break, then wait a half day or a day with no rain before you start working the ground. If you are working your ground with a tractor and there is water in the plow sole, _stop_ —it is too wet. If the plow furrows glisten in the sun, or look slick rather than crumbly, the ground is too wet—stop plowing. When turning over the furrow slice, it should be crumbly and falling apart. ### Our Living Soil Living soil is much more than just the different kinds of mineral particles that hold the plants upright. It is teeming with life throughout its strata, from bacteria to worms. Most of your soil's organisms inhabit the top 6 or 7 inches, the topsoil. These organisms include insects and other \"bugs,\" earthworms, bacteria, and fungi. Billions of soil organisms exist in your soil,...",
+        "source_node_ids": [
+          "<hyperedge>\"When they eat organic matter and it passes through their body, the result is worm manure—worm castings.\"",
+          "\"WORM MANURE\""
+        ],
+        "source_edge_ids": [
+          "edge-1465"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-0d31a2f89a77b64e0ae04120df1fdb3b",
+        "content": "Behind every organic TV dinner or chicken or carton of industrial organic milk stands a certain quantity of land that will no longer be doused with chemicals, an undeniable gain for the environment and the public health.\n\none of the most successful figures in the organic community and also perhaps one of the most polarizing; for to many organic farmers and activists, he has come to symbolize the takeover of the movement by agribusiness.\" And yet Kahn, now vice president and global sustainability officer for General Mills, argued that Cascadian Farm would have gone completely under if he hadn't sold to Welch's. By joining the mainstream food system and supporting the growth of industrial organic, Cascadian Farm, Kahn suggests, increased access for more people to quality organic food and increased the number of environmentally friendly farms. \"Behind every organic TV dinner or chicken or carton of industrial organic milk stands a certain quantity of land that will no longer be doused with chemicals, an undeniable gain for the environment and the public health,\" he told Pollan. Certainly, for those who su...",
+        "source_node_ids": [
+          "<hyperedge>\"Behind every organic TV dinner or chicken or carton of industrial organic milk stands a certain quantity of land that will no longer be doused with chemicals, an undeniable gain for the environment and the public health.\"",
+          "\"ORGANIC TV DINNER\"",
+          "\"INDUSTRIAL ORGANIC MILK\"",
+          "\"LAND\"",
+          "\"CHICKEN\""
+        ],
+        "source_edge_ids": [
+          "edge-11700",
+          "edge-11701",
+          "edge-11702",
+          "edge-11703"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-d47a7d4e49c6e48a2727071f21a879ba",
+        "content": "Can cattle, sheep, or horses water from these ponds, or are they too shallow, with too much mud and vegetation around the edge?\n\nor pastureland. Cultivated areas are small, and crops depend on slope. This is not a good soil type on which to plant 400 acres of corn, but it might make excellent orchard land. There will be more on soils in chapter 4, but you need to know the natural fertility of your farm soils and roughly what condition they are in currently. For any farm of less than 10 acres, the natural fertility of the farm is very important, because the physical size of the land will restrict the choice of enterprises. For instance, a cow-calf operation, which takes 3 acres to run a cow-calf pair, will not allow for much volume of income. The poorer the soils, the more area it would take; in some areas of the West, it takes 10 acres to run a cow-calf unit. Ten acres of vegetables or U-pick berries, however, would produce a large volume of income—but these require adequate water. Each enterprise must be evalu...",
+        "source_node_ids": [
+          "<hyperedge>\"Can cattle, sheep, or horses water from these ponds, or are they too shallow, with too much mud and vegetation around the edge?\"",
+          "\"HORSES\"",
+          "\"SHEEP\"",
+          "\"CATTLE\""
+        ],
+        "source_edge_ids": [
+          "edge-6081",
+          "edge-6082",
+          "edge-6083"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-923ecd82dafb6f5a01be8c322b21fe79",
+        "content": "Years later, with two goats that provide her family with milk, chèvre, and mozzarella cheese, and six chickens that put eggs on the table, Grant has no regrets.\n\n; only roosters do. Hens sometimes cluck when they lay an egg. At night they move inside the coop and perch in complete silence until morning. **PUBLIC HEALTH THREAT.** Unlike dogs and cats, chickens cannot spread parasites or pathogens to humans. A major concern has been whether backyard chickens could be a vector for transmitting avian influenza to humans. There is general consensus that the kind of avian influenza that is contagious to humans has not been found in North America. Bird flu is spread by contact with the contaminated feces of wild birds, primarily migratory waterfowl. Unlike rural farm birds, which might commingle with migratory birds or drink from a shared pond, backyard chickens are kept in an enclosed pen where contact with migratory waterfowl is unlikely. As the sustainable agriculture advocacy group GRAIN concluded in 2006, \"When it comes to bird flu, diverse smal...",
+        "source_node_ids": [
+          "<hyperedge>\"Years later, with two goats that provide her family with milk, chèvre, and mozzarella cheese, and six chickens that put eggs on the table, Grant has no regrets.\"",
+          "\"MOZZARELLA CHEESE\"",
+          "\"COMMITMENT\"",
+          "\"EGGS\"",
+          "\"MILK\"",
+          "\"CHÈVRE\"",
+          "\"SIX CHICKENS\""
+        ],
+        "source_edge_ids": [
+          "edge-22814",
+          "edge-22815",
+          "edge-22816",
+          "edge-22817",
+          "edge-22818",
+          "edge-22819"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-3699752bc52dee1358ad76a26a9c6fb9",
+        "content": "Polyface leases land from this farm for its Polyface beef cow herd.\n\ntake beef bones and turn them into stock, or little eggs and turn them into egg noodles and quiche.\" It would provide the marketing with a large showroom of different local products. It would provide the accounting by having one central cash register keeping track of sales, Salatin says, \"so these farmers don't have to sit here with their big, calloused, dirty fingers and punch little calculators.\" And it would provide the convenience and social space for customers, by offering a local dining space built on locally grown foods. Salatin explains that it is the overhead that kills little businesses, and a model like this would \"keep the cash register humming.\" The more you can funnel through that cash register, he says, the more efficient the overhead. This, he hopes, may be a possible future for our local food system: Instead of 100,000 Polyfaces scattered around Virginia, there could...",
+        "source_node_ids": [
+          "<hyperedge>\"Polyface leases land from this farm for its Polyface beef cow herd.\"",
+          "\"LAND\"",
+          "\"BEEF COW HERD\""
+        ],
+        "source_edge_ids": [
+          "edge-2610",
+          "edge-2611"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-d83e7f9383ec8baa65b1a2fc070b1acd",
+        "content": "Through its Farms Program, the center leases land, equipment, and storage facilities to commercial farmers operating in one of three categories: Incubator farmers receive subsidized land leases, technical assistance, and mentorship from experienced farmers, for up to three years.\n\nthe city limits of **Burlington, Vermont** , is home to an unusual and highly productive array of activities: one of the largest CSAs in Vermont, a unique incubator program for new farmers, a native plants nursery, community garden plots, a large retail garden store, educational displays and research plots, a municipal composting facility (which has done much to rebuild the fertility of Intervale soil), and a city power-generating station. And it is also the site of new thinking about urban farming, imagining how waste from a city might be repurposed to meet the food, energy, and recreational demands of that same city's population. A remarkably short distance from downtown Burlington, Vermont, that bastion of progressivity, lies one of the most unusual experiments in local food production anywhere: the Intervale. \"Intervale\" literally means a low-lying place between two hills, and tha...",
+        "source_node_ids": [
+          "<hyperedge>\"Through its Farms Program, the center leases land, equipment, and storage facilities to commercial farmers operating in one of three categories: Incubator farmers receive subsidized land leases, technical assistance, and mentorship from experienced farmers, for up to three years.\"",
+          "\"EQUIPMENT\"",
+          "\"LAND\"",
+          "\"FARMS PROGRAM\"",
+          "\"INCUBATOR FARMERS\"",
+          "\"SUBSIDIZED LAND LEASES\"",
+          "\"TECHNICAL ASSISTANCE\"",
+          "\"MENTORSHIP\"",
+          "\"STORAGE FACILITIES\""
+        ],
+        "source_edge_ids": [
+          "edge-21911",
+          "edge-21912",
+          "edge-21913",
+          "edge-21914",
+          "edge-21915",
+          "edge-21916",
+          "edge-21917",
+          "edge-21918"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-250b989e44ece1db26830c2bcb6f8a7c",
+        "content": "He ticks off the things that need to happen: get a farm committee restarted, get a water line, get the land back into farming.\n\nyears. \"Pretty much everyone stopped farming because of water,\" says Yazzie. \"We have all the equipment for farming, but there's just no water. Sometimes I shed tears. Too much emotion. Sometimes I just sit out here.\" Today, living about an hour south in Tolani Lake with his wife and three sons, Yazzie is focusing on helping the community reclaim its farming tradition by gaining rights to use water for crop fields. \"My main goal is to get people involved,\" he says. He wants to help people who used to farm return to farming. He ticks off the things that need to happen: get a farm committee restarted, get a water line, get the land back into farming. When he meets me in 2009, he has been working as a DINÉ Inc. mentor farmer and has already helped 30 different families start growing their own food again, some with backyard gardens, some with larger plots of land. Yazzie is sure that one...",
+        "source_node_ids": [
+          "<hyperedge>\"He ticks off the things that need to happen: get a farm committee restarted, get a water line, get the land back into farming.\"",
+          "\"LAND\"",
+          "\"FARM COMMITTEE\"",
+          "\"WATER LINE\""
+        ],
+        "source_edge_ids": [
+          "edge-1544",
+          "edge-1545",
+          "edge-1546"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-033bfeab9bfaed05ef236ddef40c557b",
+        "content": "If a breed of cattle or sheep has been raised in an arid region of the country, it may not do well if it is raised in a humid, wet area, which might cause parasite problems.\n\n80 degrees for quick, efficient growth. The cost of constantly heating a catfish tank or pond would be prohibitive. _Planting a shelter of trees for your farm will provide microclimates that enable your crops and livestock to be more productive and protected from weather extremes_. Look for crops and livestock that thrive in the climate and weather of your region. Consider the crop's or livestock's home climate. If a breed of cattle or sheep has been raised in an arid region of the country, it may not do well if it is raised in a humid, wet area, which might cause parasite problems. Consider what is already being raised in your area. If you are new to farming, ask older farmers in the region what crops they grow now and what crops used to be grown in the area. #### Temperature Varying temperatures determine what plants grow best in what region, inspiring nicknames such as the Corn Bel...",
+        "source_node_ids": [
+          "<hyperedge>\"If a breed of cattle or sheep has been raised in an arid region of the country, it may not do well if it is raised in a humid, wet area, which might cause parasite problems.\"",
+          "\"ARID REGION\"",
+          "\"HUMID AREA\"",
+          "\"SHEEP\"",
+          "\"CATTLE\""
+        ],
+        "source_edge_ids": [
+          "edge-20945",
+          "edge-20946",
+          "edge-20947",
+          "edge-20948"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-2f3d99de4967b60e7e74b3639abc430c",
+        "content": "Once you have assessed your land, consider the equipment needed for your various crop and livestock enterprises.\n\nconsidered. To direct-market your produce, you should be within 40 miles of a fairly large population. This is also important if you plan to sell some of your products through restaurants and grocery stores, for example. Are you considering a U-pick operation or some form of agritourism? In order to sell produce on-farm or through a roadside stand, you need to be near some well-traveled roads, perhaps on the way to a tourist site, such as a boating lake. Ask yourself how many roads lead to your farm. Are they blacktop? Are you on the blacktop or a major highway or are you back in the \"boonies\"? Easy access is important for hauling your crops and livestock to town, even if you don't have a U-pick operation. How close are you to a large-population town where you can purchase all the products and input items you need on the farm? Access to the farm is important both for visitors and for...",
+        "source_node_ids": [
+          "<hyperedge>\"Once you have assessed your land, consider the equipment needed for your various crop and livestock enterprises.\"",
+          "\"CROP AND LIVESTOCK ENTERPRISES\"",
+          "\"EQUIPMENT\"",
+          "\"LAND\""
+        ],
+        "source_edge_ids": [
+          "edge-9499",
+          "edge-9500",
+          "edge-9501"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-032143f2a2a12749c2695a447f73d523",
+        "content": "Tyrone Thompson is the farm manager at the North Leupp Family Farm, a community program providing land, education, and basic infrastructure, like irrigation, for members who want to grow their own food.\n\n. His farm, in the back country of the Navajo Reservation, came back to life in the spring of 2011. Rose Marie Williams (at right) visits with her aunt, Tsosie Hyden, in Pasture Canyon, an oasis-like wash several miles outside of Tuba City, where year-round springs flow from caves. Access is difficult, but Rose Marie and others are testing crops here, eager to take advantage of the fertile soil and natural irrigation. Rose Marie's husband, Dan, sells corn from their truck just off the main road into Tuba City. As part its effort to support local farmers, DINÉ, Inc., helps with marketing and infrastructure. For DanRose Farms, that help included replacing small signs fixed to cardboard boxes (at left) with more visible, permanent billboards (at right). Tyrone Thompson is the farm manager at the North Leupp Family Farm, a community program providing land, education, and basic infrastruct...",
+        "source_node_ids": [
+          "<hyperedge>\"Tyrone Thompson is the farm manager at the North Leupp Family Farm, a community program providing land, education, and basic infrastructure, like irrigation, for members who want to grow their own food.\"",
+          "\"NORTH LEUPP FAMILY FARM\"",
+          "\"TYRONE THOMPSON\"",
+          "\"BASIC INFRASTRUCTURE\"",
+          "\"LAND\"",
+          "\"EDUCATION\"",
+          "\"FOOD\""
+        ],
+        "source_edge_ids": [
+          "edge-20770",
+          "edge-20771",
+          "edge-20772",
+          "edge-20773",
+          "edge-20774",
+          "edge-20775"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-ebf6866ed6ad144c3c4b844913be03e7",
+        "content": "Likewise, buying land and calling that land a farm cannot ensure that your investment will be profitable.\n\ntechnology, and improved systems, the number of people employed in farming has declined; still, the business of farming remains vital to our well-being as a people and a nation. Most of America's nearly two million farms are considered \"small,\" with seven out of ten grossing less than $50,000 a year. Despite their preponderance, operators of small farms have often felt neglected by our national farm programs. Sources of advice for farmers starting out have about dried up, with agricultural county agents admitting that they have time to service only full-time farmers—a group whose numbers are declining. The state departments of agriculture have marketing advice aplenty but are of little help to newcomers asking questions about credit, cropping recommendations, and cultural information. Needed are individual human beings whose hands are on the rural pulse and who have lots of informatio...",
+        "source_node_ids": [
+          "<hyperedge>\"Likewise, buying land and calling that land a farm cannot ensure that your investment will be profitable.\"",
+          "\"LAND\""
+        ],
+        "source_edge_ids": [
+          "edge-19966"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-f3099841c9e59bebef5ddbb5acdb1e41",
+        "content": "Land, people, goals, capital, crops, and livestock are managed to yield the best possible results on the farm.\n\nhelp beginning and established farmers make their farms profitable and their livelihoods satisfying, moving us forward to a more consistently sustainable agriculture and ultimately fostering sustainable communities. ### What Is Agripreneurship? Agripreneurship is the profitable marriage of agriculture and entrepreneurship—more plainly, turning your farm into a business. Most farmers regard agriculture as a combination of philosophy and lifestyle, so in its broadest sense agripreneurship binds together philosophy, lifestyle, and business, yielding ideals that give you purpose and goals to strive for. Agripreneurship is a mental attitude that can give you the strength and motivation to break from tradition. ### About Sustainable Agriculture Sustainable agriculture is a site-specific, whole-farm approach to agriculture. Land, people, goals, capital, crops, and livestock are managed to yi...",
+        "source_node_ids": [
+          "<hyperedge>\"Land, people, goals, capital, crops, and livestock are managed to yield the best possible results on the farm.\"",
+          "\"CROPS\"",
+          "\"PEOPLE\"",
+          "\"LIVESTOCK\"",
+          "\"LAND\"",
+          "\"CAPITAL\"",
+          "\"GOALS\""
+        ],
+        "source_edge_ids": [
+          "edge-22976",
+          "edge-22977",
+          "edge-22978",
+          "edge-22979",
+          "edge-22980",
+          "edge-22981"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-fa7136637ee2d131a4ae76b9cf2f5717",
+        "content": "And the North Leupp Family Farm, a Navajo community farming project not unlike many others around the country, works to rebuild connections between people and land, engaging communities in growing food to supplement the family table, finding respite in gardening, and rediscovering a sense of place.\n\nand big coat to plant. That's when you'll starve. You won't have any corn. Nothing will grow. Either we'll have starvation, earthquakes, flooding.\" As a child she never believed these prophecies and says she thought her uncle, who told her them, was lying. \"Unbelievable, but I'm beginning to see the things that are happening. I never thought this would happen. I never thought the water in that one wash would dry. It's dry now. There's no water. There used to be lots of water.\" So many people and food projects around the nation are focusing on the power of our youth – teaching, influencing, and inspiring them to understand their world in new ways by learning through gardens, nutrition, and food. Here the stakes are even higher. And there's so much more to teach – an entire culture's traditional knowledge about seeds, cultivation, traditional foods, prayers, ceremonies – in essence, the...",
+        "source_node_ids": [
+          "<hyperedge>\"And the North Leupp Family Farm, a Navajo community farming project not unlike many others around the country, works to rebuild connections between people and land, engaging communities in growing food to supplement the family table, finding respite in gardening, and rediscovering a sense of place.\"",
+          "\"NORTH LEUPP FAMILY FARM\""
+        ],
+        "source_edge_ids": [
+          "edge-16782"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-626a48dbfe67b1f55d1d46c5b8d30097",
+        "content": "A potential obstacle is that land and infrastructure may be more expensive for an urban farm than they would be for its rural counterparts.\n\nPower's increasingly complex system of interconnected pieces is built on the simple foundation of healthy soil and community connections. **To gain political and community support, promote the advantages of urban farms**. Advantages of locating a farm in an urban area are many. Rather than spending money on packaging, lengthy refrigeration, and transport of produce to market, you'll find the market is right there, all around you. Both Philadelphia's Greensgrow (page 96) and Virginia's Lynchburg Grows (page 116) say their customers come from every section of the city, not just the immediate neighborhood. Also, urban farms have ready access to labor. This may seem counterintuitive, as city people are not often considered prime candidates for farm labor. Yet Mary Seton Corboy, CEO of Greensgrow, notes, \"Greensgrow has found that there are a lot of very smart, motivated, and hardworking p...",
+        "source_node_ids": [
+          "<hyperedge>\"A potential obstacle is that land and infrastructure may be more expensive for an urban farm than they would be for its rural counterparts.\"",
+          "\"INFRASTRUCTURE\"",
+          "\"LAND\""
+        ],
+        "source_edge_ids": [
+          "edge-24799",
+          "edge-24800"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      }
+    ],
+    "retrieved_knowledge": "A Greensgrow weekly basket can include an array of local products – locally produced cheddar, chèvre, and mozzarella cheeses; locally raised chicken, lamb, or chorizo sausage; locally produced potato pierogi or seitan; a choice of local yogurt, butter, eggs, or milk; and seasonal items such as bread, cider, honey, beer, or soaps.\n\n-owners,\" as Corboy calls those who have bought a CSA share, come to collect their weekly share of food. Nearby, so shareholders will be able to shop when they pick up their CSA basket, Greensgrow hosts a farmers' market. Corboy believes farmers' markets do better when they have more competition. So in a counterintuitive business move, Corboy decided to open the Greensgrow CSA farmers' market to other farmers, and in 2009 it was hosting 80 producers. She suggests that customers believe competition will give them a better deal and that they'll find better quality for less money. So the more vendors and products, the more people come. Corboy laughs, remembering the early days of her nursery business. Like everything else used on the farm, the greenhouse was junk to someone else but gold to her. She rescued it from someone who was going out of business. When Corboy and Sereduk brought it...\n\nRain is the main cause of worm problems in sheep and goats, particularly when combined with warm temperatures.\n\nof water to produce 1 pound of dry matter. Less efficient plants (pumpkin, squash, cucumber, for example) may use 1,000 pounds of water to produce 1 pound of dry matter. Corn may transpire up to 2 quarts of water per plant per day, or 300,000 gallons of water per acre. Aquatic plants merely need to absorb the water—about 10 pounds per pound of growth. Which plants you choose will depend on your climate. # Climate And Livestock Climate and weather affect livestock both directly and indirectly: 1. The climate can cause species to evolve with specific adaptations to that temperature. Some breeds of cattle, like Santa Gertrudis, were developed for hot-weather areas and have shaker muscles that help them get rid of flies, which are more numerous in hot areas. Some woolly animals, like alpacas, will find it difficult to cope with high temperatures, but do well in colder regions. 2. Indirect...\n\nThey have space for a thousand meat chickens a year, or they could have dairy goats or value-added products such as herbal vinegars and oils.\n\nto steward the land with the goal of increasing biodiversity, primarily in four ways: First, expand the existing tree and shrub line. Second, expand habitat for beneficial birds and insects with species such as black locust, honey locust, highbush cranberry, mulberry, anise hyssop, and native wildflowers. Third, add ponds. Finally, manage the landscape consciously by paying attention to patterns and minimizing disturbance of animal habitat in farming practices. One key permaculture concept is that diversity builds diversity, and indeed, Frey says it is amazing how quickly biodiversity returns to the landscape as they establish more perennials, trees, and shrubs. In his book _Bioshelter Market Garden: A Permaculture Farm_ , Frey writes: The best way to describe the changes permaculture development has brought to our farm is to compare it to what came before. A small field that was prev...\n\nSheep obviously need some water, but can usually do quite well on range or pasture with what nature provides.\n\n, but also soaks up any new rain and virtually eliminates weed problems. Season extenders will also save moisture. Covering garden beds with black plastic or mulch early in spring will hold in moisture enough for you to grow a good tomato crop with little or no added water. Mulch such as straw keeps the ground moist through the hottest summer months. ### Caring for Livestock in Winter **Principle :** _Let your animals learn to cope with winter_. Your livestock may need better shelter in winter to protect them from the wind. Overall, though, the best thing you can do for your animals is to let them learn to cope. In northern areas, cattle will learn to graze through snow and can use the snow as a water source. We are apt to do too many things for our animals that are not conducive to developing good, hardy breeding stock. Stock that can survive on the land on its own will minimize our...\n\nWhen they eat organic matter and it passes through their body, the result is worm manure—worm castings.\n\nloose ball of dirt and drop it from about waist high. If it breaks apart, your soil is ready to work. If it does not break, then wait a half day or a day with no rain before you start working the ground. If you are working your ground with a tractor and there is water in the plow sole, _stop_ —it is too wet. If the plow furrows glisten in the sun, or look slick rather than crumbly, the ground is too wet—stop plowing. When turning over the furrow slice, it should be crumbly and falling apart. ### Our Living Soil Living soil is much more than just the different kinds of mineral particles that hold the plants upright. It is teeming with life throughout its strata, from bacteria to worms. Most of your soil's organisms inhabit the top 6 or 7 inches, the topsoil. These organisms include insects and other \"bugs,\" earthworms, bacteria, and fungi. Billions of soil organisms exist in your soil,...\n\nBehind every organic TV dinner or chicken or carton of industrial organic milk stands a certain quantity of land that will no longer be doused with chemicals, an undeniable gain for the environment and the public health.\n\none of the most successful figures in the organic community and also perhaps one of the most polarizing; for to many organic farmers and activists, he has come to symbolize the takeover of the movement by agribusiness.\" And yet Kahn, now vice president and global sustainability officer for General Mills, argued that Cascadian Farm would have gone completely under if he hadn't sold to Welch's. By joining the mainstream food system and supporting the growth of industrial organic, Cascadian Farm, Kahn suggests, increased access for more people to quality organic food and increased the number of environmentally friendly farms. \"Behind every organic TV dinner or chicken or carton of industrial organic milk stands a certain quantity of land that will no longer be doused with chemicals, an undeniable gain for the environment and the public health,\" he told Pollan. Certainly, for those who su...\n\nCan cattle, sheep, or horses water from these ponds, or are they too shallow, with too much mud and vegetation around the edge?\n\nor pastureland. Cultivated areas are small, and crops depend on slope. This is not a good soil type on which to plant 400 acres of corn, but it might make excellent orchard land. There will be more on soils in chapter 4, but you need to know the natural fertility of your farm soils and roughly what condition they are in currently. For any farm of less than 10 acres, the natural fertility of the farm is very important, because the physical size of the land will restrict the choice of enterprises. For instance, a cow-calf operation, which takes 3 acres to run a cow-calf pair, will not allow for much volume of income. The poorer the soils, the more area it would take; in some areas of the West, it takes 10 acres to run a cow-calf unit. Ten acres of vegetables or U-pick berries, however, would produce a large volume of income—but these require adequate water. Each enterprise must be evalu...\n\nYears later, with two goats that provide her family with milk, chèvre, and mozzarella cheese, and six chickens that put eggs on the table, Grant has no regrets.\n\n; only roosters do. Hens sometimes cluck when they lay an egg. At night they move inside the coop and perch in complete silence until morning. **PUBLIC HEALTH THREAT.** Unlike dogs and cats, chickens cannot spread parasites or pathogens to humans. A major concern has been whether backyard chickens could be a vector for transmitting avian influenza to humans. There is general consensus that the kind of avian influenza that is contagious to humans has not been found in North America. Bird flu is spread by contact with the contaminated feces of wild birds, primarily migratory waterfowl. Unlike rural farm birds, which might commingle with migratory birds or drink from a shared pond, backyard chickens are kept in an enclosed pen where contact with migratory waterfowl is unlikely. As the sustainable agriculture advocacy group GRAIN concluded in 2006, \"When it comes to bird flu, diverse smal...\n\nPolyface leases land from this farm for its Polyface beef cow herd.\n\ntake beef bones and turn them into stock, or little eggs and turn them into egg noodles and quiche.\" It would provide the marketing with a large showroom of different local products. It would provide the accounting by having one central cash register keeping track of sales, Salatin says, \"so these farmers don't have to sit here with their big, calloused, dirty fingers and punch little calculators.\" And it would provide the convenience and social space for customers, by offering a local dining space built on locally grown foods. Salatin explains that it is the overhead that kills little businesses, and a model like this would \"keep the cash register humming.\" The more you can funnel through that cash register, he says, the more efficient the overhead. This, he hopes, may be a possible future for our local food system: Instead of 100,000 Polyfaces scattered around Virginia, there could...\n\nThrough its Farms Program, the center leases land, equipment, and storage facilities to commercial farmers operating in one of three categories: Incubator farmers receive subsidized land leases, technical assistance, and mentorship from experienced farmers, for up to three years.\n\nthe city limits of **Burlington, Vermont** , is home to an unusual and highly productive array of activities: one of the largest CSAs in Vermont, a unique incubator program for new farmers, a native plants nursery, community garden plots, a large retail garden store, educational displays and research plots, a municipal composting facility (which has done much to rebuild the fertility of Intervale soil), and a city power-generating station. And it is also the site of new thinking about urban farming, imagining how waste from a city might be repurposed to meet the food, energy, and recreational demands of that same city's population. A remarkably short distance from downtown Burlington, Vermont, that bastion of progressivity, lies one of the most unusual experiments in local food production anywhere: the Intervale. \"Intervale\" literally means a low-lying place between two hills, and tha...\n\nHe ticks off the things that need to happen: get a farm committee restarted, get a water line, get the land back into farming.\n\nyears. \"Pretty much everyone stopped farming because of water,\" says Yazzie. \"We have all the equipment for farming, but there's just no water. Sometimes I shed tears. Too much emotion. Sometimes I just sit out here.\" Today, living about an hour south in Tolani Lake with his wife and three sons, Yazzie is focusing on helping the community reclaim its farming tradition by gaining rights to use water for crop fields. \"My main goal is to get people involved,\" he says. He wants to help people who used to farm return to farming. He ticks off the things that need to happen: get a farm committee restarted, get a water line, get the land back into farming. When he meets me in 2009, he has been working as a DINÉ Inc. mentor farmer and has already helped 30 different families start growing their own food again, some with backyard gardens, some with larger plots of land. Yazzie is sure that one...\n\nIf a breed of cattle or sheep has been raised in an arid region of the country, it may not do well if it is raised in a humid, wet area, which might cause parasite problems.\n\n80 degrees for quick, efficient growth. The cost of constantly heating a catfish tank or pond would be prohibitive. _Planting a shelter of trees for your farm will provide microclimates that enable your crops and livestock to be more productive and protected from weather extremes_. Look for crops and livestock that thrive in the climate and weather of your region. Consider the crop's or livestock's home climate. If a breed of cattle or sheep has been raised in an arid region of the country, it may not do well if it is raised in a humid, wet area, which might cause parasite problems. Consider what is already being raised in your area. If you are new to farming, ask older farmers in the region what crops they grow now and what crops used to be grown in the area. #### Temperature Varying temperatures determine what plants grow best in what region, inspiring nicknames such as the Corn Bel...\n\nOnce you have assessed your land, consider the equipment needed for your various crop and livestock enterprises.\n\nconsidered. To direct-market your produce, you should be within 40 miles of a fairly large population. This is also important if you plan to sell some of your products through restaurants and grocery stores, for example. Are you considering a U-pick operation or some form of agritourism? In order to sell produce on-farm or through a roadside stand, you need to be near some well-traveled roads, perhaps on the way to a tourist site, such as a boating lake. Ask yourself how many roads lead to your farm. Are they blacktop? Are you on the blacktop or a major highway or are you back in the \"boonies\"? Easy access is important for hauling your crops and livestock to town, even if you don't have a U-pick operation. How close are you to a large-population town where you can purchase all the products and input items you need on the farm? Access to the farm is important both for visitors and for...\n\nTyrone Thompson is the farm manager at the North Leupp Family Farm, a community program providing land, education, and basic infrastructure, like irrigation, for members who want to grow their own food.\n\n. His farm, in the back country of the Navajo Reservation, came back to life in the spring of 2011. Rose Marie Williams (at right) visits with her aunt, Tsosie Hyden, in Pasture Canyon, an oasis-like wash several miles outside of Tuba City, where year-round springs flow from caves. Access is difficult, but Rose Marie and others are testing crops here, eager to take advantage of the fertile soil and natural irrigation. Rose Marie's husband, Dan, sells corn from their truck just off the main road into Tuba City. As part its effort to support local farmers, DINÉ, Inc., helps with marketing and infrastructure. For DanRose Farms, that help included replacing small signs fixed to cardboard boxes (at left) with more visible, permanent billboards (at right). Tyrone Thompson is the farm manager at the North Leupp Family Farm, a community program providing land, education, and basic infrastruct...\n\nLikewise, buying land and calling that land a farm cannot ensure that your investment will be profitable.\n\ntechnology, and improved systems, the number of people employed in farming has declined; still, the business of farming remains vital to our well-being as a people and a nation. Most of America's nearly two million farms are considered \"small,\" with seven out of ten grossing less than $50,000 a year. Despite their preponderance, operators of small farms have often felt neglected by our national farm programs. Sources of advice for farmers starting out have about dried up, with agricultural county agents admitting that they have time to service only full-time farmers—a group whose numbers are declining. The state departments of agriculture have marketing advice aplenty but are of little help to newcomers asking questions about credit, cropping recommendations, and cultural information. Needed are individual human beings whose hands are on the rural pulse and who have lots of informatio...\n\nLand, people, goals, capital, crops, and livestock are managed to yield the best possible results on the farm.\n\nhelp beginning and established farmers make their farms profitable and their livelihoods satisfying, moving us forward to a more consistently sustainable agriculture and ultimately fostering sustainable communities. ### What Is Agripreneurship? Agripreneurship is the profitable marriage of agriculture and entrepreneurship—more plainly, turning your farm into a business. Most farmers regard agriculture as a combination of philosophy and lifestyle, so in its broadest sense agripreneurship binds together philosophy, lifestyle, and business, yielding ideals that give you purpose and goals to strive for. Agripreneurship is a mental attitude that can give you the strength and motivation to break from tradition. ### About Sustainable Agriculture Sustainable agriculture is a site-specific, whole-farm approach to agriculture. Land, people, goals, capital, crops, and livestock are managed to yi...\n\nAnd the North Leupp Family Farm, a Navajo community farming project not unlike many others around the country, works to rebuild connections between people and land, engaging communities in growing food to supplement the family table, finding respite in gardening, and rediscovering a sense of place.\n\nand big coat to plant. That's when you'll starve. You won't have any corn. Nothing will grow. Either we'll have starvation, earthquakes, flooding.\" As a child she never believed these prophecies and says she thought her uncle, who told her them, was lying. \"Unbelievable, but I'm beginning to see the things that are happening. I never thought this would happen. I never thought the water in that one wash would dry. It's dry now. There's no water. There used to be lots of water.\" So many people and food projects around the nation are focusing on the power of our youth – teaching, influencing, and inspiring them to understand their world in new ways by learning through gardens, nutrition, and food. Here the stakes are even higher. And there's so much more to teach – an entire culture's traditional knowledge about seeds, cultivation, traditional foods, prayers, ceremonies – in essence, the...\n\nA potential obstacle is that land and infrastructure may be more expensive for an urban farm than they would be for its rural counterparts.\n\nPower's increasingly complex system of interconnected pieces is built on the simple foundation of healthy soil and community connections. **To gain political and community support, promote the advantages of urban farms**. Advantages of locating a farm in an urban area are many. Rather than spending money on packaging, lengthy refrigeration, and transport of produce to market, you'll find the market is right there, all around you. Both Philadelphia's Greensgrow (page 96) and Virginia's Lynchburg Grows (page 116) say their customers come from every section of the city, not just the immediate neighborhood. Also, urban farms have ready access to labor. This may seem counterintuitive, as city people are not often considered prime candidates for farm labor. Yet Mary Seton Corboy, CEO of Greensgrow, notes, \"Greensgrow has found that there are a lot of very smart, motivated, and hardworking p...",
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "What type of animal can be trained to graze cornstalks and is also associated with a profitable niche market in the context of whole-hog sausage production?",
+    "golden_answers": [
+      "HOGS"
+    ],
+    "context": [
+      "Farmers today are lucky to make a 5 percent return on their farms when selling raw products like corn.",
+      "A simple example is hogs and corn. Train the hogs to graze the cornstalks during late growth and turn the animals onto the field after harvest.",
+      "So exactly what is a niche market? Niche markets are of two types.",
+      "Direct marketing whole-hog sausage enables you to capture a niche market that is far more profitable than hauling your hogs to the sale barn and saying, 'What will you give me for them?'",
+      "Polyface is proud that the quality of its chicken and beef is better today than it was years ago, even as production increased from 300 to 20,000 broilers and from 20 to 500 cows.",
+      "By the way, if you have extra produce at the end of the day, take it home—your chickens and hogs will appreciate the treat."
+    ],
+    "nhops": 6,
+    "run_dir": "D:\\GitHub\\GoT_HGs_RAG\\runs\\20260403_174602_what-type-of-animal-can-be-trained-to-graze-corn",
+    "run_status": "success",
+    "answer": "Hogs",
+    "generation": "Hogs\n\nReasoning summary: The evidence indicates that hogs are trained to graze cornstalks and are directly linked to the production of whole-hog sausage, which is a profitable niche market. The references to hogs being sold for sausage and their grazing habits support this conclusion.\n\nRemaining gaps: Specific identification of the type of animal that can graze cornstalks and is trained for this purpose",
+    "retrieved": [
+      {
+        "chunk_id": "chunk-7e2a281158355949bfa9c35a51c5622a",
+        "content": "Anyone wanting to acquire breeding stock for a hog sausage niche market operation could have bought several hogs, started a breeding operation, and turned some of them into sausage at a selling price of $2.50 per pound.\n\nout of it and take your lumps before you are wiped out in the market crash. On a positive note, if you market your production in a way that Corporate America cannot, such as by processing or manufacturing a homemade recipe, you can prosper even with corporate competition. 2. **Limited interest**. Niche markets are markets often overlooked by mainstream and Corporate America. They may be too small, or require too much labor or management, or they may have been abandoned due to market crashes or lack of profit. You can succeed by finding a different way to market a product that others believe to have limited potential. It is also possible to enter a market during a \"crash\" period and acquire your stock at a low price. For example, hogs were selling for as low as 18 cents per pound in 1998. Anyone wanting to acquire breeding stock for a hog sausage niche market operation could have bough...",
+        "source_node_ids": [
+          "<hyperedge>\"Anyone wanting to acquire breeding stock for a hog sausage niche market operation could have bought several hogs, started a breeding operation, and turned some of them into sausage at a selling price of $2.50 per pound.\"",
+          "\"SAUSAGE\"",
+          "\"HOG SAUSAGE NICHE MARKET\"",
+          "\"BREEDING STOCK\""
+        ],
+        "source_edge_ids": [
+          "edge-11998",
+          "edge-11999",
+          "edge-12000"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-a17c911f4ce144036087ad77f694974d",
+        "content": "**_Goal 1_. We have existing portable hog houses and will purchase feeder pigs to sell as whole-hog sausage in the fall**.\n\n, which covers almost all crops and livestock. If things go awry, you are guaranteed a certain gross revenue per acre or a certain yield (bushels per acre), all for a 20 percent higher premium. You can control costs and increase output for increased gross income, but you have no control over the government and politicians and the laws they might pass that will affect your bottom line. Make a plan to deal with unexpected changes. **_Goal 6_. We want to convert our cattle operation to a management-intensive grazing operation**. You've estimated that it will require 2 years to build fence and lay water lines. How will this affect the cash flow? Will it generate more income the first year or second? #### Short-Term Goals You will seek to achieve short-term goals within 1 to 2 years' time: **_Goal 1_. We have existing portable hog houses and will purchase feeder pigs to sell as whole-hog s...",
+        "source_node_ids": [
+          "<hyperedge>\"**_Goal 1_. We have existing portable hog houses and will purchase feeder pigs to sell as whole-hog sausage in the fall**.\"",
+          "\"WHOLE-HOG SAUSAGE\"",
+          "\"FEEDER PIGS\"",
+          "\"FALL\"",
+          "\"PORTABLE HOG HOUSES\""
+        ],
+        "source_edge_ids": [
+          "edge-24273",
+          "edge-24274",
+          "edge-24275",
+          "edge-24276"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-8c58f4785be38b80316bcdb547edbe48",
+        "content": "\"Direct marketing whole-hog sausage enables you to capture a niche market that is far more profitable than hauling your hogs to the sale barn and saying, 'What will you give me for them?'\n\n, baling hay, and storing potatoes, you are making your crops work through additional seasons. A good hay year should result in extra hay in the barn for a reserve against a bad hay year. Adding value is another way to build reserves, by ensuring that you have products to sell throughout the year. You can build reserves in livestock by saving back females, which reduces your replacement costs. You save back females by keeping your best young ewe stock each year, while culling the rest for sale. All ram lambs must be sold. Rams should be purchased every year or alternated to prevent inbred genetic problems. This practice will ultimately improve the quality and reproductive performance of the livestock, as you select for the best stock for your farm and management methods. This is another kind of reserve, a reserve of quality. Quality reserves are also possible with other aspects of you...",
+        "source_node_ids": [
+          "<hyperedge>\"Direct marketing whole-hog sausage enables you to capture a niche market that is far more profitable than hauling your hogs to the sale barn and saying, 'What will you give me for them?'",
+          "\"DIRECT MARKETING\"",
+          "\"WHOLE-HOG SAUSAGE\"",
+          "\"NICHE MARKET\""
+        ],
+        "source_edge_ids": [
+          "edge-6535",
+          "edge-6536",
+          "edge-6537"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-db06dd0bc574d59f7ffa8848b9ae23fd",
+        "content": "In this hog example, it was profitable even with hogs selling for 10 cents per pound on the commodity market, because the product was not sold as a hog, but instead was direct-marketed straight to the consumer as a different product, whole hog sausage.\n\ncan be raised for timber, firewood, or nursery stock. Sell nursery stock for windbreaks or wildlife shelter. When planted carefully and allowed to grow to maximum potential, tree crops can be highly profitable. One good choice is a quick-growing variety, such as _Pawlonia_ or bamboo. Christmas trees also have excellent seasonal sales potential. Think before you clear an area of trees—you may want to call your extension service or Forestry Department to get an evaluation. Christmas trees can provide income outside the traditional growing season. Note, too, that not all farm crops need to be edible. * **Other alternatives**. There are many other alternative crops, from fava beans to shrimp, and from lions to sweet sorghum. The rarer it is, the harder it may be to locate a market—but then competition is reduced, too. Try to pick crops and livestock that will be easy to raise, can be mark...",
+        "source_node_ids": [
+          "<hyperedge>\"In this hog example, it was profitable even with hogs selling for 10 cents per pound on the commodity market, because the product was not sold as a hog, but instead was direct-marketed straight to the consumer as a different product, whole hog sausage.\"",
+          "\"HOGS\"",
+          "\"DIRECT-MARKETED PRODUCT\"",
+          "\"WHOLE HOG SAUSAGE\""
+        ],
+        "source_edge_ids": [
+          "edge-23342",
+          "edge-23343",
+          "edge-23344"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-6c15e66cc3147bff35c99fe3e874a056",
+        "content": "The interns have proved to be a huge help, because they arrive pre-trained, already knowledgeable about plants, bugs, and fertilizer, and they just need to be pointed in the right direction.\n\n\"The Arts and Science of Agriculture\" (ASAP) – reflects its interdisciplinary mix. Both in the classroom and at the farm, students study botany, soil chemistry, entomology, microbiology, the work of water and sunlight, and even weather and air quality. They maintain garden beds, select crops, amend soil, and harvest vegetables for use in the school cafeteria. And students also learn about ecosystems and the regional, national, and global history of food systems. As required by most high school courses, they do homework, listen to lectures, conduct experiments and research, and take tests. As a science elective, the course popularity continues to grow. By 2009 Rachel Reinhart, the JVUF program director, was teaching two ASAP classes each semester. Bryding Adams, a JVUF board member, says, \"ASFA math and science kids like the course. It's applied science, and [it] makes them think diffe...",
+        "source_node_ids": [
+          "<hyperedge>\"The interns have proved to be a huge help, because they arrive pre-trained, already knowledgeable about plants, bugs, and fertilizer, and they just need to be pointed in the right direction.\"",
+          "\"INTERNS\"",
+          "\"BUGS\"",
+          "\"FERTILIZER\"",
+          "\"PLANTS\""
+        ],
+        "source_edge_ids": [
+          "edge-8579",
+          "edge-8580",
+          "edge-8581",
+          "edge-8582"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-df880ab4353881f2fe1a61ec533c5679",
+        "content": "So exactly what is a niche market? Niche markets are of two types.\n\n50. Selling it as cornmeal will produce a net income of about $3,625 per acre—including payment for labor and management. By selling the corn as cornmeal—or growing high-dollar, high-yield varieties, or selling \"Indian corn\" for decorative purposes, or any other number of alternative marketing methods—you can vastly increase your level of profit. Of course, selling 5,600 bags of cornmeal will require much more marketing effort than would hauling the corn to the nearest elevator and unloading it. #### Farming Methods and Marketing How you choose to raise your crops and livestock can influence your marketing choices. Obviously, planting standard commodity crops on a large scale does not lend itself to direct marketing. Even variations of commodity crops (popcorn, white corn, tofu soybeans, for example) usually require contracting with someone to buy the product, rather than direct marke...",
+        "source_node_ids": [
+          "<hyperedge>\"So exactly what is a niche market? Niche markets are of two types.\"",
+          "\"NICHE MARKET\""
+        ],
+        "source_edge_ids": [
+          "edge-26204"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-0e9fc423425c82be2483c04c11e6577f",
+        "content": "Consider rabbit jerky and sausage, restaurant sales.\n\nthe only person selling okra, you can sell it at a premium price if there is a demand for it. If no one is familiar with okra, you will have to create a market before it will sell well. * **How much competition is there for sales of your product?** Look at other farms engaged in your enterprise within 25, 50, and 100 miles. Look at how they are marketing it and what volume of sales they have. Can you offer something they don't? If you and forty other farmers are selling a standard breed of tomato at midseason at a local farmers' market, count on prices no better than wholesale. * **How do you feel about your enterprise?** There's an old saying among cattle buyers: \"Bought right is half sold.\" The same is true in picking a business enterprise. Never choose an enterprise just because it will be profitable. You have to like what you're doing; you'll be more successful if you enjoy your w...",
+        "source_node_ids": [
+          "<hyperedge>\"Consider rabbit jerky and sausage, restaurant sales.\"",
+          "\"SAUSAGE\"",
+          "\"RABBIT JERKY\""
+        ],
+        "source_edge_ids": [
+          "edge-14220",
+          "edge-14221"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      },
+      {
+        "chunk_id": "chunk-2f3d99de4967b60e7e74b3639abc430c",
+        "content": "Livestock will naturally plow a pasture or garden as they graze (especially hogs).\n\nconsidered. To direct-market your produce, you should be within 40 miles of a fairly large population. This is also important if you plan to sell some of your products through restaurants and grocery stores, for example. Are you considering a U-pick operation or some form of agritourism? In order to sell produce on-farm or through a roadside stand, you need to be near some well-traveled roads, perhaps on the way to a tourist site, such as a boating lake. Ask yourself how many roads lead to your farm. Are they blacktop? Are you on the blacktop or a major highway or are you back in the \"boonies\"? Easy access is important for hauling your crops and livestock to town, even if you don't have a U-pick operation. How close are you to a large-population town where you can purchase all the products and input items you need on the farm? Access to the farm is important both for visitors and for...",
+        "source_node_ids": [
+          "<hyperedge>\"Livestock will naturally plow a pasture or garden as they graze (especially hogs).\"",
+          "\"PASTURE\"",
+          "\"HOGS\"",
+          "\"GARDEN\""
+        ],
+        "source_edge_ids": [
+          "edge-9820",
+          "edge-9821",
+          "edge-9822"
+        ],
+        "thought_id": "th-0028",
+        "thought_status": "completed"
+      }
+    ],
+    "retrieved_knowledge": "Anyone wanting to acquire breeding stock for a hog sausage niche market operation could have bought several hogs, started a breeding operation, and turned some of them into sausage at a selling price of $2.50 per pound.\n\nout of it and take your lumps before you are wiped out in the market crash. On a positive note, if you market your production in a way that Corporate America cannot, such as by processing or manufacturing a homemade recipe, you can prosper even with corporate competition. 2. **Limited interest**. Niche markets are markets often overlooked by mainstream and Corporate America. They may be too small, or require too much labor or management, or they may have been abandoned due to market crashes or lack of profit. You can succeed by finding a different way to market a product that others believe to have limited potential. It is also possible to enter a market during a \"crash\" period and acquire your stock at a low price. For example, hogs were selling for as low as 18 cents per pound in 1998. Anyone wanting to acquire breeding stock for a hog sausage niche market operation could have bough...\n\n**_Goal 1_. We have existing portable hog houses and will purchase feeder pigs to sell as whole-hog sausage in the fall**.\n\n, which covers almost all crops and livestock. If things go awry, you are guaranteed a certain gross revenue per acre or a certain yield (bushels per acre), all for a 20 percent higher premium. You can control costs and increase output for increased gross income, but you have no control over the government and politicians and the laws they might pass that will affect your bottom line. Make a plan to deal with unexpected changes. **_Goal 6_. We want to convert our cattle operation to a management-intensive grazing operation**. You've estimated that it will require 2 years to build fence and lay water lines. How will this affect the cash flow? Will it generate more income the first year or second? #### Short-Term Goals You will seek to achieve short-term goals within 1 to 2 years' time: **_Goal 1_. We have existing portable hog houses and will purchase feeder pigs to sell as whole-hog s...\n\n\"Direct marketing whole-hog sausage enables you to capture a niche market that is far more profitable than hauling your hogs to the sale barn and saying, 'What will you give me for them?'\n\n, baling hay, and storing potatoes, you are making your crops work through additional seasons. A good hay year should result in extra hay in the barn for a reserve against a bad hay year. Adding value is another way to build reserves, by ensuring that you have products to sell throughout the year. You can build reserves in livestock by saving back females, which reduces your replacement costs. You save back females by keeping your best young ewe stock each year, while culling the rest for sale. All ram lambs must be sold. Rams should be purchased every year or alternated to prevent inbred genetic problems. This practice will ultimately improve the quality and reproductive performance of the livestock, as you select for the best stock for your farm and management methods. This is another kind of reserve, a reserve of quality. Quality reserves are also possible with other aspects of you...\n\nIn this hog example, it was profitable even with hogs selling for 10 cents per pound on the commodity market, because the product was not sold as a hog, but instead was direct-marketed straight to the consumer as a different product, whole hog sausage.\n\ncan be raised for timber, firewood, or nursery stock. Sell nursery stock for windbreaks or wildlife shelter. When planted carefully and allowed to grow to maximum potential, tree crops can be highly profitable. One good choice is a quick-growing variety, such as _Pawlonia_ or bamboo. Christmas trees also have excellent seasonal sales potential. Think before you clear an area of trees—you may want to call your extension service or Forestry Department to get an evaluation. Christmas trees can provide income outside the traditional growing season. Note, too, that not all farm crops need to be edible. * **Other alternatives**. There are many other alternative crops, from fava beans to shrimp, and from lions to sweet sorghum. The rarer it is, the harder it may be to locate a market—but then competition is reduced, too. Try to pick crops and livestock that will be easy to raise, can be mark...\n\nThe interns have proved to be a huge help, because they arrive pre-trained, already knowledgeable about plants, bugs, and fertilizer, and they just need to be pointed in the right direction.\n\n\"The Arts and Science of Agriculture\" (ASAP) – reflects its interdisciplinary mix. Both in the classroom and at the farm, students study botany, soil chemistry, entomology, microbiology, the work of water and sunlight, and even weather and air quality. They maintain garden beds, select crops, amend soil, and harvest vegetables for use in the school cafeteria. And students also learn about ecosystems and the regional, national, and global history of food systems. As required by most high school courses, they do homework, listen to lectures, conduct experiments and research, and take tests. As a science elective, the course popularity continues to grow. By 2009 Rachel Reinhart, the JVUF program director, was teaching two ASAP classes each semester. Bryding Adams, a JVUF board member, says, \"ASFA math and science kids like the course. It's applied science, and [it] makes them think diffe...\n\nSo exactly what is a niche market? Niche markets are of two types.\n\n50. Selling it as cornmeal will produce a net income of about $3,625 per acre—including payment for labor and management. By selling the corn as cornmeal—or growing high-dollar, high-yield varieties, or selling \"Indian corn\" for decorative purposes, or any other number of alternative marketing methods—you can vastly increase your level of profit. Of course, selling 5,600 bags of cornmeal will require much more marketing effort than would hauling the corn to the nearest elevator and unloading it. #### Farming Methods and Marketing How you choose to raise your crops and livestock can influence your marketing choices. Obviously, planting standard commodity crops on a large scale does not lend itself to direct marketing. Even variations of commodity crops (popcorn, white corn, tofu soybeans, for example) usually require contracting with someone to buy the product, rather than direct marke...\n\nConsider rabbit jerky and sausage, restaurant sales.\n\nthe only person selling okra, you can sell it at a premium price if there is a demand for it. If no one is familiar with okra, you will have to create a market before it will sell well. * **How much competition is there for sales of your product?** Look at other farms engaged in your enterprise within 25, 50, and 100 miles. Look at how they are marketing it and what volume of sales they have. Can you offer something they don't? If you and forty other farmers are selling a standard breed of tomato at midseason at a local farmers' market, count on prices no better than wholesale. * **How do you feel about your enterprise?** There's an old saying among cattle buyers: \"Bought right is half sold.\" The same is true in picking a business enterprise. Never choose an enterprise just because it will be profitable. You have to like what you're doing; you'll be more successful if you enjoy your w...\n\nLivestock will naturally plow a pasture or garden as they graze (especially hogs).\n\nconsidered. To direct-market your produce, you should be within 40 miles of a fairly large population. This is also important if you plan to sell some of your products through restaurants and grocery stores, for example. Are you considering a U-pick operation or some form of agritourism? In order to sell produce on-farm or through a roadside stand, you need to be near some well-traveled roads, perhaps on the way to a tourist site, such as a boating lake. Ask yourself how many roads lead to your farm. Are they blacktop? Are you on the blacktop or a major highway or are you back in the \"boonies\"? Easy access is important for hauling your crops and livestock to town, even if you don't have a U-pick operation. How close are you to a large-population town where you can purchase all the products and input items you need on the farm? Access to the farm is important both for visitors and for...",
+    "f1": 1.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "What crucial component do new beekeepers use in their supers and need to manage while ensuring the edges remain straight during the setup?",
+    "golden_answers": [
+      "FOUNDATION"
+    ],
+    "context": [
+      "Propolis is a resinous substance collected by the bees from the bark and buds of trees and other plant materials.",
+      "The important thing is to keep the edges of the foundation straight until the bees have drawn it out and fastened it to the end bars of the frame.",
+      "Wiring is not difficult although a couple of tools are necessary and the job can be tedious if many frames are involved.",
+      "The equipment needed for beekeeping includes various components such as frames, foundation, and necessary tools.",
+      "Why are you going to keep bees? Most new beekeepers see it as an interesting hobby, and if they can make money on the side, so much the better.",
+      "As a new beekeeper, you are probably dealing with foundation in your supers rather than drawn comb."
+    ],
+    "nhops": 6,
+    "run_dir": null,
+    "run_status": "missing",
+    "answer": "",
+    "generation": "",
+    "retrieved": [],
+    "retrieved_knowledge": "",
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "What type of food product is typically made from feeder pigs to utilize surplus corn and can also include meat cuts such as hams and chops?",
+    "golden_answers": [
+      "SAUSAGE"
+    ],
+    "context": [
+      "American Livestock Breeds Conservancy News provides information on rare breeds; bimonthly.",
+      "_Consider_ rare breeds such as Mulefoot and Tamworth, raising on pasture, organic or natural, selling meat cuts or sausage.",
+      "Carl Honeyestewa and his father, Luther, practice traditional Hopi farming of corn, melon, squash, and even some fruits such as grapes and apples.",
+      "I usually buy feeder pigs to be sold as sausage in August or September to utilize early corn and surplus corn.",
+      "Our pork was so much more juicy that our ham was more similar to the shoulder they had been getting,\" says Salatin.",
+      "Instead, a 250-pound hog will probably produce 150 to 170 pounds of cut and wrapped meat, including chops, hams, and sausage."
+    ],
+    "nhops": 6,
+    "run_dir": null,
+    "run_status": "missing",
+    "answer": "",
+    "generation": "",
+    "retrieved": [],
+    "retrieved_knowledge": "",
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "What combination of community initiatives, including those led by residents from East Africa, Laos, and Vietnam, and the management by a nonprofit organization, defines the mixed-use space located within the city limits of Madison, Wisconsin?",
+    "golden_answers": [
+      "TROY GARDENS"
+    ],
+    "context": [
+      "To stave off hunger, residents of the housing project – many from East Africa, Laos, and Vietnam – began to cultivate tiny garden patches outside their apartments; many had been farmers back in their homeland.",
+      "Troy Gardens does not yet offer a common house for community gatherings, but residents do share a variety of activities.",
+      "If I have omitted anyone here, please forgive my oversight. It is not intentional, and the fault is my own.",
+      "Claire Strader, manager of Troy Community Farm, was the first person hired at Troy Gardens.",
+      "The group supports community and school gardens across the city, as well as its own City Seeds Urban Farm, where it provides job training and 'therapy gardening' for at-risk populations.",
+      "Community GroundWorks is a nonprofit organization managing Troy Gardens, a 31-acre mixed-use parcel combining cohousing units for low-income families, community gardens, a CSA farm, and prairie and woodland conservation areas, all within the city limits of Madison, Wisconsin."
+    ],
+    "nhops": 6,
+    "run_dir": null,
+    "run_status": "missing",
+    "answer": "",
+    "generation": "",
+    "retrieved": [],
+    "retrieved_knowledge": "",
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "Which director involved in small business development and food distribution agrees that the world produces enough food to feed the population, while also supporting new farmers and community initiatives?",
+    "golden_answers": [
+      "PETER MARKS"
+    ],
+    "context": [
+      "The structure of Janus Youth's budget supports various initiatives, enhancing the organization's capability to serve diverse demographics.",
+      "ASAP program director Peter Marks, with many years' experience in small business development in the private and nonprofit sectors, heads up this initiative, helping new farmers get off the ground and experienced farmers expand into new markets.",
+      "Beginning with a grant in 2000 to assist the community gardens and the farm, Troy Gardens has grown over a decade to a budget of about $350,000, according to Christie Ralston, who is now associate director and natural areas coordinator at Community GroundWorks.",
+      "If I have omitted anyone here, please forgive my oversight. It is not intentional, and the fault is my own.",
+      "Those who have seriously studied the issue of hunger seem to agree: we do produce more than enough food to feed all the people in the world.",
+      "We're still really beginners at understanding the distribution of food, agrees Peter Marks."
+    ],
+    "nhops": 6,
+    "run_dir": null,
+    "run_status": "missing",
+    "answer": "",
+    "generation": "",
+    "retrieved": [],
+    "retrieved_knowledge": "",
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "What significant environmental issue involves unconsumed food and is linked to urban farming, as well as impacting municipal waste levels and soil fertility?",
+    "golden_answers": [
+      "FOOD WASTE"
+    ],
+    "context": [
+      "It is hitched to everything else we care about: nourishment, health, skills, jobs, leadership, nature, community, economy, and, yes, even second chances, redemption, and empowerment.",
+      "Allen stresses the importance of connections and community for successful urban farming.",
+      "U.S. Environmental Protection Agency, 'Ag 101: Demographics,'.",
+      "According to the Environmental Protection Agency, food waste – uneaten food and food preparation scraps – accounts for over 14 percent of the municipal solid waste stream and totals more than 34 million tons per year.",
+      "Cover crops are used to prevent erosion, shade out weeds, and protect the soil from freezing and thawing.",
+      "Raap notes that leaves and yard waste, along with food waste from Burlington, became the source of the fertility for the soil."
+    ],
+    "nhops": 6,
+    "run_dir": null,
+    "run_status": "missing",
+    "answer": "",
+    "generation": "",
+    "retrieved": [],
+    "retrieved_knowledge": "",
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  {
+    "question": "Which organization, co-founded by Josh Goldman, is known for sustainable fish farming methods and is based in Turners Falls, Massachusetts?",
+    "golden_answers": [
+      "AUSTRALIS AQUACULTURE"
+    ],
+    "context": [
+      "For Dan Rose Farms, that help included replacing small signs fixed to cardboard boxes with more visible, permanent billboards.",
+      "Representatives from each of these groups and organizations who so graciously allowed us to pester them with visits, calls, and e-mails.",
+      "If I have omitted anyone here, please forgive my oversight. It is not intentional, and the fault is my own.",
+      "Josh Goldman, cofounder and CEO of Australis Aquaculture, traveled the world looking for a fish that could be truly sustainably farmed.",
+      "By eating low on the food chain, barramundi bears a low risk for accumulating mercury, PCBs, and other toxins in its flesh.",
+      "Founded in 2004 in Turners Falls, Massachusetts, Australis Aquaculture has gained an international reputation for its inventive fish-farming technology, its extreme adherence to environmentally friendly methodologies, and, above all, the culinary appeal of its fish: the barramundi."
+    ],
+    "nhops": 6,
+    "run_dir": null,
+    "run_status": "missing",
+    "answer": "",
+    "generation": "",
+    "retrieved": [],
+    "retrieved_knowledge": "",
+    "f1": 0.0,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  }
+]

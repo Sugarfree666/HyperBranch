@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "question_file": "D:\\GitHub\\GoT_HGs_RAG\\questions\\agriculture\\questions.json",
+    "runs_dir": "D:\\GitHub\\GoT_HGs_RAG\\runs",
+    "output_dir": "D:\\GitHub\\GoT_HGs_RAG\\eval\\results\\agriculture\\20260403_174845",
+    "start_index": 0,
+    "limit": 10,
+    "skip_rsim": true,
+    "skip_gen": true,
+    "workers": 1
+  },
+  "counts": {
+    "total": 10,
+    "success": 4,
+    "failed": 0,
+    "missing": 6
+  },
+  "overall": {
+    "f1": 0.3,
+    "r_s": null,
+    "g_e": null,
+    "rsim": null,
+    "gen": null
+  },
+  "by_nhops": {
+    "6": {
+      "count": 10,
+      "f1": 0.3,
+      "r_s": null,
+      "g_e": null
+    }
+  }
+}
