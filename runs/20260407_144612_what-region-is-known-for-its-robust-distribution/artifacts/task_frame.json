@@ -1,0 +1,201 @@
+{
+  "question": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+  "anchors": [
+    "region",
+    "distribution network",
+    "local food",
+    "college",
+    "farm"
+  ],
+  "target": "the region known for its agricultural practices",
+  "constraints": [
+    "robust distribution network for local food",
+    "college operating a farm for over a hundred years"
+  ],
+  "bridges": [
+    "identifying a region with a specific agricultural characteristic",
+    "specific name of the region",
+    "name of the college"
+  ],
+  "topic_entities": [
+    "region",
+    "distribution network",
+    "local food",
+    "college",
+    "farm"
+  ],
+  "answer_type_hint": "geographical region",
+  "relation_intent": "identifying a region with a specific agricultural characteristic",
+  "hard_constraints": [
+    "robust distribution network for local food",
+    "college operating a farm for over a hundred years"
+  ],
+  "relation_skeleton": "What region has a distribution network for local food and a college with a farm?",
+  "initial_entity_ids": [
+    "\"WELCOMING FARM\"",
+    "\"MAPLE RIDGE FARM AND FISHERY\"",
+    "\"HEALTHY FARM\"",
+    "\"GREENSGROW FARM\"",
+    "\"FULL BELLY FARM\""
+  ],
+  "initial_hyperedge_ids": [
+    "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+    "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+    "<hyperedge>\"This program offers a host of resources to help colleges navigate the logistics of setting up a program to bring local food to their campuses.\""
+  ],
+  "metadata": {},
+  "checklist": {
+    "question": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+    "topic_entities": [
+      "region",
+      "distribution network",
+      "local food",
+      "college",
+      "farm"
+    ],
+    "answer_type_hint": "geographical region",
+    "relation_intent": "identifying a region with a specific agricultural characteristic",
+    "hard_constraints": [
+      "robust distribution network for local food",
+      "college operating a farm for over a hundred years"
+    ],
+    "relation_skeleton": "What region has a distribution network for local food and a college with a farm?",
+    "initial_entity_ids": [
+      "\"WELCOMING FARM\"",
+      "\"MAPLE RIDGE FARM AND FISHERY\"",
+      "\"HEALTHY FARM\"",
+      "\"GREENSGROW FARM\"",
+      "\"FULL BELLY FARM\""
+    ],
+    "initial_hyperedge_ids": [
+      "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+      "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+      "<hyperedge>\"This program offers a host of resources to help colleges navigate the logistics of setting up a program to bring local food to their campuses.\""
+    ],
+    "anchors": [
+      {
+        "slot_id": "anchor-0",
+        "kind": "anchors",
+        "text": "region",
+        "status": "open",
+        "evidence_ids": [],
+        "notes": []
+      },
+      {
+        "slot_id": "anchor-1",
+        "kind": "anchors",
+        "text": "distribution network",
+        "status": "supported",
+        "evidence_ids": [
+          "th-0007"
+        ],
+        "notes": [
+          "Registered via reasoning similarity 0.403"
+        ]
+      },
+      {
+        "slot_id": "anchor-2",
+        "kind": "anchors",
+        "text": "local food",
+        "status": "supported",
+        "evidence_ids": [
+          "th-0004"
+        ],
+        "notes": [
+          "Registered via reasoning similarity 0.406"
+        ]
+      },
+      {
+        "slot_id": "anchor-3",
+        "kind": "anchors",
+        "text": "college",
+        "status": "open",
+        "evidence_ids": [],
+        "notes": []
+      },
+      {
+        "slot_id": "anchor-4",
+        "kind": "anchors",
+        "text": "farm",
+        "status": "retrieved",
+        "evidence_ids": [
+          "\"WELCOMING FARM\""
+        ],
+        "notes": [
+          "Matched entity seed: WELCOMING FARM (1.000)"
+        ]
+      }
+    ],
+    "target": [
+      {
+        "slot_id": "target-0",
+        "kind": "target",
+        "text": "the region known for its agricultural practices",
+        "status": "verified",
+        "evidence_ids": [
+          "th-0018"
+        ],
+        "notes": [
+          "Final answer synthesized."
+        ]
+      }
+    ],
+    "constraints": [
+      {
+        "slot_id": "constraint-0",
+        "kind": "constraints",
+        "text": "robust distribution network for local food",
+        "status": "supported",
+        "evidence_ids": [
+          "th-0002"
+        ],
+        "notes": [
+          "Registered via reasoning similarity 0.453"
+        ]
+      },
+      {
+        "slot_id": "constraint-1",
+        "kind": "constraints",
+        "text": "college operating a farm for over a hundred years",
+        "status": "supported",
+        "evidence_ids": [
+          "th-0008"
+        ],
+        "notes": [
+          "Registered via reasoning similarity 0.467"
+        ]
+      }
+    ],
+    "bridges": [
+      {
+        "slot_id": "bridge-0",
+        "kind": "bridges",
+        "text": "identifying a region with a specific agricultural characteristic",
+        "status": "supported",
+        "evidence_ids": [
+          "th-0003"
+        ],
+        "notes": [
+          "Registered via reasoning similarity 0.418"
+        ]
+      },
+      {
+        "slot_id": "bridge-1",
+        "kind": "bridges",
+        "text": "specific name of the region",
+        "status": "open",
+        "evidence_ids": [],
+        "notes": []
+      },
+      {
+        "slot_id": "bridge-2",
+        "kind": "bridges",
+        "text": "name of the college",
+        "status": "open",
+        "evidence_ids": [],
+        "notes": []
+      }
+    ],
+    "all_required_satisfied": false
+  }
+}
