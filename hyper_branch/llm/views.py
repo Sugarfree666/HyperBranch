@@ -93,6 +93,20 @@ def build_llm_evidence_view(
         },
         "preferred_branches": _clean_text_list(merge_result.get("preferred_branches", []), limit=3),
     }
+    answerability_summary = {
+        "candidate_answer": answer_hypotheses[0] if answer_hypotheses else "",
+        "hard_constraints": _clean_text_list(task_frame.hard_constraints, limit=4),
+        "supporting_evidence": [
+            short_text(str(item.get("core_evidence", "") or ""), 220)
+            for item in frontier_view
+            if str(item.get("core_evidence", "") or "").strip()
+        ][:3],
+        "open_questions": missing_requirements[:4],
+        "note": (
+            "Checklist coverage is advisory. The question can still be answerable if the current evidence already supports "
+            "a specific grounded answer that satisfies the main hard constraints."
+        ),
+    }
 
     return {
         "question": question,
@@ -101,6 +115,7 @@ def build_llm_evidence_view(
         "next_focus": next_focus,
         "frontier_hyperedges": frontier_view,
         "coverage_summary": coverage_summary,
+        "answerability_summary": answerability_summary,
         "control_summary": control_summary,
         "evidence_summary": _build_evidence_summary(frontier_view, coverage_summary, missing_requirements, answer_hypotheses),
     }
@@ -233,17 +248,17 @@ def _build_evidence_summary(
 ) -> str:
     summary_parts: list[str] = []
     if answer_hypotheses:
-        summary_parts.append("Current answer hypotheses: " + ", ".join(answer_hypotheses))
+        summary_parts.append("Provisional answer candidates: " + ", ".join(answer_hypotheses))
     if frontier_view:
         summary_parts.append(
             "Top frontier evidence: "
             + " | ".join(short_text(str(item.get("hyperedge", "")), 120) for item in frontier_view[:2])
         )
     open_constraints = coverage_summary.get("constraints", {}).get("missing", [])
-    if open_constraints:
-        summary_parts.append("Still-open constraints: " + ", ".join(open_constraints[:2]))
-    elif missing_requirements:
+    if missing_requirements:
         summary_parts.append("Remaining gaps: " + ", ".join(missing_requirements[:2]))
+    elif open_constraints and not answer_hypotheses:
+        summary_parts.append("Open checklist items: " + ", ".join(open_constraints[:2]))
     if not summary_parts:
         return "Evidence view is sparse and does not yet isolate a grounded answer."
     return " ".join(summary_parts)

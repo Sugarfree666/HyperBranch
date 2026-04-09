@@ -414,6 +414,24 @@ class TaskFrame:
             "all_required_satisfied": self.is_satisfied(),
         }
 
+    def answerability_snapshot(self) -> dict[str, Any]:
+        return {
+            "question": self.question,
+            "topic_entities": list(self.topic_entities),
+            "answer_type_hint": self.answer_type_hint,
+            "relation_intent": self.relation_intent,
+            "hard_constraints": list(self.hard_constraints),
+            "relation_skeleton": self.relation_skeleton,
+            "target": self.target,
+            "anchors": list(self.anchors),
+            "constraints": list(self.constraints),
+            "bridges": list(self.bridges),
+            "guidance": (
+                "Use these fields as soft guidance for what the answer must address. "
+                "Do not require checklist completeness if the current evidence can already answer the original question."
+            ),
+        }
+
     def is_satisfied(self) -> bool:
         anchor_ok = all(slot.satisfied() for slot in self.checklist.get("anchors", []))
         required_ok = all(

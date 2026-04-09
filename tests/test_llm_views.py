@@ -183,6 +183,12 @@ class LlmEvidenceViewTest(unittest.TestCase):
             view["coverage_summary"]["constraints"]["missing"],
             ["college operating a farm for over a hundred years"],
         )
+        self.assertEqual(view["answerability_summary"]["candidate_answer"], "WESTERN NORTH CAROLINA")
+        self.assertIn(
+            "Checklist coverage is advisory",
+            view["answerability_summary"]["note"],
+        )
+        self.assertTrue(view["answerability_summary"]["supporting_evidence"])
         self.assertFalse(contains_forbidden_key(view))
 
     def test_openai_reasoning_service_uses_compressed_views_only(self) -> None:
@@ -246,9 +252,13 @@ class LlmEvidenceViewTest(unittest.TestCase):
         answer_payload = client.calls[1][1]
 
         self.assertIn("llm_evidence_view", judge_payload)
+        self.assertIn("question_goal", judge_payload)
+        self.assertNotIn("task_frame_progress", judge_payload)
         self.assertNotIn("evidence_subgraph", judge_payload)
         self.assertNotIn("merge_result", judge_payload)
         self.assertNotIn("retrieval_control_state", judge_payload)
+        self.assertEqual(judge_payload["question_goal"]["target"], "region")
+        self.assertIn("soft guidance", judge_payload["question_goal"]["guidance"])
         self.assertFalse(contains_forbidden_key(judge_payload["llm_evidence_view"]))
         self.assertNotIn("score", answer_payload["thought_graph_summary"]["recent_thoughts"][0])
         self.assertNotIn("content", answer_payload["thought_graph_summary"]["recent_thoughts"][0])

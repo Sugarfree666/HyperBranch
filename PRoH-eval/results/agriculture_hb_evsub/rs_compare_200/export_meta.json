@@ -1,0 +1,14 @@
+{
+  "question_file": "D:\\GitHub\\HyperBranch\\questions\\agriculture\\questions.json",
+  "runs_dir": "D:\\GitHub\\HyperBranch\\runs",
+  "output_dir": "D:\\GitHub\\HyperBranch\\PRoH-eval\\results\\agriculture_hb_evsub\\rs_compare_200",
+  "start_index": 0,
+  "limit": 200,
+  "prefer_evidence_subgraph": true,
+  "counts": {
+    "total": 200,
+    "success": 198,
+    "failed": 2,
+    "missing": 0
+  }
+}

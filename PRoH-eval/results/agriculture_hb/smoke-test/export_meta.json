@@ -1,0 +1,14 @@
+{
+  "question_file": "D:\\GitHub\\HyperBranch\\questions\\agriculture\\questions.json",
+  "runs_dir": "D:\\GitHub\\HyperBranch\\runs",
+  "output_dir": "D:\\GitHub\\HyperBranch\\PRoH-eval\\results\\agriculture_hb\\smoke-test",
+  "start_index": 0,
+  "limit": 1,
+  "prefer_evidence_subgraph": false,
+  "counts": {
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "missing": 0
+  }
+}

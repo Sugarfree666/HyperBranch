@@ -1,0 +1,131 @@
+{
+  "question": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+  "current_focus": [
+    "Identify the specific name of the region in western North Carolina known for its robust local food distribution network",
+    "Find evidence about a college in that region operating a farm for over a hundred years",
+    "specific name of the region",
+    "explicit evidence of a college operating a farm for over a hundred years"
+  ],
+  "missing_requirements": [
+    "specific name of the region",
+    "explicit evidence of a college operating a farm for over a hundred years"
+  ],
+  "next_focus": [
+    "Identify the specific name of the region in western North Carolina known for its robust local food distribution network",
+    "Find evidence about a college in that region operating a farm for over a hundred years"
+  ],
+  "frontier_hyperedges": [
+    {
+      "hyperedge": "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.",
+      "supporting_branches": [
+        "relation"
+      ],
+      "matched_topics": [
+        "NATIONAL FARM TO SCHOOL NETWORK",
+        "FARM TO SCHOOL PROGRAM"
+      ],
+      "core_entities": [
+        "NATIONAL FARM TO SCHOOL NETWORK",
+        "FARM TO SCHOOL PROGRAM",
+        "GROWING MINDS",
+        "SOUTHEASTERN REGIONAL LEAD AGENCY"
+      ],
+      "core_evidence": "drive change here is to support the existing chain of commerce, as well as new entrepreneurs, in getting local farm products to market. #### Fresh Food for All Most people, ironically, do not think of the places that care for our sick, elderly, and children – hospitals, senior centers, and schools – when they think of good, healthy food. But with ASAP's help, many such venues in western North Carolina and neighbor..."
+    },
+    {
+      "hyperedge": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust a...",
+      "supporting_branches": [
+        "relation",
+        "anchor"
+      ],
+      "matched_topics": [
+        "DISTRIBUTION NETWORK"
+      ],
+      "core_entities": [
+        "DISTRIBUTION NETWORK",
+        "INFRASTRUCTURE",
+        "COMMUNITIES",
+        "WESTERN NORTH CAROLINA"
+      ],
+      "core_evidence": "different. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would be assured of consistently high quality, farmers would gain access to new markets, and the public would have a way of knowing it was buying something truly local. #### Creating a Certified Local Bran..."
+    },
+    {
+      "hyperedge": "Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.",
+      "supporting_branches": [
+        "constraint"
+      ],
+      "matched_topics": [],
+      "core_entities": [
+        "POSITIVE APPROACH"
+      ],
+      "core_evidence": "farmers all over the world. And connected to these companies is an intricate network of distributors who aggregrate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores. Today, if farmers are not serving the industrialized system of aggregation and distribution – if they want to stay small and serve their local community – they face many challenges. While there is the obvi..."
+    }
+  ],
+  "coverage_summary": {
+    "topics": {
+      "covered": [
+        "distribution network",
+        "local food",
+        "farm"
+      ],
+      "missing": [
+        "region",
+        "college"
+      ]
+    },
+    "constraints": {
+      "covered": [
+        "robust distribution network for local food",
+        "college operating a farm for over a hundred years"
+      ],
+      "missing": []
+    },
+    "relations": {
+      "intent": "identifying a region with a specific agricultural characteristic",
+      "covered": [
+        "identifying a region with a specific agricultural characteristic"
+      ],
+      "missing": [
+        "specific name of the region"
+      ]
+    },
+    "target": {
+      "text": "the region known for its agricultural practices",
+      "status": "supported"
+    },
+    "answer_hypotheses": [
+      "POSITIVE APPROACH"
+    ]
+  },
+  "answerability_summary": {
+    "candidate_answer": "POSITIVE APPROACH",
+    "hard_constraints": [
+      "robust distribution network for local food",
+      "college operating a farm for over a hundred years"
+    ],
+    "supporting_evidence": [
+      "drive change here is to support the existing chain of commerce, as well as new entrepreneurs, in getting local farm products to market. #### Fresh Food for All Most people, ironically, do not think of the places that...",
+      "different. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would...",
+      "farmers all over the world. And connected to these companies is an intricate network of distributors who aggregrate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores. Today..."
+    ],
+    "open_questions": [
+      "specific name of the region",
+      "explicit evidence of a college operating a farm for over a hundred years"
+    ],
+    "note": "Checklist coverage is advisory. The question can still be answerable if the current evidence already supports a specific grounded answer that satisfies the main hard constraints."
+  },
+  "control_summary": {
+    "iteration": 4,
+    "branch_weights": {
+      "constraint": 0.37,
+      "relation": 0.315,
+      "anchor": 0.315
+    },
+    "preferred_branches": [
+      "constraint",
+      "relation",
+      "anchor"
+    ]
+  },
+  "evidence_summary": "Provisional answer candidates: POSITIVE APPROACH Top frontier evidence: Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughou... | Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced... Remaining gaps: specific name of the region, explicit evidence of a college operating a farm for over a hundred years"
+}

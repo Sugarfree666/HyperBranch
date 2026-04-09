@@ -1,0 +1,7 @@
+{
+  "overall_em": 0.52,
+  "overall_f1": 0.5977777777777777,
+  "overall_rsim": 0.5938887512683868,
+  "count": 50,
+  "input_file": "D:\\GitHub\\HyperBranch\\PRoH-eval\\results\\agriculture_hb_evsub\\rs_compare\\generated_answer.json"
+}

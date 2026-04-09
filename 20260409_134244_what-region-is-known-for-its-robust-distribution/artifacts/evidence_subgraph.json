@@ -1,0 +1,2683 @@
+{
+  "hyperedge_ids": [
+    "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+    "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+    "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+    "<hyperedge>\"In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\"",
+    "<hyperedge>\"Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\"",
+    "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+    "<hyperedge>\"For more than a hundred years, Warren Wilson College has put its 340-acre farm into immediate production.\"",
+    "<hyperedge>\"At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.\"",
+    "<hyperedge>\"Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.\"",
+    "<hyperedge>\"Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.\""
+  ],
+  "entity_ids": [
+    "\"ADVOCATES OF LOCAL FOOD\"",
+    "\"CENTRALIZED MASS PRODUCTION\"",
+    "\"REGIONAL FOOD PRODUCTION\"",
+    "\"SUSTAINABILITY\"",
+    "\"FOOD SECURITY\"",
+    "\"TRUCK FARM\"",
+    "\"CROP AND LIVESTOCK FARM\"",
+    "\"HAY FARM\"",
+    "\"INFRASTRUCTURE\"",
+    "\"DISTRIBUTION NETWORK\"",
+    "\"COMMUNITIES\"",
+    "\"WESTERN NORTH CAROLINA\"",
+    "\"LOCAL GROWERS\"",
+    "\"CENTRAL DISTRIBUTION CENTER\"",
+    "\"STORAGE OF LOCAL FOOD\"",
+    "\"LOGISTICAL CHALLENGES\"",
+    "\"DISTRIBUTION OF LOCAL FOOD\"",
+    "\"FARM\"",
+    "\"WARREN WILSON COLLEGE\"",
+    "\"IMMEDIATE PRODUCTION\"",
+    "\"LOCAL FOOD COMMITTEE\"",
+    "\"FACULTY WHO TEACH SUSTAINABLE AGRICULTURE\"",
+    "\"DEAN\"",
+    "\"STUDENT WORK PROGRAM\"",
+    "\"FARM AND GARDEN MANAGERS\"",
+    "\"GROWING MINDS\"",
+    "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+    "\"SOUTHEASTERN REGIONAL LEAD AGENCY\"",
+    "\"FARM TO SCHOOL PROGRAM\"",
+    "\"POSITIVE APPROACH\""
+  ],
+  "chunk_ids": [
+    "chunk-5d4150698732f393c235b8b3e1cb2d88",
+    "chunk-a8cfe86ed3c97ccb7c9629ee2dac08b4",
+    "chunk-ba841e41630d5b5e46b271cb1a11d579",
+    "chunk-ad0d4e7d44014acab56e26cbaa12a896",
+    "chunk-04be01c6169d0bdd92b10dca615a3936",
+    "chunk-5f8baa196ceabfc9bc0a6cc79c04127e",
+    "chunk-38d2ea190331fa57b51edf78d0352738",
+    "chunk-30c38b37fe24e15bfa43a713c9e38509",
+    "chunk-5944a88ca415780f3d4838a47d068512"
+  ],
+  "expansion_frontier_entity_ids": [
+    "\"GROWING MINDS\"",
+    "\"SOUTHEASTERN REGIONAL LEAD AGENCY\""
+  ],
+  "explored_entity_ids": [
+    "\"WELCOMING FARM\"",
+    "\"MAPLE RIDGE FARM AND FISHERY\"",
+    "\"HEALTHY FARM\"",
+    "\"GREENSGROW FARM\"",
+    "\"FULL BELLY FARM\"",
+    "\"WESTERN NORTH CAROLINA\"",
+    "\"DISTRIBUTION NETWORK\"",
+    "\"WARREN WILSON COLLEGE\"",
+    "\"LOCAL FOOD COMMITTEE\""
+  ],
+  "branch_support": {
+    "initial": [
+      "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+      "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\""
+    ],
+    "constraint": [
+      "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+      "<hyperedge>\"In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\"",
+      "<hyperedge>\"farmers all over the world are connected to companies through an intricate network of distributors who aggregate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores.\"",
+      "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+      "<hyperedge>\"For more than a hundred years, Warren Wilson College has put its 340-acre farm into immediate production.\"",
+      "<hyperedge>\"Ask community organizers, members of local organizations, heads of local businesses, administrators of local schools – anyone and everyone – whether they would have an interest in and a market for local food, if a supply could be arranged.\"",
+      "<hyperedge>\"Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.\"",
+      "<hyperedge>\"ASD learned the ropes of the distribution business for a couple of years with locally owned retailers.\"",
+      "<hyperedge>\"Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\""
+    ],
+    "relation": [
+      "<hyperedge>\"This program offers a host of resources to help colleges navigate the logistics of setting up a program to bring local food to their campuses.\"",
+      "<hyperedge>\"Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\"",
+      "<hyperedge>\"The purchase of local food by campus dining halls can provide a major boost for local farmers, economies, and farmland preservation.\"",
+      "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+      "<hyperedge>\"At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.\"",
+      "<hyperedge>\"Establishing a College Farming Program.\"",
+      "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+      "<hyperedge>\"And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.\"",
+      "<hyperedge>\"Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.\""
+    ],
+    "anchor": [
+      "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+      "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+      "<hyperedge>\"This program offers a host of resources to help colleges navigate the logistics of setting up a program to bring local food to their campuses.\"",
+      "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+      "<hyperedge>\"At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.\"",
+      "<hyperedge>\"Oberlin College in Ohio may be the nation's leading pioneer in buying local food, purchasing an incredible 45 percent of its food locally.\"",
+      "<hyperedge>\"And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.\"",
+      "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+      "<hyperedge>\"The experience of Warren Wilson College, also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity.\""
+    ]
+  },
+  "branch_answers": {
+    "initial": {
+      "branch_kind": "initial",
+      "query_texts": [
+        "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+        "region",
+        "distribution network",
+        "local food",
+        "college",
+        "farm"
+      ],
+      "recommended_hyperedges": [
+        {
+          "hyperedge_id": "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+          "hyperedge_text": "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.",
+          "score": 0.41241631069183354,
+          "branch_kind": "anchor",
+          "branch_score": 0.41241631069183354,
+          "fused_score": 0.0,
+          "coverage_gain": 0.6,
+          "constraint_gain": 0.4,
+          "relation_gain": 0.49116092920303345,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.0,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"ADVOCATES OF LOCAL FOOD\"",
+            "\"CENTRALIZED MASS PRODUCTION\"",
+            "\"REGIONAL FOOD PRODUCTION\"",
+            "\"SUSTAINABILITY\"",
+            "\"FOOD SECURITY\""
+          ],
+          "chunk_ids": [
+            "chunk-5d4150698732f393c235b8b3e1cb2d88"
+          ],
+          "matched_topic_entities": [
+            "\"ADVOCATES OF LOCAL FOOD\"",
+            "\"REGIONAL FOOD PRODUCTION\"",
+            "\"FOOD SECURITY\""
+          ],
+          "support_entities": [
+            "\"ADVOCATES OF LOCAL FOOD\"",
+            "\"REGIONAL FOOD PRODUCTION\"",
+            "\"FOOD SECURITY\""
+          ],
+          "supporting_chunks": [
+            "strategy to empower this underserved population, ACEnet identifies the 32 counties in this region as its primary service region and offers a hefty 50 percent discount on kitchen-facility rent to its inhabitants. ### G..."
+          ],
+          "score_breakdown": {
+            "question": 0.4347,
+            "constraint": 0.4,
+            "relation": 0.4912,
+            "coverage": 0.6,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.0,
+            "penalty": 0.0,
+            "branch_score": 0.4124
+          },
+          "notes": [
+            "matched_topics=3",
+            "entity_degree=5"
+          ],
+          "reason": "Anchor branch prioritizes coverage, connectivity, and novelty.",
+          "display_hyperedge": "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.",
+          "entity_labels": [
+            "ADVOCATES OF LOCAL FOOD",
+            "CENTRALIZED MASS PRODUCTION",
+            "REGIONAL FOOD PRODUCTION",
+            "SUSTAINABILITY",
+            "FOOD SECURITY"
+          ],
+          "matched_topic_labels": [
+            "ADVOCATES OF LOCAL FOOD",
+            "REGIONAL FOOD PRODUCTION",
+            "FOOD SECURITY"
+          ],
+          "support_entity_labels": [
+            "ADVOCATES OF LOCAL FOOD",
+            "REGIONAL FOOD PRODUCTION",
+            "FOOD SECURITY"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+          "hyperedge_text": "Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.",
+          "score": 0.4053672150611878,
+          "branch_kind": "anchor",
+          "branch_score": 0.4053672150611878,
+          "fused_score": 0.0,
+          "coverage_gain": 0.6,
+          "constraint_gain": 0.16666666666666666,
+          "relation_gain": 0.4606940746307373,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.0,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"TRUCK FARM\"",
+            "\"CROP AND LIVESTOCK FARM\"",
+            "\"HAY FARM\""
+          ],
+          "chunk_ids": [
+            "chunk-a8cfe86ed3c97ccb7c9629ee2dac08b4"
+          ],
+          "matched_topic_entities": [
+            "\"TRUCK FARM\"",
+            "\"CROP AND LIVESTOCK FARM\"",
+            "\"HAY FARM\""
+          ],
+          "support_entities": [
+            "\"TRUCK FARM\"",
+            "\"CROP AND LIVESTOCK FARM\"",
+            "\"HAY FARM\""
+          ],
+          "supporting_chunks": [
+            "Drain winter oil and change filters. Change the transmission fluid and antifreeze, if needed. * Invest in a scheduled equipment preventive maintenance program. Set regular cycles to change oil and filters. During the..."
+          ],
+          "score_breakdown": {
+            "question": 0.4193,
+            "constraint": 0.1667,
+            "relation": 0.4607,
+            "coverage": 0.6,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.0,
+            "penalty": 0.0,
+            "branch_score": 0.4054
+          },
+          "notes": [
+            "matched_topics=3",
+            "entity_degree=3"
+          ],
+          "reason": "Anchor branch prioritizes coverage, connectivity, and novelty.",
+          "display_hyperedge": "Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.",
+          "entity_labels": [
+            "TRUCK FARM",
+            "CROP AND LIVESTOCK FARM",
+            "HAY FARM"
+          ],
+          "matched_topic_labels": [
+            "TRUCK FARM",
+            "CROP AND LIVESTOCK FARM",
+            "HAY FARM"
+          ],
+          "support_entity_labels": [
+            "TRUCK FARM",
+            "CROP AND LIVESTOCK FARM",
+            "HAY FARM"
+          ]
+        }
+      ],
+      "control_state": {
+        "iteration": 0,
+        "branch_weights": {
+          "constraint": 0.3333333333333333,
+          "relation": 0.3333333333333333,
+          "anchor": 0.3333333333333333
+        },
+        "missing_requirements": [],
+        "next_focus": [],
+        "current_focus": [],
+        "branch_queries": {},
+        "candidate_filters": {},
+        "notes": [
+          "Initialized control state."
+        ]
+      },
+      "notes": "Initial anchoring from topic entities and answer-type hints."
+    },
+    "constraint": {
+      "branch_kind": "constraint",
+      "branch_weight": 0.3700787401574803,
+      "recommended_hyperedges": [
+        {
+          "hyperedge_id": "<hyperedge>\"Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.\"",
+          "hyperedge_text": "Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.",
+          "score": 0.5063679467981512,
+          "branch_kind": "constraint",
+          "branch_score": 0.5063679467981512,
+          "fused_score": 0.0,
+          "coverage_gain": 0.0,
+          "constraint_gain": 0.8,
+          "relation_gain": 0.4522724747657776,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.36363636363636365,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"POSITIVE APPROACH\""
+          ],
+          "chunk_ids": [
+            "chunk-5944a88ca415780f3d4838a47d068512"
+          ],
+          "matched_topic_entities": [],
+          "support_entities": [
+            "\"POSITIVE APPROACH\""
+          ],
+          "supporting_chunks": [
+            "farmers all over the world. And connected to these companies is an intricate network of distributors who aggregrate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores. Today..."
+          ],
+          "score_breakdown": {
+            "question": 0.4009,
+            "constraint": 0.8,
+            "relation": 0.4523,
+            "coverage": 0.0,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.3636,
+            "penalty": 0.0,
+            "branch_score": 0.5064
+          },
+          "notes": [
+            "matched_topics=0",
+            "entity_degree=1"
+          ],
+          "reason": "Constraint branch prioritizes hard-constraint match.",
+          "display_hyperedge": "Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.",
+          "entity_labels": [
+            "POSITIVE APPROACH"
+          ],
+          "matched_topic_labels": [],
+          "support_entity_labels": [
+            "POSITIVE APPROACH"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"ASD learned the ropes of the distribution business for a couple of years with locally owned retailers.\"",
+          "hyperedge_text": "ASD learned the ropes of the distribution business for a couple of years with locally owned retailers.",
+          "score": 0.48276392334157775,
+          "branch_kind": "constraint",
+          "branch_score": 0.48276392334157775,
+          "fused_score": 0.0,
+          "coverage_gain": 0.0,
+          "constraint_gain": 0.8,
+          "relation_gain": 0.29389774799346924,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.36363636363636365,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"SOCIAL RETAILERS\""
+          ],
+          "chunk_ids": [
+            "chunk-b26f04bc8df6a747ead835cc8d210eec"
+          ],
+          "matched_topic_entities": [],
+          "support_entities": [
+            "\"SOCIAL RETAILERS\""
+          ],
+          "supporting_chunks": [
+            ", as its mission states, \"development that is sustainable and beneficial for nature and people, for culture and community.\" As part of its mission to facilitate the development of a robust local food system, ASD promo..."
+          ],
+          "score_breakdown": {
+            "question": 0.2829,
+            "constraint": 0.8,
+            "relation": 0.2939,
+            "coverage": 0.0,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.3636,
+            "penalty": 0.0,
+            "branch_score": 0.4828
+          },
+          "notes": [
+            "matched_topics=0",
+            "entity_degree=1"
+          ],
+          "reason": "Constraint branch prioritizes hard-constraint match.",
+          "display_hyperedge": "ASD learned the ropes of the distribution business for a couple of years with locally owned retailers.",
+          "entity_labels": [
+            "SOCIAL RETAILERS"
+          ],
+          "matched_topic_labels": [],
+          "support_entity_labels": [
+            "SOCIAL RETAILERS"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\"",
+          "hyperedge_text": "Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.",
+          "score": 0.4562274130691182,
+          "branch_kind": "constraint",
+          "branch_score": 0.4562274130691182,
+          "fused_score": 0.0,
+          "coverage_gain": 0.4,
+          "constraint_gain": 0.6,
+          "relation_gain": 0.5714285714285714,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.2727272727272727,
+          "penalty": 0.35,
+          "entity_ids": [
+            "\"STORAGE OF LOCAL FOOD\"",
+            "\"LOGISTICAL CHALLENGES\"",
+            "\"DISTRIBUTION OF LOCAL FOOD\""
+          ],
+          "chunk_ids": [
+            "chunk-04be01c6169d0bdd92b10dca615a3936"
+          ],
+          "matched_topic_entities": [
+            "\"STORAGE OF LOCAL FOOD\"",
+            "\"DISTRIBUTION OF LOCAL FOOD\""
+          ],
+          "support_entities": [
+            "\"STORAGE OF LOCAL FOOD\"",
+            "\"DISTRIBUTION OF LOCAL FOOD\""
+          ],
+          "supporting_chunks": [
+            "local school food markets, given the complexities of the procurement process. Data from Farm to School programs suggests that when schools dedicate a significant percentage of their purchases to local producers, local..."
+          ],
+          "score_breakdown": {
+            "question": 0.483,
+            "constraint": 0.6,
+            "relation": 0.5714,
+            "coverage": 0.4,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.2727,
+            "penalty": 0.35,
+            "branch_score": 0.4562
+          },
+          "notes": [
+            "matched_topics=2",
+            "entity_degree=3"
+          ],
+          "reason": "Constraint branch prioritizes hard-constraint match.",
+          "display_hyperedge": "Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.",
+          "entity_labels": [
+            "STORAGE OF LOCAL FOOD",
+            "LOGISTICAL CHALLENGES",
+            "DISTRIBUTION OF LOCAL FOOD"
+          ],
+          "matched_topic_labels": [
+            "STORAGE OF LOCAL FOOD",
+            "DISTRIBUTION OF LOCAL FOOD"
+          ],
+          "support_entity_labels": [
+            "STORAGE OF LOCAL FOOD",
+            "DISTRIBUTION OF LOCAL FOOD"
+          ]
+        }
+      ],
+      "recommended_ids": [
+        "<hyperedge>\"Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.\"",
+        "<hyperedge>\"ASD learned the ropes of the distribution business for a couple of years with locally owned retailers.\"",
+        "<hyperedge>\"Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\""
+      ],
+      "top_branch_score": 0.5063679467981512,
+      "gain_summary": {
+        "coverage_gain": 0.4,
+        "constraint_gain": 0.8,
+        "relation_gain": 0.5714285714285714,
+        "connector_gain": 0.0,
+        "novelty_gain": 1.0,
+        "focus_gain": 0.36363636363636365
+      },
+      "query_texts": [
+        "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+        "robust distribution network for local food",
+        "college operating a farm for over a hundred years",
+        "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+        "specific name of the region",
+        "region",
+        "distribution network",
+        "local food",
+        "college",
+        "farm"
+      ],
+      "control_state": {
+        "iteration": 3,
+        "branch_weights": {
+          "constraint": 0.3700787401574803,
+          "relation": 0.31496062992125984,
+          "anchor": 0.31496062992125984
+        },
+        "missing_requirements": [
+          "specific name of the region"
+        ],
+        "next_focus": [
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food."
+        ],
+        "current_focus": [
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+          "specific name of the region"
+        ],
+        "branch_queries": {
+          "constraint": [
+            "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+            "robust distribution network for local food",
+            "college operating a farm for over a hundred years",
+            "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+            "specific name of the region",
+            "region",
+            "distribution network",
+            "local food",
+            "college",
+            "farm"
+          ]
+        },
+        "candidate_filters": {
+          "constraint": {
+            "prefer_focus_match": true,
+            "focus_threshold": 0.12,
+            "focus_candidate_count": 12
+          }
+        },
+        "notes": [
+          "Raised constraint weight based on previous frontier contributions."
+        ]
+      },
+      "notes": "constraint branch ranking is retrieval/scoring-led."
+    },
+    "relation": {
+      "branch_kind": "relation",
+      "branch_weight": 0.31496062992125984,
+      "recommended_hyperedges": [
+        {
+          "hyperedge_id": "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+          "hyperedge_text": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+          "score": 0.492999934679502,
+          "branch_kind": "relation",
+          "branch_score": 0.492999934679502,
+          "fused_score": 0.0,
+          "coverage_gain": 0.2,
+          "constraint_gain": 1.0,
+          "relation_gain": 0.5714285714285714,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.7272727272727273,
+          "penalty": 0.35,
+          "entity_ids": [
+            "\"INFRASTRUCTURE\"",
+            "\"DISTRIBUTION NETWORK\"",
+            "\"COMMUNITIES\"",
+            "\"WESTERN NORTH CAROLINA\""
+          ],
+          "chunk_ids": [
+            "chunk-ba841e41630d5b5e46b271cb1a11d579"
+          ],
+          "matched_topic_entities": [
+            "\"DISTRIBUTION NETWORK\""
+          ],
+          "support_entities": [
+            "\"DISTRIBUTION NETWORK\""
+          ],
+          "supporting_chunks": [
+            "different. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would..."
+          ],
+          "score_breakdown": {
+            "question": 0.4318,
+            "constraint": 1.0,
+            "relation": 0.5714,
+            "coverage": 0.2,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.7273,
+            "penalty": 0.35,
+            "branch_score": 0.493
+          },
+          "notes": [
+            "matched_topics=1",
+            "entity_degree=4"
+          ],
+          "reason": "Relation branch prioritizes relation intent and skeleton match.",
+          "display_hyperedge": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+          "entity_labels": [
+            "INFRASTRUCTURE",
+            "DISTRIBUTION NETWORK",
+            "COMMUNITIES",
+            "WESTERN NORTH CAROLINA"
+          ],
+          "matched_topic_labels": [
+            "DISTRIBUTION NETWORK"
+          ],
+          "support_entity_labels": [
+            "DISTRIBUTION NETWORK"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.\"",
+          "hyperedge_text": "And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.",
+          "score": 0.49143987433115643,
+          "branch_kind": "relation",
+          "branch_score": 0.49143987433115643,
+          "fused_score": 0.0,
+          "coverage_gain": 0.2,
+          "constraint_gain": 0.4,
+          "relation_gain": 0.5535678267478943,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.6666666666666666,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"SEASONAL LOCAL ORGANIC PRODUCE\"",
+            "\"600 STORES\"",
+            "\"MOM-AND-POP CHAINS\"",
+            "\"LARGER REGIONAL SUPERMARKET CHAINS\""
+          ],
+          "chunk_ids": [
+            "chunk-efae0d6c5dabc751b9ceb56518857dff"
+          ],
+          "matched_topic_entities": [
+            "\"SEASONAL LOCAL ORGANIC PRODUCE\""
+          ],
+          "support_entities": [
+            "\"SEASONAL LOCAL ORGANIC PRODUCE\""
+          ],
+          "supporting_chunks": [
+            "Appalachian Harvest brand serves as an umbrella name for all the small-scale producers who distribute through ASD. \"Our brand hasn't taken the world by storm,\" says Flaccovento. \"But it's a solid brand that has achiev..."
+          ],
+          "score_breakdown": {
+            "question": 0.5153,
+            "constraint": 0.4,
+            "relation": 0.5536,
+            "coverage": 0.2,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.6667,
+            "penalty": 0.0,
+            "branch_score": 0.4914
+          },
+          "notes": [
+            "matched_topics=1",
+            "entity_degree=4"
+          ],
+          "reason": "Relation branch prioritizes relation intent and skeleton match.",
+          "display_hyperedge": "And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.",
+          "entity_labels": [
+            "SEASONAL LOCAL ORGANIC PRODUCE",
+            "600 STORES",
+            "MOM-AND-POP CHAINS",
+            "LARGER REGIONAL SUPERMARKET CHAINS"
+          ],
+          "matched_topic_labels": [
+            "SEASONAL LOCAL ORGANIC PRODUCE"
+          ],
+          "support_entity_labels": [
+            "SEASONAL LOCAL ORGANIC PRODUCE"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.\"",
+          "hyperedge_text": "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.",
+          "score": 0.47880135586045003,
+          "branch_kind": "relation",
+          "branch_score": 0.47880135586045003,
+          "fused_score": 0.0,
+          "coverage_gain": 0.4,
+          "constraint_gain": 0.6,
+          "relation_gain": 0.5441160202026367,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.5454545454545454,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"GROWING MINDS\"",
+            "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+            "\"SOUTHEASTERN REGIONAL LEAD AGENCY\"",
+            "\"FARM TO SCHOOL PROGRAM\""
+          ],
+          "chunk_ids": [
+            "chunk-30c38b37fe24e15bfa43a713c9e38509"
+          ],
+          "matched_topic_entities": [
+            "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+            "\"FARM TO SCHOOL PROGRAM\""
+          ],
+          "support_entities": [
+            "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+            "\"FARM TO SCHOOL PROGRAM\""
+          ],
+          "supporting_chunks": [
+            "drive change here is to support the existing chain of commerce, as well as new entrepreneurs, in getting local farm products to market. #### Fresh Food for All Most people, ironically, do not think of the places that..."
+          ],
+          "score_breakdown": {
+            "question": 0.4918,
+            "constraint": 0.6,
+            "relation": 0.5441,
+            "coverage": 0.4,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.5455,
+            "penalty": 0.0,
+            "branch_score": 0.4788
+          },
+          "notes": [
+            "matched_topics=2",
+            "entity_degree=4"
+          ],
+          "reason": "Relation branch prioritizes relation intent and skeleton match.",
+          "display_hyperedge": "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.",
+          "entity_labels": [
+            "GROWING MINDS",
+            "NATIONAL FARM TO SCHOOL NETWORK",
+            "SOUTHEASTERN REGIONAL LEAD AGENCY",
+            "FARM TO SCHOOL PROGRAM"
+          ],
+          "matched_topic_labels": [
+            "NATIONAL FARM TO SCHOOL NETWORK",
+            "FARM TO SCHOOL PROGRAM"
+          ],
+          "support_entity_labels": [
+            "NATIONAL FARM TO SCHOOL NETWORK",
+            "FARM TO SCHOOL PROGRAM"
+          ]
+        }
+      ],
+      "recommended_ids": [
+        "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+        "<hyperedge>\"And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.\"",
+        "<hyperedge>\"Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.\""
+      ],
+      "top_branch_score": 0.492999934679502,
+      "gain_summary": {
+        "coverage_gain": 0.4,
+        "constraint_gain": 1.0,
+        "relation_gain": 0.5714285714285714,
+        "connector_gain": 0.0,
+        "novelty_gain": 1.0,
+        "focus_gain": 0.7272727272727273
+      },
+      "query_texts": [
+        "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+        "identifying a region with a specific agricultural characteristic",
+        "What region has a distribution network for local food and a college with a farm?",
+        "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+        "specific name of the region",
+        "region",
+        "distribution network",
+        "local food",
+        "college",
+        "farm"
+      ],
+      "control_state": {
+        "iteration": 3,
+        "branch_weights": {
+          "constraint": 0.3700787401574803,
+          "relation": 0.31496062992125984,
+          "anchor": 0.31496062992125984
+        },
+        "missing_requirements": [
+          "specific name of the region"
+        ],
+        "next_focus": [
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food."
+        ],
+        "current_focus": [
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+          "specific name of the region"
+        ],
+        "branch_queries": {
+          "constraint": [
+            "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+            "robust distribution network for local food",
+            "college operating a farm for over a hundred years",
+            "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+            "specific name of the region",
+            "region",
+            "distribution network",
+            "local food",
+            "college",
+            "farm"
+          ],
+          "relation": [
+            "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+            "identifying a region with a specific agricultural characteristic",
+            "What region has a distribution network for local food and a college with a farm?",
+            "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+            "specific name of the region",
+            "region",
+            "distribution network",
+            "local food",
+            "college",
+            "farm"
+          ]
+        },
+        "candidate_filters": {
+          "constraint": {
+            "prefer_focus_match": true,
+            "focus_threshold": 0.12,
+            "focus_candidate_count": 12
+          },
+          "relation": {
+            "prefer_focus_match": false,
+            "focus_threshold": 0.12,
+            "focus_candidate_count": 12
+          }
+        },
+        "notes": [
+          "Raised constraint weight based on previous frontier contributions."
+        ]
+      },
+      "notes": "relation branch ranking is retrieval/scoring-led."
+    },
+    "anchor": {
+      "branch_kind": "anchor",
+      "branch_weight": 0.31496062992125984,
+      "recommended_hyperedges": [
+        {
+          "hyperedge_id": "<hyperedge>\"And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.\"",
+          "hyperedge_text": "And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.",
+          "score": 0.45872074815432234,
+          "branch_kind": "anchor",
+          "branch_score": 0.45872074815432234,
+          "fused_score": 0.0,
+          "coverage_gain": 0.2,
+          "constraint_gain": 0.4,
+          "relation_gain": 0.5535678267478943,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.6666666666666666,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"SEASONAL LOCAL ORGANIC PRODUCE\"",
+            "\"600 STORES\"",
+            "\"MOM-AND-POP CHAINS\"",
+            "\"LARGER REGIONAL SUPERMARKET CHAINS\""
+          ],
+          "chunk_ids": [
+            "chunk-efae0d6c5dabc751b9ceb56518857dff"
+          ],
+          "matched_topic_entities": [
+            "\"SEASONAL LOCAL ORGANIC PRODUCE\""
+          ],
+          "support_entities": [
+            "\"SEASONAL LOCAL ORGANIC PRODUCE\""
+          ],
+          "supporting_chunks": [
+            "Appalachian Harvest brand serves as an umbrella name for all the small-scale producers who distribute through ASD. \"Our brand hasn't taken the world by storm,\" says Flaccovento. \"But it's a solid brand that has achiev..."
+          ],
+          "score_breakdown": {
+            "question": 0.5153,
+            "constraint": 0.4,
+            "relation": 0.5536,
+            "coverage": 0.2,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.6667,
+            "penalty": 0.0,
+            "branch_score": 0.4587
+          },
+          "notes": [
+            "matched_topics=1",
+            "entity_degree=4"
+          ],
+          "reason": "Anchor branch prioritizes coverage, connectivity, and novelty.",
+          "display_hyperedge": "And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.",
+          "entity_labels": [
+            "SEASONAL LOCAL ORGANIC PRODUCE",
+            "600 STORES",
+            "MOM-AND-POP CHAINS",
+            "LARGER REGIONAL SUPERMARKET CHAINS"
+          ],
+          "matched_topic_labels": [
+            "SEASONAL LOCAL ORGANIC PRODUCE"
+          ],
+          "support_entity_labels": [
+            "SEASONAL LOCAL ORGANIC PRODUCE"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+          "hyperedge_text": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+          "score": 0.4558791619907726,
+          "branch_kind": "anchor",
+          "branch_score": 0.4558791619907726,
+          "fused_score": 0.0,
+          "coverage_gain": 0.2,
+          "constraint_gain": 1.0,
+          "relation_gain": 0.5714285714285714,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.7272727272727273,
+          "penalty": 0.35,
+          "entity_ids": [
+            "\"INFRASTRUCTURE\"",
+            "\"DISTRIBUTION NETWORK\"",
+            "\"COMMUNITIES\"",
+            "\"WESTERN NORTH CAROLINA\""
+          ],
+          "chunk_ids": [
+            "chunk-ba841e41630d5b5e46b271cb1a11d579"
+          ],
+          "matched_topic_entities": [
+            "\"DISTRIBUTION NETWORK\""
+          ],
+          "support_entities": [
+            "\"DISTRIBUTION NETWORK\""
+          ],
+          "supporting_chunks": [
+            "different. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would..."
+          ],
+          "score_breakdown": {
+            "question": 0.4318,
+            "constraint": 1.0,
+            "relation": 0.5714,
+            "coverage": 0.2,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.7273,
+            "penalty": 0.35,
+            "branch_score": 0.4559
+          },
+          "notes": [
+            "matched_topics=1",
+            "entity_degree=4"
+          ],
+          "reason": "Anchor branch prioritizes coverage, connectivity, and novelty.",
+          "display_hyperedge": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+          "entity_labels": [
+            "INFRASTRUCTURE",
+            "DISTRIBUTION NETWORK",
+            "COMMUNITIES",
+            "WESTERN NORTH CAROLINA"
+          ],
+          "matched_topic_labels": [
+            "DISTRIBUTION NETWORK"
+          ],
+          "support_entity_labels": [
+            "DISTRIBUTION NETWORK"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"The experience of Warren Wilson College, also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity.\"",
+          "hyperedge_text": "The experience of Warren Wilson College, also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity.",
+          "score": 0.44977943622126726,
+          "branch_kind": "anchor",
+          "branch_score": 0.44977943622126726,
+          "fused_score": 0.0,
+          "coverage_gain": 0.4,
+          "constraint_gain": 0.4,
+          "relation_gain": 0.5081475973129272,
+          "connector_gain": 0.3333333333333333,
+          "novelty_gain": 0.6666666666666666,
+          "focus_gain": 0.36363636363636365,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"WHOLESALE DISTRIBUTOR\"",
+            "\"FOOD-SERVICE PROGRAMS\"",
+            "\"WARREN WILSON COLLEGE\""
+          ],
+          "chunk_ids": [
+            "chunk-ad0d4e7d44014acab56e26cbaa12a896"
+          ],
+          "matched_topic_entities": [
+            "\"FOOD-SERVICE PROGRAMS\"",
+            "\"WARREN WILSON COLLEGE\""
+          ],
+          "support_entities": [
+            "\"FOOD-SERVICE PROGRAMS\"",
+            "\"WARREN WILSON COLLEGE\""
+          ],
+          "supporting_chunks": [
+            "farming. But a cooperative isn't the only aggregation model that works. Gladheart Farms in Asheville, North Carolina (page 87), shows that a farm can double as a wholesale distributor, marketing and selling products f..."
+          ],
+          "score_breakdown": {
+            "question": 0.4807,
+            "constraint": 0.4,
+            "relation": 0.5081,
+            "coverage": 0.4,
+            "connector": 0.3333,
+            "novelty": 0.6667,
+            "focus": 0.3636,
+            "penalty": 0.0,
+            "branch_score": 0.4498
+          },
+          "notes": [
+            "matched_topics=2",
+            "entity_degree=3"
+          ],
+          "reason": "Anchor branch prioritizes coverage, connectivity, and novelty.",
+          "display_hyperedge": "The experience of Warren Wilson College, also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity.",
+          "entity_labels": [
+            "WHOLESALE DISTRIBUTOR",
+            "FOOD-SERVICE PROGRAMS",
+            "WARREN WILSON COLLEGE"
+          ],
+          "matched_topic_labels": [
+            "FOOD-SERVICE PROGRAMS",
+            "WARREN WILSON COLLEGE"
+          ],
+          "support_entity_labels": [
+            "FOOD-SERVICE PROGRAMS",
+            "WARREN WILSON COLLEGE"
+          ]
+        }
+      ],
+      "recommended_ids": [
+        "<hyperedge>\"And this network is providing seasonal local organic produce to about 600 stores in the region, from small mom-and-pop chains to larger regional supermarket chains.\"",
+        "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+        "<hyperedge>\"The experience of Warren Wilson College, also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity.\""
+      ],
+      "top_branch_score": 0.45872074815432234,
+      "gain_summary": {
+        "coverage_gain": 0.4,
+        "constraint_gain": 1.0,
+        "relation_gain": 0.5714285714285714,
+        "connector_gain": 0.3333333333333333,
+        "novelty_gain": 1.0,
+        "focus_gain": 0.7272727272727273
+      },
+      "query_texts": [
+        "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+        "region",
+        "distribution network",
+        "local food",
+        "college",
+        "farm",
+        "geographical region",
+        "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+        "specific name of the region"
+      ],
+      "control_state": {
+        "iteration": 3,
+        "branch_weights": {
+          "constraint": 0.3700787401574803,
+          "relation": 0.31496062992125984,
+          "anchor": 0.31496062992125984
+        },
+        "missing_requirements": [
+          "specific name of the region"
+        ],
+        "next_focus": [
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food."
+        ],
+        "current_focus": [
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+          "specific name of the region"
+        ],
+        "branch_queries": {
+          "constraint": [
+            "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+            "robust distribution network for local food",
+            "college operating a farm for over a hundred years",
+            "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+            "specific name of the region",
+            "region",
+            "distribution network",
+            "local food",
+            "college",
+            "farm"
+          ],
+          "relation": [
+            "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+            "identifying a region with a specific agricultural characteristic",
+            "What region has a distribution network for local food and a college with a farm?",
+            "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+            "specific name of the region",
+            "region",
+            "distribution network",
+            "local food",
+            "college",
+            "farm"
+          ],
+          "anchor": [
+            "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+            "region",
+            "distribution network",
+            "local food",
+            "college",
+            "farm",
+            "geographical region",
+            "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+            "specific name of the region"
+          ]
+        },
+        "candidate_filters": {
+          "constraint": {
+            "prefer_focus_match": true,
+            "focus_threshold": 0.12,
+            "focus_candidate_count": 12
+          },
+          "relation": {
+            "prefer_focus_match": false,
+            "focus_threshold": 0.12,
+            "focus_candidate_count": 12
+          },
+          "anchor": {
+            "prefer_focus_match": false,
+            "focus_threshold": 0.12,
+            "focus_candidate_count": 12
+          }
+        },
+        "notes": [
+          "Raised constraint weight based on previous frontier contributions."
+        ]
+      },
+      "notes": "anchor branch ranking is retrieval/scoring-led."
+    }
+  },
+  "frontier_history": [
+    {
+      "iteration": 0,
+      "hyperedge_ids": [
+        "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+        "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\""
+      ],
+      "frontier": [
+        {
+          "hyperedge_id": "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+          "hyperedge_text": "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.",
+          "score": 0.41241631069183354,
+          "branch_kind": "anchor",
+          "branch_score": 0.41241631069183354,
+          "fused_score": 0.0,
+          "coverage_gain": 0.6,
+          "constraint_gain": 0.4,
+          "relation_gain": 0.49116092920303345,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.0,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"ADVOCATES OF LOCAL FOOD\"",
+            "\"CENTRALIZED MASS PRODUCTION\"",
+            "\"REGIONAL FOOD PRODUCTION\"",
+            "\"SUSTAINABILITY\"",
+            "\"FOOD SECURITY\""
+          ],
+          "chunk_ids": [
+            "chunk-5d4150698732f393c235b8b3e1cb2d88"
+          ],
+          "matched_topic_entities": [
+            "\"ADVOCATES OF LOCAL FOOD\"",
+            "\"REGIONAL FOOD PRODUCTION\"",
+            "\"FOOD SECURITY\""
+          ],
+          "support_entities": [
+            "\"ADVOCATES OF LOCAL FOOD\"",
+            "\"REGIONAL FOOD PRODUCTION\"",
+            "\"FOOD SECURITY\""
+          ],
+          "supporting_chunks": [
+            "strategy to empower this underserved population, ACEnet identifies the 32 counties in this region as its primary service region and offers a hefty 50 percent discount on kitchen-facility rent to its inhabitants. ### G..."
+          ],
+          "score_breakdown": {
+            "question": 0.4347,
+            "constraint": 0.4,
+            "relation": 0.4912,
+            "coverage": 0.6,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.0,
+            "penalty": 0.0,
+            "branch_score": 0.4124
+          },
+          "notes": [
+            "matched_topics=3",
+            "entity_degree=5"
+          ],
+          "reason": "Anchor branch prioritizes coverage, connectivity, and novelty.",
+          "display_hyperedge": "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.",
+          "entity_labels": [
+            "ADVOCATES OF LOCAL FOOD",
+            "CENTRALIZED MASS PRODUCTION",
+            "REGIONAL FOOD PRODUCTION",
+            "SUSTAINABILITY",
+            "FOOD SECURITY"
+          ],
+          "matched_topic_labels": [
+            "ADVOCATES OF LOCAL FOOD",
+            "REGIONAL FOOD PRODUCTION",
+            "FOOD SECURITY"
+          ],
+          "support_entity_labels": [
+            "ADVOCATES OF LOCAL FOOD",
+            "REGIONAL FOOD PRODUCTION",
+            "FOOD SECURITY"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+          "hyperedge_text": "Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.",
+          "score": 0.4053672150611878,
+          "branch_kind": "anchor",
+          "branch_score": 0.4053672150611878,
+          "fused_score": 0.0,
+          "coverage_gain": 0.6,
+          "constraint_gain": 0.16666666666666666,
+          "relation_gain": 0.4606940746307373,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.0,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"TRUCK FARM\"",
+            "\"CROP AND LIVESTOCK FARM\"",
+            "\"HAY FARM\""
+          ],
+          "chunk_ids": [
+            "chunk-a8cfe86ed3c97ccb7c9629ee2dac08b4"
+          ],
+          "matched_topic_entities": [
+            "\"TRUCK FARM\"",
+            "\"CROP AND LIVESTOCK FARM\"",
+            "\"HAY FARM\""
+          ],
+          "support_entities": [
+            "\"TRUCK FARM\"",
+            "\"CROP AND LIVESTOCK FARM\"",
+            "\"HAY FARM\""
+          ],
+          "supporting_chunks": [
+            "Drain winter oil and change filters. Change the transmission fluid and antifreeze, if needed. * Invest in a scheduled equipment preventive maintenance program. Set regular cycles to change oil and filters. During the..."
+          ],
+          "score_breakdown": {
+            "question": 0.4193,
+            "constraint": 0.1667,
+            "relation": 0.4607,
+            "coverage": 0.6,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.0,
+            "penalty": 0.0,
+            "branch_score": 0.4054
+          },
+          "notes": [
+            "matched_topics=3",
+            "entity_degree=3"
+          ],
+          "reason": "Anchor branch prioritizes coverage, connectivity, and novelty.",
+          "display_hyperedge": "Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.",
+          "entity_labels": [
+            "TRUCK FARM",
+            "CROP AND LIVESTOCK FARM",
+            "HAY FARM"
+          ],
+          "matched_topic_labels": [
+            "TRUCK FARM",
+            "CROP AND LIVESTOCK FARM",
+            "HAY FARM"
+          ],
+          "support_entity_labels": [
+            "TRUCK FARM",
+            "CROP AND LIVESTOCK FARM",
+            "HAY FARM"
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 1,
+      "hyperedge_ids": [
+        "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+        "<hyperedge>\"In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\"",
+        "<hyperedge>\"Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\""
+      ],
+      "frontier": [
+        {
+          "hyperedge_id": "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+          "hyperedge_text": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+          "score": 0.6804761904761903,
+          "branch_kind": "frontier",
+          "branch_score": 0.5663505840301514,
+          "fused_score": 0.6804761904761903,
+          "coverage_gain": 0.2,
+          "constraint_gain": 1.0,
+          "relation_gain": 0.5714285714285714,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.0,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"INFRASTRUCTURE\"",
+            "\"DISTRIBUTION NETWORK\"",
+            "\"COMMUNITIES\"",
+            "\"WESTERN NORTH CAROLINA\""
+          ],
+          "chunk_ids": [
+            "chunk-ba841e41630d5b5e46b271cb1a11d579"
+          ],
+          "matched_topic_entities": [
+            "\"DISTRIBUTION NETWORK\""
+          ],
+          "support_entities": [
+            "\"DISTRIBUTION NETWORK\""
+          ],
+          "supporting_chunks": [
+            "different. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would..."
+          ],
+          "score_breakdown": {
+            "question": 0.4318,
+            "constraint": 1.0,
+            "relation": 0.5714,
+            "coverage": 0.2,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.0,
+            "penalty": 0.0,
+            "branch_score": 0.5664,
+            "constraint_weight": 0.3333,
+            "relation_weight": 0.3333,
+            "anchor_weight": 0.3333,
+            "anchor_score": 0.11,
+            "fused_score": 0.6805
+          },
+          "notes": [
+            "matched_topics=1",
+            "entity_degree=4",
+            "contributors:constraint=0.566"
+          ],
+          "reason": "constraint=1.000, relation=0.571, anchor=0.110, novelty=1.000, focus=0.000, penalty=0.000",
+          "display_hyperedge": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+          "entity_labels": [
+            "INFRASTRUCTURE",
+            "DISTRIBUTION NETWORK",
+            "COMMUNITIES",
+            "WESTERN NORTH CAROLINA"
+          ],
+          "matched_topic_labels": [
+            "DISTRIBUTION NETWORK"
+          ],
+          "support_entity_labels": [
+            "DISTRIBUTION NETWORK"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\"",
+          "hyperedge_text": "In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.",
+          "score": 0.6352052307128906,
+          "branch_kind": "frontier",
+          "branch_score": 0.5057484285831452,
+          "fused_score": 0.6352052307128906,
+          "coverage_gain": 0.4,
+          "constraint_gain": 0.8,
+          "relation_gain": 0.5256156921386719,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.0,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"LOCAL GROWERS\"",
+            "\"CENTRAL DISTRIBUTION CENTER\""
+          ],
+          "chunk_ids": [
+            "chunk-ad0d4e7d44014acab56e26cbaa12a896"
+          ],
+          "matched_topic_entities": [
+            "\"LOCAL GROWERS\"",
+            "\"CENTRAL DISTRIBUTION CENTER\""
+          ],
+          "support_entities": [
+            "\"LOCAL GROWERS\"",
+            "\"CENTRAL DISTRIBUTION CENTER\""
+          ],
+          "supporting_chunks": [
+            "farming. But a cooperative isn't the only aggregation model that works. Gladheart Farms in Asheville, North Carolina (page 87), shows that a farm can double as a wholesale distributor, marketing and selling products f..."
+          ],
+          "score_breakdown": {
+            "question": 0.4887,
+            "constraint": 0.8,
+            "relation": 0.5256,
+            "coverage": 0.4,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.0,
+            "penalty": 0.0,
+            "branch_score": 0.5057,
+            "constraint_weight": 0.3333,
+            "relation_weight": 0.3333,
+            "anchor_weight": 0.3333,
+            "anchor_score": 0.22,
+            "fused_score": 0.6352
+          },
+          "notes": [
+            "matched_topics=2",
+            "entity_degree=2",
+            "contributors:constraint=0.506"
+          ],
+          "reason": "constraint=0.800, relation=0.526, anchor=0.220, novelty=1.000, focus=0.000, penalty=0.000",
+          "display_hyperedge": "In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.",
+          "entity_labels": [
+            "LOCAL GROWERS",
+            "CENTRAL DISTRIBUTION CENTER"
+          ],
+          "matched_topic_labels": [
+            "LOCAL GROWERS",
+            "CENTRAL DISTRIBUTION CENTER"
+          ],
+          "support_entity_labels": [
+            "LOCAL GROWERS",
+            "CENTRAL DISTRIBUTION CENTER"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\"",
+          "hyperedge_text": "Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.",
+          "score": 0.5838095238095238,
+          "branch_kind": "frontier",
+          "branch_score": 0.4028767637184688,
+          "fused_score": 0.5838095238095238,
+          "coverage_gain": 0.4,
+          "constraint_gain": 0.6,
+          "relation_gain": 0.5714285714285714,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.0,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"STORAGE OF LOCAL FOOD\"",
+            "\"LOGISTICAL CHALLENGES\"",
+            "\"DISTRIBUTION OF LOCAL FOOD\""
+          ],
+          "chunk_ids": [
+            "chunk-04be01c6169d0bdd92b10dca615a3936"
+          ],
+          "matched_topic_entities": [
+            "\"STORAGE OF LOCAL FOOD\"",
+            "\"DISTRIBUTION OF LOCAL FOOD\""
+          ],
+          "support_entities": [
+            "\"STORAGE OF LOCAL FOOD\"",
+            "\"DISTRIBUTION OF LOCAL FOOD\""
+          ],
+          "supporting_chunks": [
+            "local school food markets, given the complexities of the procurement process. Data from Farm to School programs suggests that when schools dedicate a significant percentage of their purchases to local producers, local..."
+          ],
+          "score_breakdown": {
+            "question": 0.483,
+            "constraint": 0.6,
+            "relation": 0.5714,
+            "coverage": 0.4,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.0,
+            "penalty": 0.0,
+            "branch_score": 0.4029,
+            "constraint_weight": 0.3333,
+            "relation_weight": 0.3333,
+            "anchor_weight": 0.3333,
+            "anchor_score": 0.22,
+            "fused_score": 0.5838
+          },
+          "notes": [
+            "matched_topics=2",
+            "entity_degree=3",
+            "contributors:relation=0.403"
+          ],
+          "reason": "constraint=0.600, relation=0.571, anchor=0.220, novelty=1.000, focus=0.000, penalty=0.000",
+          "display_hyperedge": "Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.",
+          "entity_labels": [
+            "STORAGE OF LOCAL FOOD",
+            "LOGISTICAL CHALLENGES",
+            "DISTRIBUTION OF LOCAL FOOD"
+          ],
+          "matched_topic_labels": [
+            "STORAGE OF LOCAL FOOD",
+            "DISTRIBUTION OF LOCAL FOOD"
+          ],
+          "support_entity_labels": [
+            "STORAGE OF LOCAL FOOD",
+            "DISTRIBUTION OF LOCAL FOOD"
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "hyperedge_ids": [
+        "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+        "<hyperedge>\"For more than a hundred years, Warren Wilson College has put its 340-acre farm into immediate production.\"",
+        "<hyperedge>\"At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.\""
+      ],
+      "frontier": [
+        {
+          "hyperedge_id": "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+          "hyperedge_text": "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+          "score": 0.6947072403825174,
+          "branch_kind": "frontier",
+          "branch_score": 0.5750048327445983,
+          "fused_score": 0.6947072403825174,
+          "coverage_gain": 0.4,
+          "constraint_gain": 0.6666666666666666,
+          "relation_gain": 0.4596954882144928,
+          "connector_gain": 0.3333333333333333,
+          "novelty_gain": 0.6666666666666666,
+          "focus_gain": 0.6666666666666666,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"FARM\"",
+            "\"WARREN WILSON COLLEGE\"",
+            "\"WESTERN NORTH CAROLINA\""
+          ],
+          "chunk_ids": [
+            "chunk-5f8baa196ceabfc9bc0a6cc79c04127e"
+          ],
+          "matched_topic_entities": [
+            "\"FARM\"",
+            "\"WARREN WILSON COLLEGE\""
+          ],
+          "support_entities": [
+            "\"FARM\"",
+            "\"WARREN WILSON COLLEGE\""
+          ],
+          "supporting_chunks": [
+            "world to think critically about what, when, where, why, and how we eat. Whatever the goals may be for these varied programs, they share a common motivation: fresh food is something students want the opportunity to enj..."
+          ],
+          "score_breakdown": {
+            "question": 0.475,
+            "constraint": 0.6667,
+            "relation": 0.4597,
+            "coverage": 0.4,
+            "connector": 0.3333,
+            "novelty": 0.6667,
+            "focus": 0.6667,
+            "penalty": 0.0,
+            "branch_score": 0.575,
+            "constraint_weight": 0.3701,
+            "relation_weight": 0.315,
+            "anchor_weight": 0.315,
+            "anchor_score": 0.37,
+            "fused_score": 0.6947
+          },
+          "notes": [
+            "matched_topics=2",
+            "entity_degree=3",
+            "contributors:anchor=0.490,constraint=0.575,relation=0.481"
+          ],
+          "reason": "constraint=0.667, relation=0.460, anchor=0.370, novelty=0.667, focus=0.667, penalty=0.000",
+          "display_hyperedge": "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+          "entity_labels": [
+            "FARM",
+            "WARREN WILSON COLLEGE",
+            "WESTERN NORTH CAROLINA"
+          ],
+          "matched_topic_labels": [
+            "FARM",
+            "WARREN WILSON COLLEGE"
+          ],
+          "support_entity_labels": [
+            "FARM",
+            "WARREN WILSON COLLEGE"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"For more than a hundred years, Warren Wilson College has put its 340-acre farm into immediate production.\"",
+          "hyperedge_text": "For more than a hundred years, Warren Wilson College has put its 340-acre farm into immediate production.",
+          "score": 0.6233952110771119,
+          "branch_kind": "frontier",
+          "branch_score": 0.5123622902234395,
+          "fused_score": 0.6233952110771119,
+          "coverage_gain": 0.0,
+          "constraint_gain": 0.6666666666666666,
+          "relation_gain": 0.4762797951698303,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.6666666666666666,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"IMMEDIATE PRODUCTION\""
+          ],
+          "chunk_ids": [
+            "chunk-5f8baa196ceabfc9bc0a6cc79c04127e"
+          ],
+          "matched_topic_entities": [],
+          "support_entities": [
+            "\"IMMEDIATE PRODUCTION\""
+          ],
+          "supporting_chunks": [
+            "world to think critically about what, when, where, why, and how we eat. Whatever the goals may be for these varied programs, they share a common motivation: fresh food is something students want the opportunity to enj..."
+          ],
+          "score_breakdown": {
+            "question": 0.4951,
+            "constraint": 0.6667,
+            "relation": 0.4763,
+            "coverage": 0.0,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.6667,
+            "penalty": 0.0,
+            "branch_score": 0.5124,
+            "constraint_weight": 0.3701,
+            "relation_weight": 0.315,
+            "anchor_weight": 0.315,
+            "anchor_score": 0.0,
+            "fused_score": 0.6234
+          },
+          "notes": [
+            "matched_topics=0",
+            "entity_degree=1",
+            "contributors:constraint=0.512"
+          ],
+          "reason": "constraint=0.667, relation=0.476, anchor=0.000, novelty=1.000, focus=0.667, penalty=0.000",
+          "display_hyperedge": "For more than a hundred years, Warren Wilson College has put its 340-acre farm into immediate production.",
+          "entity_labels": [
+            "IMMEDIATE PRODUCTION"
+          ],
+          "matched_topic_labels": [],
+          "support_entity_labels": [
+            "IMMEDIATE PRODUCTION"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.\"",
+          "hyperedge_text": "At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.",
+          "score": 0.6052793400824896,
+          "branch_kind": "frontier",
+          "branch_score": 0.48235293744405117,
+          "fused_score": 0.6052793400824896,
+          "coverage_gain": 0.6,
+          "constraint_gain": 0.4,
+          "relation_gain": 0.5714285714285714,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.3333333333333333,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"LOCAL FOOD COMMITTEE\"",
+            "\"FACULTY WHO TEACH SUSTAINABLE AGRICULTURE\"",
+            "\"DEAN\"",
+            "\"STUDENT WORK PROGRAM\"",
+            "\"FARM AND GARDEN MANAGERS\"",
+            "\"WARREN WILSON COLLEGE\""
+          ],
+          "chunk_ids": [
+            "chunk-38d2ea190331fa57b51edf78d0352738"
+          ],
+          "matched_topic_entities": [
+            "\"LOCAL FOOD COMMITTEE\"",
+            "\"FARM AND GARDEN MANAGERS\"",
+            "\"WARREN WILSON COLLEGE\""
+          ],
+          "support_entities": [
+            "\"LOCAL FOOD COMMITTEE\"",
+            "\"FARM AND GARDEN MANAGERS\"",
+            "\"WARREN WILSON COLLEGE\""
+          ],
+          "supporting_chunks": [
+            "lets from the mother sow. The managers also help students sort through important life issues. But production is what makes all these other lessons possible, says Chase Hubbard, farm manager. \"If it was only about educ..."
+          ],
+          "score_breakdown": {
+            "question": 0.4646,
+            "constraint": 0.4,
+            "relation": 0.5714,
+            "coverage": 0.6,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.3333,
+            "penalty": 0.0,
+            "branch_score": 0.4685,
+            "constraint_weight": 0.3701,
+            "relation_weight": 0.315,
+            "anchor_weight": 0.315,
+            "anchor_score": 0.33,
+            "fused_score": 0.6053
+          },
+          "notes": [
+            "matched_topics=3",
+            "entity_degree=6",
+            "contributors:anchor=0.482,relation=0.469"
+          ],
+          "reason": "constraint=0.400, relation=0.571, anchor=0.330, novelty=1.000, focus=0.333, penalty=0.000",
+          "display_hyperedge": "At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.",
+          "entity_labels": [
+            "LOCAL FOOD COMMITTEE",
+            "FACULTY WHO TEACH SUSTAINABLE AGRICULTURE",
+            "DEAN",
+            "STUDENT WORK PROGRAM",
+            "FARM AND GARDEN MANAGERS",
+            "WARREN WILSON COLLEGE"
+          ],
+          "matched_topic_labels": [
+            "LOCAL FOOD COMMITTEE",
+            "FARM AND GARDEN MANAGERS",
+            "WARREN WILSON COLLEGE"
+          ],
+          "support_entity_labels": [
+            "LOCAL FOOD COMMITTEE",
+            "FARM AND GARDEN MANAGERS",
+            "WARREN WILSON COLLEGE"
+          ]
+        }
+      ]
+    },
+    {
+      "iteration": 3,
+      "hyperedge_ids": [
+        "<hyperedge>\"Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.\"",
+        "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+        "<hyperedge>\"Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.\""
+      ],
+      "frontier": [
+        {
+          "hyperedge_id": "<hyperedge>\"Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.\"",
+          "hyperedge_text": "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.",
+          "score": 0.669986434423164,
+          "branch_kind": "frontier",
+          "branch_score": 0.47880135586045003,
+          "fused_score": 0.669986434423164,
+          "coverage_gain": 0.4,
+          "constraint_gain": 0.6,
+          "relation_gain": 0.5441160202026367,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.5454545454545454,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"GROWING MINDS\"",
+            "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+            "\"SOUTHEASTERN REGIONAL LEAD AGENCY\"",
+            "\"FARM TO SCHOOL PROGRAM\""
+          ],
+          "chunk_ids": [
+            "chunk-30c38b37fe24e15bfa43a713c9e38509"
+          ],
+          "matched_topic_entities": [
+            "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+            "\"FARM TO SCHOOL PROGRAM\""
+          ],
+          "support_entities": [
+            "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+            "\"FARM TO SCHOOL PROGRAM\""
+          ],
+          "supporting_chunks": [
+            "drive change here is to support the existing chain of commerce, as well as new entrepreneurs, in getting local farm products to market. #### Fresh Food for All Most people, ironically, do not think of the places that..."
+          ],
+          "score_breakdown": {
+            "question": 0.4918,
+            "constraint": 0.6,
+            "relation": 0.5441,
+            "coverage": 0.4,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.5455,
+            "penalty": 0.0,
+            "branch_score": 0.4788,
+            "constraint_weight": 0.3701,
+            "relation_weight": 0.315,
+            "anchor_weight": 0.315,
+            "anchor_score": 0.22,
+            "fused_score": 0.67
+          },
+          "notes": [
+            "matched_topics=2",
+            "entity_degree=4",
+            "contributors:relation=0.479"
+          ],
+          "reason": "constraint=0.600, relation=0.544, anchor=0.220, novelty=1.000, focus=0.545, penalty=0.000",
+          "display_hyperedge": "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.",
+          "entity_labels": [
+            "GROWING MINDS",
+            "NATIONAL FARM TO SCHOOL NETWORK",
+            "SOUTHEASTERN REGIONAL LEAD AGENCY",
+            "FARM TO SCHOOL PROGRAM"
+          ],
+          "matched_topic_labels": [
+            "NATIONAL FARM TO SCHOOL NETWORK",
+            "FARM TO SCHOOL PROGRAM"
+          ],
+          "support_entity_labels": [
+            "NATIONAL FARM TO SCHOOL NETWORK",
+            "FARM TO SCHOOL PROGRAM"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+          "hyperedge_text": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+          "score": 0.6410655486246037,
+          "branch_kind": "frontier",
+          "branch_score": 0.492999934679502,
+          "fused_score": 0.6410655486246037,
+          "coverage_gain": 0.2,
+          "constraint_gain": 1.0,
+          "relation_gain": 0.5714285714285714,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.7272727272727273,
+          "penalty": 0.35,
+          "entity_ids": [
+            "\"INFRASTRUCTURE\"",
+            "\"DISTRIBUTION NETWORK\"",
+            "\"COMMUNITIES\"",
+            "\"WESTERN NORTH CAROLINA\""
+          ],
+          "chunk_ids": [
+            "chunk-ba841e41630d5b5e46b271cb1a11d579"
+          ],
+          "matched_topic_entities": [
+            "\"DISTRIBUTION NETWORK\""
+          ],
+          "support_entities": [
+            "\"DISTRIBUTION NETWORK\""
+          ],
+          "supporting_chunks": [
+            "different. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would..."
+          ],
+          "score_breakdown": {
+            "question": 0.4318,
+            "constraint": 1.0,
+            "relation": 0.5714,
+            "coverage": 0.2,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.7273,
+            "penalty": 1.0,
+            "branch_score": 0.493,
+            "constraint_weight": 0.3701,
+            "relation_weight": 0.315,
+            "anchor_weight": 0.315,
+            "anchor_score": 0.11,
+            "fused_score": 0.6411
+          },
+          "notes": [
+            "matched_topics=1",
+            "entity_degree=4",
+            "contributors:anchor=0.456,relation=0.493"
+          ],
+          "reason": "constraint=1.000, relation=0.571, anchor=0.110, novelty=1.000, focus=0.727, penalty=1.000",
+          "display_hyperedge": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+          "entity_labels": [
+            "INFRASTRUCTURE",
+            "DISTRIBUTION NETWORK",
+            "COMMUNITIES",
+            "WESTERN NORTH CAROLINA"
+          ],
+          "matched_topic_labels": [
+            "DISTRIBUTION NETWORK"
+          ],
+          "support_entity_labels": [
+            "DISTRIBUTION NETWORK"
+          ]
+        },
+        {
+          "hyperedge_id": "<hyperedge>\"Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.\"",
+          "hyperedge_text": "Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.",
+          "score": 0.6166928338560789,
+          "branch_kind": "frontier",
+          "branch_score": 0.5063679467981512,
+          "fused_score": 0.6166928338560789,
+          "coverage_gain": 0.0,
+          "constraint_gain": 0.8,
+          "relation_gain": 0.4522724747657776,
+          "connector_gain": 0.0,
+          "novelty_gain": 1.0,
+          "focus_gain": 0.36363636363636365,
+          "penalty": 0.0,
+          "entity_ids": [
+            "\"POSITIVE APPROACH\""
+          ],
+          "chunk_ids": [
+            "chunk-5944a88ca415780f3d4838a47d068512"
+          ],
+          "matched_topic_entities": [],
+          "support_entities": [
+            "\"POSITIVE APPROACH\""
+          ],
+          "supporting_chunks": [
+            "farmers all over the world. And connected to these companies is an intricate network of distributors who aggregrate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores. Today..."
+          ],
+          "score_breakdown": {
+            "question": 0.4009,
+            "constraint": 0.8,
+            "relation": 0.4523,
+            "coverage": 0.0,
+            "connector": 0.0,
+            "novelty": 1.0,
+            "focus": 0.3636,
+            "penalty": 0.0,
+            "branch_score": 0.5064,
+            "constraint_weight": 0.3701,
+            "relation_weight": 0.315,
+            "anchor_weight": 0.315,
+            "anchor_score": 0.0,
+            "fused_score": 0.6167
+          },
+          "notes": [
+            "matched_topics=0",
+            "entity_degree=1",
+            "contributors:constraint=0.506"
+          ],
+          "reason": "constraint=0.800, relation=0.452, anchor=0.000, novelty=1.000, focus=0.364, penalty=0.000",
+          "display_hyperedge": "Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.",
+          "entity_labels": [
+            "POSITIVE APPROACH"
+          ],
+          "matched_topic_labels": [],
+          "support_entity_labels": [
+            "POSITIVE APPROACH"
+          ]
+        }
+      ]
+    }
+  ],
+  "control_history": [
+    {
+      "iteration": 0,
+      "branch_weights": {
+        "constraint": 0.3333333333333333,
+        "relation": 0.3333333333333333,
+        "anchor": 0.3333333333333333
+      },
+      "missing_requirements": [],
+      "next_focus": [],
+      "current_focus": [],
+      "branch_queries": {},
+      "candidate_filters": {},
+      "notes": [
+        "Initialized control state."
+      ]
+    },
+    {
+      "iteration": 1,
+      "branch_weights": {
+        "constraint": 0.3333333333333333,
+        "relation": 0.3333333333333333,
+        "anchor": 0.3333333333333333
+      },
+      "missing_requirements": [],
+      "next_focus": [],
+      "current_focus": [],
+      "branch_queries": {
+        "constraint": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "robust distribution network for local food",
+          "college operating a farm for over a hundred years",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm"
+        ],
+        "relation": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "identifying a region with a specific agricultural characteristic",
+          "What region has a distribution network for local food and a college with a farm?",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm"
+        ],
+        "anchor": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm",
+          "geographical region"
+        ]
+      },
+      "candidate_filters": {
+        "constraint": {
+          "prefer_focus_match": false,
+          "focus_threshold": 0.12,
+          "expansion_frontier_size": 0
+        },
+        "relation": {
+          "prefer_focus_match": false,
+          "focus_threshold": 0.12,
+          "expansion_frontier_size": 0
+        },
+        "anchor": {
+          "prefer_focus_match": false,
+          "focus_threshold": 0.12,
+          "expansion_frontier_size": 0
+        }
+      },
+      "notes": [
+        "Initialized control state."
+      ]
+    },
+    {
+      "iteration": 2,
+      "branch_weights": {
+        "constraint": 0.3700787401574803,
+        "relation": 0.31496062992125984,
+        "anchor": 0.31496062992125984
+      },
+      "missing_requirements": [
+        "college operating a farm for over a hundred years"
+      ],
+      "next_focus": [
+        "Identify specific colleges in western North Carolina that have been operating farms for over a hundred years."
+      ],
+      "current_focus": [
+        "Identify specific colleges in western North Carolina that have been operating farms for over a hundred years.",
+        "college operating a farm for over a hundred years"
+      ],
+      "branch_queries": {
+        "constraint": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "robust distribution network for local food",
+          "college operating a farm for over a hundred years",
+          "Identify specific colleges in western North Carolina that have been operating farms for over a hundred years.",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm"
+        ],
+        "relation": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "identifying a region with a specific agricultural characteristic",
+          "What region has a distribution network for local food and a college with a farm?",
+          "Identify specific colleges in western North Carolina that have been operating farms for over a hundred years.",
+          "college operating a farm for over a hundred years",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm"
+        ],
+        "anchor": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm",
+          "geographical region",
+          "Identify specific colleges in western North Carolina that have been operating farms for over a hundred years.",
+          "college operating a farm for over a hundred years"
+        ]
+      },
+      "candidate_filters": {
+        "constraint": {
+          "prefer_focus_match": true,
+          "focus_threshold": 0.12,
+          "focus_candidate_count": 12
+        },
+        "relation": {
+          "prefer_focus_match": false,
+          "focus_threshold": 0.12,
+          "focus_candidate_count": 12
+        },
+        "anchor": {
+          "prefer_focus_match": false,
+          "focus_threshold": 0.12,
+          "focus_candidate_count": 12
+        }
+      },
+      "notes": [
+        "Raised constraint weight based on previous frontier contributions."
+      ]
+    },
+    {
+      "iteration": 3,
+      "branch_weights": {
+        "constraint": 0.3700787401574803,
+        "relation": 0.31496062992125984,
+        "anchor": 0.31496062992125984
+      },
+      "missing_requirements": [
+        "specific name of the region"
+      ],
+      "next_focus": [
+        "Identify the specific region in western North Carolina known for its robust distribution network for local food."
+      ],
+      "current_focus": [
+        "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+        "specific name of the region"
+      ],
+      "branch_queries": {
+        "constraint": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "robust distribution network for local food",
+          "college operating a farm for over a hundred years",
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+          "specific name of the region",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm"
+        ],
+        "relation": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "identifying a region with a specific agricultural characteristic",
+          "What region has a distribution network for local food and a college with a farm?",
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+          "specific name of the region",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm"
+        ],
+        "anchor": [
+          "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+          "region",
+          "distribution network",
+          "local food",
+          "college",
+          "farm",
+          "geographical region",
+          "Identify the specific region in western North Carolina known for its robust distribution network for local food.",
+          "specific name of the region"
+        ]
+      },
+      "candidate_filters": {
+        "constraint": {
+          "prefer_focus_match": true,
+          "focus_threshold": 0.12,
+          "focus_candidate_count": 12
+        },
+        "relation": {
+          "prefer_focus_match": false,
+          "focus_threshold": 0.12,
+          "focus_candidate_count": 12
+        },
+        "anchor": {
+          "prefer_focus_match": false,
+          "focus_threshold": 0.12,
+          "focus_candidate_count": 12
+        }
+      },
+      "notes": [
+        "Raised constraint weight based on previous frontier contributions."
+      ]
+    }
+  ],
+  "expansion_history": [
+    {
+      "iteration": 0,
+      "selected_entity_ids": [
+        "\"WELCOMING FARM\"",
+        "\"MAPLE RIDGE FARM AND FISHERY\"",
+        "\"HEALTHY FARM\"",
+        "\"GREENSGROW FARM\"",
+        "\"FULL BELLY FARM\""
+      ],
+      "explored_entity_ids": [],
+      "candidate_entities": [],
+      "reason": "Seeded initial expansion frontier from anchor entities."
+    },
+    {
+      "iteration": 1,
+      "selected_entity_ids": [
+        "\"WESTERN NORTH CAROLINA\"",
+        "\"DISTRIBUTION NETWORK\""
+      ],
+      "explored_entity_ids": [
+        "\"WELCOMING FARM\"",
+        "\"MAPLE RIDGE FARM AND FISHERY\"",
+        "\"HEALTHY FARM\"",
+        "\"GREENSGROW FARM\"",
+        "\"FULL BELLY FARM\""
+      ],
+      "candidate_entities": [
+        {
+          "entity_id": "\"INFRASTRUCTURE\"",
+          "entity_label": "INFRASTRUCTURE",
+          "description": "INFRASTRUCTURE As the farm becomes established, infrastructure can be put into place.\" / \"Communities need to rebuild essential pieces of food infrastructure.\" / \"Infrastructure can seem technical but is vital for community systems.\" / \"Infrastructure costs are typically borne...",
+          "source_hyperedges": [
+            "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for l..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.0,
+          "support_count": 1,
+          "coarse_score": 0.5167
+        },
+        {
+          "entity_id": "\"DISTRIBUTION NETWORK\"",
+          "entity_label": "DISTRIBUTION NETWORK",
+          "description": "DISTRIBUTION NETWORK ASAP does not operate its own distribution network.\" / \"An effective distribution network might be lacking in some communities. different. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would...",
+          "source_hyperedges": [
+            "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for l..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.0,
+          "support_count": 1,
+          "coarse_score": 0.5167
+        },
+        {
+          "entity_id": "\"COMMUNITIES\"",
+          "entity_label": "COMMUNITIES",
+          "description": "COMMUNITIES All communities are influenced by grassroots food leaders.\" / \"Communities are impacted by the implications of the food system.\" / \"Communities are inspired by the youth to participate through running.\" / \"Communities are recognizing the benefits of keeping bees.\"...",
+          "source_hyperedges": [
+            "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for l..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.0,
+          "support_count": 1,
+          "coarse_score": 0.5167
+        },
+        {
+          "entity_id": "\"WESTERN NORTH CAROLINA\"",
+          "entity_label": "WESTERN NORTH CAROLINA",
+          "description": "WESTERN NORTH CAROLINA ASAP is helping venues in western North Carolina join the local food movement.\" / \"Western North Carolina has a good infrastructure for local food distribution.\" / \"Western North Carolina is the location of Warren Wilson College. different. In concert wi...",
+          "source_hyperedges": [
+            "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for l..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.0,
+          "support_count": 1,
+          "coarse_score": 0.5167
+        },
+        {
+          "entity_id": "\"LOCAL GROWERS\"",
+          "entity_label": "LOCAL GROWERS",
+          "description": "LOCAL GROWERS Local growers are often unable to meet the supply needs of large-volume customers.\" / \"Local growers produce fresh food and can partner in gleaning initiatives.\" / \"Local growers provide products to be aggregated in the central distribution center. farming. But a...",
+          "source_hyperedges": [
+            "In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantitie..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.0,
+          "support_count": 1,
+          "coarse_score": 0.5167
+        }
+      ],
+      "reason": "Western North Carolina is specifically mentioned as having a good infrastructure for local food distribution and is home to Warren Wilson College, which has been operating a farm for over a hundred years. The DISTRIBUTION NETWORK entity supports the context of local food distribution, which is crucial for identifying the region's characteristics."
+    },
+    {
+      "iteration": 2,
+      "selected_entity_ids": [
+        "\"WARREN WILSON COLLEGE\"",
+        "\"LOCAL FOOD COMMITTEE\""
+      ],
+      "explored_entity_ids": [
+        "\"WESTERN NORTH CAROLINA\"",
+        "\"DISTRIBUTION NETWORK\""
+      ],
+      "candidate_entities": [
+        {
+          "entity_id": "\"WARREN WILSON COLLEGE\"",
+          "entity_label": "WARREN WILSON COLLEGE",
+          "description": "WARREN WILSON COLLEGE An institution implementing inclusive food sourcing committees including diverse stakeholders.\" / \"Warren Wilson College emphasizes the inclusion of a local food committee in food service decisions.\" / \"Warren Wilson College is an educational institution...",
+          "source_hyperedges": [
+            "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+            "At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.8333,
+          "support_count": 2,
+          "coarse_score": 0.75
+        },
+        {
+          "entity_id": "\"FARM\"",
+          "entity_label": "FARM",
+          "description": "FARM A farm is defined as a piece of land utilized for agricultural activities, which can include a variety of operations like growing crops or raising livestock. It can feature diverse environments, such as timber areas, without necessarily being converted solely for crop pro...",
+          "source_hyperedges": [
+            "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.3333,
+          "support_count": 1,
+          "coarse_score": 0.5833
+        },
+        {
+          "entity_id": "\"IMMEDIATE PRODUCTION\"",
+          "entity_label": "IMMEDIATE PRODUCTION",
+          "description": "IMMEDIATE PRODUCTION Warren Wilson College has consistently operated its 340-acre farm for production purposes. world to think critically about what, when, where, why, and how we eat. Whatever the goals may be for these varied programs, they share a common motivation: fresh fo...",
+          "source_hyperedges": [
+            "For more than a hundred years, Warren Wilson College has put its 340-acre farm into immediate production."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.3333,
+          "support_count": 1,
+          "coarse_score": 0.5833
+        },
+        {
+          "entity_id": "\"LOCAL FOOD COMMITTEE\"",
+          "entity_label": "LOCAL FOOD COMMITTEE",
+          "description": "LOCAL FOOD COMMITTEE Committee setting standards for 'local food' definitions.\" / \"The local food committee sets standards for what constitutes 'local' food. lets from the mother sow. The managers also help students sort through important life issues. But production is what ma...",
+          "source_hyperedges": [
+            "At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.1667,
+          "support_count": 1,
+          "coarse_score": 0.55
+        },
+        {
+          "entity_id": "\"FACULTY WHO TEACH SUSTAINABLE AGRICULTURE\"",
+          "entity_label": "FACULTY WHO TEACH SUSTAINABLE AGRICULTURE",
+          "description": "FACULTY WHO TEACH SUSTAINABLE AGRICULTURE Faculty members involved in sustainable agriculture education. lets from the mother sow. The managers also help students sort through important life issues. But production is what makes all these other lessons possible, says Chase Hubb...",
+          "source_hyperedges": [
+            "At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.1667,
+          "support_count": 1,
+          "coarse_score": 0.55
+        }
+      ],
+      "reason": "Warren Wilson College directly meets the hard constraints of having operated a farm for over a hundred years and is located in western North Carolina. The Local Food Committee is relevant as it emphasizes the college's commitment to local food sourcing, which aligns with the robust distribution network for local food."
+    },
+    {
+      "iteration": 3,
+      "selected_entity_ids": [
+        "\"GROWING MINDS\"",
+        "\"SOUTHEASTERN REGIONAL LEAD AGENCY\""
+      ],
+      "explored_entity_ids": [
+        "\"WARREN WILSON COLLEGE\"",
+        "\"LOCAL FOOD COMMITTEE\""
+      ],
+      "candidate_entities": [
+        {
+          "entity_id": "\"GROWING MINDS\"",
+          "entity_label": "GROWING MINDS",
+          "description": "GROWING MINDS Growing Minds is a Farm to School program that works throughout the region.\" / \"Growing Minds is an organization in Asheville, NC, focused on education related to sustainable farming and community gardens.\" / \"Growing Minds is an organization that facilitates loc...",
+          "source_hyperedges": [
+            "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agen..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.4545,
+          "support_count": 1,
+          "coarse_score": 0.6826
+        },
+        {
+          "entity_id": "\"INFRASTRUCTURE\"",
+          "entity_label": "INFRASTRUCTURE",
+          "description": "INFRASTRUCTURE As the farm becomes established, infrastructure can be put into place.\" / \"Communities need to rebuild essential pieces of food infrastructure.\" / \"Infrastructure can seem technical but is vital for community systems.\" / \"Infrastructure costs are typically borne...",
+          "source_hyperedges": [
+            "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for l..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.5455,
+          "support_count": 1,
+          "coarse_score": 0.6258
+        },
+        {
+          "entity_id": "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+          "entity_label": "NATIONAL FARM TO SCHOOL NETWORK",
+          "description": "NATIONAL FARM TO SCHOOL NETWORK A network formed in 2007 to support the Farm to School movement.\" / \"An organization focused on promoting farm to school initiatives, mentioned as part of the evaluation resources.\" / \"The National Farm to School Network advocates for schools to...",
+          "source_hyperedges": [
+            "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agen..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.2727,
+          "support_count": 1,
+          "coarse_score": 0.5712
+        },
+        {
+          "entity_id": "\"SOUTHEASTERN REGIONAL LEAD AGENCY\"",
+          "entity_label": "SOUTHEASTERN REGIONAL LEAD AGENCY",
+          "description": "SOUTHEASTERN REGIONAL LEAD AGENCY Growing Minds is the Southeastern regional lead agency for the National Farm to School Network. drive change here is to support the existing chain of commerce, as well as new entrepreneurs, in getting local farm products to market. #### Fresh...",
+          "source_hyperedges": [
+            "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agen..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.2727,
+          "support_count": 1,
+          "coarse_score": 0.5712
+        },
+        {
+          "entity_id": "\"COMMUNITIES\"",
+          "entity_label": "COMMUNITIES",
+          "description": "COMMUNITIES All communities are influenced by grassroots food leaders.\" / \"Communities are impacted by the implications of the food system.\" / \"Communities are inspired by the youth to participate through running.\" / \"Communities are recognizing the benefits of keeping bees.\"...",
+          "source_hyperedges": [
+            "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for l..."
+          ],
+          "question_match": 1.0,
+          "focus_match": 0.2727,
+          "support_count": 1,
+          "coarse_score": 0.5712
+        }
+      ],
+      "reason": "Both entities are closely related to the agricultural initiatives in the region, specifically focusing on local food distribution and educational programs. 'Growing Minds' directly addresses the Farm to School program, which aligns with the robust distribution network for local food, while the 'Southeastern Regional Lead Agency' supports these initiatives, making them valuable for identifying the specific region in western North Carolina."
+    }
+  ],
+  "notes": [],
+  "evidence": [
+    {
+      "evidence_id": "ev-th-0002-1",
+      "chunk_id": "chunk-5d4150698732f393c235b8b3e1cb2d88",
+      "content": "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\n\nstrategy to empower this underserved population, ACEnet identifies the 32 counties in this region as its primary service region and offers a hefty 50 percent discount on kitchen-facility rent to its inhabitants. ### Growers, Millers, Bakers: Rebuilding a Local Grain Economy #### Local and Heritage Grains _coauthored by Regine Kennedy_ **Across the nation** , the grassroots food movement is expanding into the production, milling, and distribution of whole grains. Though they may be one of our oldest sources of nourishment, appealing to a sense of deep heritage, grains are a relative newcomer to the local food scene. The leaders and groups described here are pioneers in a broad-based effort to reestablish locally grown and milled grains as a prized staple in our community food pantry. Advocates of local food decry the centralized, mass production of food, based on the availability of ch...",
+      "score": 0.41241631069183354,
+      "source_node_ids": [
+        "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+        "\"ADVOCATES OF LOCAL FOOD\"",
+        "\"CENTRALIZED MASS PRODUCTION\"",
+        "\"REGIONAL FOOD PRODUCTION\"",
+        "\"SUSTAINABILITY\"",
+        "\"FOOD SECURITY\""
+      ],
+      "source_edge_ids": [
+        "edge-26692",
+        "edge-26693",
+        "edge-26694",
+        "edge-26695",
+        "edge-26696"
+      ],
+      "notes": [
+        "branch:initial",
+        "hyperedge:Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.",
+        "matched_topics=3",
+        "entity_degree=5"
+      ],
+      "source_nodes": [
+        "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.",
+        "ADVOCATES OF LOCAL FOOD",
+        "CENTRALIZED MASS PRODUCTION",
+        "REGIONAL FOOD PRODUCTION",
+        "SUSTAINABILITY",
+        "FOOD SECURITY"
+      ]
+    },
+    {
+      "evidence_id": "ev-th-0002-2",
+      "chunk_id": "chunk-a8cfe86ed3c97ccb7c9629ee2dac08b4",
+      "content": "Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\n\nDrain winter oil and change filters. Change the transmission fluid and antifreeze, if needed. * Invest in a scheduled equipment preventive maintenance program. Set regular cycles to change oil and filters. During the growing season, preventive maintenance is one element of farming that operators can control. * Use oil and hydraulic fluid analyses to help prolong equipment life through early detection of abnormal wear. # Equipment Costs Here are some formulas to help you figure your costs for machinery. They do not include property taxes or labor of the operator. ## Fixed Costs 1. Annual depreciation = new cost ÷ years of useful life 2. Average annual insurance = new cost x g x insurance rate Insurance rate: nonmotorized at .012 ($12/$100 valuation) motorized at 0.010 ($10/$1000 valuation) 3. Annual housing = square feet storage × cost per square foot Cost per square foot = new cost pe...",
+      "score": 0.4053672150611878,
+      "source_node_ids": [
+        "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+        "\"TRUCK FARM\"",
+        "\"CROP AND LIVESTOCK FARM\"",
+        "\"HAY FARM\""
+      ],
+      "source_edge_ids": [
+        "edge-9259",
+        "edge-9260",
+        "edge-9261"
+      ],
+      "notes": [
+        "branch:initial",
+        "hyperedge:Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.",
+        "matched_topics=3",
+        "entity_degree=3"
+      ],
+      "source_nodes": [
+        "Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.",
+        "TRUCK FARM",
+        "CROP AND LIVESTOCK FARM",
+        "HAY FARM"
+      ]
+    },
+    {
+      "evidence_id": "ev-evset-0006-1",
+      "chunk_id": "chunk-ba841e41630d5b5e46b271cb1a11d579",
+      "content": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\n\ndifferent. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would be assured of consistently high quality, farmers would gain access to new markets, and the public would have a way of knowing it was buying something truly local. #### Creating a Certified Local Brand When ASAP's local food guide and educational efforts took off, people began to ask for local food. But unforeseen problems began to emerge as stores jumped on the \"local\" bandwagon: There was no unified definition for local. Stores were deciding for themselves what they would call local, creating confusion and disagreement among consumers and producers. Does local mean anywhere in North Carolina? What about food from just a few miles away over the border in Tennessee? Can a...",
+      "score": 0.6804761904761903,
+      "source_node_ids": [
+        "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+        "\"INFRASTRUCTURE\"",
+        "\"DISTRIBUTION NETWORK\"",
+        "\"COMMUNITIES\"",
+        "\"WESTERN NORTH CAROLINA\""
+      ],
+      "source_edge_ids": [
+        "edge-2866",
+        "edge-2867",
+        "edge-2868",
+        "edge-2869"
+      ],
+      "notes": [
+        "branch:frontier",
+        "hyperedge:Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+        "matched_topics=1",
+        "entity_degree=4",
+        "contributors:constraint=0.566"
+      ],
+      "source_nodes": [
+        "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+        "INFRASTRUCTURE",
+        "DISTRIBUTION NETWORK",
+        "COMMUNITIES",
+        "WESTERN NORTH CAROLINA"
+      ]
+    },
+    {
+      "evidence_id": "ev-evset-0006-2",
+      "chunk_id": "chunk-ad0d4e7d44014acab56e26cbaa12a896",
+      "content": "In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\n\nfarming. But a cooperative isn't the only aggregation model that works. Gladheart Farms in Asheville, North Carolina (page 87), shows that a farm can double as a wholesale distributor, marketing and selling products for other farms. And Appalachian Sustainable Development, based in Virginia (page 253), shows that a nonprofit working as a distributor for a network of small-scale farmers can be tremendously effective in building a local food system to support farmers. The experience of Warren Wilson College (page 165), also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity. A campus food-service program needs a consistent, dependable supply of food, whether it is serving a few thousand meals per day, as at Warren Wilson College, or tens of thousands of meals per day, as at larger...",
+      "score": 0.6352052307128906,
+      "source_node_ids": [
+        "<hyperedge>\"In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\"",
+        "\"LOCAL GROWERS\"",
+        "\"CENTRAL DISTRIBUTION CENTER\""
+      ],
+      "source_edge_ids": [
+        "edge-12832",
+        "edge-12833"
+      ],
+      "notes": [
+        "branch:frontier",
+        "hyperedge:In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.",
+        "matched_topics=2",
+        "entity_degree=2",
+        "contributors:constraint=0.506"
+      ],
+      "source_nodes": [
+        "In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.",
+        "LOCAL GROWERS",
+        "CENTRAL DISTRIBUTION CENTER"
+      ]
+    },
+    {
+      "evidence_id": "ev-evset-0006-3",
+      "chunk_id": "chunk-04be01c6169d0bdd92b10dca615a3936",
+      "content": "Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\n\nlocal school food markets, given the complexities of the procurement process. Data from Farm to School programs suggests that when schools dedicate a significant percentage of their purchases to local producers, local farmers gain a significant and steady market. For example, the New York City school district signed a $4.2 million contract with farmers in upstate New York to provide apples for New York City schools over a three-year period. The 60 farms providing products to local schools in Massachusetts, meanwhile, are generating more than $700,000 in additional revenue each year. But farmers and students aren't the only ones to benefit. School food services typically find that Farm to School programs increase participation rates in school meal programs, enhancing their overall financial viability. Food-service staff show increased knowledge about local foods and interest in working...",
+      "score": 0.5838095238095238,
+      "source_node_ids": [
+        "<hyperedge>\"Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\"",
+        "\"STORAGE OF LOCAL FOOD\"",
+        "\"LOGISTICAL CHALLENGES\"",
+        "\"DISTRIBUTION OF LOCAL FOOD\""
+      ],
+      "source_edge_ids": [
+        "edge-2447",
+        "edge-2448",
+        "edge-2449"
+      ],
+      "notes": [
+        "branch:frontier",
+        "hyperedge:Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.",
+        "matched_topics=2",
+        "entity_degree=3",
+        "contributors:relation=0.403"
+      ],
+      "source_nodes": [
+        "Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.",
+        "STORAGE OF LOCAL FOOD",
+        "LOGISTICAL CHALLENGES",
+        "DISTRIBUTION OF LOCAL FOOD"
+      ]
+    },
+    {
+      "evidence_id": "ev-evset-0011-1",
+      "chunk_id": "chunk-5f8baa196ceabfc9bc0a6cc79c04127e",
+      "content": "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\n\nworld to think critically about what, when, where, why, and how we eat. Whatever the goals may be for these varied programs, they share a common motivation: fresh food is something students want the opportunity to enjoy. And as a subject for academic inquiry, the study of our food system is coming into its own, enabling students to understand core community issues through the lens of food. In this way the farm-to-college food movement is changing not only what we eat, but how we think about and understand the impacts of what we eat. ### Cultivating Confident, Competent Leaders #### Warren Wilson College Farm _with research by Benjamin Chrisinger_ For more than a hundred years, Warren Wilson College in **western North Carolina** has operated a farm of about 340 acres to serve its students and community. Today this student-run farm produces a variety of rotated crops along with grass-fe...",
+      "score": 0.6947072403825174,
+      "source_node_ids": [
+        "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+        "\"FARM\"",
+        "\"WARREN WILSON COLLEGE\"",
+        "\"WESTERN NORTH CAROLINA\""
+      ],
+      "source_edge_ids": [
+        "edge-20721",
+        "edge-20722",
+        "edge-20723"
+      ],
+      "notes": [
+        "branch:frontier",
+        "hyperedge:For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+        "matched_topics=2",
+        "entity_degree=3",
+        "contributors:anchor=0.490,constraint=0.575,relation=0.481"
+      ],
+      "source_nodes": [
+        "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+        "FARM",
+        "WARREN WILSON COLLEGE",
+        "WESTERN NORTH CAROLINA"
+      ]
+    },
+    {
+      "evidence_id": "ev-evset-0011-3",
+      "chunk_id": "chunk-38d2ea190331fa57b51edf78d0352738",
+      "content": "At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.\n\nlets from the mother sow. The managers also help students sort through important life issues. But production is what makes all these other lessons possible, says Chase Hubbard, farm manager. \"If it was only about education, then the farm would be more like a watered-down petting zoo. By focusing on production, we create really intense learning opportunities.\" **Include all stakeholders in decisions about serving campus products on campus**. For a college to consider serving food from its campus garden or farm in its cafeterias, one of the first key steps is to create an inclusive campus stakeholder committee to discuss the issues, concerns, and goals. The foodservice manager, contracted food vendor, and business manager are all obvious key players who must be at the negotiation table, says Robertson. The real issue is who else needs to be invited to the table. At Warren Wilson College...",
+      "score": 0.6052793400824896,
+      "source_node_ids": [
+        "<hyperedge>\"At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.\"",
+        "\"LOCAL FOOD COMMITTEE\"",
+        "\"FACULTY WHO TEACH SUSTAINABLE AGRICULTURE\"",
+        "\"DEAN\"",
+        "\"STUDENT WORK PROGRAM\"",
+        "\"FARM AND GARDEN MANAGERS\"",
+        "\"WARREN WILSON COLLEGE\""
+      ],
+      "source_edge_ids": [
+        "edge-9404",
+        "edge-9405",
+        "edge-9406",
+        "edge-9407",
+        "edge-9408",
+        "edge-9409"
+      ],
+      "notes": [
+        "branch:frontier",
+        "hyperedge:At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.",
+        "matched_topics=3",
+        "entity_degree=6",
+        "contributors:anchor=0.482,relation=0.469"
+      ],
+      "source_nodes": [
+        "At Warren Wilson College, it was important to include the local food committee, faculty who teach sustainable agriculture, the dean responsible for the student work program, and the farm and garden managers.",
+        "LOCAL FOOD COMMITTEE",
+        "FACULTY WHO TEACH SUSTAINABLE AGRICULTURE",
+        "DEAN",
+        "STUDENT WORK PROGRAM",
+        "FARM AND GARDEN MANAGERS",
+        "WARREN WILSON COLLEGE"
+      ]
+    },
+    {
+      "evidence_id": "ev-evset-0016-1",
+      "chunk_id": "chunk-30c38b37fe24e15bfa43a713c9e38509",
+      "content": "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.\n\ndrive change here is to support the existing chain of commerce, as well as new entrepreneurs, in getting local farm products to market. #### Fresh Food for All Most people, ironically, do not think of the places that care for our sick, elderly, and children – hospitals, senior centers, and schools – when they think of good, healthy food. But with ASAP's help, many such venues in western North Carolina and neighboring regions are beginning to join the local food movement. By featuring fresh local foods and offering food- and farm-related educational programming, these centers can improve community health while also sustaining farms. Through its farm-to-hospital program, ASAP has helped some regional hospitals organize CSA pickups for their employees as well as farmers' markets right in hospital corridors or parking lots. Some hospitals are even bringing fresh, local food into their caf...",
+      "score": 0.669986434423164,
+      "source_node_ids": [
+        "<hyperedge>\"Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.\"",
+        "\"GROWING MINDS\"",
+        "\"NATIONAL FARM TO SCHOOL NETWORK\"",
+        "\"SOUTHEASTERN REGIONAL LEAD AGENCY\"",
+        "\"FARM TO SCHOOL PROGRAM\""
+      ],
+      "source_edge_ids": [
+        "edge-4735",
+        "edge-4736",
+        "edge-4737",
+        "edge-4738"
+      ],
+      "notes": [
+        "branch:frontier",
+        "hyperedge:Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.",
+        "matched_topics=2",
+        "entity_degree=4",
+        "contributors:relation=0.479"
+      ],
+      "source_nodes": [
+        "Its most ambitious program in this vein, however, may be Growing Minds, a Farm to School program that works throughout the region and is also the Southeastern regional lead agency for the National Farm to School Network.",
+        "GROWING MINDS",
+        "NATIONAL FARM TO SCHOOL NETWORK",
+        "SOUTHEASTERN REGIONAL LEAD AGENCY",
+        "FARM TO SCHOOL PROGRAM"
+      ]
+    },
+    {
+      "evidence_id": "ev-evset-0016-2",
+      "chunk_id": "chunk-ba841e41630d5b5e46b271cb1a11d579",
+      "content": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\n\ndifferent. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would be assured of consistently high quality, farmers would gain access to new markets, and the public would have a way of knowing it was buying something truly local. #### Creating a Certified Local Brand When ASAP's local food guide and educational efforts took off, people began to ask for local food. But unforeseen problems began to emerge as stores jumped on the \"local\" bandwagon: There was no unified definition for local. Stores were deciding for themselves what they would call local, creating confusion and disagreement among consumers and producers. Does local mean anywhere in North Carolina? What about food from just a few miles away over the border in Tennessee? Can a...",
+      "score": 0.6410655486246037,
+      "source_node_ids": [
+        "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+        "\"INFRASTRUCTURE\"",
+        "\"DISTRIBUTION NETWORK\"",
+        "\"COMMUNITIES\"",
+        "\"WESTERN NORTH CAROLINA\""
+      ],
+      "source_edge_ids": [
+        "edge-2866",
+        "edge-2867",
+        "edge-2868",
+        "edge-2869"
+      ],
+      "notes": [
+        "branch:frontier",
+        "hyperedge:Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+        "matched_topics=1",
+        "entity_degree=4",
+        "contributors:anchor=0.456,relation=0.493"
+      ],
+      "source_nodes": [
+        "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+        "INFRASTRUCTURE",
+        "DISTRIBUTION NETWORK",
+        "COMMUNITIES",
+        "WESTERN NORTH CAROLINA"
+      ]
+    },
+    {
+      "evidence_id": "ev-evset-0016-3",
+      "chunk_id": "chunk-5944a88ca415780f3d4838a47d068512",
+      "content": "Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.\n\nfarmers all over the world. And connected to these companies is an intricate network of distributors who aggregrate food shipments to supply hospitals, schools, retirement homes, restaurants, and grocery stores. Today, if farmers are not serving the industrialized system of aggregation and distribution – if they want to stay small and serve their local community – they face many challenges. While there is the obvious challenge of long hours of hard physical work, many challenges have little to do with knowing how to grow crops or raise animals. They concern the business of farming: identifying the right crops or products that in smaller quantities will bring in a profit; finding markets that will consistently buy smaller quantities; branding, packaging, transporting the products safely to avoid spoilage; and meeting food safety, liability, and insurance requirements. Many of those cha...",
+      "score": 0.6166928338560789,
+      "source_node_ids": [
+        "<hyperedge>\"Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.\"",
+        "\"POSITIVE APPROACH\""
+      ],
+      "source_edge_ids": [
+        "edge-22426"
+      ],
+      "notes": [
+        "branch:frontier",
+        "hyperedge:Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.",
+        "matched_topics=0",
+        "entity_degree=1",
+        "contributors:constraint=0.506"
+      ],
+      "source_nodes": [
+        "Focus on the benefits of local food, for the people who consume it, the people who provide it, and the community as a whole.",
+        "POSITIVE APPROACH"
+      ]
+    }
+  ],
+  "summary_text": "hyperedges: Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security. | Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm. | Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel. | In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food. | Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.; entities: ADVOCATES OF LOCAL FOOD, CENTRALIZED MASS PRODUCTION, REGIONAL FOOD PRODUCTION, SUSTAINABILITY, FOOD SECURITY; evidence: Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food secur | Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\n\nDrain winter oil and change filters. Change the transmission fluid and antifreeze, if needed. * Invest in a scheduled equipment preventive main | Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowe | In this situation, a large food-service operation would highly value a central distribution center that aggregates products from local growers and can provide reliable quantities of local food.\n\nfarming. But a cooperativ | Implementing Farm to School initiatives requires addressing logistical challenges such as distribution and storage of local food.\n\nlocal school food markets, given the complexities of the procurement process. Data from F"
+}

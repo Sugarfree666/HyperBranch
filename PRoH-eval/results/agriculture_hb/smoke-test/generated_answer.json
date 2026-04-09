@@ -1,0 +1,208 @@
+[
+  {
+    "question": "What region is known for its robust distribution network for local food and has a college operating a farm for over a hundred years?",
+    "golden_answers": [
+      "WESTERN NORTH CAROLINA"
+    ],
+    "context": [
+      "He got hooked early. While his brothers were involved in sports, his father would bring him down to work on the farm.",
+      "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.",
+      "While ASAP uses a strategy similar to that of co-ops such as Country Natural Beef in creating its own brand to build recognition, value, and trust, three things set ASAP apart: it is not a producer, it does not make money on the sale of Appalachian Grown products, and it doesn't operate its own distribution network.",
+      "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.",
+      "Brushy Mountain Bee Farm, Moravian Falls, North Carolina 800-233-7929, www.brushymountainbeefarm.com",
+      "Jackson, a North Carolina native, began his work with farmers in western North Carolina, whose tobacco farming heritage was ending."
+    ],
+    "nhops": 6,
+    "generation": "<answer>Western North Carolina</answer>",
+    "retrieved": [
+      {
+        "reasoning_path": "reasoning/grounded | objective=Initial E0 and H0 anchoring | thought=Initial anchoring over topic entities and candidate hyperedges. | hyperedge=Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food se...",
+        "src_text_chunks": "strategy to empower this underserved population, ACEnet identifies the 32 counties in this region as its primary service region and offers a hefty 50 percent discount on kitchen-facility rent to its inhabitants. ### Growers, Millers, Bakers: Rebuilding a Local Grain Economy #### Local and Heritage Grains _coauthored by Regine Kennedy_ **Across the nation** , the grassroots food movement is expanding into the production, milling, and distribution of whole grains. Though they may be one of our oldest sources of nourishment, appealing to a sense of deep heritage, grains are a relative newcomer to the local food scene. The leaders and groups described here are pioneers in a broad-based effort to reestablish locally grown and milled grains as a prized staple in our community food pantry. Advocates of local food decry the centralized, mass production of food, based on the availability of ch...",
+        "entity_descriptions": "ADVOCATES OF LOCAL FOOD; CENTRALIZED MASS PRODUCTION; REGIONAL FOOD PRODUCTION; SUSTAINABILITY; FOOD SECURITY",
+        "chunk_id": "chunk-5d4150698732f393c235b8b3e1cb2d88",
+        "thought_id": "th-0002",
+        "thought_status": "grounded",
+        "source_node_ids": [
+          "<hyperedge>\"Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\"",
+          "\"ADVOCATES OF LOCAL FOOD\"",
+          "\"CENTRALIZED MASS PRODUCTION\"",
+          "\"REGIONAL FOOD PRODUCTION\"",
+          "\"SUSTAINABILITY\"",
+          "\"FOOD SECURITY\""
+        ],
+        "source_edge_ids": [
+          "edge-26692",
+          "edge-26693",
+          "edge-26694",
+          "edge-26695",
+          "edge-26696"
+        ],
+        "raw_content": "Advocates of local food decry the centralized, mass production of food, based on the availability of cheap fuel, in favor of regional, smaller-scale food production that contributes to local sustainability and food security.\n\nstrategy to empower this underserved population, ACEnet identifies the 32 counties in this region as its primary service region and offers a hefty 50 percent discount on kitchen-facility rent to its inhabitants. ### Growers, Millers, Bakers: Rebuilding a Local Grain Economy #### Local and Heritage Grains _coauthored by Regine Kennedy_ **Across the nation** , the grassroots food movement is expanding into the production, milling, and distribution of whole grains. Though they may be one of our oldest sources of nourishment, appealing to a sense of deep heritage, grains are a relative newcomer to the local food scene. The leaders and groups described here are pioneers in a broad-based effort to reestablish locally grown and milled grains as a prized staple in our community food pantry. Advocates of local food decry the centralized, mass production of food, based on the availability of ch..."
+      },
+      {
+        "reasoning_path": "reasoning/grounded | objective=Initial E0 and H0 anchoring | thought=Initial anchoring over topic entities and candidate hyperedges. | hyperedge=Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.",
+        "src_text_chunks": "Drain winter oil and change filters. Change the transmission fluid and antifreeze, if needed. * Invest in a scheduled equipment preventive maintenance program. Set regular cycles to change oil and filters. During the growing season, preventive maintenance is one element of farming that operators can control. * Use oil and hydraulic fluid analyses to help prolong equipment life through early detection of abnormal wear. # Equipment Costs Here are some formulas to help you figure your costs for machinery. They do not include property taxes or labor of the operator. ## Fixed Costs 1. Annual depreciation = new cost ÷ years of useful life 2. Average annual insurance = new cost x g x insurance rate Insurance rate: nonmotorized at .012 ($12/$100 valuation) motorized at 0.010 ($10/$1000 valuation) 3. Annual housing = square feet storage × cost per square foot Cost per square foot = new cost pe...",
+        "entity_descriptions": "TRUCK FARM; CROP AND LIVESTOCK FARM; HAY FARM",
+        "chunk_id": "chunk-a8cfe86ed3c97ccb7c9629ee2dac08b4",
+        "thought_id": "th-0002",
+        "thought_status": "grounded",
+        "source_node_ids": [
+          "<hyperedge>\"Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\"",
+          "\"TRUCK FARM\"",
+          "\"CROP AND LIVESTOCK FARM\"",
+          "\"HAY FARM\""
+        ],
+        "source_edge_ids": [
+          "edge-9259",
+          "edge-9260",
+          "edge-9261"
+        ],
+        "raw_content": "Truck Farm (Small-Scale Vegetable Farm), Crop and Livestock Farm, Hay Farm.\n\nDrain winter oil and change filters. Change the transmission fluid and antifreeze, if needed. * Invest in a scheduled equipment preventive maintenance program. Set regular cycles to change oil and filters. During the growing season, preventive maintenance is one element of farming that operators can control. * Use oil and hydraulic fluid analyses to help prolong equipment life through early detection of abnormal wear. # Equipment Costs Here are some formulas to help you figure your costs for machinery. They do not include property taxes or labor of the operator. ## Fixed Costs 1. Annual depreciation = new cost ÷ years of useful life 2. Average annual insurance = new cost x g x insurance rate Insurance rate: nonmotorized at .012 ($12/$100 valuation) motorized at 0.010 ($10/$1000 valuation) 3. Annual housing = square feet storage × cost per square foot Cost per square foot = new cost pe..."
+      },
+      {
+        "reasoning_path": "reasoning/expanded | objective=constraint hyperedge search operator | thought=constraint operator recommended hyperedges: <hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\" (0.442) | <hyperedge>\"For more than a hundred years, Warren Wilso...",
+        "src_text_chunks": "world to think critically about what, when, where, why, and how we eat. Whatever the goals may be for these varied programs, they share a common motivation: fresh food is something students want the opportunity to enjoy. And as a subject for academic inquiry, the study of our food system is coming into its own, enabling students to understand core community issues through the lens of food. In this way the farm-to-college food movement is changing not only what we eat, but how we think about and understand the impacts of what we eat. ### Cultivating Confident, Competent Leaders #### Warren Wilson College Farm _with research by Benjamin Chrisinger_ For more than a hundred years, Warren Wilson College in **western North Carolina** has operated a farm of about 340 acres to serve its students and community. Today this student-run farm produces a variety of rotated crops along with grass-fe...",
+        "entity_descriptions": "FARM; WARREN WILSON COLLEGE; WESTERN NORTH CAROLINA",
+        "chunk_id": "chunk-5f8baa196ceabfc9bc0a6cc79c04127e",
+        "thought_id": "th-0003",
+        "thought_status": "expanded",
+        "source_node_ids": [
+          "<hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\"",
+          "\"FARM\"",
+          "\"WARREN WILSON COLLEGE\"",
+          "\"WESTERN NORTH CAROLINA\""
+        ],
+        "source_edge_ids": [
+          "edge-20721",
+          "edge-20722",
+          "edge-20723"
+        ],
+        "raw_content": "For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\n\nworld to think critically about what, when, where, why, and how we eat. Whatever the goals may be for these varied programs, they share a common motivation: fresh food is something students want the opportunity to enjoy. And as a subject for academic inquiry, the study of our food system is coming into its own, enabling students to understand core community issues through the lens of food. In this way the farm-to-college food movement is changing not only what we eat, but how we think about and understand the impacts of what we eat. ### Cultivating Confident, Competent Leaders #### Warren Wilson College Farm _with research by Benjamin Chrisinger_ For more than a hundred years, Warren Wilson College in **western North Carolina** has operated a farm of about 340 acres to serve its students and community. Today this student-run farm produces a variety of rotated crops along with grass-fe..."
+      },
+      {
+        "reasoning_path": "reasoning/expanded | objective=relation hyperedge search operator | thought=relation operator recommended hyperedges: <hyperedge>\"This program offers a host of resources to help colleges navigate the logistics of setting up a program to bring local food to their campuses.\" (0.424) | <hyperedge>\"The purchase of local food by campus dining halls can pro...",
+        "src_text_chunks": ".westonaprice.org** Founded in 1999, the nonprofit Weston A. Price Foundation is \"dedicated to restoring nutrient-dense foods to the human diet through education, research and activism.\" Local chapters, which can be found through the website, are likely customers for local foods grown using sustainable methods. ### Training for New Farmers #### Beginningfarmers.org **<http://beginningfarmers.org>** Designed for new farmers, this website, developed by Taylor Reid and Jim Bingen at Michigan State University, offers an amazing array of guidance on topics from financing and finding land to production and marketing. #### Center for Agroecology & Sustainable Food Systems 831-459-3240 **<http://casfs.ucsc.edu>** Based at the University of California at Santa Cruz, this program offers an apprenticeship in ecological horticulture, which provides training for organic gardening and small-scale f...",
+        "entity_descriptions": "LOCAL FOOD; FARM TO COLLEGE",
+        "chunk_id": "chunk-9e716e5bd5f06009e0468b77709b834d",
+        "thought_id": "th-0004",
+        "thought_status": "expanded",
+        "source_node_ids": [
+          "<hyperedge>\"This program offers a host of resources to help colleges navigate the logistics of setting up a program to bring local food to their campuses.\"",
+          "\"LOCAL FOOD\"",
+          "\"FARM TO COLLEGE\""
+        ],
+        "source_edge_ids": [
+          "edge-2215",
+          "edge-2216"
+        ],
+        "raw_content": "This program offers a host of resources to help colleges navigate the logistics of setting up a program to bring local food to their campuses.\n\n.westonaprice.org** Founded in 1999, the nonprofit Weston A. Price Foundation is \"dedicated to restoring nutrient-dense foods to the human diet through education, research and activism.\" Local chapters, which can be found through the website, are likely customers for local foods grown using sustainable methods. ### Training for New Farmers #### Beginningfarmers.org **<http://beginningfarmers.org>** Designed for new farmers, this website, developed by Taylor Reid and Jim Bingen at Michigan State University, offers an amazing array of guidance on topics from financing and finding land to production and marketing. #### Center for Agroecology & Sustainable Food Systems 831-459-3240 **<http://casfs.ucsc.edu>** Based at the University of California at Santa Cruz, this program offers an apprenticeship in ecological horticulture, which provides training for organic gardening and small-scale f..."
+      },
+      {
+        "reasoning_path": "reasoning/expanded | objective=relation hyperedge search operator | thought=relation operator recommended hyperedges: <hyperedge>\"This program offers a host of resources to help colleges navigate the logistics of setting up a program to bring local food to their campuses.\" (0.424) | <hyperedge>\"The purchase of local food by campus dining halls can pro... | hyperedge=The purchase of local food by campus dining halls can provide a major boost for local farmers, economies, and farmland preservation.",
+        "src_text_chunks": "co-op, in an interview with the _Chicago Tribune_. \"[The Brown contract has] been like a shot of antibiotics for a sick animal.\" Hill also helped open a direct line of communication between growers and chefs by cofounding the Farm Fresh Rhode Island collaborative. Today, much like North Carolina's Appalachian Sustainable Agriculture Project (page 243), this collaborative is an active nonprofit that helps connect growers with buyers through conferences, meetings, and one-on-one relationship building, and it supports growers through a host of market-growing services. Brown and Yale are just two of the more well-known examples of colleges aiming for food sustainability. Others abound; Middlebury College in Vermont, for example, reports that _all_ its dairy products are purchased locally, and it also purchases local maple syrup, local eggs, and Vermont cheddar cheese. Bates College in Mai...",
+        "entity_descriptions": "PURCHASE OF LOCAL FOOD; ECONOMIES; FARMLAND PRESERVATION; MAJOR BOOST; LOCAL FARMERS",
+        "chunk_id": "chunk-a80590371c3ba416132df035a1f48358",
+        "thought_id": "th-0004",
+        "thought_status": "expanded",
+        "source_node_ids": [
+          "<hyperedge>\"The purchase of local food by campus dining halls can provide a major boost for local farmers, economies, and farmland preservation.\"",
+          "\"PURCHASE OF LOCAL FOOD\"",
+          "\"ECONOMIES\"",
+          "\"FARMLAND PRESERVATION\"",
+          "\"MAJOR BOOST\"",
+          "\"LOCAL FARMERS\""
+        ],
+        "source_edge_ids": [
+          "edge-19681",
+          "edge-19682",
+          "edge-19683",
+          "edge-19684",
+          "edge-19685"
+        ],
+        "raw_content": "The purchase of local food by campus dining halls can provide a major boost for local farmers, economies, and farmland preservation.\n\nco-op, in an interview with the _Chicago Tribune_. \"[The Brown contract has] been like a shot of antibiotics for a sick animal.\" Hill also helped open a direct line of communication between growers and chefs by cofounding the Farm Fresh Rhode Island collaborative. Today, much like North Carolina's Appalachian Sustainable Agriculture Project (page 243), this collaborative is an active nonprofit that helps connect growers with buyers through conferences, meetings, and one-on-one relationship building, and it supports growers through a host of market-growing services. Brown and Yale are just two of the more well-known examples of colleges aiming for food sustainability. Others abound; Middlebury College in Vermont, for example, reports that _all_ its dairy products are purchased locally, and it also purchases local maple syrup, local eggs, and Vermont cheddar cheese. Bates College in Mai..."
+      },
+      {
+        "reasoning_path": "reasoning/merged | objective=Fuse branch frontier candidates | thought=Global frontier: <hyperedge>\"For more than a hundred years, Warren Wilson College in western North Carolina has operated a farm of about 340 acres to serve its students and community.\" | <hyperedge>\"Establishing a College Farming Program.\" | <hyperedge>\"For more than a hundred...",
+        "src_text_chunks": "from there. Not including the start-up costs, which are significant, Hubbard thinks a college farm can be run at a fairly low cost. The Warren Wilson farm grosses about $200,000 a year on 275 working acres from sales of its broilers, beef cows, and hogs, which covers all operating expenses and a portion of student and management labor. The additional annual cost outlay, he says, is about $25,000. To my ears, that sounds like a very small amount for a flagship college program with so much to offer. \"We are a long way from turning a true profit,\" says Hubbard, \"but as a nonprofit our goal is to offer real-life experience for students for education.\" If students want to make lots of money, Hubbard wouldn't encourage them to take up farming. After all, he explains, Warren Wilson isn't trying to make farmers; it's creating students who are better prepared for whatever they want to become,...",
+        "entity_descriptions": "COLLEGE FARMING PROGRAM",
+        "chunk_id": "chunk-553c0f788a5df6c23a481c0a3efdaabb",
+        "thought_id": "th-0007",
+        "thought_status": "merged",
+        "source_node_ids": [
+          "<hyperedge>\"Establishing a College Farming Program.\"",
+          "\"COLLEGE FARMING PROGRAM\""
+        ],
+        "source_edge_ids": [
+          "edge-3621"
+        ],
+        "raw_content": "Establishing a College Farming Program.\n\nfrom there. Not including the start-up costs, which are significant, Hubbard thinks a college farm can be run at a fairly low cost. The Warren Wilson farm grosses about $200,000 a year on 275 working acres from sales of its broilers, beef cows, and hogs, which covers all operating expenses and a portion of student and management labor. The additional annual cost outlay, he says, is about $25,000. To my ears, that sounds like a very small amount for a flagship college program with so much to offer. \"We are a long way from turning a true profit,\" says Hubbard, \"but as a nonprofit our goal is to offer real-life experience for students for education.\" If students want to make lots of money, Hubbard wouldn't encourage them to take up farming. After all, he explains, Warren Wilson isn't trying to make farmers; it's creating students who are better prepared for whatever they want to become,..."
+      },
+      {
+        "reasoning_path": "reasoning/expanded | objective=constraint hyperedge search operator | thought=constraint operator recommended hyperedges: <hyperedge>\"Warren Wilson's goal is to have the college food vendor source 40 to 50 percent of its food locally, with 30 percent coming from the college farm and garden initially and increasing over time.\" (0.432) | <hyperedge>\"At Wa...",
+        "src_text_chunks": "lets from the mother sow. The managers also help students sort through important life issues. But production is what makes all these other lessons possible, says Chase Hubbard, farm manager. \"If it was only about education, then the farm would be more like a watered-down petting zoo. By focusing on production, we create really intense learning opportunities.\" **Include all stakeholders in decisions about serving campus products on campus**. For a college to consider serving food from its campus garden or farm in its cafeterias, one of the first key steps is to create an inclusive campus stakeholder committee to discuss the issues, concerns, and goals. The foodservice manager, contracted food vendor, and business manager are all obvious key players who must be at the negotiation table, says Robertson. The real issue is who else needs to be invited to the table. At Warren Wilson College...",
+        "entity_descriptions": "COLLEGE FOOD VENDOR; COLLEGE FARM AND GARDEN; 40 TO 50 PERCENT LOCAL SOURCING GOAL; 30 PERCENT INITIAL SOURCING GOAL",
+        "chunk_id": "chunk-38d2ea190331fa57b51edf78d0352738",
+        "thought_id": "th-0008",
+        "thought_status": "expanded",
+        "source_node_ids": [
+          "<hyperedge>\"Warren Wilson's goal is to have the college food vendor source 40 to 50 percent of its food locally, with 30 percent coming from the college farm and garden initially and increasing over time.\"",
+          "\"COLLEGE FOOD VENDOR\"",
+          "\"COLLEGE FARM AND GARDEN\"",
+          "\"40 TO 50 PERCENT LOCAL SOURCING GOAL\"",
+          "\"30 PERCENT INITIAL SOURCING GOAL\""
+        ],
+        "source_edge_ids": [
+          "edge-9440",
+          "edge-9441",
+          "edge-9442",
+          "edge-9443"
+        ],
+        "raw_content": "Warren Wilson's goal is to have the college food vendor source 40 to 50 percent of its food locally, with 30 percent coming from the college farm and garden initially and increasing over time.\n\nlets from the mother sow. The managers also help students sort through important life issues. But production is what makes all these other lessons possible, says Chase Hubbard, farm manager. \"If it was only about education, then the farm would be more like a watered-down petting zoo. By focusing on production, we create really intense learning opportunities.\" **Include all stakeholders in decisions about serving campus products on campus**. For a college to consider serving food from its campus garden or farm in its cafeterias, one of the first key steps is to create an inclusive campus stakeholder committee to discuss the issues, concerns, and goals. The foodservice manager, contracted food vendor, and business manager are all obvious key players who must be at the negotiation table, says Robertson. The real issue is who else needs to be invited to the table. At Warren Wilson College..."
+      },
+      {
+        "reasoning_path": "reasoning/expanded | objective=relation hyperedge search operator | thought=relation operator recommended hyperedges: <hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed w... | hyperedge=Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is end...",
+        "src_text_chunks": "different. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would be assured of consistently high quality, farmers would gain access to new markets, and the public would have a way of knowing it was buying something truly local. #### Creating a Certified Local Brand When ASAP's local food guide and educational efforts took off, people began to ask for local food. But unforeseen problems began to emerge as stores jumped on the \"local\" bandwagon: There was no unified definition for local. Stores were deciding for themselves what they would call local, creating confusion and disagreement among consumers and producers. Does local mean anywhere in North Carolina? What about food from just a few miles away over the border in Tennessee? Can a...",
+        "entity_descriptions": "INFRASTRUCTURE; DISTRIBUTION NETWORK; COMMUNITIES; WESTERN NORTH CAROLINA",
+        "chunk_id": "chunk-ba841e41630d5b5e46b271cb1a11d579",
+        "thought_id": "th-0009",
+        "thought_status": "expanded",
+        "source_node_ids": [
+          "<hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\"",
+          "\"INFRASTRUCTURE\"",
+          "\"DISTRIBUTION NETWORK\"",
+          "\"COMMUNITIES\"",
+          "\"WESTERN NORTH CAROLINA\""
+        ],
+        "source_edge_ids": [
+          "edge-2866",
+          "edge-2867",
+          "edge-2868",
+          "edge-2869"
+        ],
+        "raw_content": "Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed with a robust and growing infrastructure, he says, and ASAP doesn't want to re-create the wheel.\n\ndifferent. In concert with brokering these relationships, ASAP began to explore the idea of creating a local \"brand\" that would assure quality through annual certification. This would be a win-win-win: retailers would be assured of consistently high quality, farmers would gain access to new markets, and the public would have a way of knowing it was buying something truly local. #### Creating a Certified Local Brand When ASAP's local food guide and educational efforts took off, people began to ask for local food. But unforeseen problems began to emerge as stores jumped on the \"local\" bandwagon: There was no unified definition for local. Stores were deciding for themselves what they would call local, creating confusion and disagreement among consumers and producers. Does local mean anywhere in North Carolina? What about food from just a few miles away over the border in Tennessee? Can a..."
+      },
+      {
+        "reasoning_path": "reasoning/expanded | objective=relation hyperedge search operator | thought=relation operator recommended hyperedges: <hyperedge>\"Though Jackson acknowledges that some communities may not have a good distribution network in place and may be forced to develop or encourage their own distribution system for local food, western North Carolina is endowed w... | hyperedge=The experience of Warren Wilson College, also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity.",
+        "src_text_chunks": "farming. But a cooperative isn't the only aggregation model that works. Gladheart Farms in Asheville, North Carolina (page 87), shows that a farm can double as a wholesale distributor, marketing and selling products for other farms. And Appalachian Sustainable Development, based in Virginia (page 253), shows that a nonprofit working as a distributor for a network of small-scale farmers can be tremendously effective in building a local food system to support farmers. The experience of Warren Wilson College (page 165), also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity. A campus food-service program needs a consistent, dependable supply of food, whether it is serving a few thousand meals per day, as at Warren Wilson College, or tens of thousands of meals per day, as at larger...",
+        "entity_descriptions": "WHOLESALE DISTRIBUTOR; FOOD-SERVICE PROGRAMS; WARREN WILSON COLLEGE",
+        "chunk_id": "chunk-ad0d4e7d44014acab56e26cbaa12a896",
+        "thought_id": "th-0009",
+        "thought_status": "expanded",
+        "source_node_ids": [
+          "<hyperedge>\"The experience of Warren Wilson College, also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity.\"",
+          "\"WHOLESALE DISTRIBUTOR\"",
+          "\"FOOD-SERVICE PROGRAMS\"",
+          "\"WARREN WILSON COLLEGE\""
+        ],
+        "source_edge_ids": [
+          "edge-12790",
+          "edge-12791",
+          "edge-12792"
+        ],
+        "raw_content": "The experience of Warren Wilson College, also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity.\n\nfarming. But a cooperative isn't the only aggregation model that works. Gladheart Farms in Asheville, North Carolina (page 87), shows that a farm can double as a wholesale distributor, marketing and selling products for other farms. And Appalachian Sustainable Development, based in Virginia (page 253), shows that a nonprofit working as a distributor for a network of small-scale farmers can be tremendously effective in building a local food system to support farmers. The experience of Warren Wilson College (page 165), also in North Carolina, suggests that a wholesale distributor dedicated to serving food-service programs in large institutions is a promising business opportunity. A campus food-service program needs a consistent, dependable supply of food, whether it is serving a few thousand meals per day, as at Warren Wilson College, or tens of thousands of meals per day, as at larger..."
+      }
+    ],
+    "run_dir": "D:\\GitHub\\HyperBranch\\runs\\20260407_234029_what-region-is-known-for-its-robust-distribution",
+    "run_status": "success"
+  }
+]
