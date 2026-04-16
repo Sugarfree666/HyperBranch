@@ -14,7 +14,7 @@ CURRENT_DIR = Path(__file__).resolve().parent
 if str(CURRENT_DIR) not in sys.path:
     sys.path.insert(0, str(CURRENT_DIR))
 
-from eval import cal_f1
+from eval import cal_em, cal_f1
 
 
 def parse_args() -> argparse.Namespace:
@@ -213,7 +213,7 @@ def build_eval_record(question_entry: dict[str, Any], run_index: dict[str, dict[
     question = str(question_entry.get("question", "")).strip()
     record: dict[str, Any] = {
         "question": question,
-        "golden_answers": list(question_entry.get("golden_answers", [])),
+        "golden_answers": _extract_gold_answers(question_entry),
         "context": list(question_entry.get("context", [])),
         "nhops": question_entry.get("nhops"),
         "run_dir": None,
@@ -264,6 +264,21 @@ def build_eval_record(question_entry: dict[str, Any], run_index: dict[str, dict[
     return record
 
 
+def _extract_gold_answers(question_entry: dict[str, Any]) -> list[str]:
+    for key in ("golden_answers", "answers"):
+        value = question_entry.get(key)
+        if isinstance(value, list):
+            return [str(item).strip() for item in value if str(item).strip()]
+        if isinstance(value, str) and value.strip():
+            return [value.strip()]
+    value = question_entry.get("answer")
+    if isinstance(value, list):
+        return [str(item).strip() for item in value if str(item).strip()]
+    if isinstance(value, str) and value.strip():
+        return [value.strip()]
+    return []
+
+
 def _get_rsim_fn():
     from eval_r import cal_rsim
 
@@ -279,7 +294,9 @@ def _get_gen_fn():
 def evaluate_one(record: dict[str, Any], use_rsim: bool, use_gen: bool) -> dict[str, Any]:
     answer = record.get("answer", "") or ""
     gold_answers = record.get("golden_answers", [])
+    em_score = cal_em([gold_answers], [answer]) if gold_answers else 0.0
     f1_score = cal_f1([gold_answers], [answer]) if gold_answers else 0.0
+    record["em"] = float(em_score)
     record["f1"] = float(f1_score)
 
     if use_rsim:
@@ -327,9 +344,9 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
         nhops = record.get("nhops")
         if nhops is None:
             continue
-        bucket = by_nhops.setdefault(str(nhops), {"count": 0, "f1": [], "r_s": [], "g_e": []})
+        bucket = by_nhops.setdefault(str(nhops), {"count": 0, "em": [], "f1": [], "r_s": [], "g_e": []})
         bucket["count"] += 1
-        for metric in ("f1", "r_s", "g_e"):
+        for metric in ("em", "f1", "r_s", "g_e"):
             value = record.get(metric)
             if value is not None:
                 bucket[metric].append(float(value))
@@ -342,6 +359,7 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
             "missing": sum(1 for record in records if record.get("run_status") == "missing"),
         },
         "overall": {
+            "em": avg("em"),
             "f1": avg("f1"),
             "r_s": avg("r_s"),
             "g_e": avg("g_e"),
@@ -352,6 +370,7 @@ def summarize(records: list[dict[str, Any]]) -> dict[str, Any]:
     for nhops, bucket in sorted(by_nhops.items(), key=lambda item: int(item[0])):
         summary["by_nhops"][nhops] = {
             "count": bucket["count"],
+            "em": mean(bucket["em"]) if bucket["em"] else None,
             "f1": mean(bucket["f1"]) if bucket["f1"] else None,
             "r_s": mean(bucket["r_s"]) if bucket["r_s"] else None,
             "g_e": mean(bucket["g_e"]) if bucket["g_e"] else None,
@@ -434,6 +453,7 @@ def main() -> int:
     print(f"saved_generated={output_dir / 'generated_answer.json'}")
     print(f"saved_results={output_dir / 'test_result.json'}")
     print(f"saved_scores={output_dir / 'test_score.json'}")
+    print(f"EM={summary['overall']['em'] if summary['overall']['em'] is not None else 'N/A'}")
     print(f"F1={summary['overall']['f1'] if summary['overall']['f1'] is not None else 'N/A'}")
     print(f"R-S={summary['overall']['r_s'] if summary['overall']['r_s'] is not None else 'N/A'}")
     print(f"G-E={summary['overall']['g_e'] if summary['overall']['g_e'] is not None else 'N/A'}")

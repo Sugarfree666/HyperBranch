@@ -249,10 +249,13 @@ class FakeEvidenceRetriever:
         control_state: RetrievalControlState,
         evidence_subgraph: dict[str, object] | None = None,
         exclude_hyperedge_ids: set[str] | None = None,
+        *,
+        channel_id: str = "",
     ) -> list[HyperedgeCandidate]:
         del evidence_subgraph, exclude_hyperedge_ids
         focus = list(control_state.current_focus())
         query_texts = [question, branch_kind, *task_frame.topic_entities, *focus]
+        control_state.branch_queries[f"{channel_id}::{branch_kind}"] = query_texts
         control_state.branch_queries[branch_kind] = query_texts
         control_state.candidate_filters[branch_kind] = {
             "prefer_focus_match": bool(focus),
@@ -262,6 +265,7 @@ class FakeEvidenceRetriever:
             {
                 "iteration": control_state.iteration,
                 "branch_kind": branch_kind,
+                "channel_id": channel_id,
                 "focus": focus,
                 "weights": dict(control_state.branch_weights),
                 "query_texts": list(query_texts),
@@ -275,6 +279,7 @@ class FakeEvidenceRetriever:
         coverage_gain = 0.62 if branch_kind == "anchor" else 0.42
         novelty_gain = 0.33 if branch_kind == "anchor" else 0.12
         branch_score = 0.64 + focus_bonus
+        anchor_entity = channel_id or '"COMMUNITY SUPPORT"'
         return [
             HyperedgeCandidate(
                 hyperedge_id=f'<hyperedge>"{suffix} branch supports community support."',
@@ -288,9 +293,11 @@ class FakeEvidenceRetriever:
                 connector_gain=connector_gain,
                 novelty_gain=novelty_gain,
                 focus_gain=focus_bonus,
-                entity_ids=['"COMMUNITY SUPPORT"'],
+                entity_ids=[anchor_entity],
                 chunk_ids=[f"chunk-{branch_kind}"],
-                support_entities=['"COMMUNITY SUPPORT"'],
+                support_entities=[anchor_entity],
+                channel_id=channel_id,
+                supporting_channel_ids=[channel_id] if channel_id else [],
                 reason=f"{branch_kind} branch ranked this hyperedge via explicit scoring.",
             )
         ]
@@ -337,6 +344,51 @@ class FakeEvidenceRetriever:
             "notes": "Fake fused frontier based on branch_score and branch weight.",
         }
         return selected, merge_result
+
+    def combine_channel_frontiers(
+        self,
+        task_frame: TaskFrame,
+        channel_frontiers: dict[str, list[HyperedgeCandidate]],
+        channel_merge_results: dict[str, dict[str, object]],
+        evidence_subgraph: dict[str, object],
+        control_state: RetrievalControlState,
+        top_k: int,
+    ) -> tuple[list[HyperedgeCandidate], dict[str, object]]:
+        del task_frame, evidence_subgraph
+        fused: list[HyperedgeCandidate] = []
+        branch_contributions: dict[str, list[str]] = {}
+        for channel_id, candidates in channel_frontiers.items():
+            preferred_branches = list(channel_merge_results.get(channel_id, {}).get("preferred_branches", []))
+            for branch_kind in preferred_branches:
+                branch_contributions.setdefault(str(branch_kind), [])
+            for candidate in candidates:
+                candidate.supporting_channel_ids = [channel_id]
+                candidate.fused_score = candidate.score
+                fused.append(candidate)
+                for branch_kind in preferred_branches:
+                    branch_contributions[str(branch_kind)].append(candidate.hyperedge_id)
+        fused.sort(key=lambda item: item.fused_score, reverse=True)
+        selected = fused[:top_k]
+        return selected, {
+            "frontier_hyperedge_ids": [candidate.hyperedge_id for candidate in selected],
+            "frontier": [candidate.to_dict() for candidate in selected],
+            "branch_contributions": branch_contributions,
+            "channel_frontiers": {
+                channel_id: [candidate.hyperedge_id for candidate in candidates]
+                for channel_id, candidates in channel_frontiers.items()
+            },
+            "preferred_branches": ["relation", "constraint", "anchor"],
+            "coverage_summary": {
+                "frontier_size": len(selected),
+                "evidence_hyperedges": 0,
+                "topic_entity_coverage": 0.75,
+                "active_channels": len(channel_frontiers),
+            },
+            "answer_hypotheses": ["COMMUNITY SUPPORT"],
+            "missing_requirements": list(control_state.missing_requirements),
+            "next_focus": list(control_state.next_focus),
+            "notes": "Fake global frontier aggregated from entity channels.",
+        }
 
     def build_evidence_items(
         self,
@@ -521,6 +573,84 @@ class ThoughtControllerSelectionTest(unittest.TestCase):
                 result["evidence_subgraph"]["expansion_frontier_entity_ids"],
                 ['"URBAN FARM NETWORK"', '"LOCAL COOPERATIVE"'],
             )
+
+    def test_controller_runs_parallel_entity_channels(self) -> None:
+        logger = logging.getLogger("test.controller.parallel")
+        logger.handlers.clear()
+        logger.addHandler(logging.NullHandler())
+
+        class MultiChannelEvidenceRetriever(FakeEvidenceRetriever):
+            def anchor_task_frame(self, question: str, task_frame: TaskFrame) -> dict[str, object]:
+                del question, task_frame
+                first = HyperedgeCandidate(
+                    hyperedge_id='<hyperedge>"Urban farms build community support."',
+                    hyperedge_text="Urban farms build community support.",
+                    score=0.92,
+                    branch_kind="anchor",
+                    branch_score=0.92,
+                    coverage_gain=0.8,
+                    connector_gain=0.7,
+                    novelty_gain=0.3,
+                    entity_ids=['"COMMUNITY SUPPORT"'],
+                    chunk_ids=["chunk-1"],
+                    support_entities=['"COMMUNITY SUPPORT"'],
+                )
+                second = HyperedgeCandidate(
+                    hyperedge_id='<hyperedge>"Urban farms partner with local cooperatives."',
+                    hyperedge_text="Urban farms partner with local cooperatives.",
+                    score=0.87,
+                    branch_kind="anchor",
+                    branch_score=0.87,
+                    coverage_gain=0.74,
+                    connector_gain=0.66,
+                    novelty_gain=0.28,
+                    entity_ids=['"LOCAL COOPERATIVE"'],
+                    chunk_ids=["chunk-2"],
+                    support_entities=['"LOCAL COOPERATIVE"'],
+                )
+                return {
+                    "entity_matches": [
+                        VectorMatch(item_id="entity-1", label='"COMMUNITY SUPPORT"', score=0.81),
+                        VectorMatch(item_id="entity-2", label='"LOCAL COOPERATIVE"', score=0.79),
+                    ],
+                    "initial_entity_ids": ['"COMMUNITY SUPPORT"', '"LOCAL COOPERATIVE"'],
+                    "initial_hyperedge_ids": [first.hyperedge_id, second.hyperedge_id],
+                    "initial_hyperedge_candidates": [first, second],
+                }
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            trace_store = TraceStore(Path(tmp_dir))
+            fake_retriever = MultiChannelEvidenceRetriever()
+            config = Config(
+                project_root=Path(tmp_dir),
+                dataset=DatasetConfig(root=Path(tmp_dir)),
+                runtime=RuntimeConfig(base_run_dir=Path(tmp_dir)),
+                retrieval=RetrievalConfig(),
+                reasoning=ReasoningConfig(max_steps=1, branch_top_k=1, evidence_top_k_per_branch=1),
+                llm=LLMConfig(use_mock=True),
+                prompts=PromptConfig(directory=Path(tmp_dir)),
+            )
+            controller = ThoughtController(
+                config=config,
+                dataset=SimpleNamespace(),
+                taskframe_builder=FakeTaskFrameBuilder(),
+                registry=FakeRegistry(),
+                scorer=SimpleNamespace(),
+                evidence_retriever=fake_retriever,
+                executor=ThoughtOperationExecutor(logger=logger, trace_store=trace_store),
+                llm_service=FakeLLMService(),
+                logger=logger,
+                trace_store=trace_store,
+            )
+
+            result = controller.run("How can urban farms build community support?")
+
+            channel_ids = set(result["evidence_subgraph"]["active_channel_ids"])
+            self.assertEqual(channel_ids, {'"COMMUNITY SUPPORT"', '"LOCAL COOPERATIVE"'})
+            retrieved_channels = {str(call["channel_id"]) for call in fake_retriever.retrieve_calls}
+            self.assertEqual(retrieved_channels, {'"COMMUNITY SUPPORT"', '"LOCAL COOPERATIVE"'})
+            self.assertIn("entity_channels", result["evidence_subgraph"])
+            self.assertEqual(len(result["evidence_subgraph"]["entity_channels"]), 2)
 
 
 class EmptyStore:

@@ -7,54 +7,13 @@
     <list default="true" id="3a9a8072-ddae-4340-8354-17943ee9c24b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/artifacts/dataset_summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/artifacts/evidence_subgraph.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/artifacts/final_answer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/artifacts/llm_evidence_view.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/artifacts/task_frame.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/artifacts/thought_graph.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/events.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/llm_calls.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/20260409_134244_what-region-is-known-for-its-robust-distribution/run.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/eval.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/eval_g.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/eval_r.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/export_proh_input.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/get_rsim_score.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/get_score.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb/smoke-test/export_meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb/smoke-test/generated_answer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb_evsub/rs_compare/export_meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb_evsub/rs_compare/generated_answer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb_evsub/rs_compare/test_result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb_evsub/rs_compare/test_score.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb_evsub/rs_compare_200/export_meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb_evsub/rs_compare_200/generated_answer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb_evsub/rs_compare_200/test_result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/results/agriculture_hb_evsub/rs_compare_200/test_score.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/see_score.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/simcse/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/simcse/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/simcse/tool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PRoH-eval/simcse/trainers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/agriculture.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/agriculture.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hyper_branch/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyper_branch/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hyper_branch/llm/service.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyper_branch/llm/service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval/get_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval/get_score.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hyper_branch/llm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyper_branch/llm/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hyper_branch/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyper_branch/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyper_branch/reasoning/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyper_branch/reasoning/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hyper_branch/reasoning/operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyper_branch/reasoning/operations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hyper_branch/retrieval/evidence.py" beforeDir="false" afterPath="$PROJECT_DIR$/hyper_branch/retrieval/evidence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prompts/evidence_judge.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/evidence_judge.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prompts/task_frame.md" beforeDir="false" afterPath="$PROJECT_DIR$/prompts/task_frame.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/artifacts/dataset_summary.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/artifacts/evidence_subgraph.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/artifacts/final_answer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/artifacts/llm_evidence_view.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/artifacts/task_frame.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/artifacts/thought_graph.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/events.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/llm_calls.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runs/20260407_234029_what-region-is-known-for-its-robust-distribution/run.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_llm_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_llm_views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_reasoning_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_reasoning_control.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="1883" />
+    <option name="cachedIndexableFilesCount" value="4563" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -89,40 +48,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.cli.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/GitHub/HyperBranch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.cli.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GitHub/HyperBranch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMThirdPartyAiProvidersConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\GoT_HGs_RAG" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\HyperBranch\datasets" />
+      <recent name="D:\GitHub\HyperBranch\questions\2wikimultihopqa" />
+      <recent name="D:\GitHub\HyperBranch\questions" />
       <recent name="D:\GitHub\GoT_HGs_RAG\datasets" />
     </key>
   </component>
@@ -184,7 +146,11 @@
       <workItem from="1775098687201" duration="3214000" />
       <workItem from="1775526087621" duration="1268000" />
       <workItem from="1775527575786" duration="31142000" />
-      <workItem from="1775625403940" duration="28843000" />
+      <workItem from="1775625403940" duration="35966000" />
+      <workItem from="1775783827377" duration="5228000" />
+      <workItem from="1776047668856" duration="43380000" />
+      <workItem from="1776163517782" duration="43850000" />
+      <workItem from="1776311637659" duration="17587000" />
     </task>
     <servers />
   </component>

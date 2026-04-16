@@ -89,6 +89,8 @@ class HyperedgeCandidate:
     chunk_ids: list[str] = field(default_factory=list)
     matched_topic_entities: list[str] = field(default_factory=list)
     support_entities: list[str] = field(default_factory=list)
+    channel_id: str = ""
+    supporting_channel_ids: list[str] = field(default_factory=list)
     supporting_chunks: list[str] = field(default_factory=list)
     score_breakdown: dict[str, float] = field(default_factory=dict)
     notes: list[str] = field(default_factory=list)
@@ -100,7 +102,118 @@ class HyperedgeCandidate:
         payload["entity_labels"] = [normalize_label(entity_id) for entity_id in self.entity_ids]
         payload["matched_topic_labels"] = [normalize_label(entity_id) for entity_id in self.matched_topic_entities]
         payload["support_entity_labels"] = [normalize_label(entity_id) for entity_id in self.support_entities]
+        payload["channel_label"] = normalize_label(self.channel_id) if self.channel_id else ""
+        payload["supporting_channel_labels"] = [
+            normalize_label(channel_id) for channel_id in self.supporting_channel_ids
+        ]
         return payload
+
+
+@dataclass(slots=True)
+class EntityChannelState:
+    channel_id: str
+    frontier_entity_ids: list[str] = field(default_factory=list)
+    explored_entity_ids: list[str] = field(default_factory=list)
+    hyperedge_ids: list[str] = field(default_factory=list)
+    entity_ids: list[str] = field(default_factory=list)
+    chunk_ids: list[str] = field(default_factory=list)
+    branch_support: dict[str, list[str]] = field(default_factory=dict)
+    branch_answers: dict[str, dict[str, Any]] = field(default_factory=dict)
+    frontier_history: list[dict[str, Any]] = field(default_factory=list)
+    expansion_history: list[dict[str, Any]] = field(default_factory=list)
+    notes: list[str] = field(default_factory=list)
+
+    def seed_frontier(self, entity_id: str | None = None) -> None:
+        if entity_id:
+            self.frontier_entity_ids = self._dedupe_ids([entity_id, *self.frontier_entity_ids])
+        elif not self.frontier_entity_ids and self.channel_id:
+            self.frontier_entity_ids = [self.channel_id]
+
+    def record_branch_result(
+        self,
+        branch_kind: str,
+        candidates: list[HyperedgeCandidate],
+        branch_result: dict[str, Any] | None = None,
+    ) -> None:
+        support_ids = self.branch_support.setdefault(branch_kind, [])
+        for candidate in candidates:
+            if candidate.hyperedge_id not in support_ids:
+                support_ids.append(candidate.hyperedge_id)
+        if branch_result is not None:
+            self.branch_answers[branch_kind] = dict(branch_result)
+
+    def add_frontier(
+        self,
+        iteration: int,
+        candidates: list[HyperedgeCandidate],
+        expansion_state: dict[str, Any] | None = None,
+    ) -> None:
+        seen_hyperedges = set(self.hyperedge_ids)
+        seen_entities = set(self.entity_ids)
+        seen_chunks = set(self.chunk_ids)
+
+        for candidate in candidates:
+            if candidate.hyperedge_id not in seen_hyperedges:
+                self.hyperedge_ids.append(candidate.hyperedge_id)
+                seen_hyperedges.add(candidate.hyperedge_id)
+            for entity_id in candidate.entity_ids:
+                if entity_id not in seen_entities:
+                    self.entity_ids.append(entity_id)
+                    seen_entities.add(entity_id)
+            for chunk_id in candidate.chunk_ids:
+                if chunk_id not in seen_chunks:
+                    self.chunk_ids.append(chunk_id)
+                    seen_chunks.add(chunk_id)
+
+        self.frontier_history.append(
+            {
+                "iteration": iteration,
+                "hyperedge_ids": [candidate.hyperedge_id for candidate in candidates],
+                "frontier": [candidate.to_dict() for candidate in candidates],
+            }
+        )
+        if expansion_state is not None:
+            explored = self._dedupe_ids(expansion_state.get("explored_entity_ids", []))
+            selected = self._dedupe_ids(expansion_state.get("selected_entity_ids", []))
+            seen_explored = set(self.explored_entity_ids)
+            for entity_id in explored:
+                if entity_id not in seen_explored:
+                    self.explored_entity_ids.append(entity_id)
+                    seen_explored.add(entity_id)
+            self.frontier_entity_ids = selected
+            self.expansion_history.append(
+                {
+                    "iteration": iteration,
+                    "selected_entity_ids": selected,
+                    "explored_entity_ids": explored,
+                    "candidate_entities": list(expansion_state.get("candidate_entities", [])),
+                    "reason": str(expansion_state.get("reason", "") or "").strip(),
+                }
+            )
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "channel_id": self.channel_id,
+            "frontier_entity_ids": list(self.frontier_entity_ids),
+            "explored_entity_ids": list(self.explored_entity_ids),
+            "hyperedge_ids": list(self.hyperedge_ids),
+            "entity_ids": list(self.entity_ids),
+            "chunk_ids": list(self.chunk_ids),
+            "branch_support": dict(self.branch_support),
+            "branch_answers": dict(self.branch_answers),
+            "frontier_history": list(self.frontier_history),
+            "expansion_history": list(self.expansion_history),
+            "notes": list(self.notes),
+        }
+
+    @staticmethod
+    def _dedupe_ids(values: list[Any]) -> list[str]:
+        deduped: list[str] = []
+        for value in values:
+            text = str(value).strip()
+            if text and text not in deduped:
+                deduped.append(text)
+        return deduped
 
 
 @dataclass(slots=True)
@@ -116,10 +229,76 @@ class EvidenceSubgraph:
     frontier_history: list[dict[str, Any]] = field(default_factory=list)
     control_history: list[dict[str, Any]] = field(default_factory=list)
     expansion_history: list[dict[str, Any]] = field(default_factory=list)
+    entity_channels: dict[str, EntityChannelState] = field(default_factory=dict)
     notes: list[str] = field(default_factory=list)
 
     def seed_expansion_frontier(self, entity_ids: list[str]) -> None:
         self.expansion_frontier_entity_ids = self._dedupe_ids(entity_ids)
+        self.seed_entity_channels(entity_ids)
+
+    def seed_entity_channels(self, entity_ids: list[str]) -> None:
+        for entity_id in self._dedupe_ids(entity_ids):
+            channel = self.entity_channels.get(entity_id)
+            if channel is None:
+                channel = EntityChannelState(channel_id=entity_id)
+                self.entity_channels[entity_id] = channel
+            channel.seed_frontier(entity_id)
+
+    def ensure_channel(self, channel_id: str) -> EntityChannelState:
+        cleaned = str(channel_id).strip()
+        channel = self.entity_channels.get(cleaned)
+        if channel is None:
+            channel = EntityChannelState(channel_id=cleaned)
+            channel.seed_frontier(cleaned)
+            self.entity_channels[cleaned] = channel
+        return channel
+
+    def active_channel_ids(self) -> list[str]:
+        if not self.entity_channels:
+            return []
+        active: list[str] = []
+        for channel_id, channel in self.entity_channels.items():
+            if channel.frontier_entity_ids or not channel.explored_entity_ids:
+                active.append(channel_id)
+        return active or list(self.entity_channels)
+
+    def channel_payload(self, channel_id: str) -> dict[str, Any]:
+        channel = self.ensure_channel(channel_id)
+        return {
+            "hyperedge_ids": list(channel.hyperedge_ids),
+            "entity_ids": list(channel.entity_ids),
+            "chunk_ids": list(channel.chunk_ids),
+            "expansion_frontier_entity_ids": list(channel.frontier_entity_ids),
+            "explored_entity_ids": list(channel.explored_entity_ids),
+            "branch_support": dict(channel.branch_support),
+            "branch_answers": dict(channel.branch_answers),
+            "frontier_history": list(channel.frontier_history),
+            "expansion_history": list(channel.expansion_history),
+            "notes": list(channel.notes),
+        }
+
+    def record_channel_branch_result(
+        self,
+        channel_id: str,
+        branch_kind: str,
+        candidates: list[HyperedgeCandidate],
+        branch_result: dict[str, Any] | None = None,
+    ) -> None:
+        channel = self.ensure_channel(channel_id)
+        channel.record_branch_result(branch_kind, candidates, branch_result)
+
+    def add_channel_frontier(
+        self,
+        channel_id: str,
+        iteration: int,
+        candidates: list[HyperedgeCandidate],
+        evidence_items: list[EvidenceItem],
+        expansion_state: dict[str, Any] | None = None,
+    ) -> None:
+        channel = self.ensure_channel(channel_id)
+        channel.add_frontier(iteration, candidates, expansion_state)
+        self._ingest_candidates(candidates)
+        self._ingest_evidence(evidence_items)
 
     def record_branch_result(
         self,
@@ -142,32 +321,8 @@ class EvidenceSubgraph:
         control_state: dict[str, Any],
         expansion_state: dict[str, Any] | None = None,
     ) -> None:
-        seen_hyperedges = set(self.hyperedge_ids)
-        seen_entities = set(self.entity_ids)
-        seen_chunks = set(self.chunk_ids)
-        seen_evidence_ids = {item.evidence_id for item in self.evidence}
-
-        for candidate in candidates:
-            if candidate.hyperedge_id not in seen_hyperedges:
-                self.hyperedge_ids.append(candidate.hyperedge_id)
-                seen_hyperedges.add(candidate.hyperedge_id)
-            for entity_id in candidate.entity_ids:
-                if entity_id not in seen_entities:
-                    self.entity_ids.append(entity_id)
-                    seen_entities.add(entity_id)
-            for chunk_id in candidate.chunk_ids:
-                if chunk_id not in seen_chunks:
-                    self.chunk_ids.append(chunk_id)
-                    seen_chunks.add(chunk_id)
-
-        for item in evidence_items:
-            if item.evidence_id in seen_evidence_ids:
-                continue
-            self.evidence.append(item)
-            seen_evidence_ids.add(item.evidence_id)
-            if item.chunk_id and item.chunk_id not in seen_chunks:
-                self.chunk_ids.append(item.chunk_id)
-                seen_chunks.add(item.chunk_id)
+        self._ingest_candidates(candidates)
+        self._ingest_evidence(evidence_items)
 
         self.frontier_history.append(
             {
@@ -220,10 +375,43 @@ class EvidenceSubgraph:
             "frontier_history": list(self.frontier_history),
             "control_history": list(self.control_history),
             "expansion_history": list(self.expansion_history),
+            "entity_channels": {
+                channel_id: channel.to_dict() for channel_id, channel in self.entity_channels.items()
+            },
+            "active_channel_ids": self.active_channel_ids(),
             "notes": list(self.notes),
             "evidence": [item.to_dict() for item in self.evidence],
             "summary_text": self.to_text(),
         }
+
+    def _ingest_candidates(self, candidates: list[HyperedgeCandidate]) -> None:
+        seen_hyperedges = set(self.hyperedge_ids)
+        seen_entities = set(self.entity_ids)
+        seen_chunks = set(self.chunk_ids)
+        for candidate in candidates:
+            if candidate.hyperedge_id not in seen_hyperedges:
+                self.hyperedge_ids.append(candidate.hyperedge_id)
+                seen_hyperedges.add(candidate.hyperedge_id)
+            for entity_id in candidate.entity_ids:
+                if entity_id not in seen_entities:
+                    self.entity_ids.append(entity_id)
+                    seen_entities.add(entity_id)
+            for chunk_id in candidate.chunk_ids:
+                if chunk_id not in seen_chunks:
+                    self.chunk_ids.append(chunk_id)
+                    seen_chunks.add(chunk_id)
+
+    def _ingest_evidence(self, evidence_items: list[EvidenceItem]) -> None:
+        seen_evidence_ids = {item.evidence_id for item in self.evidence}
+        seen_chunks = set(self.chunk_ids)
+        for item in evidence_items:
+            if item.evidence_id in seen_evidence_ids:
+                continue
+            self.evidence.append(item)
+            seen_evidence_ids.add(item.evidence_id)
+            if item.chunk_id and item.chunk_id not in seen_chunks:
+                self.chunk_ids.append(item.chunk_id)
+                seen_chunks.add(item.chunk_id)
 
     @staticmethod
     def _dedupe_ids(values: list[Any]) -> list[str]:

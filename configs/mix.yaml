@@ -1,0 +1,55 @@
+dataset:
+  root: datasets/mix
+
+runtime:
+  base_run_dir: runs/mix
+  log_level: INFO
+
+retrieval:
+  entity_top_k: 5
+  topic_entity_link_top_k: 1
+  topic_entity_link_threshold: 0.60
+  hyperedge_top_k: 3
+  chunk_top_k: 4
+  evidence_keep: 6
+  taskframe_registration_threshold: 0.40
+  lexical_anchor_top_k: 12
+  branch_candidate_pool: 12
+  focus_match_min_score: 0.12
+
+reasoning:
+  max_steps: 3
+  max_stalled_steps: 1
+  coarse_top_k: 6
+  llm_top_k: 3
+  min_fresh_thoughts_per_step: 1
+  max_considered_without_selection: 3
+  thought_score_threshold: 0.12
+  min_verified_reasoning: 2
+  evidence_score_threshold: 0.20
+  selection_penalty: 0.18
+  fresh_thought_bonus: 0.08
+  branch_top_k: 3
+  evidence_top_k_per_branch: 2
+  min_branch_agreement: 2
+  base_constraint_weight: 1.0
+  base_relation_weight: 1.0
+  base_anchor_weight: 1.0
+  fused_novelty_weight: 0.12
+  fused_penalty_weight: 0.18
+  fused_focus_weight: 0.16
+  control_weight_step: 0.35
+
+llm:
+  api_key_env: OPENAI_API_KEY
+  base_url_env: OPENAI_BASE_URL
+  model: gpt-4o-mini
+  embedding_model: text-embedding-3-small
+  timeout_seconds: 120
+  max_retries: 3
+  retry_backoff_seconds: 2.0
+  temperature: 0.1
+  use_mock: false
+
+prompts:
+  dir: prompts

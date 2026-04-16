@@ -9,6 +9,7 @@ from ..llm.views import build_llm_evidence_view
 from ..logging_utils import TraceStore
 from ..models import EvidenceSubgraph, RetrievalControlState, TaskFrame, ThoughtGraph, ThoughtState
 from ..retrieval.evidence import EvidenceRetriever
+from ..utils import normalize_label
 from .operations import ThoughtOperationExecutor
 from .taskframe import TaskFrameBuilder, TaskFrameRegistry
 
@@ -85,6 +86,37 @@ class ThoughtController:
                     "notes": "Initial anchoring from topic entities and answer-type hints.",
                 },
             )
+            for channel_id in evidence_subgraph.active_channel_ids():
+                channel_candidates = [
+                    candidate
+                    for candidate in initial_candidates
+                    if channel_id in candidate.entity_ids or channel_id in candidate.support_entities
+                ]
+                evidence_subgraph.record_channel_branch_result(
+                    channel_id,
+                    "initial",
+                    channel_candidates,
+                    {
+                        "branch_kind": "initial",
+                        "channel_id": channel_id,
+                        "query_texts": [question, *task_frame.topic_entities],
+                        "recommended_hyperedges": [candidate.to_dict() for candidate in channel_candidates],
+                        "control_state": control_state.to_dict(),
+                        "notes": "Initial channel anchoring from grounded topic entities.",
+                    },
+                )
+                evidence_subgraph.add_channel_frontier(
+                    channel_id,
+                    iteration=0,
+                    candidates=channel_candidates,
+                    evidence_items=[],
+                    expansion_state={
+                        "selected_entity_ids": [channel_id],
+                        "explored_entity_ids": [],
+                        "candidate_entities": [],
+                        "reason": "Seeded entity channel from initial anchor entity.",
+                    },
+                )
             evidence_subgraph.add_frontier(
                 iteration=0,
                 candidates=initial_candidates,
@@ -107,6 +139,7 @@ class ThoughtController:
             "frontier_hyperedge_ids": [],
             "frontier": [],
             "branch_contributions": {},
+            "channel_frontiers": {},
             "preferred_branches": [],
             "coverage_summary": {},
             "answer_hypotheses": [],
@@ -120,62 +153,109 @@ class ThoughtController:
             self._log_control_state(control_state)
             self.logger.info("Iterative reasoning step %s/%s", iteration, self.config.reasoning.max_steps)
 
-            branch_candidates: dict[str, list[Any]] = {}
+            channel_frontiers: dict[str, list[Any]] = {}
+            channel_merge_results: dict[str, dict[str, Any]] = {}
             branch_results: list[dict[str, Any]] = []
             branch_thoughts: list[ThoughtState] = []
+            active_channel_ids = evidence_subgraph.active_channel_ids() or list(task_frame.initial_entity_ids)
 
-            for branch_kind in ("constraint", "relation", "anchor"):
-                previous_branch = branch_heads.get(branch_kind)
-                exclude_hyperedge_ids = set(evidence_subgraph.branch_support.get(branch_kind, []))
-                candidates = self.evidence_retriever.retrieve_branch_candidates(
+            for channel_id in active_channel_ids:
+                channel_payload = evidence_subgraph.channel_payload(channel_id)
+                channel_branch_candidates: dict[str, list[Any]] = {}
+
+                for branch_kind in ("constraint", "relation", "anchor"):
+                    branch_head_key = f"{channel_id}::{branch_kind}"
+                    previous_branch = branch_heads.get(branch_head_key)
+                    exclude_hyperedge_ids = set(channel_payload.get("branch_support", {}).get(branch_kind, []))
+                    candidates = self.evidence_retriever.retrieve_branch_candidates(
+                        question=question,
+                        task_frame=task_frame,
+                        branch_kind=branch_kind,
+                        control_state=control_state,
+                        evidence_subgraph=channel_payload,
+                        exclude_hyperedge_ids=exclude_hyperedge_ids,
+                        channel_id=channel_id,
+                    )
+                    selected_candidates = candidates[: self.config.reasoning.branch_top_k]
+                    channel_branch_candidates[branch_kind] = selected_candidates
+
+                    branch_result = self._build_branch_result(branch_kind, selected_candidates, control_state)
+                    branch_result["channel_id"] = channel_id
+                    branch_result["channel_label"] = normalize_label(channel_id)
+                    branch_result["query_texts"] = list(
+                        control_state.branch_queries.get(f"{channel_id}::{branch_kind}", control_state.branch_queries.get(branch_kind, []))
+                    )
+                    branch_result["control_state"] = control_state.to_dict()
+                    branch_result["notes"] = (
+                        f"{branch_kind} branch ranking for channel {normalize_label(channel_id)} is retrieval/scoring-led."
+                    )
+
+                    thought_id = self._next_id("th")
+                    branch_evidence = self.evidence_retriever.build_evidence_items(
+                        thought_id=thought_id,
+                        branch_kind=branch_kind,
+                        candidates=selected_candidates[: self.config.reasoning.evidence_top_k_per_branch],
+                        limit=self.config.reasoning.evidence_top_k_per_branch,
+                    )
+                    parent_ids = self._branch_parent_ids(previous_branch, last_merge_thought, initial_anchor_thought, root_thought)
+                    self.executor.retire_previous_branch(previous_branch)
+                    branch_thought = self.executor.create_branch_thought(
+                        thought_id=thought_id,
+                        task_frame=task_frame,
+                        branch_kind=branch_kind,
+                        iteration=iteration,
+                        branch_result=branch_result,
+                        candidates=selected_candidates,
+                        evidence_items=branch_evidence,
+                        parent_ids=parent_ids,
+                    )
+                    thought_graph.add_thought(branch_thought)
+                    branch_heads[branch_head_key] = branch_thought
+                    branch_thoughts.append(branch_thought)
+                    evidence_subgraph.record_branch_result(branch_kind, selected_candidates, branch_result)
+                    evidence_subgraph.record_channel_branch_result(channel_id, branch_kind, selected_candidates, branch_result)
+                    self.registry.register_reasoning(task_frame, branch_thought)
+                    branch_results.append(branch_result)
+
+                if not any(channel_branch_candidates.values()):
+                    continue
+
+                channel_frontier, channel_merge_result = self.evidence_retriever.fuse_frontier(
+                    task_frame=task_frame,
+                    branch_candidates=channel_branch_candidates,
+                    evidence_subgraph=channel_payload,
+                    control_state=control_state,
+                    top_k=self.config.reasoning.branch_top_k,
+                )
+                channel_merge_result["channel_id"] = channel_id
+                channel_merge_result["channel_label"] = normalize_label(channel_id)
+                channel_merge_results[channel_id] = channel_merge_result
+                channel_frontiers[channel_id] = channel_frontier
+                expansion_state = self._select_expansion_frontier_entities(
                     question=question,
                     task_frame=task_frame,
-                    branch_kind=branch_kind,
+                    frontier_candidates=channel_frontier,
                     control_state=control_state,
-                    evidence_subgraph=evidence_subgraph.to_dict(),
-                    exclude_hyperedge_ids=exclude_hyperedge_ids,
+                    evidence_subgraph=evidence_subgraph,
+                    channel_id=channel_id,
+                    channel_payload=channel_payload,
                 )
-                selected_candidates = candidates[: self.config.reasoning.branch_top_k]
-                branch_candidates[branch_kind] = selected_candidates
-
-                branch_result = self._build_branch_result(branch_kind, selected_candidates, control_state)
-                branch_result["query_texts"] = list(control_state.branch_queries.get(branch_kind, []))
-                branch_result["control_state"] = control_state.to_dict()
-                branch_result["notes"] = f"{branch_kind} branch ranking is retrieval/scoring-led."
-
-                thought_id = self._next_id("th")
-                branch_evidence = self.evidence_retriever.build_evidence_items(
-                    thought_id=thought_id,
-                    branch_kind=branch_kind,
-                    candidates=selected_candidates[: self.config.reasoning.evidence_top_k_per_branch],
-                    limit=self.config.reasoning.evidence_top_k_per_branch,
-                )
-                parent_ids = self._branch_parent_ids(previous_branch, last_merge_thought, initial_anchor_thought, root_thought)
-                self.executor.retire_previous_branch(previous_branch)
-                branch_thought = self.executor.create_branch_thought(
-                    thought_id=thought_id,
-                    task_frame=task_frame,
-                    branch_kind=branch_kind,
+                evidence_subgraph.add_channel_frontier(
+                    channel_id=channel_id,
                     iteration=iteration,
-                    branch_result=branch_result,
-                    candidates=selected_candidates,
-                    evidence_items=branch_evidence,
-                    parent_ids=parent_ids,
+                    candidates=channel_frontier,
+                    evidence_items=[],
+                    expansion_state=expansion_state,
                 )
-                thought_graph.add_thought(branch_thought)
-                branch_heads[branch_kind] = branch_thought
-                branch_thoughts.append(branch_thought)
-                evidence_subgraph.record_branch_result(branch_kind, selected_candidates, branch_result)
-                self.registry.register_reasoning(task_frame, branch_thought)
-                branch_results.append(branch_result)
 
-            if not branch_results:
+            if not branch_results or not channel_frontiers:
                 termination_reason = "no_branch_updates"
                 break
 
-            global_frontier, latest_merge_result = self.evidence_retriever.fuse_frontier(
+            global_frontier, latest_merge_result = self.evidence_retriever.combine_channel_frontiers(
                 task_frame=task_frame,
-                branch_candidates=branch_candidates,
+                channel_frontiers=channel_frontiers,
+                channel_merge_results=channel_merge_results,
                 evidence_subgraph=evidence_subgraph.to_dict(),
                 control_state=control_state,
                 top_k=self.config.reasoning.branch_top_k,
@@ -186,19 +266,12 @@ class ThoughtController:
                 candidates=global_frontier,
                 limit=min(self.config.retrieval.evidence_keep, len(global_frontier)),
             )
-            expansion_state = self._select_expansion_frontier_entities(
-                question=question,
-                task_frame=task_frame,
-                frontier_candidates=global_frontier,
-                control_state=control_state,
-                evidence_subgraph=evidence_subgraph,
-            )
             evidence_subgraph.add_frontier(
                 iteration=iteration,
                 candidates=global_frontier,
                 evidence_items=frontier_evidence,
                 control_state=control_state.to_dict(),
-                expansion_state=expansion_state,
+                expansion_state=self._aggregate_channel_expansion_state(evidence_subgraph, active_channel_ids),
             )
 
             merge_thought = self.executor.create_merge_thought(
@@ -233,6 +306,7 @@ class ThoughtController:
                     "iteration": iteration,
                     "retrieval_control_state": control_state.to_dict(),
                     "branch_results": branch_results,
+                    "channel_merge_results": channel_merge_results,
                     "merge_result": latest_merge_result,
                     "sufficiency": sufficiency,
                 },
@@ -243,6 +317,7 @@ class ThoughtController:
                     "iteration": iteration,
                     "retrieval_control_state": control_state.to_dict(),
                     "branch_results": branch_results,
+                    "channel_merge_results": channel_merge_results,
                     "merge_result": latest_merge_result,
                     "sufficiency": sufficiency,
                 },
@@ -422,12 +497,13 @@ class ThoughtController:
         self,
         evidence_subgraph: EvidenceSubgraph,
         merge_result: dict[str, Any],
-    ) -> tuple[int, int, tuple[str, ...], tuple[str, ...]]:
+    ) -> tuple[int, int, tuple[str, ...], tuple[str, ...], tuple[str, ...]]:
         return (
             len(evidence_subgraph.hyperedge_ids),
             len(evidence_subgraph.chunk_ids),
             tuple(str(item) for item in merge_result.get("frontier_hyperedge_ids", [])),
             tuple(str(item) for item in merge_result.get("answer_hypotheses", [])),
+            tuple(str(item) for item in evidence_subgraph.active_channel_ids()),
         )
 
     def _next_id(self, prefix: str) -> str:
@@ -441,11 +517,24 @@ class ThoughtController:
         frontier_candidates: list[Any],
         control_state: RetrievalControlState,
         evidence_subgraph: EvidenceSubgraph,
+        *,
+        channel_id: str = "",
+        channel_payload: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
-        current_frontier_entities = list(evidence_subgraph.expansion_frontier_entity_ids)
-        if not current_frontier_entities and not evidence_subgraph.explored_entity_ids:
-            current_frontier_entities = list(task_frame.initial_entity_ids)
-        exclude_entity_ids = set(current_frontier_entities) | set(evidence_subgraph.explored_entity_ids)
+        payload = channel_payload or (
+            evidence_subgraph.channel_payload(channel_id) if channel_id else evidence_subgraph.to_dict()
+        )
+        current_frontier_entities = [
+            str(item).strip()
+            for item in payload.get("expansion_frontier_entity_ids", [])
+            if str(item).strip()
+        ]
+        explored_entity_ids = {
+            str(item).strip() for item in payload.get("explored_entity_ids", []) if str(item).strip()
+        }
+        if not current_frontier_entities and not explored_entity_ids:
+            current_frontier_entities = [channel_id] if channel_id else list(task_frame.initial_entity_ids)
+        exclude_entity_ids = set(current_frontier_entities) | explored_entity_ids
         coarse_candidates = self.evidence_retriever.rank_expansion_entities(
             question=question,
             task_frame=task_frame,
@@ -487,10 +576,40 @@ class ThoughtController:
             "candidate_entities": coarse_candidates,
             "reason": reason,
         }
+        if channel_id:
+            payload["channel_id"] = channel_id
         self.trace_store.log_event("expansion_frontier_selected", payload)
         self.logger.info(
-            "Selected %s expansion frontier entities from %s coarse candidates",
+            "Selected %s expansion frontier entities from %s coarse candidates%s",
             len(selected_entity_ids),
             len(coarse_candidates),
+            f" for channel {normalize_label(channel_id)}" if channel_id else "",
         )
         return payload
+
+    def _aggregate_channel_expansion_state(
+        self,
+        evidence_subgraph: EvidenceSubgraph,
+        channel_ids: list[str],
+    ) -> dict[str, Any]:
+        selected: list[str] = []
+        explored: list[str] = []
+        candidate_entities: list[dict[str, Any]] = []
+        for channel_id in channel_ids:
+            channel = evidence_subgraph.ensure_channel(channel_id)
+            for entity_id in channel.frontier_entity_ids:
+                if entity_id not in selected:
+                    selected.append(entity_id)
+            for entity_id in channel.explored_entity_ids:
+                if entity_id not in explored:
+                    explored.append(entity_id)
+            if channel.expansion_history:
+                latest_candidates = channel.expansion_history[-1].get("candidate_entities", [])
+                if isinstance(latest_candidates, list):
+                    candidate_entities.extend(latest_candidates[:2])
+        return {
+            "selected_entity_ids": selected,
+            "explored_entity_ids": explored,
+            "candidate_entities": candidate_entities[:6],
+            "reason": "Aggregated next frontier entities across entity-parallel channels.",
+        }

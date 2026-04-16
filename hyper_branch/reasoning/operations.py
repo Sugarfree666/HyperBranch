@@ -68,14 +68,21 @@ class ThoughtOperationExecutor:
         evidence_items: list[EvidenceItem],
         parent_ids: list[str],
     ) -> ThoughtState:
+        channel_id = str(branch_result.get("channel_id", "") or "").strip()
         recommended = [
             f"{candidate.hyperedge_id} ({candidate.branch_score:.3f})"
             for candidate in candidates[:3]
         ]
         content = (
-            f"{branch_kind} operator recommended hyperedges: " + " | ".join(recommended)
+            f"{normalize_channel(channel_id)} / {branch_kind} operator recommended hyperedges: " + " | ".join(recommended)
+            if channel_id and recommended
+            else f"{branch_kind} operator recommended hyperedges: " + " | ".join(recommended)
             if recommended
-            else f"{branch_kind} operator found no useful hyperedges at iteration {iteration}"
+            else (
+                f"{normalize_channel(channel_id)} / {branch_kind} operator found no useful hyperedges at iteration {iteration}"
+                if channel_id
+                else f"{branch_kind} operator found no useful hyperedges at iteration {iteration}"
+            )
         )
         confidence = max((candidate.branch_score for candidate in candidates), default=0.0)
         thought = ThoughtState(
@@ -96,6 +103,7 @@ class ThoughtOperationExecutor:
             metadata={
                 "iteration": iteration,
                 "branch_kind": branch_kind,
+                "channel_id": channel_id,
                 "selected_hyperedge_ids": [candidate.hyperedge_id for candidate in candidates],
                 "frontier_hyperedges": [candidate.to_dict() for candidate in candidates],
                 "query_texts": list(branch_result.get("query_texts", [])),
@@ -126,6 +134,11 @@ class ThoughtOperationExecutor:
         parent_ids: list[str],
     ) -> ThoughtState:
         frontier_ids = [str(item).strip() for item in merge_result.get("frontier_hyperedge_ids", []) if str(item).strip()]
+        active_channels = [
+            str(item).strip()
+            for item in merge_result.get("channel_frontiers", {})
+            if str(item).strip()
+        ]
         content = (
             "Global frontier: " + " | ".join(frontier_ids[:3])
             if frontier_ids
@@ -153,6 +166,7 @@ class ThoughtOperationExecutor:
                 "frontier_hyperedge_ids": merge_result.get("frontier_hyperedge_ids", []),
                 "answer_hypotheses": merge_result.get("answer_hypotheses", []),
                 "preferred_branches": preferred_branches,
+                "active_channels": active_channels,
                 "branch_contributions": merge_result.get("branch_contributions", {}),
                 "coverage_summary": merge_result.get("coverage_summary", {}),
                 "missing_requirements": merge_result.get("missing_requirements", []),
@@ -236,3 +250,7 @@ class ThoughtOperationExecutor:
             },
         )
         self.logger.info("Created %s thought %s (%s)", thought.kind, thought.thought_id, thought.status)
+
+
+def normalize_channel(channel_id: str) -> str:
+    return channel_id.strip('"') if channel_id else ""

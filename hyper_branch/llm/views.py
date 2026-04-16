@@ -62,6 +62,7 @@ def build_llm_evidence_view(
             {
                 "hyperedge": hyperedge_text,
                 "supporting_branches": branch_membership.get(hyperedge_id, []),
+                "supporting_channels": _candidate_labels(candidate, "supporting_channel_labels", "channel_label", limit=4),
                 "matched_topics": _candidate_labels(candidate, "matched_topic_labels", "matched_topic_entities", limit=4),
                 "core_entities": _candidate_labels(
                     candidate,

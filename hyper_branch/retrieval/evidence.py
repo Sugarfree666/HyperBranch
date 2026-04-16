@@ -138,6 +138,8 @@ class EvidenceRetriever:
         control_state: RetrievalControlState,
         evidence_subgraph: dict[str, Any] | None = None,
         exclude_hyperedge_ids: set[str] | None = None,
+        *,
+        channel_id: str = "",
     ) -> list[HyperedgeCandidate]:
         evidence_subgraph = evidence_subgraph or {}
         connected_entity_ids = [
@@ -155,6 +157,8 @@ class EvidenceRetriever:
         }
         exclude = set(exclude_hyperedge_ids or set())
         query_texts = self._branch_query_texts(question, task_frame, branch_kind, control_state)
+        channel_key = f"{channel_id}::{branch_kind}" if channel_id else branch_kind
+        control_state.branch_queries[channel_key] = list(query_texts)
         control_state.branch_queries[branch_kind] = list(query_texts)
 
         candidates = self._rank_hyperedges(
@@ -172,14 +176,23 @@ class EvidenceRetriever:
             fallback_to_initial_entities=not connected_entity_ids and not explored_entity_ids and not existing_hyperedge_ids,
         )
         filtered = self._apply_control_filter(branch_kind, candidates, control_state)
+        annotated: list[HyperedgeCandidate] = []
+        for candidate in filtered[: self.config.branch_candidate_pool]:
+            if channel_id:
+                candidate.channel_id = channel_id
+                if channel_id not in candidate.supporting_channel_ids:
+                    candidate.supporting_channel_ids.append(channel_id)
+                candidate.notes = [f"channel:{normalize_label(channel_id)}", *candidate.notes]
+            annotated.append(candidate)
         self.logger.info(
-            "Retrieved %s branch candidates for %s with queries=%s and weights=%s",
-            len(filtered),
+            "Retrieved %s branch candidates for %s%s with queries=%s and weights=%s",
+            len(annotated),
             branch_kind,
+            f" on {normalize_label(channel_id)}" if channel_id else "",
             query_texts,
             control_state.branch_weights,
         )
-        return filtered[: self.config.branch_candidate_pool]
+        return annotated
 
     def fuse_frontier(
         self,
@@ -216,6 +229,8 @@ class EvidenceRetriever:
                         chunk_ids=list(candidate.chunk_ids),
                         matched_topic_entities=list(candidate.matched_topic_entities),
                         support_entities=list(candidate.support_entities),
+                        channel_id=candidate.channel_id,
+                        supporting_channel_ids=list(candidate.supporting_channel_ids),
                         supporting_chunks=list(candidate.supporting_chunks),
                         score_breakdown=dict(candidate.score_breakdown),
                         notes=list(candidate.notes),
@@ -240,6 +255,9 @@ class EvidenceRetriever:
                     for entity_id in candidate.support_entities:
                         if entity_id not in entry.support_entities:
                             entry.support_entities.append(entity_id)
+                    for channel_id in candidate.supporting_channel_ids:
+                        if channel_id not in entry.supporting_channel_ids:
+                            entry.supporting_channel_ids.append(channel_id)
                     for entity_id in candidate.matched_topic_entities:
                         if entity_id not in entry.matched_topic_entities:
                             entry.matched_topic_entities.append(entity_id)
@@ -305,6 +323,96 @@ class EvidenceRetriever:
             "missing_requirements": list(control_state.missing_requirements),
             "next_focus": list(control_state.next_focus),
             "notes": "Global frontier fused from explicit branch scores.",
+        }
+        return selected_frontier, merge_result
+
+    def combine_channel_frontiers(
+        self,
+        task_frame: TaskFrame,
+        channel_frontiers: dict[str, list[HyperedgeCandidate]],
+        channel_merge_results: dict[str, dict[str, Any]],
+        evidence_subgraph: dict[str, Any],
+        control_state: RetrievalControlState,
+        top_k: int,
+    ) -> tuple[list[HyperedgeCandidate], dict[str, Any]]:
+        existing_hyperedge_ids = {
+            str(item).strip() for item in evidence_subgraph.get("hyperedge_ids", []) if str(item).strip()
+        }
+        aggregate: dict[str, HyperedgeCandidate] = {}
+        supporting_channels: dict[str, set[str]] = defaultdict(set)
+        branch_contributions: dict[str, list[str]] = defaultdict(list)
+
+        for channel_id, frontier_candidates in channel_frontiers.items():
+            channel_result = channel_merge_results.get(channel_id, {})
+            preferred_branches = [
+                str(item).strip()
+                for item in channel_result.get("preferred_branches", [])
+                if str(item).strip()
+            ]
+            for candidate in frontier_candidates:
+                entry = aggregate.get(candidate.hyperedge_id)
+                if entry is None:
+                    entry = self._clone_candidate(candidate)
+                    aggregate[candidate.hyperedge_id] = entry
+                else:
+                    self._merge_candidate_state(entry, candidate)
+                supporting_channels[candidate.hyperedge_id].add(channel_id)
+                for branch_kind in preferred_branches[:2]:
+                    if candidate.hyperedge_id not in branch_contributions[branch_kind]:
+                        branch_contributions[branch_kind].append(candidate.hyperedge_id)
+
+        combined: list[HyperedgeCandidate] = []
+        for hyperedge_id, candidate in aggregate.items():
+            channel_count = len(supporting_channels[hyperedge_id])
+            repeat_penalty = 1.0 if hyperedge_id in existing_hyperedge_ids else candidate.penalty
+            channel_bonus = 0.08 * max(channel_count - 1, 0)
+            combined_score = max(candidate.fused_score, candidate.branch_score, candidate.score) + channel_bonus - (
+                (self.reasoning_config.fused_penalty_weight if self.reasoning_config else 0.18) * repeat_penalty
+            )
+            candidate.score = combined_score
+            candidate.fused_score = combined_score
+            candidate.supporting_channel_ids = sorted(supporting_channels[hyperedge_id])
+            candidate.notes.append(
+                "channels:" + ",".join(normalize_label(channel_id) for channel_id in candidate.supporting_channel_ids)
+            )
+            candidate.score_breakdown.update(
+                {
+                    "channel_count": channel_count,
+                    "channel_bonus": round(channel_bonus, 4),
+                    "combined_score": round(combined_score, 4),
+                }
+            )
+            combined.append(candidate)
+
+        combined.sort(
+            key=lambda item: (
+                len(item.supporting_channel_ids),
+                item.fused_score,
+                item.coverage_gain,
+                item.novelty_gain,
+            ),
+            reverse=True,
+        )
+        selected_frontier = combined[:top_k]
+        merge_result = {
+            "frontier_hyperedge_ids": [candidate.hyperedge_id for candidate in selected_frontier],
+            "frontier": [candidate.to_dict() for candidate in selected_frontier],
+            "branch_contributions": dict(branch_contributions),
+            "channel_frontiers": {
+                channel_id: [candidate.hyperedge_id for candidate in candidates]
+                for channel_id, candidates in channel_frontiers.items()
+            },
+            "preferred_branches": self._preferred_branches_from_channel_merges(channel_merge_results),
+            "coverage_summary": {
+                "frontier_size": len(selected_frontier),
+                "evidence_hyperedges": len(evidence_subgraph.get("hyperedge_ids", [])),
+                "topic_entity_coverage": self._frontier_topic_coverage(task_frame, selected_frontier),
+                "active_channels": len([channel_id for channel_id, candidates in channel_frontiers.items() if candidates]),
+            },
+            "answer_hypotheses": self._derive_answer_hypotheses(task_frame, selected_frontier),
+            "missing_requirements": list(control_state.missing_requirements),
+            "next_focus": list(control_state.next_focus),
+            "notes": "Global frontier aggregated from entity-parallel channel frontiers.",
         }
         return selected_frontier, merge_result
 
@@ -415,6 +523,7 @@ class EvidenceRetriever:
                         source_edge_ids=self.dataset.graph.adjacency.get(candidate.hyperedge_id, [])[:12],
                         notes=[
                             f"branch:{branch_kind}",
+                            *( [f"channel:{normalize_label(candidate.channel_id)}"] if candidate.channel_id else [] ),
                             f"hyperedge:{normalize_label(candidate.hyperedge_id)}",
                             *candidate.notes[:4],
                         ],
@@ -808,6 +917,76 @@ class EvidenceRetriever:
             reverse=True,
         )
         return ranked
+
+    def _preferred_branches_from_channel_merges(self, channel_merge_results: dict[str, dict[str, Any]]) -> list[str]:
+        scores: dict[str, float] = defaultdict(float)
+        for merge_result in channel_merge_results.values():
+            for index, branch_kind in enumerate(merge_result.get("preferred_branches", [])):
+                cleaned = str(branch_kind).strip()
+                if not cleaned:
+                    continue
+                scores[cleaned] += max(0.0, 1.0 - (0.2 * index))
+        ranked = sorted(scores, key=lambda branch_kind: scores[branch_kind], reverse=True)
+        return ranked
+
+    def _clone_candidate(self, candidate: HyperedgeCandidate) -> HyperedgeCandidate:
+        return HyperedgeCandidate(
+            hyperedge_id=candidate.hyperedge_id,
+            hyperedge_text=candidate.hyperedge_text,
+            score=candidate.score,
+            branch_kind=candidate.branch_kind,
+            branch_score=candidate.branch_score,
+            fused_score=candidate.fused_score,
+            coverage_gain=candidate.coverage_gain,
+            constraint_gain=candidate.constraint_gain,
+            relation_gain=candidate.relation_gain,
+            connector_gain=candidate.connector_gain,
+            novelty_gain=candidate.novelty_gain,
+            focus_gain=candidate.focus_gain,
+            penalty=candidate.penalty,
+            entity_ids=list(candidate.entity_ids),
+            chunk_ids=list(candidate.chunk_ids),
+            matched_topic_entities=list(candidate.matched_topic_entities),
+            support_entities=list(candidate.support_entities),
+            channel_id=candidate.channel_id,
+            supporting_channel_ids=list(candidate.supporting_channel_ids),
+            supporting_chunks=list(candidate.supporting_chunks),
+            score_breakdown=dict(candidate.score_breakdown),
+            notes=list(candidate.notes),
+            reason=candidate.reason,
+        )
+
+    def _merge_candidate_state(self, entry: HyperedgeCandidate, candidate: HyperedgeCandidate) -> None:
+        entry.branch_score = max(entry.branch_score, candidate.branch_score)
+        entry.fused_score = max(entry.fused_score, candidate.fused_score)
+        entry.coverage_gain = max(entry.coverage_gain, candidate.coverage_gain)
+        entry.constraint_gain = max(entry.constraint_gain, candidate.constraint_gain)
+        entry.relation_gain = max(entry.relation_gain, candidate.relation_gain)
+        entry.connector_gain = max(entry.connector_gain, candidate.connector_gain)
+        entry.novelty_gain = max(entry.novelty_gain, candidate.novelty_gain)
+        entry.focus_gain = max(entry.focus_gain, candidate.focus_gain)
+        entry.penalty = max(entry.penalty, candidate.penalty)
+        for entity_id in candidate.entity_ids:
+            if entity_id not in entry.entity_ids:
+                entry.entity_ids.append(entity_id)
+        for chunk_id in candidate.chunk_ids:
+            if chunk_id not in entry.chunk_ids:
+                entry.chunk_ids.append(chunk_id)
+        for entity_id in candidate.support_entities:
+            if entity_id not in entry.support_entities:
+                entry.support_entities.append(entity_id)
+        for entity_id in candidate.matched_topic_entities:
+            if entity_id not in entry.matched_topic_entities:
+                entry.matched_topic_entities.append(entity_id)
+        for channel_id in candidate.supporting_channel_ids:
+            if channel_id not in entry.supporting_channel_ids:
+                entry.supporting_channel_ids.append(channel_id)
+        for chunk_text in candidate.supporting_chunks:
+            if chunk_text not in entry.supporting_chunks:
+                entry.supporting_chunks.append(chunk_text)
+        for note in candidate.notes:
+            if note not in entry.notes:
+                entry.notes.append(note)
 
     def _frontier_topic_coverage(self, task_frame: TaskFrame, frontier: list[HyperedgeCandidate]) -> float:
         if not task_frame.topic_entities:
