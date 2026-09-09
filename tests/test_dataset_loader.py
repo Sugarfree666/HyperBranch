@@ -52,7 +52,7 @@ class HypergraphDatabaseTest(unittest.TestCase):
             _write_vectors(
                 root / "vdb_hyperedges.json",
                 "hyperedge_name",
-                [("H1", [1.0, 0.0]), ("H2", [0.0, 1.0]), ("H3", [0.0, 1.0])],
+                [("H1", [1.0, 0.0]), ("H2", [0.0, 1.0]), ("H3", [0.4, 0.9165])],
             )
             _write_vectors(
                 root / "vdb_chunks.json",
@@ -71,6 +71,11 @@ class HypergraphDatabaseTest(unittest.TestCase):
                 candidates,
                 FixedEmbedder([0.0, 1.0]),
             )
+            path_ranked = database.rank(
+                "Which path is relevant?",
+                {"H2": {"H1", "H3"}, "H3": set()},
+                FixedEmbedder([1.0, 0.0]),
+            )
 
         self.assertEqual(candidates, {"H1": set(), "H2": {"H1"}})
         self.assertEqual(vector_linked_candidates, candidates)
@@ -83,9 +88,24 @@ class HypergraphDatabaseTest(unittest.TestCase):
         database._entity_ids_by_name[_lookup_key("A")].append("B")
         self.assertEqual(database._link_entities("A (film)", FixedEmbedder([0.0, 1.0])), ["B"])
         self.assertEqual([item["id"] for item in ranked], ["H2", "H1"])
-        self.assertEqual(ranked[0]["chunks"], [("C2", "B connects to the second hyperedge.")])
+        self.assertEqual(
+            ranked[0]["chunks"],
+            [
+                ("C1", "A and B occur in the same source chunk."),
+                ("C2", "B connects to the second hyperedge."),
+            ],
+        )
         self.assertEqual(ranked[0]["first_hop_texts"], ["H1"])
         self.assertNotIn("H3", [item["id"] for item in ranked])
+        self.assertEqual([item["id"] for item in path_ranked], ["H2", "H3"])
+        self.assertEqual(path_ranked[0]["first_hop_texts"], ["H1"])
+        self.assertEqual(
+            path_ranked[0]["chunks"],
+            [
+                ("C1", "A and B occur in the same source chunk."),
+                ("C2", "B connects to the second hyperedge."),
+            ],
+        )
 
 
 class FixedEmbedder:

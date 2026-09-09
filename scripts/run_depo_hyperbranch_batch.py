@@ -222,6 +222,26 @@ def main() -> int:
                 encoding="utf-8",
             )
             print(f"{args.dataset} #{index}: {result['final_answer']['answer']}")
+            completed_questions = [
+                (completed_index, completed_item)
+                for completed_index, completed_item in indexed_questions
+                if (output_dir / f"{completed_index:05d}" / "result.json").exists()
+            ]
+            if len(completed_questions) % 10 == 0:
+                score_file = save_scores(
+                    args.dataset,
+                    run_id,
+                    output_dir,
+                    completed_questions,
+                    question_file,
+                    question_structure_override,
+                )
+                score = json.loads(score_file.read_text(encoding="utf-8"))
+                print(
+                    f"checkpoint={len(completed_questions)}/{len(indexed_questions)} "
+                    f"EM={score['overall']['em']:.4f} "
+                    f"F1={score['overall']['f1']:.4f}"
+                )
         except Exception as exc:
             print(f"{args.dataset} #{index} failed: {exc}", file=sys.stderr)
 

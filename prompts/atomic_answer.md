@@ -4,18 +4,16 @@ The input contains:
 - `original_question`: global context for disambiguation.
 - `atomic_question`: the question to answer.
 - `dependency_context`: answers to prerequisite questions.
-- `evidence_blocks`: retrieved source chunks ordered by relevance. Each block contains only a chunk title and its source text.
+- `evidence_blocks`: retrieved source chunks ordered by relevance.
 
 Apply the following procedure silently:
 
-1. Identify the exact answer target in `atomic_question`: its subject, relation, direction, answer type, scope, and any temporal, comparative, or other constraint. Use `original_question` only to resolve ambiguity in that target.
-2. Prefer facts directly supported by the supplied evidence or usable dependency answers. For each candidate answer, verify that its supporting statement has the requested subject, relation direction, and constraint. Do not choose a merely related entity, a different role, or the opposite endpoint of a date range.
-3. Read source chunks in relevance order, but do not assume the first mentioned entity is the answer. Combine facts across chunks only when their entities and relation direction support the required reasoning chain.
-4. Return only the minimal answer span, never a full evidence sentence or claim. Match the granularity requested by the question: return an entity or title without its surrounding predicate or type label; return a full supported date for a date question, but only the year for a question explicitly asking for a year; and return a numeric value with a unit only when the question asks for a measurement rather than a count. Preserve qualifiers only when they are necessary to identify the requested answer. Omit unrequested appositives, explanations, and parenthetical statistics.
-5. For comparison or selection questions, return exactly one stated candidate that satisfies the comparison. For polar questions, return only `yes` or `no`. Do not answer a non-polar question with `yes` or `no`.
-6. Do not paraphrase, normalize, or add explanation when the evidence states the answer. If the supplied evidence and dependencies do not provide a usable answer, use reliable general knowledge to fill the missing link and give the best answer to the atomic question.
-7. For a composed relation, trace its path before selecting an answer. A paternal or maternal grandparent is the subject's father’s or mother’s parent with the requested gender; a father-, mother-, or child-in-law is the respective relative of the subject's spouse. Return the requested endpoint, not an intermediate relative.
-8. Before returning, perform an answer-role and granularity check. Return the requested person, organization, role, place level, work, date, quantity, or expression—not a related container, member, creator, performer, subject, effect, or location at another level. For a shared property, namesake, or translation, return that property or expression rather than an entity mentioned in the premise.
+1. Treat the answer as the variable requested by `atomic_question`. Determine its subject, relation direction, expected type, scope, and constraints. Use `original_question` only to resolve ambiguity.
+2. Check all supplied evidence and usable dependency answers before choosing an answer. Verify that the supporting statement has the requested subject, relation direction, and constraint. Do not select an entity merely because it appears first or frequently, or because it has a related but different role.
+3. When the evidence states the answer, return the shortest complete span that answers the question. Preserve the source form of names, numbers, and dates, but omit unrequested predicates, type labels, appositives, and surrounding context.
+4. Perform the operation requested by the question, including comparison, selection, shared-property identification, and polar judgment. Return exactly one stated candidate for comparison or selection questions. Return only `yes` or `no` for a polar question; do not answer a non-polar question with `yes` or `no`.
+5. Use reliable general knowledge only when the supplied evidence and dependency answers are insufficient.
+6. Before returning, substitute the answer into the question and verify its type, granularity, relation direction, and constraints. Return the requested person, organization, role, place, work, date, quantity, or expression, not a related entity, container, member, creator, performer, subject, effect, or location at another level.
 
 Return strict JSON only:
 {
