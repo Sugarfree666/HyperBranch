@@ -29,13 +29,26 @@ def main() -> int:
     parser.add_argument("--indices", type=int, nargs="+", help="Explicit 1-based question indices.")
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--llm-model", default="gpt-4o-mini")
+    parser.add_argument(
+        "--include-previous-answer",
+        action="store_true",
+        help="Provide the saved leaf answer as a candidate for evidence-based verification.",
+    )
+    parser.add_argument(
+        "--prompt-file",
+        default="prompts/atomic_answer.md",
+        help="Prompt path, relative to the project root unless absolute.",
+    )
     args = parser.parse_args()
     if args.indices is None and (args.start is None or args.end is None):
         parser.error("provide --indices or both --start and --end")
 
     config = yaml.safe_load((PROJECT_ROOT / "configs" / f"{args.dataset}.yaml").read_text(encoding="utf-8"))
     questions = json.loads((PROJECT_ROOT / "questions" / args.dataset / "questions.json").read_text(encoding="utf-8"))
-    prompt = (PROJECT_ROOT / "prompts" / "atomic_answer.md").read_text(encoding="utf-8").strip()
+    prompt_path = Path(args.prompt_file)
+    if not prompt_path.is_absolute():
+        prompt_path = PROJECT_ROOT / prompt_path
+    prompt = prompt_path.read_text(encoding="utf-8").strip()
     client = OpenAIClient(
         api_key=os.environ["OPENAI_API_KEY"],
         model=args.llm_model,
@@ -57,19 +70,18 @@ def main() -> int:
             source = json.loads(source_path.read_text(encoding="utf-8"))
             leaf = source["nodes"][-1]
             question = questions[index - 1]["question"].strip()
+            prompt_input = {
+                "original_question": question,
+                "atomic_question": leaf["rewritten_question"],
+                # The saved leaf question has dependency placeholders substituted already.
+                "dependency_context": [],
+                "evidence_blocks": leaf["evidence_blocks"],
+            }
+            if args.include_previous_answer:
+                prompt_input["previous_answer"] = leaf["answer"]
             response = client.chat_json(
                 prompt,
-                json.dumps(
-                    {
-                        "original_question": question,
-                        "atomic_question": leaf["rewritten_question"],
-                        # The saved leaf question has dependency placeholders substituted already.
-                        "dependency_context": [],
-                        "evidence_blocks": leaf["evidence_blocks"],
-                    },
-                    ensure_ascii=False,
-                    indent=2,
-                ),
+                json.dumps(prompt_input, ensure_ascii=False, indent=2),
                 max_tokens=900,
             )
             answer = str(response["answer"]).strip()
