@@ -96,7 +96,11 @@ class AtomicPipelineTest(unittest.TestCase):
             client.entity_questions,
             ["Who is linked to A?", "Where was B recorded?", "What follows C?"],
         )
-        self.assertEqual(client.chat_calls[1]["dependency_context"][0]["answer"], "B")
+        dependency = client.chat_calls[1]["dependency_context"][0]
+        self.assertEqual(dependency["answer"], "B")
+        self.assertTrue(dependency["entities"])
+        self.assertTrue(dependency["evidence_blocks"])
+        self.assertNotIn("entity_ids", dependency)
         self.assertTrue(client.chat_calls[1]["evidence_blocks"])
         self.assertTrue(
             all(

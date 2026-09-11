@@ -17,7 +17,11 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from hyper_branch.client import OpenAIClient
-from hyper_branch.pipeline import _rewrite_question, _topological_order
+from hyper_branch.pipeline import (
+    _answer_dependency_context,
+    _rewrite_question,
+    _topological_order,
+)
 
 
 def _saved_dag(source: dict[str, object]) -> dict[str, object]:
@@ -71,19 +75,24 @@ def main() -> int:
             source = json.loads(source_path.read_text(encoding="utf-8"))
             dag = _saved_dag(source)
             saved_nodes = {node["id"]: node for node in source["nodes"]}
-            answers: dict[str, dict[str, str]] = {}
+            answers: dict[str, dict[str, object]] = {}
             output_nodes = []
             for node in _topological_order(dag["nodes"]):
-                dependencies = [answers[node_id] for node_id in node.get("depends_on", [])]
-                atomic_question, _ = _rewrite_question(node["question"], dependencies)
+                dependency_answers = [
+                    answers[node_id] for node_id in node.get("depends_on", [])
+                ]
+                atomic_question, _ = _rewrite_question(
+                    node["question"], dependency_answers
+                )
                 saved = saved_nodes[node["id"]]
+                dependency_context = _answer_dependency_context(dependency_answers)
                 response = client.chat_json(
                     prompt,
                     json.dumps(
                         {
                             "original_question": questions[index - 1]["question"],
                             "atomic_question": atomic_question,
-                            "dependency_context": dependencies,
+                            "dependency_context": dependency_context,
                             "evidence_blocks": saved["evidence_blocks"],
                         },
                         ensure_ascii=False,
@@ -92,7 +101,14 @@ def main() -> int:
                     max_tokens=900,
                 )
                 answer = str(response["answer"]).strip()
-                answers[node["id"]] = {"node_id": node["id"], "answer": answer}
+                answers[node["id"]] = {
+                    "node_id": node["id"],
+                    "question": atomic_question,
+                    "entities": saved["entities"],
+                    "entity_ids": saved.get("entity_ids", {}),
+                    "evidence_blocks": saved["evidence_blocks"],
+                    "answer": answer,
+                }
                 output_nodes.append(
                     {
                         "id": node["id"],
@@ -107,9 +123,9 @@ def main() -> int:
             output_path.write_text(
                 json.dumps(
                     {
-                        "source_result": str(source_path),
                         "topic_entities": source["topic_entities"],
                         "atomic_question_dag": dag,
+                        "topic_entity_ids": source.get("topic_entity_ids", {}),
                         "nodes": output_nodes,
                     },
                     ensure_ascii=False,

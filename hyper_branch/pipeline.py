@@ -77,11 +77,12 @@ class HyperBranchPipeline:
             #取当前节点的依赖节点id
             dependency_ids = node.get("depends_on", [])
             #取出依赖问题的答案
-            dependency_context = [answers[dependency_id] for dependency_id in dependency_ids]
+            dependency_answers = [answers[dependency_id] for dependency_id in dependency_ids]
+            dependency_context = _answer_dependency_context(dependency_answers)
             #重写问题
             rewritten_question, _ = _rewrite_question(
                 node["question"],
-                dependency_context,
+                dependency_answers,
             )
             anchors = self.client.chat_json(
                 ENTITY_RECOGNITION_PROMPT,
@@ -189,6 +190,27 @@ def _topological_order(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
             if indegree[dependent_id] == 0:
                 ready.append(dependent_id)
     return order
+
+
+def _answer_dependency_context(
+    dependency_answers: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Return the prerequisite records exposed to the answer model.
+
+    Entity IDs are retrieval-only artifacts.  Keep the predecessor's question,
+    answer, entities, and evidence so downstream answering can verify the
+    provenance of a derived value without receiving retrieval implementation
+    details.
+    """
+
+    return [
+        {
+            key: value
+            for key, value in dependency_answer.items()
+            if key != "entity_ids"
+        }
+        for dependency_answer in dependency_answers
+    ]
 
 
 def _rewrite_question(
